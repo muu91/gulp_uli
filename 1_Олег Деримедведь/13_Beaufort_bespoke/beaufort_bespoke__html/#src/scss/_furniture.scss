@@ -1,0 +1,144 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// BLOCK ADVANTAGES FURNITURE
+.bl_advantages__furniture {
+  padding-top: 40px;
+  padding-bottom: 120px;
+  @media (max-width: 992px) {
+    padding-bottom: 60px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+// END BLOCK ADVANTAGES FURNITURE
+// ========================================
+// KITCHEN INDIVIDUAL FURNITURE
+.bl_individual__furniture {
+  padding-top: 0;
+  @media (max-width: 768px) {
+    padding-bottom: 50px;
+  }
+  .bl_individual__content {
+    > p {
+      color: $grey1;
+    }
+    .bl_individual__items {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(20, 50px);
+        gap: 30px;
+        @media (max-width: 768px) {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: auto;
+        }
+        li {
+          min-height: auto;
+          max-height: auto;
+          height: auto;
+          background-color: rgba(0, 0, 0, 0.5);
+          // img {
+          //   display: block;
+          //   position: absolute;
+          //   display: none;
+          // }
+
+          &:first-child {
+            grid-row-start: 1;
+            grid-row-end: 12;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            // min-height: 880px;
+            // max-height: 880px;
+            min-height: auto;
+            max-height: auto;
+            height: auto;
+
+            @media (max-width: 768px) {
+              grid-row-start: auto;
+              grid-row-end: auto;
+              grid-column-start: auto;
+              grid-column-end: auto;
+            }
+          }
+          &:nth-child(2) {
+            grid-row-start: 1;
+            grid-row-end: 6;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            min-height: auto;
+            max-height: auto;
+            height: auto;
+
+            @media (max-width: 768px) {
+              grid-row-start: auto;
+              grid-row-end: auto;
+              grid-column-start: auto;
+              grid-column-end: auto;
+            }
+          }
+          &:nth-child(3) {
+            grid-row-start: 6;
+            grid-row-end: 11;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            min-height: auto;
+            max-height: auto;
+            height: auto;
+
+            @media (max-width: 768px) {
+              grid-row-start: auto;
+              grid-row-end: auto;
+              grid-column-start: auto;
+              grid-column-end: auto;
+            }
+          }
+          &:nth-child(4) {
+            grid-row-start: 12;
+            grid-row-end: 17;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            min-height: auto;
+            max-height: auto;
+            height: auto;
+
+            @media (max-width: 768px) {
+              grid-row-start: auto;
+              grid-row-end: auto;
+              grid-column-start: auto;
+              grid-column-end: auto;
+            }
+          }
+          &:nth-child(5) {
+            grid-row-start: 11;
+            grid-row-end: 21;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            min-height: auto;
+            max-height: auto;
+            height: auto;
+
+            @media (max-width: 768px) {
+              grid-row-start: auto;
+              grid-row-end: auto;
+              grid-column-start: auto;
+              grid-column-end: auto;
+            }
+          }
+          &:nth-child() {
+            min-height: auto;
+            max-height: auto;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+// END KITCHEN INDIVIDUAL FURNITURE
+// ========================================

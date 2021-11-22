@@ -1,0 +1,9 @@
+<svg id="Компонент_45_1" data-name="Компонент 45 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="936.908" height="1620.604" viewBox="0 0 936.908 1620.604">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#483aeb"/>
+    </linearGradient>
+  </defs>
+  <path id="Контур_4035" data-name="Контур 4035" d="M1003.191,804.425l255.462-442.476L492.264,804.425h510.927m76.489,132.483H0L1620.6,0,1079.68,936.908Z" transform="translate(0 1620.603) rotate(-90)" opacity="0.039" fill="url(#linear-gradient)"/>
+</svg>

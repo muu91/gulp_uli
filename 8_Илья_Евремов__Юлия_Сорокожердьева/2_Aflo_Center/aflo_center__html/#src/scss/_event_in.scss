@@ -1,0 +1,277 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// EVENT IN
+.bl_eventin_page {
+  .bl_newsin_page__content {
+    .newsin__new {
+      margin-bottom: 40px !important;
+    }
+    > p {
+      @media (max-width: 1024px) {
+        font-size: 19px !important;
+      }
+      @media (max-width: 768px) {
+        font-size: 17px !important;
+      }
+      @media (max-width: 425px) {
+        font-size: 16px !important;
+      }
+    }
+    .newsin__img {
+      background-color: $bg;
+    }
+    .block_in {
+      .block_in__content {
+        p {
+          font-size: 20px;
+          color: $dark;
+          margin-bottom: 20px;
+          @media (max-width: 1024px) {
+            font-size: 19px;
+          }
+          @media (max-width: 768px) {
+            font-size: 17px;
+          }
+          @media (max-width: 425px) {
+            font-size: 16px;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        ul {
+          margin-bottom: 100px;
+          padding-left: 20px;
+          @media (max-width: 768px) {
+            margin-bottom: 60px;
+          }
+          @media (max-width: 600px) {
+            padding-left: 0;
+          }
+          li {
+            position: relative;
+            font-size: 22px;
+            line-height: 150%;
+            font-family: $Nun;
+            font-weight: 400;
+            color: $grey;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            @media (max-width: 1024px) {
+              font-size: 19px;
+            }
+            @media (max-width: 768px) {
+              font-size: 17px;
+            }
+            @media (max-width: 425px) {
+              font-size: 16px;
+            }
+            &::before {
+              content: "";
+              width: 6px;
+              height: 6px;
+              background-color: $grey;
+              border-radius: 50%;
+              position: absolute;
+              left: 0;
+              top: 12px;
+            }
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+        .two_contacts {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          @media (max-width: 768px) {
+            gap: 10px;
+          }
+          @media (max-width: 600px) {
+            grid-template-columns: repeat(1, 1fr);
+          }
+          .two_contacts__item {
+            padding: 30px;
+            border: 2px solid $border;
+            border-radius: 8px;
+            transition: 0.3s;
+            @media (max-width: 600px) {
+              padding: 20px;
+            }
+            &:hover {
+              box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+              transition: 0.3s;
+            }
+            h4 {
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 150%;
+              color: $dark;
+              margin-bottom: 20px;
+              @media (max-width: 768px) {
+                font-size: 14px;
+              }
+            }
+            > a {
+              display: block;
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 150%;
+              color: $l_grey;
+              margin-bottom: 10px;
+              span {
+                color: $dark;
+              }
+            }
+            .address {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              position: relative;
+
+              img {
+                display: block;
+                margin-right: 10px;
+                height: fit-content;
+              }
+              svg {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 2px;
+              }
+              address {
+                font-size: 14px;
+                line-height: 135%;
+                color: $l_grey;
+                margin-bottom: 10px;
+                white-space: nowrap;
+                font-style: normal;
+                margin-right: 10px;
+                font-family: $Nun;
+                padding-left: 18px;
+                @media (max-width: 992px) {
+                  white-space: normal;
+                }
+              }
+              a {
+                color: $green;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 135%;
+                transition: 0.3s;
+                white-space: nowrap;
+                @media (max-width: 992px) {
+                  white-space: normal;
+                }
+                &:hover {
+                  transition: 0.3s;
+                  color: $red;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.two_contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  @media (max-width: 768px) {
+    gap: 10px;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .two_contacts__item {
+    padding: 30px;
+    border: 2px solid $border;
+    border-radius: 8px;
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+    @media (max-width: 600px) {
+      padding: 20px;
+    }
+    h4 {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 150%;
+      color: $dark;
+      margin-bottom: 20px;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+    > a {
+      display: block;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 150%;
+      color: $l_grey;
+      margin-bottom: 10px;
+      span {
+        color: $dark;
+      }
+    }
+    .address {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: relative;
+
+      img {
+        display: block;
+        margin-right: 10px;
+        height: fit-content;
+      }
+      svg {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 2px;
+      }
+      address {
+        font-size: 14px;
+        line-height: 135%;
+        color: $l_grey;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        font-style: normal;
+        margin-right: 10px;
+        font-family: $Nun;
+        padding-left: 18px;
+        @media (max-width: 992px) {
+          white-space: normal;
+        }
+      }
+      a {
+        color: $green;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 135%;
+        transition: 0.3s;
+        white-space: nowrap;
+        @media (max-width: 992px) {
+          white-space: normal;
+        }
+        &:hover {
+          transition: 0.3s;
+          color: $red;
+        }
+      }
+    }
+  }
+}
+// END EVENT IN
+// ========================================

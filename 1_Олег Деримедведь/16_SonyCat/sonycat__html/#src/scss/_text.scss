@@ -1,0 +1,129 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// Heading
+h1 {
+  font-family: $Mont;
+  color: #000;
+  display: block;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: normal;
+  @media (max-width: 992px) {
+    font-size: 32px;
+  }
+  span {
+    font-weight: 800;
+  }
+  br {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+h2 {
+  font-family: $Mont;
+  color: #000;
+  display: block;
+  font-weight: 500;
+  font-size: 54px;
+  // line-height: 107/54 * 100%;
+  line-height: normal;
+  @media (max-width: 992px) {
+    font-size: 32px;
+  }
+  span {
+    font-weight: 800;
+  }
+  br {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+h3 {
+  font-family: $Mont;
+  color: #000;
+  display: block;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32/26 * 100%;
+  @media (max-width: 425px) {
+    font-size: 18px;
+  }
+}
+
+h4 {
+  font-family: $Mont;
+  color: #000;
+  display: block;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32/24 * 100%;
+  @media (max-width: 425px) {
+    font-size: 16px;
+  }
+}
+h5 {
+  font-family: $Mont;
+  color: #fff;
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 21/12 * 100%;
+  text-transform: uppercase;
+}
+
+// End Heading
+// ------------------------------
+p {
+  font-family: $Mont;
+  color: #000;
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  // line-height: 54/18 * 100%;
+  line-height: normal;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+// ------------------------------
+// Links
+
+.btn_orange {
+  background-color: $orange1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  line-height: 100%;
+  color: #fff;
+  font-family: $Mont;
+  padding: 25px 30px;
+  border-radius: 25px;
+  width: fit-content;
+  transition: 0.3s;
+  @media (max-width: 992px) {
+    font-size: 22px;
+    padding: 20px 22px;
+    border-radius: 20px;
+  }
+  @media (max-width: 768px) {
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+
+  &:hover {
+    transition: 0.3s;
+    background-color: #c86208;
+  }
+}
+
+// End links
+// ------------------------------

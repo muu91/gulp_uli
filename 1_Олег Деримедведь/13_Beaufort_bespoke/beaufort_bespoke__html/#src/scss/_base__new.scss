@@ -1,0 +1,400 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+html.lock,
+body.lock {
+    height: 100%;
+    overflow: hidden !important;
+    width: 100%;
+    position: relative;
+    // background-color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    // overflow: hidden;
+    background-color: #fff;
+}
+// .main_wrapper {
+//     width: 100%;
+//     @media (max-height: 100vh) {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         align-items: stretch;
+//         min-height: 100vh;
+//     }
+// }
+
+.container {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+    @media (max-width: 992px) {
+        padding: 0 40px;
+    }
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
+    @media (max-width: 375px) {
+        padding: 0 16px;
+    }
+}
+
+// ---------------------
+// Для скрола блока
+// .scroll{
+//     max-height: calc(100vh - 56px);
+//     overflow-x: hidden;
+//     overflow-y: auto;
+// }
+// Для скрола блока
+// ------------------------------
+// ========================================
+// ------------------------------
+// Heading
+h1 {
+    font-family: $Azo;
+    color: $grey1;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: normal;
+    @media (max-width: 992px) {
+        // font-size: 60px;
+    }
+}
+
+h2 {
+    font-family: $Azo;
+    color: $grey1;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: normal;
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
+}
+
+h3 {
+    font-family: $Azo;
+    color: $grey1;
+    display: inline-block;
+    font-weight: 400;
+    line-height: normal;
+    // @media (max-width: 992px) {
+    //     // font-size: 42px;
+    // }
+}
+
+h4 {
+    font-family: $Azo;
+    color: $grey1;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: normal;
+    // @media (max-width: 992px) {
+    //     // font-size: 42px;
+    // }
+}
+h5 {
+    font-family: $Azo;
+    color: $grey1;
+    display: inline-block;
+    font-weight: 400;
+    line-height: normal;
+    // @media (max-width: 992px) {
+    //     // font-size: 42px;
+    // }
+}
+// End Heading
+// ------------------------------
+p {
+    font-family: $Euro;
+    color: $grey1_80;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 125%;
+    // @media (max-width: 768px) {
+    //     font-size: 16px;
+    // }
+}
+
+// ------------------------------
+// Links
+.btn_grey1 {
+    display: inline-block;
+    padding: 10px 18px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    border: 2px solid $grey1;
+    background-color: $grey1;
+    font-family: $Azo;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    transition: 0.3s;
+    text-align: center;
+    white-space: nowrap;
+    &:hover {
+        background-color: $grey1_80;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+}
+.main_h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+    p {
+        display: block;
+        font-family: $Azo;
+        color: $gold;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    img {
+        width: 50px;
+        display: block;
+        margin-bottom: 23px;
+    }
+    h2 {
+        text-align: center;
+    }
+}
+
+// End links
+// ------------------------------
+// Form
+::placeholder {
+    font-family: $Euro;
+    font-size: 15px;
+    color: rgba(77, 84, 92, 0.4);
+    line-height: 20px;
+    font-weight: 300;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+:-ms-input-placeholder {
+    font-family: $Euro;
+    font-size: 15px;
+    color: rgba(77, 84, 92, 0.4);
+    line-height: 20px;
+    font-weight: 300;
+    @media (max-width: 768px) {
+        // font-size: 14px;
+    }
+}
+
+::-ms-input-placeholder {
+    font-family: $Euro;
+    font-size: 15px;
+    color: rgba(77, 84, 92, 0.4);
+    line-height: 20px;
+    font-weight: 300;
+    @media (max-width: 768px) {
+        // font-size: 14px;
+    }
+}
+
+// End Form
+// ========================================
+// SLICK SLIDER
+// .slick-track {
+//     .slick-slide {
+//         outline: none;
+//     }
+// }
+
+// .slick-slider {
+//     position: static;
+// }
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 0;
+    width: 54px;
+    height: 54px;
+    background-repeat: no-repeat;
+    background-size: 15px 25px;
+    background-position: center center;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid $gold;
+    transition: 0.3s;
+    display: none;
+    @media (max-width: 425px) {
+        width: 40px;
+        height: 40px;
+        background-size: 12px 20px;
+    }
+    &:active,
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        cursor: pointer;
+        transition: 0.3s;
+        opacity: 0.8;
+    }
+}
+
+.slick-prev {
+    left: 10%;
+    background-image: url("../img/icons/arrow_left.svg");
+
+    @media (max-width: 768px) {
+        left: 30px;
+    }
+    @media (max-width: 425px) {
+        left: 20px;
+    }
+}
+
+.slick-next {
+    right: 10%;
+    background-image: url("../img/icons/arrow_right.svg");
+    @media (max-width: 768px) {
+        right: 30px;
+    }
+    @media (max-width: 768px) {
+        right: 20px;
+    }
+}
+
+// ------------------------------
+// Чтобы картинки не исчезали)
+// .slick-list {
+//     width: 100%;
+// }
+
+// ------------------------------
+// DOTS
+.slick-dots {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-195%);
+    padding: 0;
+    margin-top: 0;
+    max-width: 320px;
+    width: 100%;
+    overflow: hidden;
+    @media (max-width: 1300px) {
+        transform: translateX(0);
+        left: 20px;
+        max-width: 250px;
+    }
+    @media (max-width: 992px) {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 34%;
+    }
+    // @media (max-width: 767px) {
+    //     bottom: 50px;
+    // }
+    // @media (max-width: 450px) {
+    //     bottom: -30px;
+    // }
+    li {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        &:first-child {
+            width: 15px;
+            height: 15px;
+            &::before {
+                display: none;
+            }
+        }
+        &::before {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #dbddde;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .active_li {
+        &::before {
+            background-color: $gold;
+        }
+        button {
+            background-color: $gold;
+        }
+    }
+    button {
+        font-size: 0;
+        width: 15px;
+        height: 15px;
+        padding: 0;
+        border: none;
+        background-color: #dbddde;
+        border-radius: 50%;
+        // @media (max-width: 1200px) {
+        //     width: calc(30px + (56 - 30) *((100vw - 320px) / (1200 - 320)));
+        // }
+        &:hover {
+            cursor: pointer;
+        }
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
+    .slick-active {
+        position: relative;
+        z-index: 10;
+        button {
+            width: 15px;
+            height: 15px;
+            background: $grey1;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+// END SLICK SLIDER
+// ========================================
+// ------------------------------
+// OTHERS
+
+// END OTHERS
+// ------------------------------
+// ========================================

@@ -1,0 +1,51 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+.main_footer__thanks {
+  // display: none;
+  .footer_top {
+    .footer_top__content {
+      .footer_top__text {
+        position: relative;
+        .footer_top__phone {
+          display: block;
+          font-size: 26px;
+          font-weight: bold;
+          font-family: $Mont;
+          line-height: normal;
+          color: #fff;
+          position: absolute;
+          top: 0;
+          right: 0;
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+        .footer__logo {
+          @media (max-width: 425px) {
+            margin-bottom: 40px;
+          }
+        }
+      }
+      .footer_top__form {
+        display: none;
+
+        @media (max-width: 768px) {
+          // display: block;
+        }
+        .footer_top__phone {
+          display: block;
+          font-size: 26px;
+          font-weight: bold;
+          font-family: $Mont;
+          line-height: normal;
+          color: #fff;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+// ========================================

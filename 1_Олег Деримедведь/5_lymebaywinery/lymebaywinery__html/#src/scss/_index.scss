@@ -1,0 +1,668 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// body {
+//     padding-bottom: 300px;
+// }
+// BLOCK HEADER
+.w_bl_header {
+    width: 100%;
+    min-height: 670px;
+    background-image: url("../img/header_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @media (max-width: 767px) {
+        min-height: 470px;
+    }
+    .w_header__body {
+        min-height: 670px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        @media (max-width: 767px) {
+            min-height: 470px;
+        }
+        .w_header__content {
+            display: flex;
+            flex-direction: column;
+            max-width: 420px;
+            @media (max-width: 450px) {
+                max-width: 300px;
+            }
+            h1 {
+                display: block;
+                font-family: $Pl_dis;
+                font-weight: 400;
+                font-size: 90px;
+                line-height: 120%;
+                color: #ffffff;
+                box-sizing: border-box;
+                letter-spacing: normal;
+                margin-bottom: 42px;
+                @media (max-width: 767px) {
+                    font-size: 70px;
+                }
+                @media (max-width: 450px) {
+                    font-size: 50px;
+                }
+            }
+            .w_btn_header {
+                display: block;
+                padding: 15px 24px;
+                background-color: #fff;
+                width: fit-content;
+                font-family: $SourceSansPro;
+                font-size: 16px;
+                line-height: 100%;
+                font-weight: 700;
+                color: $black_1a;
+                text-transform: uppercase;
+                transition: .3s;
+                &:hover {
+                    transition: .3s;
+                    background: rgba(255, 255, 255, 0.7);
+                }
+            }
+        }
+    }
+}
+
+// BLOCK HEADER
+// ========================================
+// ========================================
+// BLOCK FAVOURITES
+.w_bl_favourites {
+    padding-top: 85px;
+    padding-bottom: 100px;
+    .w_favourites__body {
+        h3 {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            @media (max-width: 600px) {
+                margin-bottom: 20px;
+            }
+        }
+        .w_favourites__items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .w_favourites__item {
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 25%;
+                border-right: 1px solid #dbe3dc;
+                @media (max-width: 1100px) {
+                    width: 50%;
+                    margin-bottom: 50px;
+                }
+                @media (max-width: 600px) {
+                    border-right: none;
+                    width: 100%;
+                    border-bottom: 1px solid #dbe3dc;
+                    padding-bottom: 30px;
+                    padding-top: 30px;
+                    margin-bottom: 0;
+                }
+                &:last-child {
+                    border-right: none;
+                    @media (max-width: 600px) {
+                        border-bottom: none;
+                    }
+                }
+                &:nth-child(2) {
+                    @media (max-width: 1100px) {
+                        border-right: none;
+                    }
+                }
+                h4 {
+                    font-family: $SourceSansPro;
+                    font-weight: 700;
+                    font-size: 21px;
+                    letter-spacing: 0.53px;
+                    color: $black_1a;
+                    margin-bottom: 20px;
+                }
+                span {
+                    font-size: 16px;
+                    font-family: $SourceSansPro;
+                    font-weight: 700;
+                    font-size: 16px;
+                    letter-spacing: 0.53px;
+                    color: $black_1a;
+                    display: block;
+                    margin-bottom: 25px;
+                }
+                .w_drink_img {
+                    max-height: 265px;
+                    max-width: 110px;
+                    margin-bottom: 13px;
+                    position: relative;
+                    img {
+                        display: block;
+                        object-fit: contain;
+                        object-position: center;
+                        height: 100%;
+                        width: 100%;
+                        margin-left: 7px;
+                    }
+                    .w_discount {
+                        width: 76px;
+                        height: 76px;
+                        position: absolute;
+                        right: -33px;
+                        top: 58%;
+                        border-radius: 50%;
+                        background-color: $yellow_cb9;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                        font-size: 19px;
+                        font-family: $SourceSansPro;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        span {
+                            margin-bottom: 0;
+                            color: #fff;
+                            font-size: 23px;
+                            font-family: $SourceSansPro;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .w_price {
+                    display: flex;
+                    color: $black_1a;
+                    font-family: $OpenSans;
+                    font-weight: 700;
+                    font-size: 21px;
+                    display: block;
+                    margin-bottom: 25px;
+                    span {
+                        font-size: 21px;
+                        display: inline-block;
+                        margin-bottom: 0;
+                    }
+                }
+                .w_favourites__item_footer {
+                    display: flex;
+                    justify-content: center;
+                    .w_numb__selected {
+                        form {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            input {
+                                width: 65px;
+                                padding: 20px 10px;
+                                border: 2px solid $black_1a;
+                                display: block;
+                                color: $black_1a;
+                                font-family: $OpenSans;
+                                font-weight: 700;
+                                font-size: 18px;
+                                margin-right: 15px;
+                                text-align: center;
+                                &:active,
+                                &:focus {
+                                    border-radius: 0;
+                                    outline: none;
+                                }
+                            }
+                            button {
+                                width: 85px;
+                                padding: 20px 10px;
+                                display: block;
+                                background-color: $black_1a;
+                                border: 0;
+                                color: #fff;
+                                font-family: $OpenSans;
+                                font-weight: 700;
+                                font-size: 18px;
+                                margin-right: 15px;
+                                text-align: center;
+                                transition: 0.3s;
+                                &:active,
+                                &:focus {
+                                    border-radius: 0;
+                                    outline: none;
+                                }
+                                &:hover {
+                                    transition: 0.3s;
+                                    background-color: $yellow_cb9;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//END BLOCK FAVOURITES
+// ========================================
+// ========================================
+// BLOCK PERFECT GIFT
+.w_perfect_gift {
+    background-color: $red_6a;
+    .w_perfect_gift__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+        .w_perfect_gift__text {
+            display: flex;
+            flex-direction: column;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 60px;
+            margin-right: 30px;
+            width: 50%;
+            @media (max-width: 1100px) {
+                padding-left: 0;
+            }
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-right: 0;
+            }
+            h2 {
+                margin-bottom: 40px;
+                @media (max-width: 991px) {
+                    font-size: 48px;
+                }
+                @media (max-width: 767px) {
+                    margin-bottom: 20px;
+                    font-size: 38px;
+                }
+            }
+            p {
+                font-size: 36px;
+                font-family: $SourceSansPro;
+                font-weight: 400;
+                @media (max-width: 991px) {
+                    font-size: 30px;
+                }
+                @media (max-width: 767px) {
+                    font-size: 26px;
+                }
+                span {
+                    display: block;
+                    line-height: 120%;
+                }
+            }
+        }
+        .w_perfect_gift__img {
+            max-height: 433px;
+            overflow: hidden;
+            width: 50%;
+            position: relative;
+            a {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                height: 100%;
+                width: 100%;
+                z-index: 10;
+            }
+            @media (max-width: 767px) {
+                width: 100%;
+                max-height: none;
+                margin-bottom: 30px;
+            }
+            img {
+                display: block;
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+//END BLOCK PERFECT GIFT
+// ========================================
+// ========================================
+// BLOCK DRINK DESCRIPTION
+.w_drink_desc {
+    padding-top: 130px;
+    padding-bottom: 120px;
+    @media (max-width: 767px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .w_drink_desc__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 1330px) {
+            flex-direction: column;
+        }
+        .w_drink_desc__items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+            margin-right: 16px;
+            width: 580px;
+            @media (max-width: 1330px) {
+                margin-bottom: 16px;
+                margin-right: 0;
+            }
+            @media (max-width: 630px) {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 0;
+                width: 100%;
+            }
+            &:last-child {
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+            .w_drink_desc__item {
+                display: flex;
+                flex-direction: column;
+                width: 285px;
+                margin-right: 16px;
+                @media (max-width: 630px) {
+                    margin-bottom: 16px;
+                    margin-right: 0;
+                }
+                &:first-child {
+                    .w_drink_desc__img {
+                        background-image: url("../img/bg_drink1.jpg");
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .w_drink_desc__text {
+                        background-color: $black_31;
+                    }
+                }
+                &:nth-child(2) {
+                    margin-right: 0;
+                    .w_drink_desc__img {
+                        background-image: url("../img/bg_drink2.jpg");
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .w_drink_desc__text {
+                        background-color: $blue_4b;
+                    }
+                }
+                .w_drink_desc__img {
+                    width: 285px;
+                    height: 290px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        display: block;
+                        object-fit: contain;
+                        object-position: center;
+                        width: 100%;
+                        height: 100%;
+                        max-height: 220px;
+                    }
+                }
+                .w_drink_desc__text {
+                    width: 285px;
+                    height: 290px;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    h4 {
+                        color: #fff;
+                        font-size: 30px;
+                        font-family: $Pl_dis;
+                        font-weight: 400;
+                        text-align: center;
+                        margin-bottom: 20px;
+                        height: 30px;
+                    }
+                    p {
+                        color: #fff;
+                        font-size: 16px;
+                        font-family: $SourceSansPro;
+                        font-weight: 400;
+                        text-align: center;
+                        letter-spacing: 0.4px;
+                        margin-bottom: 30px;
+                        max-height: 55px;
+                        max-width: 152px;
+                        overflow: hidden;
+                    }
+                    .w_read_more {
+                        padding: 15px 20px;
+                        border: 2px solid #ffffff;
+                        color: #fff;
+                        font-size: 14px;
+                        font-family: $SourceSansPro;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.7px;
+                        transition: 0.3s;
+                        &:hover {
+                            transition: 0.3s;
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+        }
+        .w_drink_desc__items_2 {
+            display: flex;
+            flex-direction: column;
+            @media (max-width: 1330px) {
+                width: 580px;
+            }
+            @media (max-width: 630px) {
+                width: 100%;
+                align-items: center;
+            }
+            .w_drink_desc__item {
+                display: flex;
+                flex-direction: row-reverse;
+                width: 570px;
+                margin-right: 0;
+                @media (max-width: 1330px) {
+                    width: 585px;
+                    justify-content: center;
+                }
+                @media (max-width: 630px) {
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                }
+                &:first-child {
+                    margin-bottom: 8px;
+                    .w_drink_desc__img {
+                        background-image: url("../img/bg_drink3.jpg");
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .w_drink_desc__text {
+                        background-color: $green_63;
+                    }
+                }
+                &:nth-child(2) {
+                    margin-top: 8px;
+                    .w_drink_desc__img {
+                        background-image: url("../img/bg_drink4.jpg");
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .w_drink_desc__text {
+                        background-color: $fiolet_60;
+                        h4 {
+                            font-size: 21px;
+                        }
+                    }
+                }
+                .w_drink_desc__img {
+                    height: 282px;
+                    @media (max-width: 1330px) {
+                        width: 295px;
+                    }
+                    @media (max-width: 630px) {
+                        width: 285px;
+                    }
+                }
+                .w_drink_desc__text {
+                    height: 282px;
+                    @media (max-width: 1330px) {
+                        width: 290px;
+                    }
+                    @media (max-width: 630px) {
+                        width: 285px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//END BLOCK DRINK DESCRIPTION
+// ========================================
+// ========================================
+// BLOCK STORY 
+.w_story {
+    padding-top: 84px;
+    padding-bottom: 80px;
+    background-image: url("../img/story_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .w_story__body {
+        max-width: 840px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        h3 {
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        p {
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 16px;
+            font-family: $SourceSansPro;
+            font-weight: 400;
+            letter-spacing: 0.4px;
+            &:last-child {
+                margin-bottom: 40px;
+            }
+        }
+        .w_first_p {
+            max-width: 680px;
+        }
+        .w_read_more {
+            padding: 15px 24px;
+            border: 2px solid #ffffff;
+            color: #fff;
+            font-size: 14px;
+            font-family: $SourceSansPro;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            transition: 0.3s;
+            &:hover {
+                transition: 0.3s;
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+//END BLOCK STORY 
+// ========================================
+// ========================================
+// BLOCK USP
+.w_usp {
+    background-color: $black_14;
+    padding-bottom: 110px;
+    padding-top: 80px;
+    @media (max-width: 767px) {
+        padding-bottom: 60px;
+    }
+    .w_wsp_items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .w_usp_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 24%;
+            max-width: 230px;
+            @media (max-width: 767px) {
+                width: 48%;
+                margin-bottom: 30px;
+                max-width: none;
+            }
+            @media (max-width: 450px) {
+                width: 100%;
+            }
+            img {
+                width: 80px;
+                height: auto;
+                display: block;
+                margin-bottom: 10px;
+            }
+            h5 {
+                color: #fff;
+                font-size: 21px;
+                font-family: $Pl_dis;
+                font-weight: 400;
+                margin-bottom: 10px;
+                letter-spacing: 0.53px;
+                text-align: center;
+            }
+            p {
+                color: $yellow_cb9;
+                font-size: 18px;
+                font-family: $SourceSansPro;
+                font-weight: 400;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// END BLOCK USP 
+// ========================================
+// ========================================

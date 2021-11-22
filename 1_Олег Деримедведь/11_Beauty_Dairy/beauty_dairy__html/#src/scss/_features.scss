@@ -1,0 +1,183 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// ========================================
+// BLOCK HEADER 2
+.bl_header2 {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    min-height: 650px;
+    background-image: url("../img/features/header_bg.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    @media (max-width: 991px) {
+        min-height: 500px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 80px;
+        padding-bottom: 50px;
+        background-size: auto 100%;
+    }
+    .container {
+        min-height: inherit;
+    }
+    .bl_header__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: inherit;
+        h1 {
+            margin-bottom: 60px;
+            max-width: 900px;
+            text-align: center;
+        }
+        .bl_header2__img {
+            width: 130px;
+            height: 130px;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 25%;
+            padding: 20px;
+            box-shadow: 2px 2px 20px rgba(17, 21, 31, 0.2);
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+    }
+}
+
+// END BLOCK HEADER 2
+// ========================================
+// BLOCK MAIN UL 2
+.bl_main_ul2 {
+    margin-top: -180px;
+    padding-bottom: 80px;
+    @media (max-width: 991px) {
+        margin-top: -100px;
+    }
+    @media (max-width: 767px) {
+        margin-top: -50px;
+        padding-bottom: 40px;
+    }
+    .bl_main_ul__content {
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            li {
+                @media (max-width: 991px) {
+                    margin-bottom: 20px;
+                }
+                .bl_main_ul__item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    @media (max-width: 767px) {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
+                    .bl_main_ul__text {
+                        width: 50%;
+                        @media (max-width: 767px) {
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                        h2 {
+                            margin-bottom: 50px;
+                            @media (max-width: 991px) {
+                                margin-bottom: 30px;
+                            }
+                            @media (max-width: 767px) {
+                                margin-bottom: 20px;
+                            }
+                        }
+                        p {
+                            font-weight: 400;
+                            @media (max-width: 767px) {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .bl_main_ul__img {
+                        width: 45%;
+                        @media (max-width: 767px) {
+                            max-width: 450px;
+                            width: auto;
+                        }
+                    }
+                }
+                &:nth-child(2n) {
+                    .bl_main_ul__item {
+                        flex-direction: row-reverse;
+                        @media (max-width: 767px) {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// END BLOCK MAIN UL 2
+// ========================================
+// MAKE LIFE 2
+.bl_make_life2 {
+    position: relative;
+    background: $lingr_footer;
+    border-bottom: 0.5px solid #fff;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 400px;
+        height: 100%;
+        background-image: url("../img/big_heart.png");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: contain;
+        overflow: hidden;
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    .bl_make_life__content {
+        position: relative;
+        z-index: 10;
+        h2 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+        }
+        .orange_btn {
+            background: #fff;
+            color: #000;
+            transition: 0.3s;
+            padding: 20px 15px;
+            &:hover {
+                transition: 0.3s;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+// END MAKE LIFE 2
+// ========================================

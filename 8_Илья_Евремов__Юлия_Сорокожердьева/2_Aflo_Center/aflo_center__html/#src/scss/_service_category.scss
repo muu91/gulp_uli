@@ -1,0 +1,56 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// DIAGNOS AND ANALYZ
+.bl_d_and_a {
+  padding-bottom: 100px;
+  @media (max-width: 992px) {
+    padding-bottom: 60px;
+  }
+  // .bl_d_and_a__content {
+  // }
+}
+.bl_d_and_a__menu {
+  border: 2px solid $border;
+  padding: 60px;
+  border-radius: 8px;
+  @media (max-width: 992px) {
+    padding: 30px;
+  }
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 30px;
+    @media (max-width: 1024px) {
+      gap: 60px 20px;
+    }
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px 20px;
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+    }
+
+    li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      a {
+        @media (max-width: 600px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// END DIAGNOS AND ANALYZ
+// ========================================

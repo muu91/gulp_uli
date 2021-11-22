@@ -1,0 +1,45 @@
+/* ======================================== */
+
+
+/* ANODINA */
+
+@font-face {
+    font-family: "Anodina";
+    src: url("./Anodina-ExtraBold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Anodina";
+    src: url("./Anodina-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Anodina";
+    src: url("./Anodina-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Anodina";
+    src: url("./Anodina-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Anodina";
+    src: url("./Anodina-Light.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+/* END ANODINA */
+
+
+/* ======================================== */

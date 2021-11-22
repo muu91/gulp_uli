@@ -1,0 +1,224 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// SERVICE
+.bl_services_page {
+  padding-bottom: 100px;
+  @media (max-width: 768px) {
+    padding-bottom: 60px;
+  }
+
+  .bl_services_page__content {
+    .service__main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      @media (max-width: 992px) {
+        flex-direction: column;
+      }
+      aside {
+        max-width: 330px;
+        min-width: 330px;
+        background-color: $bg;
+        border-radius: 8px;
+        padding: 30px;
+        height: fit-content;
+        margin-right: 30px;
+        @media (max-width: 1024px) {
+          max-width: 300px;
+          min-width: 300px;
+          margin-right: 20px;
+        }
+        @media (max-width: 992px) {
+          max-width: none;
+          min-width: auto;
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 60px;
+        }
+        @media (max-width: 700px) {
+          padding: 20px;
+        }
+        .service__form {
+          margin-bottom: 30px;
+          form {
+            position: relative;
+            @media (max-width: 992px) {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 20px;
+            }
+            @media (max-width: 700px) {
+              grid-template-columns: repeat(1, 1fr);
+              gap: 0;
+            }
+
+            .service__search {
+              position: relative;
+              margin-bottom: 20px;
+              .input {
+                input {
+                  width: 100%;
+                  padding-right: 40px;
+                  background-color: #fff;
+                  border: 0;
+                  @media (max-width: 1440px) {
+                  }
+                  @media (max-width: 1360px) {
+                    padding: 20px;
+                  }
+                }
+                span {
+                  @media (max-width: 1360px) {
+                    // display: none;
+                  }
+                }
+              }
+              button {
+                position: absolute;
+                right: 18px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 5;
+                display: block;
+                width: 16px;
+                height: 16px;
+                outline: none;
+                border: 0;
+                background-color: transparent;
+
+                img {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                  object-position: center;
+                }
+              }
+            }
+            .select {
+              margin-bottom: 20px;
+              .jq-selectbox {
+                border: 2px solid #fff;
+                .jq-selectbox__select {
+                  top: 8px;
+                  color: $grey;
+                }
+                .jq-selectbox__dropdown {
+                  border: 2px solid #fff;
+                }
+              }
+            }
+          }
+        }
+        .service__otdelenie {
+          margin-bottom: 40px;
+          h4 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 150%;
+            margin-bottom: 15px;
+            @media (max-width: 768px) {
+              font-size: 14px;
+            }
+          }
+          .green_menu {
+            margin-bottom: 0;
+            ul {
+              li {
+                background-color: #fff;
+              }
+            }
+          }
+        }
+        .service__spec {
+          h4 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 150%;
+            margin-bottom: 15px;
+          }
+          ul {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 21px;
+            margin-top: 25px;
+
+            @media (max-width: 992px) {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width: 600px) {
+              grid-template-columns: repeat(1, 1fr);
+            }
+            li {
+              a {
+                font-weight: 600;
+                line-height: 135%;
+                font-size: 14px;
+                color: $grey;
+                transition: 0.3s;
+                &:hover {
+                  color: $red;
+                  transition: 0.3s;
+                }
+              }
+            }
+          }
+        }
+      }
+      main {
+        max-width: 930px;
+        width: 100%;
+        h3 {
+          margin-bottom: 30px;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 150%;
+          @media (max-width: 1024px) {
+            font-size: 18px;
+          }
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
+          @media (max-width: 600px) {
+            margin-bottom: 20px;
+          }
+        }
+        .service__popular {
+          margin-bottom: 100px;
+          @media (max-width: 768px) {
+            margin-bottom: 60px;
+          }
+          ul {
+            grid-template-columns: repeat(2, 1fr);
+            @media (max-width: 600px) {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          }
+        }
+        .service__all {
+          border: 2px solid $border;
+          padding: 60px;
+          @media (max-width: 992px) {
+            padding: 30px;
+          }
+          @media (max-width: 700px) {
+            padding: 20px;
+            // padding-bottom: 0px;
+          }
+          ul {
+            grid-template-columns: repeat(2, 1fr);
+            @media (max-width: 600px) {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END SERVICE
+// ========================================

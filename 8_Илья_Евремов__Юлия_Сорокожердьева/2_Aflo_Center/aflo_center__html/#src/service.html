@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('_head.html')
+</head>
+
+<body>
+    <div class="main_wrapper">
+        @@include('_header.html')
+        <main>
+            <!-- ======================================== -->
+            <!-- CRUMBS -->
+            <section class="bl_crumbs">
+                <div class="container">
+                    <div class="bl_crumbs__content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Услуги
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- END CRUMBS -->
+            <!-- ======================================== -->
+            <!-- SERVICE -->
+            <div class="bl_services_page">
+                <div class="container">
+                    <div class="bl_services_page__content">
+                        <h1>
+                            Услуги
+                        </h1>
+                        <div class="service__main">
+                            <aside>
+                                <div class="service__form">
+                                    <form action="#">
+                                        <div class="service__search">
+                                            <div class="input">
+                                                <input type="text" required>
+                                                <span class="placeholder">
+                                                    Поиск по услугам
+                                                </span>
+                                            </div>
+                                            <button>
+                                                <img src="./img/header/search.svg" alt="search">
+                                            </button>
+                                        </div>
+                                        <div class="select">
+                                            <select name="select">
+                                                <option value="1" selected>
+                                                    Категория
+                                                </option>
+                                                <option value="2">
+                                                    Категория 1
+                                                </option>
+                                                <option value="3">
+                                                    Категория 2
+                                                </option>
+                                                <option value="4">
+                                                    Категория 3
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="select">
+                                            <select name="select">
+                                                <option value="1" selected>
+                                                    Филиалы
+                                                </option>
+                                                <option value="2">
+                                                    Филиалы 1
+                                                </option>
+                                                <option value="3">
+                                                    Филиалы 2
+                                                </option>
+                                                <option value="4">
+                                                    Филиалы 3
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="service__otdelenie">
+                                    <h4>
+                                        Отделение
+                                    </h4>
+                                    <div class="green_menu service__menu">
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="active" data-filter_tab="service__adult">
+                                                    Взрослое
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-filter_tab="service__child">
+                                                    Детское
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="service__spec">
+                                    <h4>
+                                        Специализация
+                                    </h4>
+                                    <div class="service__adult" data-tab_content="service__adult">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    Диагностика и анализы
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Лечебные процедуры
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Выездные осмотры
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Медицинский фитнесс
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Городской санаторий
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Программы
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Исследование на коронавирус
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Медосмотры и справки
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="service__child" data-tab_content="service__child">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    Child Диагностика и анализы
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Child Медицинский фитнесс
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Child Городской санаторий
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Child Программы
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Child Исследование на коронавирус
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Child Медосмотры и справки
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </aside>
+                            <main>
+                                <h3>
+                                    Популярные услуги
+                                </h3>
+                                <div class="service__popular bl_d_and_a__menu ">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="btn_dark_mini">
+                                                Получение справок
+                                                <img src="./img/icons/arrow_right_mini_dark.svg" alt="arrow_right"
+                                                    class="svg">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn_dark_mini">
+                                                Физиопроцедуры
+                                                <img src="./img/icons/arrow_right_mini_dark.svg" alt="arrow_right"
+                                                    class="svg">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn_dark_mini">
+                                                Прием специалистов
+                                                <img src="./img/icons/arrow_right_mini_dark.svg" alt="arrow_right"
+                                                    class="svg">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class=" btn_dark_mini">
+                                                Лечебные процедуры
+                                                <img src="./img/icons/arrow_right_mini_dark.svg" alt="arrow_right"
+                                                    class="svg">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3>
+                                    Все услуги
+                                </h3>
+                                <div class="service__all bl_404_sitemap__menu">
+                                    <ul>
+                                        <li>
+                                            <h4>
+                                                Диагностика и анализы
+                                            </h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        Бронхофонография
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Доплерография
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Маммография
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Спирометрия
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Фиброгастродуоденоскопия (фгдс)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Электронейромиография (ЭНМГ)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Дерматоскопия
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Анализы
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Рентген
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Узи
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Электрокардиография (экг)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Колоноскопия
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                Лечебные процедуры
+                                            </h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        Горный воздух
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Соляная комната
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Терапевтический лазер
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Криолечение
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Лечебный массаж
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Озокеритотерапия
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Кислородный коктейль
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Электролечение
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Озонотерапия
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                Выездные медосмотры
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                Городской санаторий
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                Медицинский фитнесс
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                Клещ-контроль
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                Программы
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                Исследование на коронавирус
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                Медосмотры и справки
+                                            </h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        Предварительный и периодический осмотры
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Справка в ГИБДД в Кирове
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Медицинские книжки
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Справка на оружие
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Справка на учебу, для трудоустройства (086/у)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Справка на госслужбу
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Санаторно-курортная карта
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Психиатрическое освидетельствование
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Предрейсовые и послерейсовые медицинские осмотры
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Справка в детский сад (026/У)
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END SERVICE -->
+            <!-- ======================================== -->
+        </main>
+        @@include('_footer.html') @@include('_popups.html') @@include('_js_source.html')
+
+</body>
+
+</html>

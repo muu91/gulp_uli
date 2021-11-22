@@ -1,0 +1,104 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// Heading
+h1 {
+  font-family: $Mont;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 85/70 * 100%;
+  @media (max-width: 768px) {
+    font-size: 45px;
+  }
+}
+
+h2 {
+  font-family: $Mont;
+  color: $black1;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 85/70 * 100%;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 45px;
+  }
+}
+
+h3 {
+  font-family: $Mont;
+  color: $black1;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49/40 * 100%;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
+}
+h4 {
+  font-family: $Mont;
+  color: $black1;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22/18 * 100%;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+// End Heading
+// ------------------------------
+p {
+  font-family: $Mont;
+  color: $black1;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22/18 * 100%;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+// ------------------------------
+// Links
+
+.btn__blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 25px;
+  background-color: $blue1;
+  text-align: center;
+  font-family: $Mont;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 100%;
+  transition: 0.3s;
+  font-size: 12px;
+  width: fit-content;
+  @media (max-width: 768px) {
+    min-width: 335px;
+  }
+  @media (max-width: 425px) {
+    min-width: auto;
+    width: 100%;
+  }
+  &:hover {
+    transition: 0.3s;
+    box-shadow: 10px 10px 15px rgba(18, 16, 144, 0.2);
+  }
+}
+
+// End links
+// ------------------------------

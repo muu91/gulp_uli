@@ -1,0 +1,120 @@
+@import "_base.scss";
+// ========================================
+// ========================================
+// BLOCK PRELOADER
+.main_preloader2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: $green;
+    overflow: hidden;
+    .preloader__white {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 80%;
+        background-color: #fff;
+        transform: skewX(-12deg) !important;
+        animation-delay: 0.8s;
+    }
+    img {
+        display: block;
+        position: relative;
+        z-index: 105;
+        width: 330px;
+        height: auto;
+        @media (max-width: 767px) {
+            width: 200px;
+        }
+    }
+    .preloader__percent {
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: $pragmac;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 120%;
+        text-align: center;
+        color: $blue;
+        @media (max-width: 767px) {
+            font-size: 28px;
+            bottom: 30px;
+        }
+    }
+}
+
+//END BLOCK PRELOADER
+// ========================================
+// ========================================
+@import "_base.scss";
+// ========================================
+// ========================================
+// BLOCK PRELOADER
+.main_preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: $green;
+    overflow: hidden;
+    .preloader__white {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 80%;
+        background-color: #fff;
+        transform: skewX(-12deg) !important;
+        animation-delay: 0.8s;
+    }
+    img {
+        display: block;
+        position: relative;
+        z-index: 105;
+        width: 330px;
+        height: auto;
+        @media (max-width: 767px) {
+            width: 200px;
+        }
+    }
+    .preloader__percent {
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: $pragmac;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 120%;
+        text-align: center;
+        color: $blue;
+        @media (max-width: 767px) {
+            font-size: 28px;
+            bottom: 30px;
+        }
+    }
+}
+
+//END BLOCK PRELOADER
+// ========================================
+// ========================================

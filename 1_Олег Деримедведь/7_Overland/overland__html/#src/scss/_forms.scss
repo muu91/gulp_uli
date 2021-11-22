@@ -1,0 +1,289 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// ========================================
+// BLOCK TOP FORM
+.bl_form {
+    margin-bottom: 100px;
+    @media (max-width: 767px) {
+        margin-bottom: 50px;
+    }
+    .top_form__body {
+        max-width: 1140px;
+        margin: 0 auto;
+        margin-top: -50px;
+        @media (max-width: 767px) {
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+        @media (max-width: 500px) {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        form {
+            padding: 50px 80px 80px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+            background-color: #fff;
+            @media (max-width: 767px) {
+                padding: 50px;
+            }
+            h2 {
+                margin-bottom: 6px;
+                text-align: center;
+                @media (max-width: 767px) {
+                    font-display: 30px;
+                }
+            }
+            p {
+                font-size: 28px;
+                line-height: 130%;
+                display: block;
+                margin-bottom: 50px;
+                text-align: center;
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                    margin-bottom: 25px;
+                }
+            }
+            .top_form__inputs {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start;
+                margin-bottom: 70px;
+                @media (max-width: 767px) {
+                    margin-bottom: 30px;
+                }
+                @media (max-width: 500px) {
+                    flex-direction: column;
+                }
+                input {
+                    max-width: 273px;
+                    width: 100%;
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+                    border: none;
+                    border-bottom: 1px solid $black_5b;
+                    font-family: $Mont;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: $black_5b;
+                    margin: 0 10px;
+                    appearance: none;
+                    @media (max-width: 500px) {
+                        max-width: none;
+                        margin: 0;
+                    }
+                    &:first-child {
+                        @media (max-width: 767px) {
+                            margin-bottom: 30px;
+                        }
+                    }
+                    &:focus,
+                    &:active {
+                        outline: none;
+                        border-bottom: 2px solid $blue_04;
+                    }
+                }
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    margin: 0;
+                }
+                 ::placeholder {
+                    font-family: $Mont;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: $black_5b;
+                    @media (max-width: 767px) {
+                        font-size: 14px;
+                    }
+                }
+                 :-ms-input-placeholder {
+                    font-family: $Mont;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: $black_5b;
+                    @media (max-width: 767px) {
+                        font-size: 14px;
+                    }
+                }
+                 ::-ms-input-placeholder {
+                    font-family: $Mont;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: $black_5b;
+                    @media (max-width: 767px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .btn_form {
+                padding: 22px 45px 13px;
+                background-color: $blue_04;
+                color: #fff;
+                border-radius: 0;
+                border: none;
+                transition: 0.3s;
+                font-size: 25px;
+                line-height: 130%;
+                font-weight: 400;
+                letter-spacing: 0.14em;
+                font-family: $Mont;
+                @media (max-width: 767px) {
+                    padding: 13px 18px;
+                    font-size: 19px;
+                }
+                &:hover {
+                    opacity: 0.8;
+                    transition: 0.3s;
+                }
+                &:active,
+                &:focus {
+                    outline: none;
+                    border: none;
+                    border-radius: 0;
+                    opacity: 0.8;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+//END BLOCK TOP FORM
+// ========================================
+// ========================================
+// BLOCK FORM 2
+.bl_top_form2 {
+    .top_form__body {
+        form {
+            @media (max-width: 374px) {
+                padding: 50px 30px;
+            }
+            h2 {
+                @media (max-width: 374px) {
+                    font-size: 22px;
+                }
+            }
+            .form__content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                max-width: 750px;
+                width: 100%;
+                @media (max-width: 767px) {
+                    flex-direction: column;
+                }
+                .top_form__inputs {
+                    display: flex;
+                    flex-direction: column;
+                    width: 45%;
+                    margin-bottom: 0;
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
+                    input {
+                        margin-bottom: 40px;
+                        width: 100%;
+                        max-width: none;
+                        margin-left: 0;
+                        margin-right: 0;
+                        appearance: none;
+                    }
+                }
+                .form_textarea {
+                    width: 45%;
+                    height: inherit;
+                    padding-bottom: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: stretch;
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
+                    p {
+                        font-family: $Mont;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: $black_5b;
+                        display: block;
+                        width: 100%;
+                        text-align: left;
+                        padding-top: 9px;
+                        padding-bottom: 9px;
+                        margin-bottom: 0;
+                    }
+                    textarea {
+                        width: 100%;
+                        height: 100%;
+                        padding: 9px;
+                        // padding-top: 9px;
+                        // padding-bottom: 9px;
+                        border: none;
+                        border: 1px solid $black_5b;
+                        // border-bottom: 1px solid $black_5b;
+                        // border-top: 1px solid $black_5b;
+                        resize: none;
+                        font-family: $Mont;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: $black_5b;
+                        @media (max-width: 767px) {
+                            min-height: 190px;
+                            width: 100%;
+                        }
+                        &:focus,
+                        &:active {
+                            outline: none;
+                            // border-bottom: 2px solid $blue_04;
+                            // border-top: 2px solid $blue_04;
+                            border: 2px solid $black_5b;
+                        }
+                    }
+                     ::placeholder {
+                        font-family: $Mont;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: $black_5b;
+                        @media (max-width: 767px) {
+                            font-size: 14px;
+                        }
+                    }
+                     :-ms-input-placeholder {
+                        font-family: $Mont;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: $black_5b;
+                        @media (max-width: 767px) {
+                            font-size: 14px;
+                        }
+                    }
+                     ::-ms-input-placeholder {
+                        font-family: $Mont;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: $black_5b;
+                        @media (max-width: 767px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//END  BLOCK FORM 2
+// ========================================
+// ========================================

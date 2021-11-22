@@ -1,0 +1,282 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// SERVICE PAGE
+.bl_service_page {
+  .bl_service_page__content {
+    h1 {
+      margin-bottom: 50px;
+      @media (max-width: 700px) {
+        margin-bottom: 20px;
+      }
+    }
+    .main_main {
+      @media (max-width: 768px) {
+        padding-bottom: 60px;
+      }
+      @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+      }
+      aside {
+        @media (max-width: 1024px) {
+          max-width: 220px;
+          min-width: 220px;
+        }
+        @media (max-width: 992px) {
+          display: block;
+        }
+        @media (max-width: 700px) {
+          // display: none;
+          margin-right: 0;
+          max-width: none;
+          min-width: auto;
+        }
+        .bl_service_page__menu {
+          @media (max-width: 700px) {
+            margin-bottom: 30px;
+            border: 2px solid $border;
+            border-radius: 3px;
+            overflow: hidden;
+          }
+
+          .btn_choice_service {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            height: 50px;
+            width: 100%;
+            padding: 15px 20px;
+            font-family: $Mont;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: $light_grey;
+            display: none;
+            @media (max-width: 700px) {
+              display: flex;
+            }
+            &::after {
+              content: "";
+              display: block;
+              width: 15px;
+              height: 10px;
+              position: absolute;
+              right: 20px;
+              top: 50%;
+              transform: translateY(-50%);
+              background-image: url("../img/icons/slide_bottom_arrow.svg");
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center center;
+            }
+          }
+          ul {
+            flex-direction: column;
+            align-items: center;
+            @media (max-width: 700px) {
+              // display: none;
+              padding: 0 20px;
+              height: 0;
+              flex-wrap: nowrap;
+              overflow: hidden;
+              transition: 0.3s;
+            }
+            li {
+              @media (max-width: 700px) {
+                margin-bottom: 0;
+              }
+              ul {
+                @media (max-width: 700px) {
+                  padding: 0;
+                  max-height: none;
+                  height: auto;
+                }
+                li {
+                  width: 100%;
+                  @media (max-width: 700px) {
+                    margin-bottom: 20px;
+                  }
+                  h4 {
+                    @media (max-width: 700px) {
+                      line-height: 100%;
+                    }
+                  }
+                  ul {
+                    @media (max-width: 700px) {
+                      display: none;
+                      transition: none;
+                    }
+                    li {
+                      @media (max-width: 700px) {
+                        margin-bottom: 10px;
+                      }
+                    }
+                  }
+                  .show_more {
+                    @media (max-width: 700px) {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          ul.active {
+            @media (max-width: 700px) {
+              overflow: auto;
+              height: 300px;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+      .service_content {
+        width: 100%;
+        ul {
+          li {
+            margin-bottom: 70px;
+            @media (max-width: 768px) {
+              margin-bottom: 30px;
+            }
+            @media (max-width: 700px) {
+              overflow: auto;
+              padding-bottom: 10px;
+            }
+            &:last-child {
+              margin-bottom: 0;
+            }
+            .bl_service_page__title {
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+              align-items: flex-end;
+              margin-bottom: 30px;
+              @media (max-width: 768px) {
+                margin-bottom: 20px;
+              }
+              @media (max-width: 700px) {
+                // flex-direction: column;
+                // align-items: flex-start;
+                flex-wrap: wrap;
+              }
+              h2 {
+                margin-right: 20px;
+                line-height: 100%;
+                @media (max-width: 700px) {
+                  // margin-right: 0;
+                  // margin-bottom: 10px;
+                }
+              }
+              a {
+                display: flex;
+                align-items: center;
+                position: relative;
+                font-family: $Mont;
+                color: $blue;
+                font-size: 14px;
+                font-weight: 400;
+                &:hover {
+                  text-decoration: underline;
+                }
+                &::after {
+                  content: "";
+                  display: block;
+                  height: 10px;
+                  width: 6px;
+                  background-image: url("../img/icons/arrow_right_blue.svg");
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center center;
+                  margin-left: 12px;
+                }
+              }
+            }
+            ul {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 30px;
+              @media (max-width: 1024px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+              }
+              @media (max-width: 700px) {
+                display: flex;
+                flex-direction: row;
+                gap: 0;
+              }
+              li {
+                display: none;
+                margin-bottom: 0;
+                &:first-child,
+                &:nth-child(2),
+                &:nth-child(3) {
+                  display: block;
+                }
+                &:nth-child(3) {
+                  @media (max-width: 1024px) {
+                    display: none;
+                  }
+                  @media (max-width: 700px) {
+                    display: block;
+                  }
+                }
+                @media (max-width: 700px) {
+                  margin-right: 20px;
+                  max-width: 190px;
+                  min-width: 190px;
+                  &:last-child {
+                    margin-right: 0;
+                  }
+                }
+                .bl_service_page__img {
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 3px;
+                  margin-bottom: 20px;
+                  height: 330px;
+                  background-color: $bg1;
+                  @media (max-width: 1600px) {
+                    height: calc(150px + (330 - 150) * ((100vw - 1025px) / (1600 - 1025)));
+                  }
+                  @media (max-width: 1024px) {
+                    height: calc(280px + (300 - 280) * ((100vw - 993px) / (1024 - 993)));
+                  }
+                  @media (max-width: 992px) {
+                    height: calc(220px + (300 - 220) * ((100vw - 769px) / (992 - 769)));
+                  }
+                  @media (max-width: 700px) {
+                    height: 190px;
+                  }
+                  a {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                  }
+                  img {
+                    display: block;
+                    object-position: center;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END SERVICE PAGE
+// ========================================

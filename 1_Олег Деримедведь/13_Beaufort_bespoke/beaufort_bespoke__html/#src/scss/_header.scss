@@ -1,0 +1,194 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// HEADER
+.main_header {
+  position: relative;
+  z-index: 100;
+  // --------------------
+  //  Header desktop
+  .header__desktop {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #fff;
+    .container {
+      max-width: 1120px;
+    }
+    .header__top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 17px;
+    }
+    .header__logo {
+      max-width: 200px;
+      width: 100%;
+      a {
+        display: block;
+        width: 100%;
+        img {
+          display: block;
+          width: inherit;
+        }
+      }
+    }
+    .header__bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .header__menu {
+      @media (max-width: 992px) {
+        display: none;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        li {
+          margin-right: 44px;
+          @media (max-width: 1150px) {
+            margin-right: 30px;
+          }
+          @media (max-width: 1040px) {
+            margin-right: 20px;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            display: block;
+            font-family: $Euro;
+            color: $grey1;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: 0.3s;
+            font-size: 15px;
+            white-space: nowrap;
+            &:hover {
+              transition: 0.3s;
+              color: $gold;
+            }
+            // line-height: normal;
+          }
+        }
+      }
+    }
+    .header__btn {
+      margin-left: 40px;
+      @media (max-width: 768px) {
+        margin-left: 20px;
+      }
+    }
+    .header__burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 30px;
+      min-width: 30px;
+      height: 20px;
+      margin-right: 40px;
+      position: relative;
+      display: none;
+      z-index: 60;
+      @media (max-width: 992px) {
+        display: flex;
+      }
+      @media (max-width: 768px) {
+        margin-right: 20px;
+      }
+      span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: $gold;
+        transition: 0.3s;
+      }
+    }
+    .header__burger.active {
+      span {
+        &:first-child {
+          transform: rotate(405deg) translate(5px, 6px);
+        }
+        &:nth-child(2) {
+          width: 0;
+          height: 0;
+          transition: 0.3s;
+        }
+        &:last-child {
+          transform: rotate(-405deg) translate(5px, -6px);
+        }
+      }
+    }
+  }
+  //  End Header desktop
+  // --------------------
+  // Header mobile
+  .header__mobile {
+    // display: none;
+    background-color: $grey1;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    height: 100%;
+    width: 300px;
+    padding-top: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    z-index: 50;
+    transition: 0.3s;
+    display: none;
+    @media (max-width: 992px) {
+      display: block;
+    }
+    @media (max-width: 425px) {
+      width: 100%;
+    }
+    .header__menu {
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        li {
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            display: block;
+            font-family: $Euro;
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: 0.3s;
+            font-size: 15px;
+            white-space: nowrap;
+            &:hover {
+              transition: 0.3s;
+              color: $gold;
+            }
+          }
+        }
+      }
+    }
+  }
+  .header__mobile.active {
+    left: 0;
+    transition: 0.3s;
+    overflow: auto;
+  }
+  // End Header mobile
+  // --------------------
+}
+// END HEADER
+// ========================================

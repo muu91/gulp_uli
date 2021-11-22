@@ -1,0 +1,83 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// COVID 19
+.bl_covid_19 {
+  .bl_newsin_page__content {
+    .newsin__img {
+      margin-bottom: 60px !important;
+    }
+    .bl_covid_19__menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 100px;
+      @media (max-width: 768px) {
+        margin-bottom: 60px;
+      }
+      @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .green_menu {
+        margin-bottom: 0;
+        margin-right: 30px;
+        width: 100%;
+        @media (max-width: 600px) {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .block_in {
+      .block_in__content {
+        .sign_up {
+          ul {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            padding-left: 0;
+            margin-bottom: 40px;
+            li {
+              padding-left: 0;
+              margin: 0;
+              &::before {
+                display: none;
+              }
+              .sign_up__content {
+                padding-bottom: 50px;
+
+                .sign_up__left {
+                  p {
+                    color: $dark;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .block_in__covid_general {
+      .block_in__content {
+        ul {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .block_in__covid_desc {
+      .block_in__content {
+        ul {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+// END COVID 19
+// ========================================

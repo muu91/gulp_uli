@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="480.125" height="435.715" viewBox="0 0 480.125 435.715">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle" width="480.125" height="435.715" transform="translate(720 1453.034)" fill="#f4f4f4"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Прямоугольник_4" data-name="Прямоугольник 4" width="481.258" height="481.258" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.293" stop-color="#fff"/>
+      <stop offset="1" stop-color="#2e3184"/>
+    </linearGradient>
+  </defs>
+  <g id="Группа_масок_8" data-name="Группа масок 8" transform="translate(-720 -1453.034)" clip-path="url(#clip-path)">
+    <g id="Сгруппировать_34" data-name="Сгруппировать 34" transform="translate(264.913 687.048)">
+      <g id="Сгруппировать_8" data-name="Сгруппировать 8" transform="translate(454.087 765.952)" clip-path="url(#clip-path-2)">
+        <rect id="Прямоугольник_3" data-name="Прямоугольник 3" width="481.351" height="481.351" transform="translate(-0.075 -0.093)" fill="#006247"/>
+        <g id="Сгруппировать_7" data-name="Сгруппировать 7" transform="translate(-350.6 -0.068)" opacity="0.15" style="mix-blend-mode: multiply;isolation: isolate">
+          <path id="Контур_24" data-name="Контур 24" d="M636.438,833.891l131.13,227.124L374.18,833.891H636.438m39.262-68H121.5L953.357,1246.8,675.7,765.887Z" transform="translate(-121.5 -765.887)" fill="url(#linear-gradient)"/>
+          <path id="Контур_25" data-name="Контур 25" d="M910.62,1221.169h0Z" transform="translate(-78.763 -741.23)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

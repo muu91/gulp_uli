@@ -1,0 +1,379 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+.main_footer {
+  background-color: #3a2359;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .footer__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .footer__item {
+    max-width: 200px;
+  }
+  .footer__item__logo {
+    max-width: 250px;
+    @media (max-width: 1024px) {
+      max-width: 180px;
+      // width: 100%;
+    }
+    @media (max-width: 768px) {
+      border-bottom: 1px solid $fio2;
+      width: 100%;
+      max-width: none;
+    }
+
+    .footer__logo {
+      max-width: 110px;
+      margin-bottom: 25px;
+      @media (max-width: 1024px) {
+        max-width: 85px;
+        margin-bottom: 15px;
+      }
+      @media (max-width: 768px) {
+        margin: 0 auto;
+        margin-bottom: 30px;
+      }
+      a {
+        display: block;
+        img {
+          display: block;
+        }
+      }
+    }
+    p {
+      display: block;
+      margin-bottom: 10px;
+      font-family: $Open;
+      font-size: 12px;
+      line-height: 18/12 * 100%;
+      font-weight: 400;
+      color: #fff;
+      text-align: left;
+      @media (max-width: 1024px) {
+        margin-bottom: 5px;
+        white-space: nowrap;
+      }
+      @media (max-width: 768px) {
+        white-space: normal;
+        display: none;
+      }
+    }
+    a {
+      display: block;
+      color: #fff;
+      font-family: $Open;
+      font-size: 12px;
+      line-height: 18/12 * 100%;
+      font-weight: 400;
+      text-align: left;
+      @media (max-width: 1024px) {
+        white-space: nowrap;
+      }
+      @media (max-width: 768px) {
+        white-space: normal;
+        display: none;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .footer__links_m {
+      display: none;
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      > a {
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: $Open;
+        position: relative;
+        color: #fff;
+        transition: 0.3s;
+        white-space: nowrap;
+
+        &::before {
+          content: "";
+          width: 15px;
+          height: 13px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @media (max-width: 1024px) {
+            width: 10px;
+            height: 10px;
+          }
+        }
+        &:first-child {
+          margin-left: 0;
+          @media (max-width: 1024px) {
+            margin-left: 0;
+          }
+        }
+      }
+      .phone {
+        padding-left: 25px;
+        margin-bottom: 15px;
+        @media (max-width: 1024px) {
+          padding-left: 18px;
+        }
+        &::before {
+          background-image: url("../img/footer/phone.svg");
+        }
+      }
+      .email {
+        padding-left: 25px;
+        margin-bottom: 25px;
+        @media (max-width: 1024px) {
+          padding-left: 18px;
+        }
+        &::before {
+          background-image: url("../img/footer/message.svg");
+          transform: translateY(-40%);
+        }
+      }
+    }
+  }
+  .footer__item__menu {
+    ul {
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      li {
+        margin-bottom: 15px;
+        @media (max-width: 1024px) {
+          margin-bottom: 12.5px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          display: block;
+          font-family: $Open;
+          font-size: 16px;
+          line-height: 120%;
+          font-weight: 400;
+          color: #fff;
+          text-align: left;
+          width: fit-content;
+          @media (max-width: 1024px) {
+            font-size: 12px;
+          }
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .footer__item__feedback {
+    @media (max-width: 768px) {
+      border-top: 1px solid $fio2;
+      width: 100%;
+      max-width: none;
+      padding-top: 25px;
+    }
+    > a {
+      display: block;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: $Open;
+      position: relative;
+      color: #fff;
+      transition: 0.3s;
+      white-space: nowrap;
+      @media (max-width: 1024px) {
+        font-size: 12px;
+      }
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+      &:hover {
+        transition: 0.3s;
+        opacity: 0.6;
+      }
+      &::before {
+        content: "";
+        width: 15px;
+        height: 13px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 1024px) {
+          width: 10px;
+          height: 10px;
+        }
+      }
+      &:first-child {
+        margin-left: 0;
+        @media (max-width: 1024px) {
+          margin-left: 0;
+        }
+      }
+    }
+    .phone {
+      padding-left: 25px;
+      margin-bottom: 15px;
+      @media (max-width: 1024px) {
+        padding-left: 18px;
+      }
+      &::before {
+        background-image: url("../img/footer/phone.svg");
+      }
+    }
+    .email {
+      padding-left: 25px;
+      margin-bottom: 40px;
+      @media (max-width: 1024px) {
+        padding-left: 18px;
+        margin-bottom: 13px;
+      }
+      &::before {
+        background-image: url("../img/footer/message.svg");
+        transform: translateY(-40%);
+      }
+    }
+    .footer__soc {
+      @media (max-width: 768px) {
+        max-width: 265px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+      }
+      p {
+        display: block;
+        margin-bottom: 10px;
+        font-family: $Open;
+        font-size: 12px;
+        line-height: 18/12 * 100%;
+        font-weight: 400;
+        color: #fff;
+        text-align: left;
+        @media (max-width: 768px) {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        @media (max-width: 768px) {
+          justify-content: space-between;
+          align-items: center;
+        }
+        li {
+          margin-right: 8px;
+          @media (max-width: 768px) {
+            margin: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            background-color: $fio1;
+            transition: 0.3s;
+            @media (max-width: 768px) {
+              width: 40px;
+              height: 40px;
+              padding: 10px;
+              border-radius: 7px;
+            }
+            &:hover {
+              transition: 0.3s;
+              opacity: 0.6;
+            }
+            img {
+              display: block;
+              @media (max-width: 768px) {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                object-position: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer__copy_m {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      display: none;
+      @media (max-width: 768px) {
+        display: flex;
+      }
+
+      p {
+        display: block;
+        margin-bottom: 10px;
+        font-family: $Open;
+        font-size: 12px;
+        line-height: 18/12 * 100%;
+        font-weight: 400;
+        color: #fff;
+        text-align: left;
+      }
+      a {
+        display: block;
+        color: #fff;
+        font-family: $Open;
+        font-size: 12px;
+        line-height: 18/12 * 100%;
+        font-weight: 400;
+        text-align: left;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// ========================================

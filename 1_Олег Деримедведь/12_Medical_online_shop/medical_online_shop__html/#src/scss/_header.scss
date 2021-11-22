@@ -1,0 +1,844 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// HEADER
+.main_header {
+    @media (max-width: 768px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 100;
+    }
+    // --------------------
+    //  Header desktop
+    .header__desktop {
+        .header__top {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #dbcbcb;
+            .container {
+                @media (max-width: 1100px) {
+                    padding: 0 40px;
+                }
+                @media (max-width: 768px) {
+                    padding: 0 20px;
+                }
+                @media (max-width: 374px) {
+                    padding: 0 15px;
+                }
+            }
+            .header__top__content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .header__top__left {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    @media (max-width: 768px) {
+                        width: 100%;
+                        justify-content: space-between;
+                    }
+                    .header__burger {
+                        position: relative;
+                        .burger {
+                            min-width: 20px;
+                            max-width: 20px;
+                            height: 15px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            margin-right: 18px;
+                            display: none;
+                            position: relative;
+                            z-index: 100;
+                            @media (max-width: 992px) {
+                                display: flex;
+                                margin-right: 10px;
+                            }
+                            >span {
+                                display: block;
+                                background-color: $black1;
+                                height: 3px;
+                                width: 100%;
+                                border-radius: 5px;
+                                position: relative;
+                                z-index: 100;
+                            }
+                        }
+                        // Mobile
+                        .header__mobile {
+                            display: block;
+                            position: absolute;
+                            top: -7px;
+                            left: -7px;
+                            z-index: 50;
+                            background-color: #fff;
+                            border: solid 2px #45b8bd;
+                            overflow: hidden;
+                            border-radius: 5px;
+                            padding: 7px;
+                            padding-top: 32px;
+                            //  max-width: 380px;
+                            width: 300px;
+                            display: none;
+                            .header__mobile__content {
+                                display: flex;
+                                flex-direction: column;
+                                .header__menu {
+                                    border-top: 2px solid #dbcbcb;
+                                    >ul {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: flex-start;
+                                        align-items: flex-start;
+                                        padding-top: 8px;
+                                        li {
+                                            margin-bottom: 17px;
+                                            &:last-child {
+                                                margin-bottom: 8px;
+                                            }
+                                            a {
+                                                display: block;
+                                                font-family: $Rob;
+                                                font-size: 17px;
+                                                line-height: 100%;
+                                                color: $black1;
+                                                &:active,
+                                                &:hover,
+                                                &:focus {
+                                                    color: $blue1;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .header__city {
+                                    // max-width: 240px;
+                                    padding-left: 24px;
+                                    padding-top: 14px;
+                                    padding-bottom: 14px;
+                                    border-top: 2px solid #dbcbcb;
+                                    >span {
+                                        display: block;
+                                        line-height: 100%;
+                                        font-size: 14px;
+                                        font-weight: 100;
+                                        text-transform: uppercase;
+                                        color: $black1;
+                                        margin-bottom: 7px;
+                                        background-color: transparent;
+                                        height: auto;
+                                    }
+                                    div {
+                                        transition: 0.3s;
+                                        //   &:hover {
+                                        //       opacity: 0.6;
+                                        //       transition: 0.3s;
+                                        //   }
+                                        display: block;
+                                        position: relative;
+                                        p {
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: center;
+                                            font-family: $Rob;
+                                            position: relative;
+                                            &::before {
+                                                content: '';
+                                                position: absolute;
+                                                left: -22px;
+                                                top: 0;
+                                                width: 20px;
+                                                height: 22px;
+                                                background-image: url("../img/ico/marker.svg");
+                                                background-repeat: no-repeat;
+                                                background-size: contain;
+                                                background-position: center center;
+                                            }
+                                            b {
+                                                font-size: 18px;
+                                                font-weight: 500;
+                                                line-height: 100%;
+                                                margin-right: 7px;
+                                                font-family: $Rob;
+                                            }
+                                            >span {
+                                                padding: 2px 7px;
+                                                background-color: $blue1;
+                                                border-radius: 5px;
+                                                color: #fff;
+                                                text-transform: uppercase;
+                                                font-size: 14px;
+                                                font-weight: 300;
+                                                font-family: $Rob;
+                                                line-height: 100%;
+                                                height: auto;
+                                                width: auto;
+                                                display: block;
+                                                position: relative;
+                                                z-index: 5;
+                                                &:hover {
+                                                    cursor: pointer;
+                                                }
+                                            }
+                                        }
+                                        >span {
+                                            font-size: 14px;
+                                            font-weight: 300;
+                                            line-height: 100%;
+                                            color: $black1;
+                                            font-family: $Rob;
+                                        }
+                                        .cities {
+                                            margin-top: 20px;
+                                            position: relative;
+                                            top: 110%;
+                                            left: 0;
+                                            overflow: auto;
+                                            // max-width: 200px;
+                                            width: 100%;
+                                            max-height: 160px;
+                                            z-index: 50;
+                                            display: none;
+                                            ul {
+                                                display: flex;
+                                                flex-direction: column;
+                                                background-color: #fff;
+                                                padding: 10px;
+                                                max-height: fit-content;
+                                                overflow: auto;
+                                                padding-right: 24px;
+                                                li {
+                                                    margin-bottom: 15px;
+                                                    a {
+                                                        height: 100%;
+                                                        display: block;
+                                                        font-family: $Rob;
+                                                        font-size: 16px;
+                                                        line-height: 100%;
+                                                        font-weight: 400;
+                                                        color: $black1;
+                                                        transition: 0.3s;
+                                                        white-space: nowrap;
+                                                        &:hover {
+                                                            transition: 0.3s;
+                                                            color: $blue1;
+                                                        }
+                                                    }
+                                                    a.active {
+                                                        transition: 0.3s;
+                                                        color: $blue1;
+                                                    }
+                                                    span {
+                                                        opacity: 0;
+                                                        position: absolute;
+                                                        bottom: 0;
+                                                        left: 0;
+                                                        z-index: -1;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .cities.active {
+                                            display: block;
+                                        }
+                                    }
+                                }
+                                .header__search {
+                                    padding-top: 15px;
+                                    padding-bottom: 7px;
+                                    border-top: 2px solid #dbcbcb;
+                                    form {
+                                        label {
+                                            display: block;
+                                            position: relative;
+                                            input {
+                                                width: 100%;
+                                                padding: 14px 10px;
+                                                font-size: 16px;
+                                                font-family: $Rob;
+                                                line-height: 100%;
+                                                color: $Rob;
+                                                padding-right: 35px;
+                                                border: solid 1px #dbcbcb;
+                                                outline: none;
+                                                border-radius: 5px;
+                                                &:active,
+                                                &:focus {
+                                                    border: solid 1px $black1;
+                                                }
+                                            }
+                                            button {
+                                                width: 25px;
+                                                height: 25px;
+                                                position: absolute;
+                                                right: 7px;
+                                                top: 50%;
+                                                transform: translateY(-50%);
+                                                background-color: transparent;
+                                                border: none;
+                                                outline: none;
+                                                &:active,
+                                                &:focus {
+                                                    opacity: 0.6;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        // End Mobile
+                    }
+                    .header__burger.active {
+                        .burger {
+                            >span {
+                                background-color: $blue1;
+                            }
+                        }
+                        .header__mobile {
+                            display: block;
+                        }
+                    }
+                    .header__logo {
+                        max-width: 320px;
+                        min-width: 290px;
+                        margin-right: 30px;
+                        @media (max-width: 1100px) {
+                            margin-right: 20px;
+                        }
+                        @media (max-width: 768px) {
+                            min-width: 200px;
+                            margin-right: 0;
+                            display: none;
+                        }
+                        // @media (max-width: 500px) {
+                        //     display: none;
+                        // }
+                        a {
+                            display: block;
+                            width: 100%;
+                            img {
+                                display: block;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    @media (max-width: 768px) {
+                        // display: none;
+                    }
+                    li {
+                        &:first-child {
+                            @media (max-width: 992px) {
+                                display: none;
+                            }
+                        }
+                        .header__city {
+                            max-width: 240px;
+                            padding-left: 22px;
+                            >span {
+                                display: block;
+                                line-height: 100%;
+                                font-size: 14px;
+                                font-weight: 100;
+                                text-transform: uppercase;
+                                color: $black1;
+                                margin-bottom: 7px;
+                            }
+                            div {
+                                transition: 0.3s;
+                                //   &:hover {
+                                //       opacity: 0.6;
+                                //       transition: 0.3s;
+                                //   }
+                                position: relative;
+                                display: block;
+                                p {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    font-family: $Rob;
+                                    position: relative;
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        left: -20px;
+                                        top: 0;
+                                        width: 18px;
+                                        height: 22px;
+                                        background-image: url("../img/ico/marker.svg");
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center center;
+                                    }
+                                    b {
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                        line-height: 100%;
+                                        margin-right: 7px;
+                                        font-family: $Rob;
+                                    }
+                                    span {
+                                        padding: 2px 7px;
+                                        background-color: $blue1;
+                                        border-radius: 5px;
+                                        color: #fff;
+                                        text-transform: uppercase;
+                                        font-size: 14px;
+                                        font-weight: 100;
+                                        font-family: $Rob;
+                                        line-height: 100%;
+                                        vertical-align: middle;
+                                        &:hover {
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                                span {
+                                    font-size: 14px;
+                                    font-weight: 100;
+                                    line-height: 100%;
+                                    color: $black1;
+                                    font-family: $Rob;
+                                }
+                                .cities {
+                                    position: absolute;
+                                    top: 110%;
+                                    left: 0;
+                                    overflow: auto;
+                                    max-width: 200px;
+                                    width: 100%;
+                                    max-height: 160px;
+                                    z-index: 50;
+                                    display: none;
+                                    ul {
+                                        display: flex;
+                                        flex-direction: column;
+                                        background-color: #fff;
+                                        padding: 10px;
+                                        max-height: fit-content;
+                                        overflow: auto;
+                                        li {
+                                            margin-bottom: 15px;
+                                            position: relative;
+                                            a {
+                                                height: 100%;
+                                                display: block;
+                                                font-family: $Rob;
+                                                font-size: 16px;
+                                                line-height: 100%;
+                                                font-weight: 400;
+                                                color: $black1;
+                                                transition: 0.3s;
+                                                white-space: nowrap;
+                                                &:hover {
+                                                    transition: 0.3s;
+                                                    color: $blue1;
+                                                }
+                                            }
+                                            a.active {
+                                                transition: 0.3s;
+                                                color: $blue1;
+                                            }
+                                            span {
+                                                opacity: 0;
+                                                position: absolute;
+                                                bottom: 0;
+                                                left: 0;
+                                                z-index: -1;
+                                            }
+                                        }
+                                    }
+                                }
+                                .cities.active {
+                                    display: block;
+                                }
+                            }
+                        }
+                        .header__feedback {
+                            max-width: 310px;
+                            margin-left: 45px;
+                            padding-left: 22px;
+                            @media (max-width: 1100px) {
+                                margin-left: 25px;
+                            }
+                            @media (max-width: 768px) {
+                                margin-left: 0;
+                            }
+                            span {
+                                display: block;
+                                font-family: $Rob;
+                                font-weight: 100;
+                                line-height: 100%;
+                                margin-bottom: 7px;
+                                @media (max-width: 992px) {
+                                    display: none;
+                                }
+                            }
+                            div {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                position: relative;
+                                a {
+                                    display: block;
+                                    font-family: $Rob;
+                                    color: $black1;
+                                    transition: 0.3s;
+                                    white-space: nowrap;
+                                    &:first-child {
+                                        font-weight: 500;
+                                        font-size: 18px;
+                                        line-height: 100%;
+                                        position: relative;
+                                        @media (max-width: 700px) {
+                                            // display: none;
+                                        }
+                                        @media (max-width: 500px) {
+                                            display: block;
+                                        }
+                                        // &:hover {
+                                        //     opacity: 0.6;
+                                        //     transition: 0.3s;
+                                        // }
+                                        &::before {
+                                            content: '';
+                                            position: absolute;
+                                            left: -22px;
+                                            top: 0px;
+                                            width: 18px;
+                                            height: 18px;
+                                            background-image: url("../img/ico/phone-call.svg");
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            background-position: center center;
+                                        }
+                                    }
+                                    &:last-child {
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                        line-height: 100%;
+                                        color: #fff;
+                                        background-color: $orange1;
+                                        padding: 8px 10px;
+                                        border-radius: 5px;
+                                        text-transform: uppercase;
+                                        margin-left: 6px;
+                                        border: 2px solid $orange1;
+                                        @media (max-width: 768px) {
+                                            display: none;
+                                        }
+                                        &:hover {
+                                            opacity: 0.6;
+                                            transition: 0.3s;
+                                            border: 2px solid $black1;
+                                            background-color: transparent;
+                                            color: $black1;
+                                        }
+                                        span {
+                                            display: inline-block;
+                                            margin-bottom: 0;
+                                            font-weight: 300;
+                                            @media (max-width: 500px) {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .header__logo__mobile {
+                    margin-left: 20px;
+                    display: none;
+                    @media (max-width: 768px) {
+                        display: block;
+                        min-width: 50px;
+                    }
+                    a {
+                        display: block;
+                        img {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        >.header__logo {
+            display: none;
+            @media (max-width: 500px) {
+                display: block;
+                width: 100%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: none;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .header__bottom {
+            border-bottom: 2px solid #dbcbcb;
+            @media (max-width: 992px) {
+                display: none;
+            }
+            .container {
+                @media (max-width: 1100px) {
+                    padding: 0 40px;
+                }
+                @media (max-width: 768px) {
+                    padding: 0 20px;
+                }
+                @media (max-width: 374px) {
+                    padding: 0 15px;
+                }
+            }
+            .header__bottom__content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .header__menu {
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        li {
+                            display: block;
+                            margin-right: 30px;
+                            position: relative;
+                            a {
+                                height: 100%;
+                                display: block;
+                                font-family: $Rob;
+                                font-size: 16px;
+                                line-height: 100%;
+                                font-weight: 400;
+                                color: $black1;
+                                border-top: 2px solid #dbcbcb;
+                                border-bottom: 2px solid #dbcbcb;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                margin-top: -2px;
+                                margin-bottom: -2px;
+                                transition: 0.3s;
+                                white-space: nowrap;
+                                &:hover {
+                                    transition: 0.3s;
+                                    color: $blue1;
+                                    border-top: 2px solid $blue1;
+                                    border-bottom: 2px solid $blue1;
+                                }
+                            }
+                            // Блок при наведении
+                            .header__submenu {
+                                position: absolute;
+                                top: 36px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                max-width: 940px;
+                                width: max-content;
+                                border: 2px solid #45b8bd;
+                                border-radius: 5px;
+                                padding: 30px 15px 15px;
+                                background-color: #fff;
+                                overflow: hidden;
+                                z-index: 95;
+                                display: none;
+                                @media (max-width: 1800px) {
+                                    transform: translateX(-25%);
+                                }
+                                @media (max-width: 1480px) {
+                                    // transform: translateX(-40%);
+                                }
+                                @media (max-width: 1366px) {
+                                    transform: translateX(-18%);
+                                }
+                                @media (max-width: 1020px) {
+                                    // transform: translateX(-35%);
+                                }
+                                >ul {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    align-items: stretch;
+                                    li {
+                                        margin-right: 22px;
+                                        &:last-child {
+                                            margin-right: 0;
+                                        }
+                                        ul {
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: flex-start;
+                                            align-items: flex-start;
+                                            max-width: 300px;
+                                            width: 100%;
+                                            height: 100%;
+                                            border-right: 1px solid #dbcbcb;
+                                            padding-right: 20px;
+                                            li {
+                                                margin-bottom: 15px;
+                                                margin-right: 0;
+                                                &:last-child {
+                                                    margin-bottom: 0;
+                                                }
+                                                h3 {
+                                                    display: block;
+                                                    font-family: $Rob;
+                                                    font-size: 17px;
+                                                    font-weight: 700;
+                                                    text-transform: uppercase;
+                                                    color: $black1;
+                                                }
+                                                a {
+                                                    border: none;
+                                                    white-space: normal;
+                                                    color: $black1;
+                                                    font-family: $Rob;
+                                                    font-size: 17px;
+                                                    font-weight: 400;
+                                                    line-height: 120%;
+                                                    display: block;
+                                                    padding: 0;
+                                                    &:hover {
+                                                        color: $blue1;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &:last-child {
+                                            ul {
+                                                border-right: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover .header__submenu {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .header__bottom__right {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    @media (max-width: 1200px) {
+                        display: none;
+                    }
+                    >a {
+                        display: block;
+                        padding: 6px 12px;
+                        padding-top: 8px;
+                        border-radius: 5px;
+                        background-color: $blue1;
+                        color: #fff;
+                        text-transform: uppercase;
+                        line-height: 100%;
+                        font-family: $Rob;
+                        font-size: 14px;
+                        font-weight: 100;
+                        margin-right: 15px;
+                        transition: 0.3s;
+                        &:hover {
+                            opacity: 0.6;
+                            transition: 0.3s;
+                        }
+                    }
+                    .header__loupe {
+                        position: relative;
+                        a {
+                            display: block;
+                            width: 23px;
+                            height: 23px;
+                            transition: 0.3s;
+                            &:hover {
+                                opacity: 0.6;
+                                transition: 0.3s;
+                            }
+                            img {
+                                display: block;
+                            }
+                        }
+                        form {
+                            position: absolute;
+                            right: 0;
+                            z-index: 15;
+                            top: 30px;
+                            width: max-content;
+                            display: none;
+                            label {
+                                display: block;
+                                position: relative;
+                                input {
+                                    width: 100%;
+                                    padding: 14px 10px;
+                                    font-size: 16px;
+                                    font-family: $Rob;
+                                    line-height: 100%;
+                                    color: $Rob;
+                                    padding-right: 35px;
+                                    border: solid 1px #dbcbcb;
+                                    outline: none;
+                                    border-radius: 5px;
+                                    &:active,
+                                    &:focus {
+                                        border: solid 1px $black1;
+                                    }
+                                }
+                                button {
+                                    width: 25px;
+                                    height: 25px;
+                                    position: absolute;
+                                    right: 7px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    background-color: transparent;
+                                    border: none;
+                                    outline: none;
+                                    &:active,
+                                    &:focus {
+                                        opacity: 0.6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .header__loupe.active {
+                        form {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //  End Header desktop
+    // --------------------
+}
+
+// END HEADER
+// ========================================

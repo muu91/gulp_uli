@@ -1,0 +1,114 @@
+// ----------------------------------------
+// Other
+.main_career_2 {
+    .bl_career {
+        .career__persons {
+            margin-top: 0;
+        }
+    }
+    .bl_contacts_form {
+        padding-top: 0;
+        .bl_form {
+            margin-top: 0;
+            margin-bottom: 50px;
+            .form {
+                .wpcf7 {
+                    form {
+                        >p {
+                            label {
+                                span {
+                                    &:first-child {
+                                        input {
+                                            display: none;
+                                        }
+                                    }
+                                    &:nth-child(2) {
+                                        padding: 12px 18px;
+                                        display: inline-block;
+                                        border: 2px solid #C2C8CC;
+                                        margin-bottom: 20px;
+                                        margin-top: 20px;
+                                        transition: 0.3s;
+                                        &:hover {
+                                            cursor: pointer;
+                                            transition: 0.3s;
+                                        }
+                                    }
+                                }
+                            }
+                            button {
+                                &:hover {
+                                    transition: 0.3s;
+                                    background-color: $blue;
+                                }
+                                span {
+                                    &:hover {
+                                        transition: 0.3s;
+                                        background-color: #fff!important;
+                                        &:after,
+                                        &:before {
+                                            transition: 0.3s;
+                                            background-color: #fff!important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//End Other
+// ----------------------------------------
+// Vakancii
+.main__vakancii {
+    .content {
+        padding-bottom: 0;
+        .main_h2 {
+            margin-bottom: 0;
+        }
+        .bl_contacts_form {
+            @media (max-width: 767px) {
+                padding-top: 50px;
+            }
+            background-color: #f2f2f2;
+            .main_h2 {
+                padding-left: 100px;
+                padding-right: 100px;
+                @media (max-width: 991px) {
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
+                @media (max-width: 450px) {
+                    padding-left: 20px;
+                    padding-right: 30px;
+                }
+                h2 {
+                    padding-left: 0;
+                }
+            }
+            .wpcf7-form {
+                padding-top: 0;
+            }
+            .wpcf7 {
+                .wpcf7-form {
+                    p {
+                        .read_more__green {
+                            &:hover span,
+                            &:hover span:before,
+                            &:hover span:after {
+                                transition: 0.3s;
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End Vakancii

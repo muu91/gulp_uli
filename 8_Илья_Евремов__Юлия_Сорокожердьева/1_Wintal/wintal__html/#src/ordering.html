@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('_head.html')
+</head>
+
+<body>
+    <div class="main_wrapper">
+        @@include('_header.html')
+        <main>
+            <!-- ======================================== -->
+            <!-- CRUMBS -->
+            <div class="bl_crumbs">
+                <div class="container">
+                    <div class="bl_crumbs__content">
+                        <ul>
+                            <li>
+                                <a href="#">Вернуться к корзине</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- END CRUMBS -->
+            <!-- ======================================== -->
+            <!-- ORDER PAGE -->
+            <div class="bl_order_page">
+                <div class="container">
+                    <div class="bl_order_page__content">
+                        <h1>
+                            Оформление заказа
+                        </h1>
+                        <div class="main_main">
+                            <section class="main__content">
+                                <form action="#">
+                                    <h3>1.Контактные данные</h3>
+                                    <div class="order_authorized">
+                                        <p>
+                                            Вы авторизованы как <a href="#"> Прокофьев Ибрагим Валерьянович</a>
+                                        </p>
+                                        <a href="#">
+                                            сбросить
+                                        </a>
+                                    </div>
+                                    <div class="order_inputs">
+                                        <label for="#">
+                                            <p>
+                                                Имя *
+                                            </p>
+                                            <input type="text" placeholder="Введите ваше имя">
+                                        </label>
+                                        <label for="#">
+                                            <p>
+                                                Фамилия *
+                                            </p>
+                                            <input type="text" placeholder="Введите вашу фамилию">
+                                        </label>
+                                        <label for="#">
+                                            <p>
+                                                Номер телефона *
+                                            </p>
+                                            <input type="text" placeholder="+7">
+                                        </label>
+                                        <label for="#">
+                                            <p>
+                                                e-mail *
+                                            </p>
+                                            <input type="text" placeholder="Введите ваш e-mail">
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" class="order_check" id="order_check">
+                                            <span></span>
+                                            <p>
+                                                Принимать будет другой человек
+                                            </p>
+                                        </label>
+                                        <div class="order_inputs order_inputs__active">
+                                            <label for="#">
+                                                <p>
+                                                    Имя *
+                                                </p>
+                                                <input type="text" placeholder="Введите ваше имя">
+                                            </label>
+                                            <label for="#">
+                                                <p>
+                                                    Фамилия *
+                                                </p>
+                                                <input type="text" placeholder="Введите вашу фамилию">
+                                            </label>
+                                            <label for="#">
+                                                <p>
+                                                    Номер телефона *
+                                                </p>
+                                                <input type="text" placeholder="+7">
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <h3>
+                                        2. Способ получения
+                                    </h3>
+                                    <div class="order_menu">
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-filter_tab_order="order_pickup_order">
+                                                    Самовывоз
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-filter_tab_order="order_delivery_order">
+                                                    Доставка
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="order_pickup" data-tab_content_order="order_pickup_order">
+                                        <p>
+                                            Вы самостоятельно забираете товар с нашего склада. Срок отгрузки не более 3
+                                            дней.
+                                        </p>
+                                        <div class="order_choice">
+                                            <p>
+                                                Пункт самовывоза:
+                                            </p>
+                                            <ul>
+                                                <li class="active">
+                                                    <h5>
+                                                        Склад, П.Корчагина 88/3
+                                                    </h5>
+                                                </li>
+                                                <li>
+                                                    <h5>
+                                                        Склад, П.Корчагина 88/3
+                                                    </h5>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="order_delivery" data-tab_content_order="order_delivery_order">
+                                        <div class="order_choice">
+                                            <ul>
+                                                <li class="active">
+                                                    <h5>
+                                                        Доставка по Кирову без монтажа
+                                                    </h5>
+                                                </li>
+                                                <li>
+                                                    <h5>
+                                                        Сдек
+                                                    </h5>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="order_inputs">
+                                            <label for="#">
+                                                <p>
+                                                    e-mail *
+                                                </p>
+                                                <input type="email" placeholder="Введите адрес или выберите на карте">
+                                            </label>
+                                            <label for="#">
+                                                <p>
+                                                    Этаж
+                                                </p>
+                                                <input type="text" placeholder="Введите этаж">
+                                            </label>
+                                        </div>
+                                        <div class="order_map" id="order_map"></div>
+                                        <div class="order_elevator">
+                                            <p>
+                                                Наличие лифта
+                                            </p>
+                                            <label>
+                                                <input type="checkbox" name="elevator">
+                                                <span></span>
+                                                <p>
+                                                    пассажирский
+                                                </p>
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="elevator">
+                                                <span></span>
+                                                <p>
+                                                    грузовой
+                                                </p>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <h3>
+                                        3. Способ оплаты
+                                    </h3>
+                                    <div class="order_choice order_choice__payment">
+                                        <ul>
+                                            <li class="active">
+                                                <h5>
+                                                    По карте онлайн
+                                                </h5>
+                                                <p>
+                                                    Оплата принимается с карты любого банка, без процентов.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>
+                                                    Наличными
+                                                </h5>
+                                                <p>
+                                                    Оплата принимается наличными при получении товара
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>
+                                                    По карте при получении товара
+                                                </h5>
+                                                <p>
+                                                    Оплата производится через терминал курьеру при получении товара
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>
+                                                    По счету
+                                                </h5>
+                                                <p>
+                                                    Оплата принимается с карты любого банка, без процентов.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h3>
+                                        Комментарий к заказу
+                                    </h3>
+                                    <textarea></textarea>
+                                </form>
+                            </section>
+                            <aside>
+                                <div class="order__tovars">
+                                    <div class="order__list">
+                                        <h3>
+                                            Товары в заказе
+                                        </h3>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Двухстворчатое окно Rehau DELIGHT-Design Reha
+                                                </h4>
+                                                <p>
+                                                    6 257 ₽ — 1 шт
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h4>
+                                                    Двухстворчатое окно Rehau DELIGHT-Design Reha
+                                                </h4>
+                                                <p>
+                                                    6 257 ₽ — 1 шт
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h4>
+                                                    Двухстворчатое окно Rehau DELIGHT-Design Reha
+                                                </h4>
+                                                <p>
+                                                    6 257 ₽ — 1 шт
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h4>
+                                                    Двухстворчатое окно Rehau DELIGHT-Design Reha
+                                                </h4>
+                                                <p>
+                                                    6 257 ₽ — 1 шт
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h4>
+                                                    Двухстворчатое окно Rehau DELIGHT-Design Reha
+                                                </h4>
+                                                <p>
+                                                    6 257 ₽ — 1 шт
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="more_pa_data">Показать ещё <span>1</span>
+                                        </a>
+                                    </div>
+                                    <div class="order__total">
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    Товары
+                                                </p>
+                                                <p>
+                                                    <span> 18 771</span> <span>₽</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Доставка
+                                                </p>
+                                                <p>
+                                                    <span> 500</span> <span>₽</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Итого
+                                                </p>
+                                                <p class="all_price">
+                                                    <span>
+                                                        18 771
+                                                    </span>
+                                                    <span>
+                                                        ₽
+                                                    </span>
+                                                </p>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="order__bottom">
+                                        <a href="#" class="btn_blue btn_popup_free_measuring">
+                                            Оформить заказ
+                                        </a>
+                                        <p>
+                                            Нажимая "Оформить заказ", вы даете свое согласие на <a href="#"> обработку
+                                                персональных
+                                                данных</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END ORDER PAGE -->
+
+            <!-- ======================================== -->
+
+        </main>
+        @@include('_footer.html') @@include('_js_source.html')
+
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                var center = {
+                    lat: 50.4447127,
+                    lng: 30.601249,
+                };
+                let mapMarkers = {};
+                // The map, centered at Uluru
+
+                var map = new google.maps.Map(document.getElementById("order_map"), {
+                    zoom: 15,
+                    center: center,
+                    mapTypeControl: false,
+                    scrollwheel: false,
+                    disableDefaultUI: false,
+                    position: center,
+                    map: map
+
+                });
+            }
+        </script>
+
+        <script defer=""
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-pBlC3Ex6zwA0zIWMz4H93I3CZvYf8d0&amp;callback=initMap">
+            </script>
+
+</body>
+
+</html>

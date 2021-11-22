@@ -1,0 +1,23 @@
+Проект 1
+
+http://185.195.26.141/dc-group/wp-admin/
+admin
+dcgroup6171
+
+
+Прект 2 
+
+фтп
+185.195.26.141
+direct
+P9k2E1q2
+
+http://185.195.26.141/dc-direct/wp-admin/
+admin
+dcdirect6171
+
+Проект 3
+
+https://themes.upro.dev/oracle/wp-admin/
+admin
+oracle6171

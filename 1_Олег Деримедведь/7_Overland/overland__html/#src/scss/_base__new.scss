@@ -1,0 +1,302 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// ========================================
+html.lock,
+body.lock {
+    height: 100%;
+    overflow: hidden !important;
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+    @media (max-width: 991px) {
+        padding: 0 40px;
+    }
+    @media (max-width: 767px) {
+        padding: 0 28px;
+    }
+}
+
+// ========================================
+h1 {
+    display: inline-block;
+    font-family: $Mont;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 130%;
+    color: #ffffff;
+    @media (max-width: 767px) {
+        font-size: 31px;
+    }
+}
+
+h2 {
+    display: inline-block;
+    font-family: $Mont;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    color: $blue_04;
+    text-transform: uppercase;
+    @media (max-width: 767px) {
+        font-size: 30px;
+    }
+}
+
+h3 {
+    display: inline-block;
+    font-family: $Mont;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 130%;
+    color: $blue_04;
+    @media (max-width: 767px) {
+        font-size: 11px;
+    }
+}
+
+p {
+    font-family: $Mont;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: $black_5b;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+.main_h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    h2 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+// Links
+//End links
+// -----------------------------------------------------
+// Form
+::placeholder {
+    font-family: $Mont;
+    font-size: 14px;
+    line-height: 22px;
+    color: $black_5b;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+ :-ms-input-placeholder {
+    font-family: $Mont;
+    font-size: 14px;
+    line-height: 22px;
+    color: $black_5b;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+ ::-ms-input-placeholder {
+    font-family: $Mont;
+    font-size: 14px;
+    line-height: 22px;
+    color: $black_5b;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+// End Form
+// =========================================================
+//=========================================================
+// SLICK SLIDER
+.slick-track {
+    .slick-slide {
+        outline: none;
+    }
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 0;
+    width: 17px;
+    height: 73px;
+    background-image: url('../img/accreditations/slider_arrow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: transparent;
+    border: none;
+    @media (max-width: 767px) {
+        height: 52px;
+    }
+    @media (max-width: 450px) {
+        width: 25px;
+    }
+    &:active,
+    &:focus {
+        outline: none;
+        border: none;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.slick-prev {
+    left: 0;
+    @media (max-width: 450px) {
+        left: 0;
+    }
+}
+
+.slick-next {
+    right: 0;
+    transform: rotate(180deg) translateY(50%);
+    @media (max-width: 450px) {
+        right: 0;
+    }
+}
+
+// ---
+// Чтобы картинки не исчезали)
+.slick-list {
+    width: 100%;
+}
+
+// ---
+// DOTS 
+.slick-dots {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin-top: 0;
+    max-width: 376px;
+    @media (max-width: 767px) {
+        bottom: -50px;
+    }
+    @media (max-width: 450px) {
+        bottom: -30px;
+    }
+    li {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 13px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    button {
+        font-size: 0;
+        width: 56px;
+        height: 4px;
+        padding: 0;
+        border: none;
+        background-color: #c4c4c4;
+        @media (max-width: 1200px) {
+            width: calc(30px + (56 - 30) *((100vw - 320px) / (1200 - 320)));
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        &:active,
+        &:focus {
+            background-color: none;
+            outline: none;
+        }
+    }
+    .slick-active {
+        button {
+            width: 56px;
+            height: 4px;
+            background: $blue_04;
+            @media (max-width: 1200px) {
+                width: calc(30px + (56 - 30) *((100vw - 320px) / (1200 - 320)));
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// END SLICK SLIDER
+// =========================================================
+// =========================================================
+// ---------------------------------
+// OTHERS
+main {
+    overflow: hidden;
+    margin-top: -60px;
+    @media (max-width: 991px) {
+        margin-top: 0;
+    }
+}
+
+style .main_main {
+    position: relative;
+    .bl_main_bg {
+        position: absolute;
+        top: 300px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+        @media (max-width: 767px) {
+            display: none;
+        }
+        .main_bg__img {
+            width: 100%;
+            overflow: hidden;
+            height: 1890px;
+            background-image: url(../img/bg_triangle.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            @media (min-width: 1920px) {
+                background-size: 100% 100%;
+            }
+            img {
+                display: block;
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+                height: 100%;
+            }
+            &:nth-child(even) {
+                transform: rotateX(180deg);
+            }
+        }
+    }
+}
+
+//END OTHERS
+// ---------------------------------
+// =========================================================
+// =========================================================

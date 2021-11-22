@@ -1,0 +1,148 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// SLICK SLIDER
+// ------------------------------
+
+// .slick-slider {
+//   // position: static;
+//   height: 100%;
+//   width: 100%;
+// }
+.slick-list {
+  margin: 0 -15px;
+
+  .slick-track {
+    // height: 100%;
+    .slick-slide {
+      // outline: none;
+      padding: 0 15px;
+    }
+  }
+}
+// ------------------------------
+// ARROWS
+.slick-arrow {
+  position: absolute;
+  top: -66px;
+  right: 0;
+  z-index: 10;
+  font-size: 0;
+  width: 22px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: transparent;
+  border: none;
+  transition: 0.3s;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.8;
+  }
+}
+
+.slick-prev {
+  // left: 20px;
+  right: 80px;
+  background-image: url("../img//icons/slide_left.svg");
+  @media (max-width: 425px) {
+    right: auto;
+    left: 0;
+  }
+}
+
+.slick-next {
+  right: 0;
+  background-image: url("../img//icons/slide_right.svg");
+}
+// // END ARROWS
+// // ------------------------------
+
+// // DOTS
+// .slick-dots {
+//   position: absolute;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: space-between;
+//   bottom: 60px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   padding: 0;
+//   margin-top: 0;
+//   max-width: 320px;
+//   width: 100%;
+//   height: 10px;
+//   overflow: hidden;
+//   margin-bottom: 0;
+
+//   @media (max-width: 768px) {
+//   }
+
+//   li {
+//     list-style: none;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     flex-direction: row;
+//     justify-content: flex-end;
+//     width: 10px;
+//     height: 10px;
+//     background-color: #fff;
+//   }
+
+//   button {
+//     font-size: 0;
+//     width: 15px;
+//     height: 15px;
+//     padding: 0;
+//     border: none;
+//     background-color: #dbddde;
+//     border-radius: 50%;
+//     // @media (max-width: 1200px) {
+//     //     width: calc(30px + (56 - 30) *((100vw - 320px) / (1200 - 320)));
+//     // }
+//     &:hover {
+//       cursor: pointer;
+//     }
+//     &:active,
+//     &:focus {
+//       outline: none;
+//     }
+//   }
+//   .slick-active {
+//     position: relative;
+//     z-index: 10;
+//     button {
+//       width: 10px;
+//       height: 10px;
+//       // background: $grey1;
+
+//       &:hover {
+//         cursor: pointer;
+//       }
+//     }
+//   }
+// }
+// END DOTS
+// ------------------------------
+// OTHERS
+
+// Чтобы картинки не исчезали)
+// .slick-list {
+//     width: 100%;
+// }
+
+// ------------------------------
+// END SLICK SLIDER
+// ========================================

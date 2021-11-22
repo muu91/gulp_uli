@@ -1,0 +1,140 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// Heading
+h1 {
+  font-family: $Mont;
+  color: #fff;
+  display: block;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60/50 * 100%;
+  text-align: center;
+  @media (max-width: 992px) {
+    font-size: 38px;
+  }
+  @media (max-width: 560px) {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  display: block;
+  font-family: $Mont;
+  color: $black1;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43/36 * 100%;
+  margin-bottom: 20px;
+  @media (max-width: 992px) {
+    font-size: 30px;
+  }
+  @media (max-width: 728px) {
+    font-size: 36px;
+  }
+  @media (max-width: 560px) {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  display: block;
+  font-family: $Mont;
+  color: $black1;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  @media (max-width: 992px) {
+    font-size: 18px;
+  }
+  @media (max-width: 728px) {
+    font-size: 20px;
+  }
+  // @media (max-width: 560px) {
+  //   font-size: 24px;
+  // }
+}
+
+// End Heading
+// ------------------------------
+p {
+  display: block;
+  font-family: $Mont;
+  color: $black1;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  @media (max-width: 992px) {
+    font-size: 14px;
+  }
+  @media (max-width: 728px) {
+    font-size: 16px;
+  }
+}
+// ------------------------------
+// Links
+.btn_yell {
+  background-color: $yellow1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  min-width: 170px;
+  transition: 0.3s;
+  font-family: $Mont;
+  font-weight: 500;
+  color: $black1;
+  text-align: center;
+  font-size: 14px;
+  padding: 15px;
+  border-radius: 2px;
+  white-space: nowrap;
+  @media (max-width: 992px) {
+    min-width: 117px;
+    height: 44px;
+  }
+  @media (max-width: 728px) {
+    height: 55px;
+    min-width: 170px;
+  }
+  &:hover {
+    transition: 0.3s;
+    background-color: #c59500;
+  }
+}
+
+.btn_grey {
+  background-color: $grey1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  min-width: 170px;
+  transition: 0.3s;
+  font-family: $Mont;
+  font-weight: 500;
+  color: $black1;
+  text-align: center;
+  font-size: 14px;
+  padding: 15px;
+  border-radius: 2px;
+  white-space: nowrap;
+
+  @media (max-width: 992px) {
+    min-width: 117px;
+    height: 44px;
+  }
+  @media (max-width: 728px) {
+    height: 55px;
+    min-width: 170px;
+  }
+  &:hover {
+    transition: 0.3s;
+    background-color: $yellow1;
+  }
+}
+
+// End links
+// ------------------------------

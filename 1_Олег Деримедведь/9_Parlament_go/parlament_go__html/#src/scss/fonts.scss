@@ -1,0 +1,55 @@
+//FONTS
+// -------------------------------
+//Geometria
+@font-face {
+    font-family: "Geometria";
+    src: url("../fonts/Geometria.otf") format("opentype");
+    font-weight: 400; //Regular
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: "Geometria";
+//     src: url("../fonts/Geometria.woff") format("woff");
+//     font-weight: 400; //Regular
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: "Gibson";
+//     src: url("../fonts/gibson/GibsonLight.OTF") format("opentype");
+//     font-weight: 300; //SemiBold
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: "TrajanPro3";
+//     src: url("../fonts/TrajanPro3-Semibold.otf") format("opentype");
+//     font-weight: 600; //SemiBold
+//     font-style: normal;
+// }
+//End Geometria
+// -------------------------------
+// Object Sans
+@font-face {
+    font-family: "Object Sans";
+    src: url("../fonts/ObjectSans-Regular.otf") format("opentype");
+    font-weight: 400; //Regular
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: "SF Compact";
+//     src: url("../fonts/sf_compact/SF-Compact-Text-Bold.otf") format("opentype");
+//     font-weight: 700; //Bold
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: "Playfair Display";
+//     src: url("../fonts/PlayfairDisplay-SemiBold.woff2") format("woff2"), /* chrome、firefox */
+//     url("../fonts/PlayfairDisplay-SemiBold.woff") format("woff");
+//     /* chrome、firefox */
+//     font-weight: 600; //SemiBold
+//     font-style: normal;
+// }
+//End Object Sans
+// -------------------------------
+//END FONTS

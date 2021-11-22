@@ -1,0 +1,80 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// BLOCK HEADER
+.main__about {
+    background-color: $black_1a;
+}
+
+// ========================================
+// ========================================
+// BLOCK MOVEMENT
+.bl_movement__about {
+    .movement__body {
+        .movement__images {
+            margin-bottom: 0;
+        }
+    }
+}
+
+//END BLOCK MOVEMENT
+// ========================================
+// ========================================
+// BLOCK EVOKE 2TEXT
+.bl_text2__about {
+    background-color: $black_1a;
+    .text2__body {
+        .text2__item {
+            @media (max-width: 767px) {
+                width: auto;
+                align-items: flex-start;
+            }
+            h2 {
+                color: #fff;
+            }
+            p {
+                color: #fff;
+            }
+            .text2_a {
+                color: #fff;
+                position: relative;
+                display: inline-block;
+                width: inherit;
+                transition: 0.3s;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 1px;
+                    width: inherit;
+                    background-color: #fff;
+                    transition: 0.3s;
+                }
+                &:hover {
+                    opacity: 0.5;
+                    transition: 0.3s;
+                }
+                &:hover &:before {
+                    transition: 0.3s;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+//END BLOCK EVOKE 2TEXT
+// ========================================
+// ========================================
+// BLOCK MOVEMENT
+.bl_movement__3_about {
+    background-color: $black_1a;
+}
+
+//END BLOCK MOVEMENT
+// ========================================
+// ========================================

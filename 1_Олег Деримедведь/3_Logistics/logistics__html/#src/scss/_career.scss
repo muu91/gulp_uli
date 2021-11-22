@@ -1,0 +1,75 @@
+@import "_base.scss";
+// ========================================
+// ======================================== 
+//  BLOCK CAREER
+.bl_career {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    @media (max-width: 991px) {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    h3 {
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+        }
+    }
+    .career__persons {
+        margin-top: 90px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: -10px;
+        margin-left: -10px;
+        @media (max-width: 1260px) {
+            justify-content: space-around;
+        }
+        @media (max-width: 991px) {
+            margin-top: 0;
+        }
+        .career__person {
+            width: 280px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 40px;
+            .career__img {
+                width: 280px;
+                height: 320px;
+                overflow: hidden;
+                margin-bottom: 20px;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-position: center;
+                    object-fit: cover;
+                }
+            }
+            h4 {
+                display: block;
+                margin-bottom: 10px;
+                text-transform: none;
+                font-family: $pragmac;
+                font-weight: 900;
+                line-height: 100%;
+                text-align: center;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            p {
+                text-align: center;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+// END BLOCK CAREER
+// ======================================== 
+// ========================================

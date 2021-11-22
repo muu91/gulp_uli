@@ -1,0 +1,112 @@
+    // ========================================
+    //Variables
+    @import "_variables.scss";
+    //End Variables
+    // ========================================
+    // BLOCK TABS BRANDS
+    .bl_tabs__brands {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        .bl_tabs__content {
+            .bl_tabs__tabs {
+                .tabs__contents {
+                    ul {
+                        li {
+                            .tabs__content {
+                                display: none;
+                                padding-left: 0;
+                                @media (max-width: 768px) {
+                                    padding-left: 15px;
+                                }
+                                .tabs__content__img {
+                                    float: left;
+                                    margin-bottom: 40px;
+                                    @media (max-width: 600px) {
+                                        float: none;
+                                        margin: 0 auto;
+                                        margin-bottom: 20px;
+                                    }
+                                }
+                                .tabs__content__text {
+                                    padding-top: 0;
+                                    width: 100%;
+                                }
+                            }
+                            .tabs__content.tab_active2 {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    // END BLOCK TABS BRANDS
+    // ========================================
+    // NATCO PHARM
+    .bl_natco_pharm {
+        .bl_natco_pharm__content {
+            h3 {
+                display: block;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+                font-size: 30px;
+                font-family: $Rob;
+                font-weight: 700;
+            }
+            .bl_natco_pharm__text {
+                img {
+                    display: block;
+                    float: right;
+                    width: 400px;
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                    @media (max-width: 768px) {
+                        width: 300px;
+                    }
+                    @media (max-width: 600px) {
+                        float: none;
+                        margin: 0 auto;
+                        margin-bottom: 20px;
+                    }
+                }
+                p {
+                    display: block;
+                    margin-bottom: 20px;
+                }
+                br {
+                    clear: both;
+                }
+            }
+        }
+    }
+    
+    // END NATCO PHARM
+    // ========================================
+    // BLOCK BUY
+    .bl_buy__brands {
+        padding-top: 56px;
+        padding-bottom: 36px;
+        .bl_buy__content {
+            h3 {
+                display: block;
+                margin-bottom: 40px;
+                text-transform: uppercase;
+                font-size: 30px;
+                font-family: $Rob;
+                font-weight: 700;
+            }
+            .bl_buy__items {
+                ul {
+                    flex-wrap: wrap;
+                    li {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+    // END BLOCK BUY 
+    // ========================================

@@ -1,0 +1,11 @@
+<svg id="Компонент_45_2" data-name="Компонент 45 – 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1850.941" height="924.661" viewBox="0 0 1850.941 924.661">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.259" y1="0.912" x2="0.912" y2="0.237" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f4f4f4"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.741" y1="0.088" x2="0.088" y2="0.763" xlink:href="#linear-gradient"/>
+  </defs>
+  <path id="Контур_3941" data-name="Контур 3941" d="M2608.067-1036,1632.126-456.339h975.942Z" transform="translate(-757.126 1381)" opacity="0.6" fill="url(#linear-gradient)"/>
+  <path id="Контур_4031" data-name="Контур 4031" d="M1632.126-456.339,2608.067-1036H1632.126Z" transform="translate(-1632.126 1036)" opacity="0.6" fill="url(#linear-gradient-2)"/>
+</svg>

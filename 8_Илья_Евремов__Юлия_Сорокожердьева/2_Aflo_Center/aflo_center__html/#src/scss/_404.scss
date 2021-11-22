@@ -1,0 +1,225 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// BLOCK 404
+.bl_404 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("../img/other/404.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 715px;
+  @media (max-width: 1024px) {
+    min-height: 650px;
+  }
+  @media (max-width: 768px) {
+    min-height: 505px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .bl_404__content {
+    .bl_404__text {
+      width: 50%;
+      @media (max-width: 1024px) {
+        width: auto;
+        max-width: 560px;
+      }
+      h1 {
+        font-weight: 400;
+        font-size: 200px;
+        line-height: 120%;
+        color: #fff;
+        margin-bottom: 0;
+        @media (max-width: 1024px) {
+          font-size: 150px;
+        }
+        @media (max-width: 768px) {
+          font-size: 100px;
+        }
+      }
+      > p {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 130%;
+        color: #fff;
+        margin-bottom: 40px;
+        @media (max-width: 1024px) {
+          font-size: 30px;
+        }
+        @media (max-width: 768px) {
+          font-size: 26px;
+        }
+      }
+      ul {
+        padding-left: 20px;
+        margin-bottom: 40px;
+        li {
+          position: relative;
+          padding-left: 25px;
+          margin-bottom: 20px;
+          font-size: 14px;
+          font-weight: 600;
+          font-family: $Nun;
+          line-height: 135%;
+          color: #fff;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: #fff;
+            border-radius: 50%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
+// END BLOCK 404
+// ========================================
+// 404 SITEMAP
+.bl_404_sitemap {
+  padding-top: 100px;
+  background-color: $bg;
+  padding-bottom: 100px;
+  @media (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .bl_404_sitemap__content {
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 150%;
+      color: $dark;
+      margin-bottom: 30px;
+      @media (max-width: 1024px) {
+        font-size: 18px;
+      }
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.bl_404_sitemap__menu {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 60px;
+  margin-bottom: 100px;
+  // padding-bottom: 40px;
+  @media (max-width: 768px) {
+    padding: 30px;
+    // padding-bottom: 10px;
+    margin-bottom: 60px;
+  }
+  @media (max-width: 700px) {
+    padding: 20px;
+    // padding-bottom: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 30px;
+    @media (max-width: 768px) {
+      gap: 30px;
+    }
+    @media (max-width: 700px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+    }
+    li {
+      h4 {
+        // margin-bottom: 20px;
+        position: relative;
+        transition: 0.3s;
+        font-size: 16px;
+        font-family: $Nun;
+        transition: 0.3s;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+        @media (max-width: 700px) {
+          padding-right: 20px;
+          font-size: 14px;
+        }
+
+        &::after {
+          content: "";
+          width: 16px;
+          height: 16px;
+          background-image: url("../img/icons/plus_dark.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          display: none;
+          transition: 0.3s;
+
+          @media (max-width: 700px) {
+            display: block;
+          }
+        }
+        a {
+          transition: 0.3s;
+          &:hover {
+            transition: 0.3s;
+            color: $red;
+          }
+        }
+      }
+      h4.active {
+        &::after {
+          transform: translateY(-50%) rotate(45deg);
+          transition: 0.3s;
+        }
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 20px;
+        @media (max-width: 700px) {
+          display: none;
+          // margin-bottom: 20px;
+        }
+        li {
+          margin-bottom: 20px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            font-size: 14px;
+            line-height: 135%;
+            color: $grey;
+            transition: 0.3s;
+            font-weight: 600;
+            &:hover {
+              color: $red;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END 404 SITEMAP
+// ========================================

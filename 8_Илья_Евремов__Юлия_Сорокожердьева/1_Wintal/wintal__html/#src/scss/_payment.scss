@@ -1,0 +1,23 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// PAYMENT
+.bl_payment {
+  .bl_payment__content {
+    h1 {
+      margin-bottom: 30px;
+    }
+    .bl_payment__items {
+      ul {
+        grid-template-columns: repeat(3, 1fr);
+        @media (max-width: 600px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+}
+// END PAYMENT
+// ========================================

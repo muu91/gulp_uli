@@ -1,0 +1,181 @@
+// ========================================
+// POPUP FORM
+.bl_popup_form {
+    // display: flex;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(19, 34, 75, 0.9);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 991px) {
+        padding: 40px;
+    }
+    @media (max-width: 767px) {
+        padding: 20px;
+    }
+    .popup_body {
+        position: relative;
+        padding: 50px;
+        background: white;
+        max-width: 778px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 408px;
+        @media (max-width: 991px) {
+            padding: 40px;
+        }
+        @media (max-width: 767px) {
+            min-height: 350px;
+        }
+        @media (max-width: 450px) {
+            padding: 20px;
+            min-height: 280px;
+        }
+        .wpcf7 {
+            form {
+                padding: 0;
+                margin-bottom: 0;
+                background-color: #fff;
+            }
+        }
+        .popup_btn_close {
+            position: absolute;
+            display: block;
+            right: 25px;
+            top: 25px;
+            width: 24px;
+            height: 24px;
+            z-index: 2;
+            background-image: url("../img/icons/popup_close.svg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: 0.3s;
+            &:hover {
+                cursor: pointer;
+                transform: rotate(90deg);
+                transition: 0.3s;
+            }
+            @media (max-width: 767px) {
+                right: 20px;
+                top: 20px;
+            }
+        }
+        .form_body {
+            .form {
+                display: flex;
+                flex-direction: column;
+            }
+            h2 {
+                padding-left: 0;
+                &:before {
+                    display: none;
+                }
+            }
+            .form__inputs {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                input {
+                    width: 48%;
+                    border: none;
+                    background-color: transparent;
+                    border-bottom: 2px solid $grey2;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                    font-family: $pragmac;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #0C0D0F;
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
+                    @media (max-width: 450px) {
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                    &:active,
+                    &:focus {
+                        outline: none;
+                        border-bottom: 2px solid #0C0D0F;
+                    }
+                }
+                 ::placeholder {
+                    font-family: $pragmac;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #0C0D0F;
+                    @media (max-width: 767px) {
+                        font-size: 14px;
+                    }
+                }
+                 :-ms-input-placeholder {
+                    font-family: $pragmac;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #0C0D0F;
+                    @media (max-width: 767px) {
+                        font-size: 14px;
+                    }
+                }
+                 ::-ms-input-placeholder {
+                    font-family: $pragmac;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #0C0D0F;
+                    @media (max-width: 767px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+            button {
+                background-color: $green;
+                border: none;
+                padding: 15px 18px;
+                color: #fff;
+                width: max-content;
+                transition: 0.3s;
+                max-width: 220px;
+                width: 100%;
+                cursor: pointer;
+                &:active,
+                &:focus {
+                    outline: none;
+                }
+                &:hover {
+                    transition: 0.3s;
+                    background-color: $blue;
+                }
+                span {
+                    background-color: #fff;
+                    margin-left: 50px;
+                    &:before,
+                    &:after {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// END POPUP FORM
+// ========================================

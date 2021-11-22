@@ -1,0 +1,52 @@
+//FONTS
+// -------------------------------
+//Gibson
+@font-face {
+    font-family: "Gibson";
+    src: url("../fonts/gibson/GibsonSemiBd.otf") format("opentype");
+    font-weight: 600; //SemiBold
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gibson";
+    src: url("../fonts/gibson/GibsonLight.OTF") format("opentype");
+    font-weight: 300; //SemiBold
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: "TrajanPro3";
+//     src: url("../fonts/TrajanPro3-Semibold.otf") format("opentype");
+//     font-weight: 600; //SemiBold
+//     font-style: normal;
+// }
+
+//End Gibson
+// -------------------------------
+// SF Compact
+@font-face {
+    font-family: "SF Compact";
+    src: url("../fonts/sf_compact/SF-Compact-Text-Light.otf") format("opentype");
+    font-weight: 300; //Light
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Compact";
+    src: url("../fonts/sf_compact/SF-Compact-Text-Bold.otf") format("opentype");
+    font-weight: 700; //Bold
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: "Playfair Display";
+//     src: url("../fonts/PlayfairDisplay-SemiBold.woff2") format("woff2"), /* chrome、firefox */
+//     url("../fonts/PlayfairDisplay-SemiBold.woff") format("woff");
+//     /* chrome、firefox */
+//     font-weight: 600; //SemiBold
+//     font-style: normal;
+// }
+//End SF Compact
+
+// -------------------------------
+//END FONTS

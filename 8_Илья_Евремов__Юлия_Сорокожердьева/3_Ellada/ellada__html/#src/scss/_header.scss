@@ -1,0 +1,33 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// HEADER
+.main_header {
+  position: relative;
+  z-index: 100;
+  // --------------------
+  //  Header desktop
+  // .header__desktop {
+  //   padding-bottom: 30px;
+  //   @media (max-width: 768px) {
+  //     padding-bottom: 20px;
+  //   }
+  //   @media (max-width: 600px) {
+  //     display: flex;
+  //     flex-direction: row-reverse;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //     padding-top: 10px;
+  //     padding-bottom: 20px;
+  //   }
+  //   @media (max-width: 375px) {
+  //     padding-bottom: 10px;
+  //   }
+  // }
+  //  End Header desktop
+  // --------------------
+}
+// END HEADER
+// ========================================

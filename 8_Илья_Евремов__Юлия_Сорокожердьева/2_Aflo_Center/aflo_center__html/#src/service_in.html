@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('_head.html')
+</head>
+
+<body>
+    <div class="main_wrapper">
+        @@include('_header_services.html')
+        <main>
+            <!-- ======================================== -->
+            <!-- CRUMBS -->
+            <section class="bl_crumbs">
+                <div class="container">
+                    <div class="bl_crumbs__content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Диагностика и анализы
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    УЗИ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- END CRUMBS -->
+            <!-- ======================================== -->
+            <!-- SERVICE IN -->
+            <div class="bl_service_in">
+                <div class="container">
+                    <div class="bl_service_in__content">
+                        <h1>
+                            УЗИ
+                        </h1>
+                        <p class="dark">
+                            Всем известно насколько важно перед началом лечения точно определить диагноз, а не
+                            действовать вслепую. Только такой
+                            подход может гарантировать эффективность лечения.
+                        </p>
+                        <div class="service_in__img">
+                            <img src="./img/servicein/top_servicein.png" alt="news">
+                        </div>
+                        <div class="bl_service_in__menu header_yakor_menu_block">
+                            <div class="green_menu">
+                                <ul>
+                                    <li>
+                                        <a href="#covid_general" class="active">
+                                            Общее
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#covid_services">
+                                            Филиалы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#covid_spec">
+                                            Описание
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#covid_filial">
+                                            Услуги и цены
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#covid_desc">
+                                            Специалисты
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#covid_desc">
+                                            Акции
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#covid_desc">
+                                            Отзывы
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn_red btn_corporate_application">
+                                <span>Записаться на прием</span>
+                                <img src="./img/header/record.svg" alt="record">
+                            </a>
+                        </div>
+                        <div class="block_in">
+                            <div class="block_in__title">
+                                <h2>
+                                    Общее
+                                </h2>
+                            </div>
+                            <div class="block_in__content">
+                                <p>
+                                    <span class="dark">Ультразвуковая диагностика</span> - один из современных
+                                    медицинских методов, позволяющий
+                                    просто и безболезненно осуществить
+                                    качественную и количественную оценку данных, исследовать морфологическую и
+                                    функциональную характеристику органов и
+                                    систем. Современный аппарат УЗИ и высокий профессионализм персонала позволит
+                                    провести качественную диагностику.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block_in">
+                            <div class="block_in__title">
+                                <h2>
+                                    Филиалы оказывающие услугу
+                                </h2>
+                            </div>
+                            <div class="block_in__content">
+                                <div class="two_contacts">
+                                    <div class="two_contacts__item">
+                                        <h4>
+                                            МЦ на Володарского
+                                        </h4>
+                                        <a href="tel:+78332680303">+7 (8332) <span>68-03-03</span></a>
+                                        <div class="address">
+                                            <img src="./img/icons/map_icon.svg" alt="map_icon" class="svg">
+                                            <address>
+                                                г. Киров, ул. Володарского, д.60
+                                            </address>
+                                            <a href="#" class="btn_serv btn_serv_1">
+                                                показать на карте
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="two_contacts__item">
+                                        <h4>
+                                            МЦ на Октябрьском
+                                        </h4>
+                                        <a href="tel:+78332680303">+7 (8332) <span>68-03-03</span></a>
+                                        <div class="address">
+                                            <img src="./img/icons/map_icon.svg" alt="map_icon" class="svg">
+                                            <address>
+                                                г. Киров, Октябрьский пр-т, д.29а
+                                            </address>
+                                            <a href="#" class="btn_serv btn_serv_2">
+                                                показать на карте
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__map">
+                                    <a href="#" class="btn_bg btn_close_serv">
+                                        Закрыть
+                                    </a>
+                                    <div class="serv__map" id="serv__map1">map</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block_in">
+                            <div class="block_in__title">
+                                <h2>
+                                    Описание
+                                </h2>
+                            </div>
+                            <div class="block_in__content">
+                                <p class="dark">
+                                    Как часто нужно проводить обследование?
+                                </p>
+                                <p>
+                                    Даже при отсутствии проблем со здоровьем желательно один раз в год проходить
+                                    профилактическое обследование. Ведь любое
+                                    заболевание, выявленное на ранней стадии хорошо лечится. При обращении к врачу надо
+                                    помнить что УЗИ является
+                                    вспомогательным и дополнительным методом обследования.
+                                </p>
+                                <p>
+                                    В стандартный УЗ-скрининг входят исследования следующих органов: щитовидной железы,
+                                    органов брюшной полости (печени,
+                                    желчного пузыря, поджелудочной железы, селезенки), почек и органов малого таза. При
+                                    обнаружении отклонений следует
+                                    обязательно пройти дообследование.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bl_service_in__slider">
+                            <div class="bl_service_in__swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class=" swiper-slide">
+                                        <img src="./img/servicein/servicein_slide1.png" alt="">
+                                    </div>
+                                    <div class=" swiper-slide">
+                                        <img src="./img/index/3_branches/branch1.png" alt="">
+                                    </div>
+                                    <div class=" swiper-slide">
+                                        <img src="./img/index/3_branches/branch2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+
+                                <div class="swiper-button-prev">
+                                    <img src="./img/icons/arrow_left_slide.svg" class="svg" alt="slide_left">
+                                    <img src="./img/icons/arrow_left_slide_mobile.svg" alt="slide_left">
+                                </div>
+                                <div class="swiper-button-next">
+                                    <img src="./img/icons/arrow_right_slide.svg" class="svg" alt="slide_right">
+                                    <img src="./img/icons/arrow_right_slide_mobile.svg" alt="slide_right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block_in block_in_services_prices">
+                            <div class="block_in__title">
+                                <h2>
+                                    Услуги и цены
+                                </h2>
+                                <a href="#" class="pdf">
+                                    Прайс-лист в формате PDF
+                                </a>
+                            </div>
+                            <div class="block_in__content">
+                                <div class="sign_up">
+                                    <ul>
+                                        <li>
+                                            <div class="sign_up__content">
+                                                <div class="sign_up__left">
+                                                    <p class="dark">
+                                                        Ультразвуковое исследование органов брюшной полости (печень,
+                                                        желчный пузырь и протоки, поджелудочная железа, селезенка)
+                                                    </p>
+                                                </div>
+                                                <div class="sign_up__right">
+                                                    <div class="sign_up__price">
+                                                        <p>
+                                                            850 ₽
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="btn_bg ">
+                                                        Записаться
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="sign_up__hidden">
+                                                <p class="dark">
+                                                    Показания:
+                                                </p>
+                                                <p>
+                                                    УЗИ следует проводить при любых болезненных ощущениях в правом
+                                                    подреберье, горечи во рту, чувстве распирания после еды,
+                                                    при повышенном газообразовании, а также, если у вас отмечались
+                                                    приступы острых болей в правом подреберье или
+                                                    опоясывающие боли.
+                                                </p>
+                                                <p>
+                                                    Пациентам с хроническими заболеваниями УЗИ осуществляется согласно
+                                                    рекомендациям лечащего врача.
+                                                </p>
+                                                <p>
+                                                    С профилактической целью и для раннего выявления заболеваний,
+                                                    рекомендуется проходить данное обследование не реже одного
+                                                    раза в год всем здоровым лицам, особенно, в старшей возрастной
+                                                    группе.
+                                                </p>
+                                            </div>
+                                            <a href="#" class="btn_green_2 btn_service">
+                                                <span>
+                                                    Подробнее
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="sign_up__content">
+                                                <div class="sign_up__left">
+                                                    <p class="dark">
+                                                        Ультразвуковое исследование органов брюшной полости (печень,
+                                                        желчный пузырь и протоки, поджелудочная железа, селезенка)
+                                                        с определением сократительной функции желчного пузыря
+                                                    </p>
+                                                </div>
+                                                <div class="sign_up__right">
+                                                    <div class="sign_up__price">
+                                                        <p>
+                                                            1200 ₽
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="btn_bg">
+                                                        Записаться
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="sign_up__hidden">
+                                                <p class="dark">
+                                                    Показания:
+                                                </p>
+                                                <p>
+                                                    УЗИ следует проводить при любых болезненных ощущениях в правом
+                                                    подреберье, горечи во рту, чувстве распирания после еды,
+                                                    при повышенном газообразовании, а также, если у вас отмечались
+                                                    приступы острых болей в правом подреберье или
+                                                    опоясывающие боли.
+                                                </p>
+                                                <p>
+                                                    Пациентам с хроническими заболеваниями УЗИ осуществляется согласно
+                                                    рекомендациям лечащего врача.
+                                                </p>
+                                                <p>
+                                                    С профилактической целью и для раннего выявления заболеваний,
+                                                    рекомендуется проходить данное обследование не реже одного
+                                                    раза в год всем здоровым лицам, особенно, в старшей возрастной
+                                                    группе.
+                                                </p>
+                                            </div>
+                                            <a href="#" class="btn_green_2 btn_service">
+                                                <span>
+                                                    Подробнее
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="sign_up__content">
+                                                <div class="sign_up__left">
+                                                    <p class="dark">
+                                                        Ультразвуковое исследование желчного пузыря с определением
+                                                        сократительной функции
+                                                    </p>
+                                                </div>
+                                                <div class="sign_up__right">
+                                                    <div class="sign_up__price">
+                                                        <p>
+                                                            750 ₽
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="btn_bg">
+                                                        Записаться
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="sign_up__hidden">
+                                                <p class="dark">
+                                                    Показания:
+                                                </p>
+                                                <p>
+                                                    УЗИ следует проводить при любых болезненных ощущениях в правом
+                                                    подреберье, горечи во рту, чувстве распирания после еды,
+                                                    при повышенном газообразовании, а также, если у вас отмечались
+                                                    приступы острых болей в правом подреберье или
+                                                    опоясывающие боли.
+                                                </p>
+                                                <p>
+                                                    Пациентам с хроническими заболеваниями УЗИ осуществляется согласно
+                                                    рекомендациям лечащего врача.
+                                                </p>
+                                                <p>
+                                                    С профилактической целью и для раннего выявления заболеваний,
+                                                    рекомендуется проходить данное обследование не реже одного
+                                                    раза в год всем здоровым лицам, особенно, в старшей возрастной
+                                                    группе.
+                                                </p>
+                                            </div>
+                                            <a href="#" class="btn_green_2 btn_service">
+                                                <span>
+                                                    Подробнее
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="sign_up__content">
+                                                <div class="sign_up__left">
+                                                    <p class="dark">
+                                                        Ультразвуковое исследование мочевого пузыря с определением
+                                                        остаточной мочи
+                                                    </p>
+                                                </div>
+                                                <div class="sign_up__right">
+                                                    <div class="sign_up__price">
+                                                        <p>
+                                                            700 ₽
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="btn_bg">
+                                                        Записаться
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="sign_up__hidden">
+                                                <p class="dark">
+                                                    Показания:
+                                                </p>
+                                                <p>
+                                                    УЗИ следует проводить при любых болезненных ощущениях в правом
+                                                    подреберье, горечи во рту, чувстве распирания после еды,
+                                                    при повышенном газообразовании, а также, если у вас отмечались
+                                                    приступы острых болей в правом подреберье или
+                                                    опоясывающие боли.
+                                                </p>
+                                                <p>
+                                                    Пациентам с хроническими заболеваниями УЗИ осуществляется согласно
+                                                    рекомендациям лечащего врача.
+                                                </p>
+                                                <p>
+                                                    С профилактической целью и для раннего выявления заболеваний,
+                                                    рекомендуется проходить данное обследование не реже одного
+                                                    раза в год всем здоровым лицам, особенно, в старшей возрастной
+                                                    группе.
+                                                </p>
+                                            </div>
+                                            <a href="#" class="btn_green_2 btn_service">
+                                                <span>
+                                                    Подробнее
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="sign_up__content">
+                                                <div class="sign_up__left">
+                                                    <p class="dark">
+                                                        Ультразвуковое исследование предстательной железы
+                                                        трансабдоминальное
+                                                    </p>
+                                                </div>
+                                                <div class="sign_up__right">
+                                                    <div class="sign_up__price">
+                                                        <p>
+                                                            700 ₽
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="btn_bg">
+                                                        Записаться
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="sign_up__hidden">
+                                                <p class="dark">
+                                                    Показания:
+                                                </p>
+                                                <p>
+                                                    УЗИ следует проводить при любых болезненных ощущениях в правом
+                                                    подреберье, горечи во рту, чувстве распирания после еды,
+                                                    при повышенном газообразовании, а также, если у вас отмечались
+                                                    приступы острых болей в правом подреберье или
+                                                    опоясывающие боли.
+                                                </p>
+                                                <p>
+                                                    Пациентам с хроническими заболеваниями УЗИ осуществляется согласно
+                                                    рекомендациям лечащего врача.
+                                                </p>
+                                                <p>
+                                                    С профилактической целью и для раннего выявления заболеваний,
+                                                    рекомендуется проходить данное обследование не реже одного
+                                                    раза в год всем здоровым лицам, особенно, в старшей возрастной
+                                                    группе.
+                                                </p>
+                                            </div>
+                                            <a href="#" class="btn_green_2 btn_service">
+                                                <span>
+                                                    Подробнее
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="sign_up__more">
+                                        Показать все
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="block_in__pdf">
+                                Прайс-лист в формате PDF
+                            </a>
+                        </div>
+                        <div class="block_in">
+                            <div class="block_in__title">
+                                <h2>
+                                    Специалисты
+                                </h2>
+                            </div>
+                            <div class="block_in__content">
+                                <div class="service__spec">
+                                    <ul>
+                                        <li>
+                                            <a href="#"></a>
+                                            <div class="spec__img">
+                                                <img src="./img/servicein/spec1.png" alt="spec">
+                                            </div>
+                                            <h4>
+                                                Герасименко О.В.
+                                            </h4>
+                                            <p>
+                                                Врач ультразвуковой диагностики
+                                            </p>
+                                            <p>
+                                                Филиал: <span>МЦ на Володарского</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <a href="#"></a>
+                                            <div class="spec__img">
+                                                <img src="./img/servicein/spec2.png" alt="spec">
+                                            </div>
+                                            <h4>
+                                                Копанев К.Н.
+                                            </h4>
+                                            <p>
+                                                Врач ультразвоковой диагностики, терапевт
+                                            </p>
+                                            <p>
+                                                Филиал: <span>МЦ на Октябрьском</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block_in">
+                            <div class="block_in__title">
+                                <h2>
+                                    Акции
+                                </h2>
+                            </div>
+                            <div class="block_in__content">
+                                <div class="service__stock">
+                                    <ul>
+                                        <li>
+                                            <a href="#"></a>
+                                            <div class="service__stock__img">
+                                                <img src="./img/index/5_stock/stock1.png" alt="stock">
+                                            </div>
+                                            <div class="service__stock__text">
+                                                <div class="date">
+                                                    <p>
+                                                        26 августа 2021
+                                                    </p>
+                                                </div>
+                                                <h3>
+                                                    Каждому пенсионеру, скидка 5%
+                                                </h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"></a>
+                                            <div class="service__stock__img">
+                                                <img src="./img/index/5_stock/stock2.jpg" alt="stock">
+                                            </div>
+                                            <div class="service__stock__text">
+                                                <div class="date">
+                                                    <p>
+                                                        26 августа 2021
+                                                    </p>
+                                                </div>
+                                                <h3>
+                                                    Комплексное обследование на COVID-19!
+                                                </h3>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block_in">
+                            <div class="block_in__title">
+                                <h2>
+                                    Отзывы
+                                </h2>
+                            </div>
+                            <div class="block_in__content">
+                                <div class="sign_up">
+                                    <ul>
+                                        <li>
+                                            <div class="sign_up__content">
+                                                <div class="sign_up__left">
+                                                    <div class="sign_up__date">
+                                                        <p>
+                                                            16.10.2019
+                                                        </p>
+                                                    </div>
+                                                    <div class="sign_up__top">
+                                                        <p>
+                                                            Кому:
+                                                            <span>
+                                                                Зыков Александр Николаевич
+                                                            </span>
+                                                        </p>
+                                                        <p>
+                                                            Филиал:
+                                                            <span>
+                                                                МЦ на Володарского
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <p class="dark">
+                                                        Врач УЗИ Зыков А.Н. - профессионал своего дела!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="sign_up__hidden">
+                                                <p>
+                                                    УЗИ следует проводить при любых болезненных ощущениях в правом
+                                                    подреберье, горечи во рту, чувстве распирания после еды,
+                                                    при повышенном газообразовании, а также, если у вас отмечались
+                                                    приступы острых болей в правом подреберье или
+                                                    опоясывающие боли.
+                                                </p>
+                                                <p>
+                                                    Пациентам с хроническими заболеваниями УЗИ осуществляется согласно
+                                                    рекомендациям лечащего врача.
+                                                </p>
+                                                <p>
+                                                    С профилактической целью и для раннего выявления заболеваний,
+                                                    рекомендуется проходить данное обследование не реже одного
+                                                    раза в год всем здоровым лицам, особенно, в старшей возрастной
+                                                    группе.
+                                                </p>
+                                            </div>
+                                            <a href="#" class="btn_green_2 btn_service">
+                                                Подробнее
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="sign_up__content">
+                                                <div class="sign_up__left">
+                                                    <div class="sign_up__date">
+                                                        <p>
+                                                            16.10.2019
+                                                        </p>
+                                                    </div>
+                                                    <div class="sign_up__top">
+                                                        <p>
+                                                            Кому:
+                                                            <span>
+                                                                Ушакова Елена Юрьевна
+                                                            </span>
+                                                        </p>
+                                                        <p>
+                                                            Филиал:
+                                                            <span>
+                                                                МЦ на Октябрьском
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <p class="dark">
+                                                        Благодарность врачу УЗИ Ушаковой Е.Ю.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="sign_up__hidden">
+
+                                                <p>
+                                                    УЗИ следует проводить при любых болезненных ощущениях в правом
+                                                    подреберье, горечи во рту, чувстве распирания после еды,
+                                                    при повышенном газообразовании, а также, если у вас отмечались
+                                                    приступы острых болей в правом подреберье или
+                                                    опоясывающие боли.
+                                                </p>
+                                                <p>
+                                                    Пациентам с хроническими заболеваниями УЗИ осуществляется согласно
+                                                    рекомендациям лечащего врача.
+                                                </p>
+                                                <p>
+                                                    С профилактической целью и для раннего выявления заболеваний,
+                                                    рекомендуется проходить данное обследование не реже одного
+                                                    раза в год всем здоровым лицам, особенно, в старшей возрастной
+                                                    группе.
+                                                </p>
+                                            </div>
+                                            <a href="#" class="btn_green_2 btn_service">
+                                                Подробнее
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END SERVICE IN -->
+            <!-- ======================================== -->
+
+
+
+        </main>
+        @@include('_footer.html') @@include('_popups.html') @@include('_js_source.html')
+        <script>
+            var postion = $('.header_yakor_menu_block').offset().top,
+                height = $('.header_yakor_menu_block').height();
+            $(document).on('scroll', function () {
+                var scroll = $(document).scrollTop();
+                if (scroll < (postion + height + 100)) {
+                    $('.header_yakor_menu').removeClass('active');
+                } else {
+                    $('.header_yakor_menu').addClass('active');
+                }
+            });
+        </script>
+
+</body>
+
+</html>

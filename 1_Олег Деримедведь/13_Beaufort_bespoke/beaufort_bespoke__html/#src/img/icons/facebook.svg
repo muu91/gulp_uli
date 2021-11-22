@@ -1,0 +1,13 @@
+<svg id="icons_social_facebook" data-name="icons/social/facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8.959" height="19.2" viewBox="0 0 8.959 19.2">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Mask" d="M5.957,19.2V9.6h2.65L8.959,6.29h-3l0-1.656c0-.863.082-1.325,1.321-1.325H8.94V0H6.289c-3.184,0-4.3,1.605-4.3,4.3V6.291H0V9.6H1.985v9.6Z" fill="#212b36"/>
+    </clipPath>
+  </defs>
+  <path id="Mask-2" data-name="Mask" d="M5.957,19.2V9.6h2.65L8.959,6.29h-3l0-1.656c0-.863.082-1.325,1.321-1.325H8.94V0H6.289c-3.184,0-4.3,1.605-4.3,4.3V6.291H0V9.6H1.985v9.6Z" fill="#212b36"/>
+  <g id="icons_social_facebook-2" data-name="icons/social/facebook" clip-path="url(#clip-path)">
+    <g id="Color" transform="translate(-6 -1.2)">
+      <rect id="color_background" data-name="color/background" width="21.6" height="21.6" rx="4" fill="#f5f6f6"/>
+    </g>
+  </g>
+</svg>

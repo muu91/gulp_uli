@@ -1,0 +1,676 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+html.lock,
+body.lock {
+    height: 100%;
+    overflow: hidden !important;
+    width: 100%;
+    position: relative;
+    // background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main_wrapper {
+    width: 100%;
+    overflow: hidden;
+    @media (max-height: 100vh) {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        // align-items: stretch;
+        // min-height: 100vh;
+    }
+}
+
+.container {
+    max-width: 1570px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+    @media (max-width: 1024px) {
+        padding: 0 42px;
+    }
+    @media (max-width: 768px) {
+        padding: 0 30px;
+    }
+    @media (max-width: 375px) {
+        padding: 0 15px;
+    }
+}
+
+// ---------------------
+// Для скрола блока
+// .scroll{
+//     max-height: calc(100vh - 56px);
+//     overflow-x: hidden;
+//     overflow-y: auto;
+// }
+// Для скрола блока
+// ------------------------------
+// ========================================
+// ------------------------------
+// Heading
+h1 {
+    display: block;
+    font-family: $Nun;
+    font-size: 70px;
+    line-height: 120%;
+    font-weight: 400;
+    color: $dark;
+    margin-bottom: 40px;
+    @media (max-width: 1024px) {
+        font-size: 60px;
+    }
+    @media (max-width: 768px) {
+        font-size: 46px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 425px) {
+        font-size: 32px;
+    }
+}
+h2 {
+    display: block;
+    font-family: $Nun;
+    font-size: 34px;
+    line-height: 130%;
+    font-weight: 700;
+    color: $dark;
+    margin-bottom: 30px;
+    @media (max-width: 1024px) {
+        font-size: 30px;
+    }
+    @media (max-width: 768px) {
+        font-size: 26px;
+    }
+    @media (max-width: 425px) {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+h3 {
+    font-family: $Nun;
+}
+h4 {
+    display: block;
+    font-family: $Nun;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+    color: $dark;
+    @media (max-width: 425px) {
+        font-size: 14px;
+    }
+}
+// End Heading
+// ------------------------------
+p {
+    display: block;
+    font-family: $Nun;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+    color: $dark;
+    @media (max-width: 425px) {
+        font-size: 14px;
+    }
+}
+
+a {
+    display: block;
+    width: fit-content;
+    font-family: $Nun;
+    color: $dark;
+    transition: 0.3s;
+    &:hover {
+        transition: 0.3s;
+    }
+}
+// ------------------------------
+// Buttons
+// -------------------
+.btn_red {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: $red;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: $Nun;
+    line-height: 100%;
+    border-radius: 8px;
+    border: 2px solid $red;
+    outline: none;
+    transition: 0.3s;
+    height: 54px;
+    width: fit-content;
+    padding: 18px 30px;
+    white-space: nowrap;
+    @media (max-width: 600px) {
+        height: 44px;
+        padding: 14px 20px;
+        font-size: 12px;
+    }
+    &:focus {
+        border: 2px solid $dark;
+        transition: 0.3s;
+    }
+    &:hover {
+        background-color: $red_h;
+        transition: 0.3s;
+    }
+}
+// -------------------
+
+.btn_red_mini {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: $red;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: $Nun;
+    line-height: 100%;
+    border-radius: 6px;
+    border: 2px solid $red;
+    outline: none;
+    transition: 0.3s;
+    height: 44px;
+    width: fit-content;
+    padding: 14px 20px;
+    &:focus {
+        border: 2px solid $dark;
+        transition: 0.3s;
+    }
+    &:hover {
+        background-color: $red_h;
+        transition: 0.3s;
+    }
+}
+// -------------------
+.btn_red_dark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: $dark;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: $Nun;
+    line-height: 100%;
+    border-radius: 8px;
+    border: 2px solid $dark;
+    outline: none;
+    transition: 0.3s;
+    height: 54px;
+    width: fit-content;
+    padding: 18px 30px;
+    padding-right: 55px;
+    position: relative;
+    @media (max-width: 600px) {
+        height: 44px;
+        font-size: 12px;
+        padding: 15px 20px;
+        padding-right: 45px;
+    }
+    &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        @media (max-width: 600px) {
+            right: 15px;
+        }
+    }
+    &::after {
+        content: "";
+        display: block;
+        height: 16px;
+        width: 2px;
+        background-color: #fff;
+        position: absolute;
+        right: 37px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.3s;
+        @media (max-width: 600px) {
+            right: 22px;
+        }
+    }
+    &:focus {
+        border: 2px solid $red;
+        transition: 0.3s;
+    }
+    &:hover {
+        background-color: $dark2;
+        transition: 0.3s;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    }
+}
+// -------------------
+.btn_red_border {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: transparent;
+    color: $dark;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: $Nun;
+    line-height: 100%;
+    border-radius: 8px;
+    border: 2px solid $border;
+    outline: none;
+    transition: 0.3s;
+    height: 54px;
+    width: fit-content;
+    padding: 18px 30px;
+    &:focus {
+        border: 2px solid $dark;
+        transition: 0.3s;
+    }
+    &:hover {
+        background-color: $border;
+        transition: 0.3s;
+    }
+}
+// -------------------
+.btn_red_bg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: $bg;
+    color: $dark;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: $Nun;
+    line-height: 100%;
+    border-radius: 8px;
+    border: 2px solid $bg;
+    outline: none;
+    transition: 0.3s;
+    height: 54px;
+    width: fit-content;
+    padding: 18px 30px;
+    white-space: nowrap;
+    &:focus {
+        border: 2px solid $dark;
+        transition: 0.3s;
+    }
+    &:hover {
+        background-color: $bg;
+        transition: 0.3s;
+    }
+}
+// -------------------
+.btn_red_mini_2 {
+    font-family: $Nun;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 135%;
+    color: $red;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        color: $dark;
+    }
+    &:focus svg path,
+    &:hover svg path {
+        fill: $dark;
+        transition: 0.3s;
+    }
+    svg {
+        width: 7px;
+        height: 12px;
+        margin-left: 10px;
+        path {
+            transition: 0.3s;
+        }
+    }
+}
+// -------------------
+.btn_dark_mini {
+    font-family: $Nun;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: $dark;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    // justify-content: flex-end;
+    align-items: center;
+    transition: 0.3s;
+    padding-right: 22px;
+    width: fit-content;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+    &:hover,
+    &:focus {
+        color: $red;
+    }
+    &:focus svg path,
+    &:hover svg path {
+        fill: $red;
+        transition: 0.3s;
+    }
+    svg {
+        width: 7px;
+        height: 12px;
+        margin-left: 10px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        path {
+            transition: 0.3s;
+        }
+    }
+}
+// -------------------
+.btn_bg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: $bg;
+    color: $dark;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: $Nun;
+    line-height: 100%;
+    border-radius: 8px;
+    border: 2px solid $bg;
+    outline: none;
+    transition: 0.3s;
+    height: 54px;
+    width: fit-content;
+    padding: 18px 30px;
+    white-space: nowrap;
+
+    &:focus {
+        border: 2px solid $dark;
+        transition: 0.3s;
+    }
+    &:hover {
+        background-color: $border;
+        border: 2px solid $border;
+        transition: 0.3s;
+    }
+}
+// -------------------
+.btn_green {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: $green;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $Nun;
+    line-height: 135%;
+    outline: none;
+    transition: 0.3s;
+    width: fit-content;
+    &:focus {
+        color: $dark;
+        transition: 0.3s;
+    }
+    &:hover {
+        transition: 0.3s;
+        color: $dark;
+    }
+    &:hover svg path {
+        transition: 0.3s;
+        fill: $dark;
+    }
+    svg {
+        margin-right: 10px;
+        margin-bottom: 2px;
+        path {
+            fill: $green;
+            transition: 0.3s;
+        }
+    }
+}
+// -------------------
+.btn_green_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: $green;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $Nun;
+    line-height: 135%;
+    outline: none;
+    transition: 0.3s;
+    width: fit-content;
+    position: relative;
+    padding-left: 26px;
+    &:focus {
+        color: $dark;
+        transition: 0.3s;
+    }
+    &:hover {
+        transition: 0.3s;
+        color: $dark;
+    }
+    &:hover::before,
+    &:hover::after {
+        transition: 0.3s;
+        color: $dark;
+        background-color: $dark;
+    }
+    &::before {
+        content: "";
+        width: 16px;
+        height: 2px;
+        background-color: $green;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+    }
+    &::after {
+        content: "";
+        height: 16px;
+        width: 2px;
+        background-color: $green;
+        position: absolute;
+        left: 7px;
+        top: 1px;
+        display: block;
+        transition: 0.3s;
+    }
+}
+.btn_green_2.active {
+    &::after {
+        transition: 0.3s;
+        height: 0;
+        top: 8px;
+    }
+}
+// -------------------
+
+.btn_block {
+    background-color: $border;
+    border: 2px solid $border;
+}
+
+// End Buttons
+// ------------------------------
+// ========================================
+// SWIPER
+// ------------------------------
+// BUTTONS
+.swiper-button-prev,
+.swiper-button-next {
+    top: auto;
+    bottom: 190px;
+    width: 50px;
+    height: 30px;
+    margin: 0;
+    @media (max-width: 768px) {
+        width: 9px;
+        height: 12px;
+    }
+    &::after {
+        display: none;
+    }
+    &:hover svg path {
+        fill: $red;
+        transition: 0.3s;
+    }
+    svg {
+        @media (max-width: 768px) {
+            display: none;
+        }
+        path {
+            transition: 0.3s;
+        }
+    }
+    img {
+        display: block;
+        width: 50px;
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+            width: 7px;
+            height: 12px;
+        }
+    }
+}
+.swiper-button-prev {
+    left: 40px;
+    @media (max-width: 1440px) {
+        left: 10px;
+    }
+    @media (max-width: 768px) {
+        left: 20px;
+    }
+}
+.swiper-button-next {
+    right: 40px;
+    @media (max-width: 1440px) {
+        right: 10px;
+    }
+    @media (max-width: 768px) {
+        right: 20px;
+    }
+}
+.swiper-button-disabled {
+    svg {
+        path {
+            fill: $border !important;
+        }
+    }
+}
+
+// END BUTTONS
+// ------------------------------
+// SWIPER PAGINATION
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+.swiper-pagination {
+    width: fit-content !important;
+    bottom: 40px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    @media (max-width: 600px) {
+        bottom: 10px !important;
+    }
+
+    span {
+        display: block;
+        width: 5px;
+        max-width: 5px;
+        min-width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-right: 20px;
+        transition: 0.3s;
+        opacity: 1;
+        margin: 0 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .swiper-pagination-bullet-active {
+        transition: 0.3s;
+        width: 10px;
+        max-width: 10px;
+        min-width: 10px;
+        height: 10px;
+        background-color: $red;
+    }
+}
+// END SWIPER PAGINATION
+// ------------------------------
+// SCROLLBAR
+.swiper-scrollbar {
+    width: 240px !important;
+    height: 12px !important;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 2px solid $l_grey;
+    bottom: -100px !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    background-color: transparent;
+    @media (max-width: 1024px) {
+        bottom: -60px !important;
+    }
+    @media (max-width: 600px) {
+        bottom: -40px !important;
+        width: 160px !important;
+    }
+    .swiper-scrollbar-drag {
+        // width: 80px !important;
+        border-radius: 0;
+        background-color: $l_grey;
+    }
+}
+// END SCROLLBAR
+// ------------------------------
+// END SWIPER
+// ========================================
+
+// ------------------------------
+// OTHERS
+
+// END OTHERS
+// ------------------------------
+// ========================================

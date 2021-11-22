@@ -1,0 +1,25 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// HEADER
+.bl_pizzeria__carte {
+  .bl_pizzeria__list {
+    ul {
+      li {
+        width: 100%;
+        &:nth-child(2n) {
+          margin-left: 0;
+        }
+        .bl_pizzeria__text {
+          p {
+            max-width: 720px;
+          }
+        }
+      }
+    }
+  }
+}
+// END HEADER
+// ========================================

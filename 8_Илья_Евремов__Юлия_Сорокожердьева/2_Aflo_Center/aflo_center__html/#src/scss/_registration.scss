@@ -1,0 +1,246 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// REGISTRATION
+.bl_registration {
+  padding-bottom: 100px;
+  @media (max-width: 768px) {
+    padding-bottom: 60px;
+  }
+  .bl_registration__content {
+    > p {
+      font-size: 14px;
+      max-width: 810px;
+      color: $grey;
+      line-height: 135%;
+    }
+    .bl_registration__form {
+      border: 2px solid $border;
+      padding: 60px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      @media (max-width: 992px) {
+        padding: 30px;
+      }
+      @media (max-width: 425px) {
+        padding: 20px;
+      }
+      form {
+        box-sizing: border-box;
+        .bl_registration__inputs {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 30px;
+          margin-bottom: 30px;
+          @media (max-width: 1024px) {
+            gap: 30px 20px;
+          }
+          @media (max-width: 992px) {
+            gap: 20px 10px;
+            margin-bottom: 20px;
+          }
+          @media (max-width: 700px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+          }
+          @media (max-width: 600px) {
+            grid-template-columns: repeat(1, 1fr);
+            margin-bottom: 10px;
+          }
+          .bl_reg__input {
+            .input {
+              input {
+                width: 100%;
+                border: 2px solid $bg;
+              }
+            }
+            .checkbox_main {
+              margin-top: 20px;
+              margin-left: 20px;
+              @media (max-width: 700px) {
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+        .bl_registration__inputs__bottom {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 30px;
+          margin-bottom: 30px;
+          @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+          }
+          @media (max-width: 992px) {
+            gap: 10px;
+            margin-bottom: 20px;
+          }
+          @media (max-width: 600px) {
+            margin-bottom: 20px;
+            grid-template-columns: repeat(1, 1fr);
+          }
+          .bl_reg__input {
+            .input {
+              input {
+                width: 100%;
+                border: 2px solid $bg;
+              }
+            }
+            .checkbox_main {
+              margin-top: 20px;
+              margin-left: 20px;
+              @media (max-width: 700px) {
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+        .bl_registration__checkbox {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 30px;
+          @media (max-width: 768px) {
+            margin-bottom: 20px;
+          }
+          @media (max-width: 600px) {
+            flex-direction: column;
+          }
+          .checkbox_main {
+            &:first-child {
+              margin-right: 30px;
+              @media (max-width: 600px) {
+                margin-right: 0;
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+        .bl_registration__btns {
+          display: flex;
+          flex-direction: row;
+          @media (max-width: 700px) {
+            flex-wrap: wrap;
+          }
+          button {
+            margin-right: 20px;
+            @media (max-width: 700px) {
+              margin-bottom: 10px;
+              height: 44px;
+              padding: 14px 18px;
+              font-size: 12px;
+              margin-right: 10px;
+            }
+            &:first-child {
+              @media (max-width: 425px) {
+                margin-right: 5px;
+              }
+            }
+            &:last-child {
+              margin-right: 0;
+              @media (max-width: 700px) {
+                margin-bottom: 0;
+              }
+            }
+          }
+          .btn_green_reg {
+            background-color: $green;
+            border: 2px solid $green;
+            @media (max-width: 425px) {
+              margin-right: 0;
+            }
+          }
+          .btn_gos_uslugi {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            white-space: nowrap;
+            img {
+              display: block;
+              margin-left: 10px;
+              transform: translateY(-2px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.checkbox_main {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: fit-content;
+  &:hover {
+    cursor: pointer;
+  }
+  p {
+    font-size: 14px;
+    line-height: 135%;
+    font-weight: 600;
+    &:last-child {
+      margin-top: 1px;
+    }
+  }
+}
+.main_check {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  margin-right: 10px;
+
+  input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    top: 0;
+    left: 0;
+  }
+  input:checked + span {
+    border: 2px solid $green;
+    transition: 0.3s;
+    &::before {
+      opacity: 1;
+      transition: 0.3s;
+    }
+  }
+  span {
+    display: block;
+    min-width: 20px;
+    max-width: 20px;
+    height: 20px;
+    border: 2px solid $l_grey;
+    border-radius: 3px;
+    margin: 0;
+    position: relative;
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      border: 2px solid $dark;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 1px;
+      background-color: $green;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: 0.3s;
+    }
+  }
+}
+
+// END REGISTRATION
+// ========================================

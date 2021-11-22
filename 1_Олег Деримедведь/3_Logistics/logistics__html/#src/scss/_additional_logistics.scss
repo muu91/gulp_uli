@@ -1,0 +1,28 @@
+@import "_base.scss";
+// ========================================
+// ======================================== 
+//  BLOCK HEADER
+.bl_header_2__add_log {
+    background-image: url("../img/header/additional_logistic_header.jpg");
+}
+
+// END BLOCK HEADER
+// ======================================== 
+// ======================================== 
+// BLOCK advantages
+.bl_directions__add_log {
+    padding-top: 0;
+    .directions_items {
+        .directions_item {
+            h4 {
+                @media (max-width: 450px) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+//End BLOCK advantages
+// ======================================== 
+// ========================================

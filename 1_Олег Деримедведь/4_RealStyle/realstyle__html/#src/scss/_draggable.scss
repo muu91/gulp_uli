@@ -1,0 +1,16 @@
+.entry {
+    position: absolute;
+    opacity: .5;
+    cursor: move;
+    transition: opacity .3s;
+}
+
+.entry.dim-over {
+    opacity: 1;
+    z-index: 10;
+}
+
+.entry.dim-hide {
+    opacity: .2;
+    z-index: 1;
+}

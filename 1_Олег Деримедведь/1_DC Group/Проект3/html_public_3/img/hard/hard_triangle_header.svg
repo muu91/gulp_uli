@@ -1,0 +1,10 @@
+<svg id="Компонент_107_2" data-name="Компонент 107 – 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1138.719" height="709.308" viewBox="0 0 1138.719 709.308">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.762" y1="-0.095" x2="0.194" y2="0.817" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-opacity="0"/>
+      <stop offset="0.494" stop-opacity="0.122"/>
+      <stop offset="1" stop-opacity="0.741"/>
+    </linearGradient>
+  </defs>
+  <path id="Контур_3931" data-name="Контур 3931" d="M-.031,709.331,409.487.024h729.2V51.9L3.032,707.561ZM273.992,435.308,854.2,100.324H467.385Z" transform="translate(0.031 -0.024)" fill="url(#linear-gradient)"/>
+</svg>

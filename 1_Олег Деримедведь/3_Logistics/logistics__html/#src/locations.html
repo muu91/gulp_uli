@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('_head.html')
+</head>
+
+<body>
+    @@include('_preloader.html') @@include('_header_2.html')
+    <main class="main">
+
+        <!-- ======================================== -->
+        <!-- ======================================== -->
+        <!-- BLOCK LOCATIONS-->
+        <div class="bl_locations">
+            <div class="container">
+
+                <div class="main_h2" data-aos="fade-down" data-aos-delay="0">
+                    <div class="bands">
+                        <span data-aos="fade-down" data-aos-delay="800"></span>
+                        <span data-aos="fade-down" data-aos-delay="600"></span>
+                        <span data-aos="fade-down" data-aos-delay="400"></span>
+                        <span data-aos="fade-down" data-aos-delay="200"></span>
+                        <span data-aos="fade-down" data-aos-delay="0"></span>
+                    </div>
+                    <h2>
+                        Локации
+                    </h2>
+                </div>
+                <div class="locations__items">
+                    <div class="locations__heading" data-aos="fade-up" data-aos-delay="0">
+                        <h6>
+                            Адрес
+                        </h6>
+                        <!-- <h6>
+                            Почта
+                        </h6> -->
+                        <h6>
+                            Телефон
+                        </h6>
+                    </div>
+                    <div class="locations__item" data-aos="fade-up" data-aos-delay="100">
+                        <address>
+                            <a href="#map_loc" data-coordinat="48.64726, 35.2617751" data-id="1">
+                                Днепропетровская обл, г. Новомосковск,  ул.Гетманская
+                            </a>                          
+                        </address>
+                        <!-- <div class="locations__email">
+                            <a href="mailto:info@business-group.com.ua">
+                            info@business-group.com.ua
+                          </a>
+                        </div> -->
+                        <div class="locations__tel">
+                            <a href="tel:+380672434954">
+                            +38 067 243 49 54, 
+                          </a>
+                            <a href="tel:+380672434954">
+                              +38 067 243 49 54
+                            </a>
+                        </div>
+                    </div>
+                    <div class="locations__item" data-aos="fade-up" data-aos-delay="200">
+                        <address>
+                            <a href="#map_loc" data-coordinat="48.6890135, 26.5918505" data-id="2">
+                                Хмельницкая обл., г. Каменец-Подольский, ул.Грушевского, 1А
+                            </a>                        
+                      </address>
+                        <!-- <div class="locations__email">
+                            <a href="mailto:info@business-group.com.ua">
+                          info@business-group.com.ua
+                        </a>
+                        </div> -->
+                        <div class="locations__tel">
+                            <a>
+                          -
+                        </a>
+
+                        </div>
+                    </div>
+                    <div class="locations__item" data-aos="fade-up" data-aos-delay="300">
+                        <address>
+                            <a href="#map_loc" data-coordinat="48.6890135, 26.5918505" data-id="3">
+                                Днепропетровская обл, г. Новомосковск, ул.Гетманская
+                            </a>                        
+                      </address>
+                        <!-- <div class="locations__email">
+                            <a href="mailto:info@business-group.com.ua">
+                          info@business-group.com.ua
+                        </a>
+                        </div> -->
+                        <div class="locations__tel">
+                            <a href="tel:+380672434954">
+                          +38 067 243 49 54, 
+                        </a>
+                            <a href="tel:+380672434954">
+                            +38 067 243 49 54
+                          </a>
+                        </div>
+                    </div>
+                    <div class="locations__item" data-aos="fade-up" data-aos-delay="400">
+                        <address>
+                            <a href="#map_loc" data-coordinat="48.64726, 35.2617751" data-id="4">
+                                Хмельницкая обл., г. Каменец-Подольский, ул.Грушевского, 1А
+                            </a>                        
+                    </address>
+                        <!-- <div class="locations__email">
+                            <a href="mailto:info@business-group.com.ua">
+                        info@business-group.com.ua
+                      </a>
+                        </div> -->
+                        <div class="locations__tel">
+                            <a>
+                        -
+                      </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation__items">
+                    <a href="#" class="active" data-aos="fade-up" data-aos-delay="500">1</a>
+                    <a href="#" data-aos="fade-up" data-aos-delay="600">2</a>
+                    <a href="#" data-aos="fade-up" data-aos-delay="700">3</a>
+                </div>
+            </div>
+
+        </div>
+        <!--END BLOCK LOCATIONS-->
+        <!-- ======================================== -->
+        <!-- ======================================== -->
+        <!-- BLOCK LOCATIONS MAPS -->
+        <div id="map_loc" class="maps__map" data-aos="fade-in" data-aos-delay="100">
+
+        </div>
+
+        <!--END BLOCK LOCATIONS MAPS -->
+        <!-- ======================================== -->
+        <!-- ======================================== -->
+
+    </main>
+    @@include('_footer.html') @@include('_js_source.html')
+
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var center = {
+                lat: 50.4447127,
+                lng: 30.601249,
+            };
+            let mapMarkers = {};
+            // The map, centered at Uluru
+
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 6,
+                center: center,
+                mapTypeControl: false,
+                scrollwheel: false,
+                disableDefaultUI: false,
+                position: center,
+                map: map,
+                styles: [{
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#f5f5f5",
+                    }, ],
+                }, {
+                    elementType: "labels.icon",
+                    stylers: [{
+                        visibility: "off",
+                    }, ],
+                }, {
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#616161",
+                    }, ],
+                }, {
+                    elementType: "labels.text.stroke",
+                    stylers: [{
+                        color: "#f5f5f5",
+                    }, ],
+                }, {
+                    featureType: "administrative.land_parcel",
+                    stylers: [{
+                        visibility: "off",
+                    }, ],
+                }, {
+                    featureType: "administrative.land_parcel",
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#bdbdbd",
+                    }, ],
+                }, {
+                    featureType: "administrative.neighborhood",
+                    stylers: [{
+                        visibility: "off",
+                    }, ],
+                }, {
+                    featureType: "poi",
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#eeeeee",
+                    }, ],
+                }, {
+                    featureType: "poi",
+                    elementType: "labels.text",
+                    stylers: [{
+                        visibility: "off",
+                    }, ],
+                }, {
+                    featureType: "poi",
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#757575",
+                    }, ],
+                }, {
+                    featureType: "poi.park",
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#e5e5e5",
+                    }, ],
+                }, {
+                    featureType: "poi.park",
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#9e9e9e",
+                    }, ],
+                }, {
+                    featureType: "road",
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#ffffff",
+                    }, ],
+                }, {
+                    featureType: "road",
+                    elementType: "labels",
+                    stylers: [{
+                        visibility: "off",
+                    }, ],
+                }, {
+                    featureType: "road.arterial",
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#757575",
+                    }, ],
+                }, {
+                    featureType: "road.highway",
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#dadada",
+                    }, ],
+                }, {
+                    featureType: "road.highway",
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#616161",
+                    }, ],
+                }, {
+                    featureType: "road.local",
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#9e9e9e",
+                    }, ],
+                }, {
+                    featureType: "transit.line",
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#e5e5e5",
+                    }, ],
+                }, {
+                    featureType: "transit.station",
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#eeeeee",
+                    }, ],
+                }, {
+                    featureType: "water",
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#c9c9c9",
+                    }, ],
+                }, {
+                    featureType: "water",
+                    elementType: "labels.text",
+                    stylers: [{
+                        visibility: "off",
+                    }, ],
+                }, {
+                    featureType: "water",
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#9e9e9e",
+                    }, ],
+                }, ],
+            });
+
+            $(".locations__item address").each(function() {
+                let coord = $(this).data("coordinat"),
+                    text = $(this).text();
+
+                let marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(
+                        coord.split(",")[0],
+                        coord.split(",")[1]
+                    ),
+                    map: map,
+                    title: text,
+                    icon: "https://themes.upro.dev/logistics/wp-content/themes/logistics/img/point.svg",
+                });
+
+                marker.addListener("click", function(e) {
+                    window.open('https://www.google.com/maps/search/?api=1&query=' + coord, '_blank');
+                });
+
+                mapMarkers[$(this).data('id')] = marker;
+
+                $(this).click(function() {
+                    let marker = mapMarkers[$(this).data('id')];
+                    if (marker) {
+                        map.setZoom(15);
+                        map.panTo(marker.position);
+                    }
+                });
+            });
+        }
+    </script>
+
+    <script defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-pBlC3Ex6zwA0zIWMz4H93I3CZvYf8d0&amp;callback=initMap">
+    </script>
+
+
+</body>
+
+</html>

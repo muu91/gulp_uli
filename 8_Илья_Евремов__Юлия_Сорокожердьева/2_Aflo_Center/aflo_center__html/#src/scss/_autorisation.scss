@@ -1,0 +1,112 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// AUTHORATION
+.bl_authoration {
+  padding-bottom: 100px;
+  @media (max-width: 768px) {
+    padding-bottom: 60px;
+  }
+  .bl_authoration__content {
+    .bl_authoration__form {
+      border: 2px solid $border;
+      padding: 60px;
+      border-radius: 8px;
+      @media (max-width: 992px) {
+        padding: 30px;
+      }
+      @media (max-width: 425px) {
+        padding: 20px;
+      }
+      form {
+        .bl_authoration__inputs {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+          margin-bottom: 30px;
+          @media (max-width: 992px) {
+            gap: 20px 10px;
+          }
+          @media (max-width: 700px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+          }
+          @media (max-width: 600px) {
+            grid-template-columns: repeat(1, 1fr);
+            margin-bottom: 20px;
+          }
+          .bl_auth__input {
+            .input {
+              input {
+                width: 100%;
+                border: 2px solid $bg;
+              }
+            }
+            .forget {
+              color: $grey;
+              font-family: $Nun;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 135%;
+              width: 100%;
+              text-align: right;
+              margin-top: 10px;
+              transition: 0.3s;
+              &:hover {
+                transition: 0.3s;
+                color: $dark;
+              }
+            }
+          }
+        }
+        .bl_authoration__btns {
+          display: flex;
+          flex-direction: row;
+          @media (max-width: 700px) {
+            flex-wrap: wrap;
+          }
+          button {
+            margin-right: 20px;
+            @media (max-width: 700px) {
+              margin-bottom: 10px;
+              height: 44px;
+              padding: 14px 20px;
+              font-size: 12px;
+              margin-right: 10px;
+            }
+            &:last-child {
+              margin-right: 0;
+              @media (max-width: 700px) {
+                margin-bottom: 0;
+              }
+            }
+          }
+          .btn_green_reg {
+            background-color: $green;
+            border: 2px solid $green;
+          }
+          .btn_gos_uslugi {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            white-space: nowrap;
+            img {
+              display: block;
+              margin-left: 10px;
+              transform: translateY(-2px);
+            }
+          }
+          .btn_red_auth {
+            background-color: $green;
+            border: 2px solid $green;
+          }
+        }
+      }
+    }
+  }
+}
+
+// END AUTHORATION
+// ========================================

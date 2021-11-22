@@ -1,0 +1,191 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// SLICK SLIDER
+// ------------------------------
+
+// .slick-track {
+//     .slick-slide {
+//         outline: none;
+//     }
+// }
+// .slick-slider {
+//     position: static;
+// }
+// ------------------------------
+// ARROWS
+// .slick-arrow {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   z-index: 10;
+//   font-size: 0;
+//   width: 54px;
+//   height: 54px;
+//   background-repeat: no-repeat;
+//   background-size: 15px 25px;
+//   background-position: center center;
+//   background-color: #fff;
+//   border-radius: 50%;
+//   border: 1px solid $gold;
+//   transition: 0.3s;
+//   display: none;
+//   @media (max-width: 425px) {
+//     width: 40px;
+//     height: 40px;
+//     background-size: 12px 20px;
+//   }
+//   &:active,
+//   &:focus {
+//     outline: none;
+//   }
+//   &:hover {
+//     cursor: pointer;
+//     transition: 0.3s;
+//     opacity: 0.8;
+//   }
+// }
+
+// .slick-prev {
+//   left: 10%;
+//   background-image: url("../img/icons/arrow_left.svg");
+
+//   @media (max-width: 768px) {
+//     left: 30px;
+//   }
+//   @media (max-width: 425px) {
+//     left: 20px;
+//   }
+// }
+
+// .slick-next {
+//   right: 10%;
+//   background-image: url("../img/icons/arrow_right.svg");
+//   @media (max-width: 768px) {
+//     right: 30px;
+//   }
+//   @media (max-width: 768px) {
+//     right: 20px;
+//   }
+// }
+// END ARROWS
+// ------------------------------
+
+// DOTS
+// .slick-dots {
+//   position: absolute;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: space-between;
+//   top: 60px;
+//   left: 50%;
+//   transform: translateX(-195%);
+//   padding: 0;
+//   margin-top: 0;
+//   max-width: 320px;
+//   width: 100%;
+//   overflow: hidden;
+//   @media (max-width: 1300px) {
+//     transform: translateX(0);
+//     left: 20px;
+//     max-width: 250px;
+//   }
+//   @media (max-width: 992px) {
+//     left: 50%;
+//     transform: translateX(-50%);
+//     top: 34%;
+//   }
+//   // @media (max-width: 767px) {
+//   //     bottom: 50px;
+//   // }
+//   // @media (max-width: 450px) {
+//   //     bottom: -30px;
+//   // }
+//   li {
+//     list-style: none;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end;
+//     &:first-child {
+//       width: 15px;
+//       height: 15px;
+//       &::before {
+//         display: none;
+//       }
+//     }
+//     &::before {
+//       content: "";
+//       width: 100%;
+//       height: 2px;
+//       background-color: #dbddde;
+//       position: absolute;
+//       left: 0;
+//       top: 50%;
+//       transform: translateY(-50%);
+//       z-index: -1;
+//     }
+//     &:last-child {
+//       margin-right: 0;
+//     }
+//   }
+//   .active_li {
+//     &::before {
+//       background-color: $gold;
+//     }
+//     button {
+//       background-color: $gold;
+//     }
+//   }
+//   button {
+//     font-size: 0;
+//     width: 15px;
+//     height: 15px;
+//     padding: 0;
+//     border: none;
+//     background-color: #dbddde;
+//     border-radius: 50%;
+//     // @media (max-width: 1200px) {
+//     //     width: calc(30px + (56 - 30) *((100vw - 320px) / (1200 - 320)));
+//     // }
+//     &:hover {
+//       cursor: pointer;
+//     }
+//     &:active,
+//     &:focus {
+//       outline: none;
+//     }
+//   }
+//   .slick-active {
+//     position: relative;
+//     z-index: 10;
+//     button {
+//       width: 15px;
+//       height: 15px;
+//       background: $grey1;
+
+//       &:hover {
+//         cursor: pointer;
+//       }
+//     }
+//   }
+// }
+// END DOTS
+// ------------------------------
+// OTHERS
+
+// Чтобы картинки не исчезали)
+// .slick-list {
+//     width: 100%;
+// }
+
+// ------------------------------
+// END SLICK SLIDER
+// ========================================

@@ -1,0 +1,97 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// BLOCK HEADER
+.main__hidden_house {
+    background-color: $black_1a;
+}
+
+// ========================================
+// ========================================
+// BLOCK MOVEMENT HIDDEN HOUSE
+.bl_movement__hh {
+    background-color: $black_1a;
+    .movement__body {
+        .movement__text {
+            h2 {
+                max-width: 350px;
+                color: #fff;
+                font-weight: 400;
+            }
+            p {
+                color: #fff;
+                span {
+                    display: block;
+                    font-size: 12px;
+                    @media (max-width: 767px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//END BLOCK MOVEMENT HIDDEN HOUSE
+// ========================================
+// ========================================
+// BLOCK KEY FEATURES 2
+.bl_key_features_white {
+    padding-top: 0;
+    h2 {
+        color: #fff;
+    }
+    .key_features__items {
+        .key_features__item {
+            h3 {
+                color: #fff;
+            }
+            ul {
+                li {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// END BLOCK KEY FEATURES 2
+// ========================================
+// ========================================
+// BLOCK MOVEMENT HH
+.bl_movement__hh_2 {
+    background-color: $black_1a;
+    margin-bottom: 194px;
+    @media (max-width: 767px) {
+        margin-bottom: 77px;
+    }
+}
+
+//END BLOCK MOVEMENT HH
+// ========================================
+// ========================================
+// BLOCK MOVEMENT HH 2
+.bl_movement__hh_3 {
+    background-color: $black_1a;
+    padding-top: 0;
+    .movement__body {
+        .movement__images {
+            .movement__img3 {
+                left: auto;
+                right: 0;
+            }
+            .movement__img4 {
+                left: 0;
+                right: auto;
+            }
+        }
+    }
+}
+
+// END BLOCK MOVEMENT HH 2
+// ========================================
+// ========================================

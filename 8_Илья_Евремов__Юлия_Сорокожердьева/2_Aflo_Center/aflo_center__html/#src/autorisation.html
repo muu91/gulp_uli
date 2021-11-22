@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('_head.html')
+</head>
+
+<body>
+    <div class="main_wrapper">
+        @@include('_header.html')
+        <main>
+            <!-- ======================================== -->
+            <!-- CRUMBS -->
+            <section class="bl_crumbs">
+                <div class="container">
+                    <div class="bl_crumbs__content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Авторизация
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- END CRUMBS -->
+            <!-- ======================================== -->
+            <!-- AUTHORATION -->
+            <div class="bl_authoration">
+                <div class="container">
+                    <div class="bl_authoration__content">
+                        <h1>
+                            Авторизация
+                        </h1>
+                        <div class="bl_authoration__form">
+                            <form action="#">
+                                <div class="bl_authoration__inputs">
+                                    <div class="bl_auth__input">
+                                        <div class="input">
+                                            <input type="email" required>
+                                            <span class="placeholder">
+                                                e-mail
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bl_auth__input">
+                                        <div class="input">
+                                            <input type="password" required>
+                                            <span class="placeholder">
+                                                Пароль
+                                            </span>
+                                        </div>
+                                        <a href="#" class="forget">
+                                            Забыли пароль?
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bl_authoration__btns">
+                                    <button class="btn_red ">
+                                        Войти
+                                    </button>
+                                    <button class="btn_bg btn_gos_uslugi">
+                                        Войти через
+                                        <img src="./img/other/gos_uslugi.png" alt="gos_uslugi">
+                                    </button>
+                                    <button class="btn_red btn_red_auth">
+                                        Зарегистрироваться
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END AUTHORATION -->
+            <!-- ======================================== -->
+
+
+
+        </main>
+        @@include('_footer.html') @@include('_popups.html') @@include('_js_source.html')
+
+</body>
+
+</html>

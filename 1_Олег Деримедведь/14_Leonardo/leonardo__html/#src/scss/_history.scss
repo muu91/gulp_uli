@@ -1,0 +1,80 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// HEADER HISTORY
+.bl_header__history {
+  background-image: url("../img/header_bg/header_bg2.jpg");
+}
+
+// END HEADER HISTORY
+// ========================================
+// HISTORY
+.bl_history {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  @media (max-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .container {
+    max-width: 792px;
+  }
+  h3 {
+    margin-bottom: 32px;
+    @media (max-width: 768px) {
+      margin-bottom: 24px;
+    }
+  }
+  .bl_history__personal {
+    margin-top: 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @media (max-width: 768px) {
+      margin-top: 40px;
+    }
+  }
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    .personal__img {
+      // max-width: 92px;
+      // min-width: 92px;
+      // height: 92px;
+      max-width: 200px;
+      min-width: 200px;
+      height: 200px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+      }
+    }
+    figcaption {
+      font-family: $AG;
+      font-size: 16px;
+      line-height: 128%;
+      color: $black_16;
+      font-weight: 400;
+      text-align: right;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+      span {
+        display: block;
+        font-weight: 700;
+      }
+    }
+  }
+}
+// END HISTORY
+// ========================================

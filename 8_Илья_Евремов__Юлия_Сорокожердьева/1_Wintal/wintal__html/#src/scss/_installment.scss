@@ -1,0 +1,79 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// INSTALLMENT
+.bl_installment {
+  .bl_installment__content {
+    h1 {
+      margin-bottom: 30px;
+    }
+    .bl_installment__items {
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+        @media (max-width: 500px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+}
+.moneys {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  min-height: 450px;
+  @media (max-width: 500px) {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  ul {
+    display: grid;
+    gap: 30px;
+    @media (max-width: 1024px) {
+      gap: 20px;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      padding-top: 60px;
+      &:first-child {
+        @media (max-width: 500px) {
+          padding-top: 0;
+        }
+      }
+      .moneys__img {
+        min-height: 120px;
+        max-height: 120px;
+        height: 120px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+        img {
+          display: block;
+          height: inherit;
+          width: 100%;
+          margin: 0 auto;
+          object-position: center;
+          object-fit: contain;
+        }
+      }
+      h3 {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+// END INSTALLMENT
+// ========================================

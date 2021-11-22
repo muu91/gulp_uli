@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('_head.html')
+</head>
+
+<!-- <div class="swiper">
+    <div class="swiper-wrapper">
+        <div class=" swiper-slide">
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev">
+        <img src="./img/icons/arrow_left_slide.svg" class="svg" alt="slide_left">
+        <img src="./img/icons/arrow_left_slide_mobile.svg" alt="slide_left">
+    </div>
+    <div class="swiper-button-next">
+        <img src="./img/icons/arrow_right_slide.svg" class="svg" alt="slide_right">
+        <img src="./img/icons/arrow_right_slide_mobile.svg" alt="slide_right">
+    </div>
+</div> -->
+
+<body>
+    <div class="main_wrapper">
+        @@include('_header.html')
+        <main>
+            <!-- ======================================== -->
+            <!-- BLOCK HEADER -->
+            <section class="bl_header">
+                <div class="container">
+                    <div class="bl_header__content">
+                        <div class="bl_header__swiper swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="bl_header__slide swiper-slide bl_header__slide1">
+                                    <div class="bl_header__top">
+                                        <div class="number">
+                                            1
+                                        </div>
+                                        <div class="bl_header__title">
+                                            <div class="title__mini">
+                                                Акция
+                                            </div>
+                                            <h1>
+                                                <span>Программа</span> «Экспресс-УЗИ»
+                                            </h1>
+                                        </div>
+                                    </div>
+                                    <div class="bl_header__bottom">
+                                        <div class="bl_header__text">
+                                            <div class="text__price text__price__green">
+                                                <p>
+                                                    1 700 ₽
+                                                </p>
+                                                <del>
+                                                    3 450 ₽
+                                                </del>
+                                            </div>
+                                            <p>
+                                                Комплексное обследование органов: щитовидная железа, лимфоузлы, печень,
+                                                желчный пузырь, поджелудочная железа, селезенка,
+                                                почки, надпочечники, мочеточник.
+                                            </p>
+                                            <a href="#" class="btn_red_dark">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                        <div class="bl_header__img">
+                                            <img src="./img/index/1_header_slide/slide1.png" alt="slide">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" bl_header__slide bl_header__slide2 swiper-slide ">
+                                    <div class="bl_header__top">
+                                        <div class="number">
+                                            2
+                                        </div>
+                                        <div class="bl_header__title">
+                                            <div class="title__mini">
+                                                Спецпредложение
+                                            </div>
+                                            <h2>
+                                                <span>Обследование на</span> Covid-19
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="bl_header__bottom">
+                                        <div class="bl_header__text">
+                                            <div class="text__price text__price__red">
+                                                <p>
+                                                    2 500 ₽
+                                                </p>
+                                                <del>
+                                                    3 200 ₽
+                                                </del>
+                                            </div>
+                                            <p>
+                                                Комплексное обследование на Covid-19: ПРЦ-мазок и кровь на антитела в
+                                                аккредитованной Роспотребнадзором лаборатории
+                                                «Афло-центр»
+                                            </p>
+                                            <a href="#" class="btn_red_dark">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                        <div class="bl_header__img">
+                                            <img src="./img/index/1_header_slide/slide2.png" alt="slide">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" bl_header__slide bl_header__slide3 swiper-slide">
+                                    <div class="bl_header__top">
+                                        <div class="number">
+                                            3
+                                        </div>
+                                        <div class="bl_header__title">
+                                            <div class="title__mini">
+                                                Акция
+                                            </div>
+                                            <h2>
+                                                <span>Накопительная</span> карта
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="bl_header__bottom">
+                                        <div class="bl_header__text">
+                                            <div class="text__price text__price__dark">
+                                                <p>
+                                                    5%
+                                                </p>
+                                            </div>
+                                            <p>
+                                                При накоплении услуг на сумму 5 000 ₽ предоставляется дисконтная карта
+                                                со скидкой 5 %
+                                            </p>
+                                            <a href="#" class="btn_red_dark">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                        <div class="bl_header__img">
+                                            <img src="./img/index/1_header_slide/slide3.png" alt="slide">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev">
+                                <img src="./img/icons/arrow_left_slide.svg" class="svg" alt="slide_left">
+                                <img src="./img/icons/arrow_left_slide_mobile.svg" alt="slide_left">
+                            </div>
+                            <div class="swiper-button-next">
+                                <img src="./img/icons/arrow_right_slide.svg" class="svg" alt="slide_right">
+                                <img src="./img/icons/arrow_right_slide_mobile.svg" alt="slide_right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END BLOCK HEADER -->
+            <!-- ======================================== -->
+            <!-- POP SERVICES AND SPEC -->
+            <section class="bl_ser_spec">
+                <div class="container">
+                    <div class="bl_ser_spec__content">
+                        <div class="pop_ser">
+                            <h2>
+                                Популярные услуги
+                            </h2>
+                            <div class="pop_ser__search">
+                                <form action="#">
+                                    <input type="text" placeholder="Поиск по услугам и докторам">
+                                    <button>
+                                        <img src="./img/header/search.svg" class="svg" alt="search">
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="pop_ser__services">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Получение справок
+                                            <img src="./img/icons/arrow_right_mini_dark.svg" alt="arrow">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Прием специалистов
+                                            <img src="./img/icons/arrow_right_mini_dark.svg" alt="arrow">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Физиопроцедуры
+                                            <img src="./img/icons/arrow_right_mini_dark.svg" alt="arrow">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Лечебные процедуры
+                                            <img src="./img/icons/arrow_right_mini_dark.svg" alt="arrow">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="all_services">
+                                    Все услуги
+                                    <img src="./img/icons/arrow_right_slide_red.svg" class="svg" alt="arrow_red">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="res_spec">
+                            <h2>
+                                Прием специалистов
+                            </h2>
+                            <div class="res_spec__specialist">
+                                <ul>
+                                    <li>
+                                        <h4>
+                                            Невролог
+                                        </h4>
+                                        <div class="specialist__img">
+                                            <img src="./img/index/2_reception/reception1.png" alt="reseption">
+                                        </div>
+                                        <a href="#" class="specialist__hover">
+                                            <img src="./img/icons/arrow_right_slide.svg" alt="arrow_right_slide">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            Стоматолог
+                                        </h4>
+                                        <div class="specialist__img">
+                                            <img src="./img/index/2_reception/reception2.png" alt="reseption">
+                                        </div>
+                                        <a href="#" class="specialist__hover">
+                                            <img src="./img/icons/arrow_right_slide.svg" alt="arrow_right_slide">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            Психолог
+                                        </h4>
+                                        <div class="specialist__img">
+                                            <img src="./img/index/2_reception/reception3.png" alt="reseption">
+                                        </div>
+                                        <a href="#" class="specialist__hover">
+                                            <img src="./img/icons/arrow_right_slide.svg" alt="arrow_right_slide">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            Педиатр
+                                        </h4>
+                                        <div class="specialist__img">
+                                            <img src="./img/index/2_reception/reception4.png" alt="reseption">
+                                        </div>
+                                        <a href="#" class="specialist__hover">
+                                            <img src="./img/icons/arrow_right_slide.svg" alt="arrow_right_slide">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            Гинеколог
+                                        </h4>
+                                        <div class="specialist__img">
+                                            <img src="./img/index/2_reception/reception5.png" alt="reseption">
+                                        </div>
+                                        <a href="#" class="specialist__hover">
+                                            <img src="./img/icons/arrow_right_slide.svg" alt="arrow_right_slide">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            Все <br> специалисты
+                                        </h4>
+                                        <div class="specialist__img">
+                                            <!-- <img src="./img/index/2_reception/reception1.png" alt="reseption"> -->
+                                        </div>
+                                        <a href="#" class="specialist__hover">
+                                            <img src="./img/icons/arrow_right_slide.svg" alt="arrow_right_slide">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END POP SERVICES AND SPEC -->
+            <!-- ======================================== -->
+            <!-- BRANCHES -->
+            <section class="bl_branches">
+                <div class="container">
+                    <div class="bl_branches__content">
+                        <h2>
+                            Филиалы
+                        </h2>
+                        <div class="swiper bl_branches__swiper ">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide ">
+                                    <a href="#"></a>
+                                    <div class="bl_branches__img">
+                                        <img src="./img/index/3_branches/branch1.png" alt="branches">
+                                    </div>
+                                    <h3>
+                                        МЦ на Володарского
+                                    </h3>
+                                    <div class="bl_branches__bottom">
+                                        <a href="tel:+78332680303">
+                                            +7 8332 <span>68-03-03</span>
+                                            <img src="./img/icons/phone.svg" alt="phone">
+                                        </a>
+                                        <address>
+                                            <img src="./img/icons/map_icon.svg" alt="map_icon">
+                                            г. Киров, ул. Володарского, д.60
+                                        </address>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"></a>
+                                    <div class="bl_branches__img">
+                                        <img src="./img/index/3_branches/branch2.png" alt="branches">
+                                    </div>
+                                    <h3>
+                                        МЦ на Октябрьском
+                                    </h3>
+                                    <div class="bl_branches__bottom">
+                                        <a href="tel:+78332680303">
+                                            +7 8332 <span>68-03-03</span>
+                                            <img src="./img/icons/phone.svg" alt="phone">
+                                        </a>
+                                        <address>
+                                            <img src="./img/icons/map_icon.svg" alt="map_icon">
+                                            г. Киров, Октябрьский пр-т, д.29а
+                                        </address>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"></a>
+                                    <div class="bl_branches__img">
+                                        <img src="./img/index/3_branches/branch3.png" alt="branches">
+                                    </div>
+                                    <h3>
+                                        МЦ на Некрасова
+                                    </h3>
+                                    <div class="bl_branches__bottom">
+                                        <a href="tel:+78332680303">
+                                            <img src="./img/icons/phone.svg" alt="phone">
+                                            +7 8332 <span>68-03-03</span>
+                                        </a>
+                                        <address>
+                                            <img src="./img/icons/map_icon.svg" alt="map_icon">
+                                            г. Киров, ул. Некрасова, 16а
+                                        </address>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"></a>
+                                    <div class="bl_branches__img">
+                                        <!-- <img src="./img/index/3_branches/branch3.png" alt="branches"> -->
+                                    </div>
+                                    <h3>
+                                        МЦ на Некрасова
+                                    </h3>
+                                    <div class="bl_branches__bottom">
+                                        <a href="tel:+78332680303">
+                                            <img src="./img/icons/phone.svg" alt="phone">
+                                            +7 8332 <span>68-03-03</span>
+                                        </a>
+                                        <address>
+                                            <img src="./img/icons/map_icon.svg" alt="map_icon">
+                                            г. Киров, ул. Некрасова, 16а
+                                        </address>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"></a>
+                                    <div class="bl_branches__img">
+                                        <!-- <img src="./img/index/3_branches/branch3.png" alt="branches"> -->
+                                    </div>
+                                    <h3>
+                                        МЦ на Некрасова
+                                    </h3>
+                                    <div class="bl_branches__bottom">
+                                        <a href="tel:+78332680303">
+                                            <img src="./img/icons/phone.svg" alt="phone">
+                                            +7 8332 <span>68-03-03</span>
+                                        </a>
+                                        <address>
+                                            <img src="./img/icons/map_icon.svg" alt="map_icon">
+                                            г. Киров, ул. Некрасова, 16а
+                                        </address>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"></a>
+                                    <div class="bl_branches__img">
+                                        <!-- <img src="./img/index/3_branches/branch3.png" alt="branches"> -->
+                                    </div>
+                                    <h3>
+                                        МЦ на Некрасова
+                                    </h3>
+                                    <div class="bl_branches__bottom">
+                                        <a href="tel:+78332680303">
+                                            <img src="./img/icons/phone.svg" alt="phone">
+                                            +7 8332 <span>68-03-03</span>
+                                        </a>
+                                        <address>
+                                            <img src="./img/icons/map_icon.svg" alt="map_icon">
+                                            г. Киров, ул. Некрасова, 16а
+                                        </address>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <!-- <div class="swiper-pagination"></div> -->
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev">
+                                <img src="./img/icons/arrow_left_slide.svg" class="svg" alt="slide_left">
+                                <img src="./img/icons/arrow_left_slide_mobile_red.svg" alt="slide_left">
+                            </div>
+                            <div class="swiper-button-next">
+                                <img src="./img/icons/arrow_right_slide.svg" class="svg" alt="slide_right">
+                                <img src="./img/icons/arrow_right_slide_mobile_red.svg" alt="slide_right">
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END BRANCHES -->
+            <!-- ======================================== -->
+            <!-- NEWS -->
+            <section class="bl_news">
+                <div class="container">
+                    <div class="bl_news__content">
+                        <div class="bl_news__title">
+                            <h2>
+                                Новости
+                            </h2>
+                            <a href="#" class="btn_red_mini_2">
+                                Все новости
+                                <img src="./img/icons/arrow_right_slide_mobile_red.svg" alt="arrow_right_slide"
+                                    class="svg">
+                            </a>
+                        </div>
+                        <div class="swiper bl_news__swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide ">
+                                    <a href="#"></a>
+                                    <div class="bl_news__img">
+                                        <img src="./img/index/4_news/news1.png" alt="news">
+                                    </div>
+                                    <div class="bl_news__date">
+                                        26 августа 2021
+                                    </div>
+                                    <h3>
+                                        Акция для спортсменов, выезжающих на соревнования
+                                    </h3>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <a href="#"></a>
+                                    <div class="bl_news__img">
+                                        <img src="./img/index/4_news/news2.png" alt="news">
+                                    </div>
+                                    <div class="bl_news__date">
+                                        26 августа 2021
+                                    </div>
+                                    <h3>
+                                        График работы "Афло - центра" в праздничные дни с 1 по 10 мая
+                                    </h3>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"></a>
+                                    <div class="bl_news__img">
+                                        <img src="./img/index/4_news/news3.png" alt="news">
+                                    </div>
+                                    <div class="bl_news__date">
+                                        05 декабря 2018
+                                    </div>
+                                    <h3>
+                                        "Афло-центр" награжден дипломом "100 лучших товаров россии"
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-pagination"></div> -->
+                            <div class="swiper-button-prev">
+                                <img src="./img/icons/arrow_left_slide.svg" class="svg" alt="slide_left">
+                                <img src="./img/icons/arrow_left_slide_mobile_red.svg" alt="slide_left">
+                            </div>
+                            <div class="swiper-button-next">
+                                <img src="./img/icons/arrow_right_slide.svg" class="svg" alt="slide_right">
+                                <img src="./img/icons/arrow_right_slide_mobile_red.svg" alt="slide_right">
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END NEWS -->
+            <!-- ======================================== -->
+            <!-- STOCK -->
+            <section class="bl_stock">
+                <div class="container">
+                    <div class="bl_stock__content">
+                        <div class="header_title">
+                            <h2>
+                                Акции
+                            </h2>
+                            <a href="#" class="btn_red_mini_2">
+                                Все акции
+                                <img src="./img/icons/arrow_right_slide_mobile_red.svg" alt="arrow_right_slide"
+                                    class="svg">
+                            </a>
+                        </div>
+                        <div class="swiper bl_stock__swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide ">
+                                    <a href="#"></a>
+                                    <img src="./img/icons/arrow_right_slide.svg" class="svg" alt="slide_left">
+
+                                    <div class="bl_stock__date">
+                                        26 августа 2021
+                                    </div>
+                                    <h3>
+                                        Каждому пенсионеру, скидка 5%
+                                    </h3>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <a href="#"></a>
+                                    <img src="./img/icons/arrow_right_slide.svg" class="svg" alt="slide_left">
+                                    <div class="bl_stock__date">
+                                        26 августа 2021
+                                    </div>
+                                    <h3>
+                                        Комплексное обследование на COVID-19!
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-pagination"></div> -->
+                            <div class="swiper-button-prev">
+                                <img src="./img/icons/arrow_left_slide.svg" class="svg" alt="slide_left">
+                                <img src="./img/icons/arrow_left_slide_mobile_red.svg" alt="slide_left">
+                            </div>
+                            <div class="swiper-button-next">
+                                <img src="./img/icons/arrow_right_slide.svg" class="svg" alt="slide_right">
+                                <img src="./img/icons/arrow_right_slide_mobile_red.svg" alt="slide_right">
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END STOCK -->
+            <!-- ======================================== -->
+            <!-- MAP BRANCHES -->
+            <section class="bl_map_branches">
+                <div class="container">
+                    <div class="bl_map_branches__content">
+                        <h2>
+                            Филиалы на карте
+                        </h2>
+                        <div class="bl_map_branches__body">
+                            <div class="bl_map_branches__menu__mobile">
+                                <span>
+                                    Филиал
+                                </span>
+                                <select name="select" id="select_mobile">
+                                    <option value="1" selected>
+                                        <h4>
+                                            МЦ на Володарского
+                                        </h4>
+                                    </option>
+                                    <option value="2">
+                                        <h4>
+                                            МЦ на Октябрьском
+                                        </h4>
+                                    </option>
+                                    <option value="3">
+                                        <h4>
+                                            МЦ на Некрасова
+                                        </h4>
+                                    </option>
+                                    <option value="4">
+                                        <h4>
+                                            МЦ на Некрасова
+                                        </h4>
+                                    </option>
+                                    <option value="5">
+                                        <h4>
+                                            МЦ на Некрасова
+                                        </h4>
+                                    </option>
+                                    <option value="6">
+                                        <h4>
+                                            МЦ на Некрасова
+                                        </h4>
+                                    </option>
+                                    <option value="7">
+                                        <h4>
+                                            МЦ на Некрасова
+                                        </h4>
+                                    </option>
+
+                                </select>
+                            </div>
+                            <div class="bl_map_branches__menu">
+                                <ul>
+                                    <li>
+                                        <h4>
+                                            МЦ на Володарского
+                                        </h4>
+                                        <address>
+                                            г. Киров, ул. Володарского, д.60
+                                        </address>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            МЦ на Октябрьском
+                                        </h4>
+                                        <address>
+                                            г. Киров, Октябрьский пр-т, д.29а
+                                        </address>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            МЦ на Некрасова
+                                        </h4>
+                                        <address>
+                                            г. Киров, ул. Некрасова, д.16а
+                                        </address>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            Medical Fitness
+                                        </h4>
+                                        <address>
+
+                                        </address>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            МЦ Афло-центр Глазов
+                                        </h4>
+                                        <address>
+
+                                        </address>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            МЦ Афло-центр Шарья
+                                        </h4>
+                                        <address>
+                                            Г. Шарья, ул. Октябрьская, 39
+                                        </address>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bl_map_branches__map" id="bl_map_branches"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END MAP BRANCHES -->
+            <!-- ======================================== -->
+            <!-- ABOUT -->
+            <section class="bl_about">
+                <div class="container">
+                    <div class="bl_about__content">
+                        <div class="bl_about__top">
+                            <div class="bl_about__slider">
+                                <div class="swiper bl_about__swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class=" swiper-slide">
+                                            <img src="./img/index/6_about/about1.png" alt="about_slide">
+                                        </div>
+                                        <div class=" swiper-slide">
+                                            <img src="./img/index/4_news/news2.png" alt="about_slide">
+                                        </div>
+                                        <div class=" swiper-slide">
+                                            <img src="./img/other/doctor1.png" alt="about_slide">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-pagination"></div>
+
+                                    <div class="swiper-button-prev">
+                                        <img src="./img/icons/arrow_left_slide.svg" class="svg" alt="slide_left">
+                                        <img src="./img/icons/arrow_left_slide_mobile.svg" alt="slide_left">
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <img src="./img/icons/arrow_right_slide.svg" class="svg" alt="slide_right">
+                                        <img src="./img/icons/arrow_right_slide_mobile.svg" alt="slide_right">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bl_about__text">
+                                <h2>
+                                    О нас
+                                </h2>
+                                <p>
+                                    Работаем и развиваемся <a href="#"> для наших клиентов</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bl_about__center">
+                            <div class="bl_about__amount">
+                                <div class="amount">
+                                    46
+                                </div>
+                                <p>
+                                    специалистов в штате
+                                </p>
+                            </div>
+                            <div class="bl_about__desc">
+                                <p>
+                                    «Афло» в переводе с латинского языка, языка медицины, – «вдохновлять», «дышать».
+                                    Наша работа и пациенты вдохновляют нас
+                                    на успех в оздоровлении и лечении людей. Мы делаем все возможное, чтобы посещение
+                                    «Афло-центра» было полезным и приятным. Мы существуем для улучшения самочувствия
+                                    детей и взрослых с применением
+                                    современных медицинских знаний и технологий.
+                                </p>
+                                <a href="#" class="btn_red_mini_2">
+                                    О компании
+                                    <img src="./img/icons/arrow_right_slide_mobile_red.svg" alt="arrow_right_slide"
+                                        class="svg">
+                                </a>
+                            </div>
+                            <div class="bl_about__license">
+                                <img src="./img/icons/doc.svg" alt="doc">
+                                <p>
+                                    На оказание медицинских услуг получена лицензия ЛО-43-01-002253, выдана
+                                    министерством здравоохранения Кировской области
+                                    16.03.2016 г., срок действия лицензии - БЕССРОЧНО .
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bl_about__bottom">
+                            <h4>
+                                Объем оказанных услуг за 2021 год
+                            </h4>
+                            <ul>
+                                <li>
+                                    <p>
+                                        консультаций
+                                    </p>
+                                    <div class="number">
+                                        12 350
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>
+                                        профосмотров и выданных справок
+                                    </p>
+                                    <div class="number">
+                                        >5 500
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>
+                                        проведенных лабораторных исследований
+                                    </p>
+                                    <div class="number">
+                                        2 340
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END ABOUT -->
+            <!-- ======================================== -->
+            <!-- FORM -->
+            <section class="bl_form">
+                <div class="container">
+                    <div class="bl_form__content">
+                        <div class="bl_form__body">
+                            <h2>
+                                Обратная связь
+                            </h2>
+                            <p>
+                                Оставьте контактные данные, свяжемся с Вами в ближайшее рабочее время
+                            </p>
+                            <div class="bl_form__form">
+                                <form action="#">
+                                    <h4>
+                                        Вам необходимо
+                                    </h4>
+                                    <div class="form__menu">
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-filter_tab="form1">
+                                                    Консультация врача
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-filter_tab="form2">
+                                                    Обратный звонок
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="form__forms">
+                                        <div class="form__form form__1" data-tab_content="form1">
+                                            <div class="input">
+                                                <input type="text" required>
+                                                <span class="placeholder">
+                                                    Ваше имя
+                                                </span>
+                                            </div>
+                                            <div class="input">
+                                                <input type="tel" required>
+                                                <span class="placeholder">
+                                                    Номер телефона
+                                                </span>
+                                            </div>
+                                            <select name="select" id="select_form">
+                                                <option value="1" selected>
+                                                    Услуга
+                                                </option>
+                                                <option value="2">
+                                                    Услуга 2
+                                                </option>
+                                                <option value="3">
+                                                    Услуга 3
+                                                </option>
+                                                <option value="4">
+                                                    Услуга 4
+                                                </option>
+                                                <option value="5">
+                                                    Услуга 5
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="form__form form__2" data-tab_content="form2">
+                                            <div class="input">
+                                                <input type="text" required>
+                                                <span class="placeholder">
+                                                    Ваше имя
+                                                </span>
+                                            </div>
+                                            <div class="input">
+                                                <input type="tel" required>
+                                                <span class="placeholder">
+                                                    Номер телефона
+                                                </span>
+                                            </div>
+                                            <div class="textarea">
+                                                <textarea required></textarea>
+                                                <span class="textarea_place">
+                                                    Комментарий
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main_checkbox">
+                                        <label>
+                                            <div class="checkbox">
+                                                <input type="checkbox" checked>
+                                                <span></span>
+                                            </div>
+                                            <p>
+                                                Согласен на обработку персональных данных
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <button class="btn_red">
+                                        Отправить
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- <img src="./img/other/doctor1.png" alt="doctor1"> -->
+                    </div>
+                </div>
+            </section>
+            <!-- END FORM -->
+            <!-- ======================================== -->
+
+        </main>
+        @@include('_footer.html') @@include('_popups.html') @@include('_js_source.html')
+
+</body>
+
+</html>

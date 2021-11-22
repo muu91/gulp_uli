@@ -1,0 +1,212 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// ========================================
+// BLOCK HEADER 2 2 
+.bl_header2_2 {
+    background-image: url("../img/change/header_bg2.png");
+    .bl_header__content {
+        h1 {
+            max-width: 900px;
+        }
+    }
+} // END BLOCK HEADER 2 2
+// ========================================
+// BLOCK QUOTES 
+.bl_quotes {
+    padding-bottom: 150px;
+    @media (max-width: 767px) {
+        padding-bottom: 50px;
+    }
+    .bl_quotes__content {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-start;
+        }
+        img {
+            display: block;
+            width: 85px;
+            height: 65px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            @media (max-width: 991px) {
+                width: 65px;
+                height: auto;
+            }
+            @media (max-width: 767px) {
+                width: 50px;
+                height: auto;
+            }
+            @media (max-width: 450px) {
+                width: 30px;
+                height: auto;
+            }
+        }
+        .bl_quotes__text {
+            width: 40%;
+            @media (max-width: 767px) {
+                width: 85%;
+            }
+            &:last-child {
+                margin-left: 70px;
+                @media (max-width: 991px) {
+                    margin-left: 50px;
+                }
+                @media (max-width: 767px) {
+                    margin-left: 0;
+                    margin-top: 15px;
+                }
+            }
+            p {
+                font-weight: 400;
+                margin-bottom: 20px;
+                font-size: 30px;
+                font-style: italic;
+                @media (max-width: 991px) {
+                    font-size: 26px;
+                }
+                @media (max-width: 767px) {
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// END BLOCK QUOTES
+// ========================================
+// BLOCK MAIN UL 2 2
+.bl_main_ul2_2 {
+    margin-top: 0;
+    padding-top: 20px;
+    .bl_main_ul__content {
+        ul {
+            li {
+                margin-bottom: 180px;
+                @media (max-width: 767px) {
+                    margin-bottom: 50px;
+                }
+                .bl_main_ul__item {
+                    @media (max-width: 767px) {
+                        flex-direction: column-reverse;
+                    }
+                    .bl_main_ul__text {
+                        @media (max-width: 767px) {
+                            margin-bottom: 0;
+                        }
+                        p {
+                            margin-bottom: 20px;
+                            @media (max-width: 991px) {
+                                font-size: 20px;
+                            }
+                            @media (max-width: 767px) {
+                                font-size: 16px;
+                                margin-bottom: 15px;
+                            }
+                        }
+                        .white_btn {
+                            border-radius: 14px;
+                            font-family: $Gordita;
+                            font-size: 26px;
+                            line-height: 100%;
+                            font-weight: 700;
+                            color: #000;
+                            transition: 0.3s;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            white-space: nowrap;
+                            width: fit-content;
+                            min-width: 256px;
+                            padding: 20px;
+                            border: 2px solid $red;
+                            margin-top: 50px;
+                            @media (max-width: 991px) {
+                                // display: none;
+                                font-size: 20px;
+                            }
+                            @media (max-width: 767px) {
+                                // display: none;
+                                font-size: 16px;
+                                min-width: 200px;
+                                margin-top: 30px;
+                                padding: 15px;
+                            }
+                            &:hover {
+                                transition: 0.3s;
+                                // opacity: 0.6;
+                                background-color: $red;
+                                color: #fff;
+                                border: 2px solid $red;
+                            }
+                        }
+                    }
+                    .bl_main_ul__img {
+                        width: 40%;
+                        @media (max-width: 1200px) {
+                            width: 46%;
+                        }
+                        @media (max-width: 767px) {
+                            margin-bottom: 20px;
+                            width: auto;
+                            max-width: 470px;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    margin-bottom: 0;
+                    .bl_main_ul__item {
+                        @media (max-width: 767px) {
+                            flex-direction: column-reverse;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} // END BLOCK MAIN UL 2 2
+// ========================================
+// MAKE LIFE 2
+.bl_make_life3 {
+    background-image: url("../img/change/footer_bg2.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    @media (max-width: 450px) {
+        background-size: auto 100%;
+    }
+    &:after {
+        display: none;
+    }
+    .bl_make_life__content {
+        h2 {
+            color: #000;
+        }
+        p {
+            color: #000;
+        }
+        .orange_btn {
+            background: $lingr2;
+            color: #fff;
+            &:hover {
+                transition: 0.3s;
+                // opacity: 0.6;
+                background: linear-gradient(to right, #FF5C0D, #FFA700);
+            }
+        }
+    }
+} // END MAKE LIFE 2
+// ========================================

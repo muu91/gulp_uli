@@ -1,0 +1,286 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// ========================================
+// BLOCK  HEADER
+.bl_header_services {
+    min-height: 783px;
+    padding-top: 160px;
+    padding-bottom: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 400px) {
+        padding-top: 220px;
+    }
+    .bl_header__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        @media (max-width: 767px) {
+            flex-direction: column-reverse;
+        }
+        .bl_header__text {
+            width: 45%;
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+            h1 {
+                margin-bottom: 30px;
+            }
+            p {
+                display: block;
+                margin-bottom: 35px;
+                line-height: 150%;
+            }
+            a {
+                display: block;
+                color: $blue;
+                font-size: 20px;
+                font-family: $Gibson;
+                font-weight: 900;
+                border-radius: 3px;
+                background-color: $blue;
+                color: #fff;
+                padding: 20px 60px;
+                width: fit-content;
+                transition: 0.3s;
+                &:hover {
+                    transition: 0.3s;
+                    opacity: 0.6;
+                }
+                @media (max-width: 767px) {
+                    margin: 0 auto;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        .bl_header__img {
+            width: 45%;
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+//END BLOCK HEADER
+// ========================================
+// ========================================
+// BLOCK PARNTERS
+.bl_partners {
+    background-color: #f7f7f7;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    @media (max-width: 767px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    h2 {
+        margin-bottom: 60px;
+        @media (max-width: 767px) {
+            margin-bottom: 40px;
+        }
+    }
+    .bl_partners__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media (max-width: 767px) {
+            flex-direction: column-reverse;
+        }
+        .bl_partners__item {
+            width: 48%;
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 40px;
+            padding: 70px;
+            @media (max-width: 991px) {
+                padding: 70px 50px;
+            }
+            @media (max-width: 767px) {
+                width: 100%;
+                padding: 50px 30px;
+            }
+            .item__img {
+                border-radius: 10px;
+                box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+                margin-bottom: 50px;
+                @media (max-width: 767px) {
+                    max-width: 400px;
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+                }
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            // &:nth-child(2) {
+            //     .item__img {
+            //         box-shadow: none;
+            //         border-radius: 10px;
+            //         box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+            //         background-color: #fafafa!important;
+            //         margin-bottom: 30px;
+            //         &:first-child {
+            //             position: relative;
+            //             z-index: 10;
+            //         }
+            //         img {
+            //             border-radius: 10px;
+            //             padding-top: -5px;
+            //             transform: translateY(-12px);
+            //         }
+            //     }
+            // }
+            h3 {
+                // padding-left: 70px;
+                // padding-right: 70px;
+                margin-bottom: 25px;
+                // @media (max-width: 1366px) and (min-width: 767px) {
+                //     padding-left: calc(40px + (70 - 40) * ((100vw - 767px) / (1366 - 767)));
+                //     padding-right: calc(40px + (70 - 40) * ((100vw - 767px) / (1366 - 767)));
+                // }
+                // @media (max-width: 767px) {
+                //     padding-left: 35px;
+                //     padding-right: 35px;
+                // }
+            }
+            p {
+                // padding-left: 70px;
+                // padding-right: 70px;
+                display: block;
+                // margin-bottom: 30px;
+                line-height: 150%;
+                // @media (max-width: 1366px) and (min-width: 767px) {
+                //     padding-left: calc(40px + (70 - 40) * ((100vw - 767px) / (1366 - 767)));
+                //     padding-right: calc(40px + (70 - 40) * ((100vw - 767px) / (1366 - 767)));
+                // }
+                // @media (max-width: 767px) {
+                //     padding-left: 35px;
+                //     padding-right: 35px;
+                // }
+            }
+        }
+    }
+    a {
+        display: block;
+        color: $blue;
+        font-size: 20px;
+        font-family: $Gibson;
+        font-weight: 900;
+        border-radius: 3px;
+        background-color: $blue;
+        color: #fff;
+        padding: 20px 60px;
+        margin: 0 auto;
+        width: fit-content;
+        transition: 0.3s;
+        &:hover {
+            transition: 0.3s;
+            opacity: 0.6;
+        }
+        @media (max-width: 767px) {
+            padding: 10px 60px;
+        }
+    }
+}
+
+// END BLOCK PARNTERS
+// ========================================
+// ========================================
+// BLOCK TESTIMONIALS
+.bl_testimonials {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @media (max-width: 767px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .container {
+        max-width: 1420px;
+        @media (max-width: 991px) {
+            padding: 0;
+        }
+    }
+    h2 {
+        margin-bottom: 90px;
+        @media (max-width: 767px) {
+            margin-bottom: 40px;
+        }
+    }
+    .bl_testimonials__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        // padding-bottom: 60px;
+        position: relative;
+        .slick-list {
+            padding-bottom: 60px;
+            @media (max-width: 767px) {
+                padding-bottom: 40px;
+            }
+        }
+        .slick-dots {
+            bottom: 0;
+        }
+        .bl_testimonials__item {
+            width: 45%;
+            border-radius: 6px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            padding: 55px;
+            padding-top: 0;
+            margin-top: 40px;
+            margin-right: 50px;
+            margin-left: 50px;
+            @media (max-width: 991px) {
+                margin-right: 40px;
+                margin-left: 40px;
+            }
+            @media (max-width: 767px) {
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+            @media (max-width: 450px) {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            img {
+                width: 82px;
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 25px;
+                margin-top: -40px;
+            }
+            p {
+                line-height: 150%;
+                display: block;
+                margin-bottom: 25px;
+            }
+            a {
+                display: block;
+                font-family: $SF;
+                font-weight: 700;
+                color: $blue;
+                font-size: 20px;
+                line-height: 120%;
+            }
+        }
+    }
+}
+
+// END BLOCK TESTIMONIALS
+// ========================================
+// ========================================

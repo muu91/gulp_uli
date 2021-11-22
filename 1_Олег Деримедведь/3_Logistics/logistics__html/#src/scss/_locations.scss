@@ -1,0 +1,132 @@
+@import "_base.scss";
+// ========================================
+// ========================================
+// BLOCK LOCATIONS
+.bl_locations {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    @media (max-width: 991px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .locations__items {
+        display: flex;
+        flex-direction: column;
+        .locations__heading {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            @media (max-width: 767px) {
+                display: none;
+            }
+            h6 {
+                display: block;
+                font-family: $pragmac;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 140%;
+                color: #676767;
+                display: block;
+                width: 48%;
+            }
+        }
+        .locations__item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 1px solid $grey2;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            align-items: center;
+            @media (max-width: 767px) {
+                flex-direction: column;
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+            address {
+                display: block;
+                font-family: $pragmac;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 120%;
+                color: #0C0D0F;
+                width: 48%;
+                @media (max-width: 767px) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                a {
+                    color: #0C0D0F;
+                    display: block;
+                    font-family: $pragmac;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 120%;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .locations__email {
+                width: 32%;
+                @media (max-width: 767px) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                a {
+                    display: block;
+                    font-family: $pragmac;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: $green;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .locations__tel {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 48%;
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+                a {
+                    white-space: nowrap;
+                    display: block;
+                    font-family: $pragmac;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #0C0D0F;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-right: 0;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .navigation__items {
+        margin-top: 30px;
+        @media (max-width: 767px) {
+            margin-top: 20px;
+        }
+    }
+}
+
+//END BLOCK LOCATIONS
+// ========================================
+// ========================================

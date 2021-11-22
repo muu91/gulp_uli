@@ -1,0 +1,531 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// BLOCK HEADER
+.bl_header {
+  background-image: url("../img/header_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  // height: 100vh;
+  @media (max-width: 425px) {
+    background-size: auto 120%;
+    background-position: 70% 90%;
+  }
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    @media (max-width: 768px) {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  .bl_header__content {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    max-width: 520px;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    min-height: 1024px;
+    position: relative;
+    z-index: 5;
+    @media (max-width: 768px) {
+      min-height: 667px;
+      padding-bottom: 78px;
+      justify-content: flex-end;
+    }
+    h1 {
+      margin-bottom: 25px;
+      @media (max-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+    p {
+      color: #fff;
+      text-align: left;
+      margin-bottom: 35px;
+      @media (max-width: 768px) {
+        margin-bottom: 25px;
+      }
+      &:nth-child(2) {
+        font-size: 40px;
+        @media (max-width: 768px) {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+// END BLOCK HEADER
+// ========================================
+// LOAD VARIANTS
+.bl_load {
+  padding-top: 200px;
+  padding-bottom: 260px;
+  @media (max-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  .bl_load__content {
+    h2 {
+      margin-bottom: 10px;
+      width: 100%;
+      @media (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+    ul {
+      li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 70px;
+        padding-top: 70px;
+        border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+        gap: 20px;
+        @media (max-width: 768px) {
+          flex-direction: column;
+          padding-top: 35px;
+          padding-bottom: 35px;
+        }
+        &:nth-child(2) {
+          flex-direction: row-reverse;
+          @media (max-width: 768px) {
+            flex-direction: column;
+          }
+          .bl_load__img {
+            flex-basis: 688px;
+            margin-right: 0;
+            @media (max-width: 768px) {
+              flex-basis: auto;
+            }
+          }
+        }
+        &:last-child {
+          border: none;
+          .bl_load__img {
+            flex-basis: 654px;
+            @media (max-width: 768px) {
+              flex-basis: auto;
+            }
+          }
+        }
+        .bl_load__img {
+          flex-basis: 400px;
+          width: 100%;
+          @media (max-width: 768px) {
+            flex-basis: auto;
+            max-width: 400px;
+          }
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+        .bl_load__text {
+          max-width: 415px;
+          width: 100%;
+          @media (max-width: 425px) {
+            max-width: 265px;
+          }
+          h3 {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .btn__blue {
+      margin: 0 auto;
+      @media (max-width: 768px) {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+// END LOAD VARIANTS
+// ========================================
+// SERVICES
+.bl_services {
+  padding-bottom: 200px;
+  @media (max-width: 768px) {
+    padding-bottom: 130px;
+  }
+  .bl_services__content {
+    h2 {
+      color: $blue1;
+      margin-bottom: 35px;
+      width: 100%;
+      @media (max-width: 768px) {
+        margin-bottom: 25px;
+      }
+    }
+    > p {
+      color: $blue1;
+      max-width: 875px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 70px;
+      display: block;
+      @media (max-width: 768px) {
+        margin-bottom: 50px;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: stretch;
+      flex-wrap: wrap;
+      gap: 5%;
+      @media (max-width: 992px) {
+        gap: 4%;
+      }
+      li {
+        width: 30%;
+        box-shadow: 3px 3px 30px rgba(190, 190, 190, 0.15);
+        border-radius: 50px;
+        min-height: 440px;
+        padding: 15px 38px;
+        margin-bottom: 50px;
+        @media (max-width: 992px) {
+          width: 48%;
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+          max-width: 600px;
+          margin: 0 auto;
+          margin-bottom: 35px;
+        }
+        @media (max-width: 425px) {
+          min-height: 260px;
+        }
+        .bl_services__img {
+          height: 230px;
+          margin-bottom: 20px;
+          @media (max-width: 425px) {
+            height: 140px;
+          }
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: contain;
+          }
+        }
+        h3 {
+          width: 100%;
+          margin-bottom: 25px;
+        }
+        p {
+          width: 100%;
+        }
+      }
+    }
+    .btn__blue {
+      margin: 0 auto;
+      margin-top: 20px;
+      @media (max-width: 425px) {
+        font-size: 12px;
+        padding: 15px 5px;
+      }
+    }
+  }
+}
+// END SERVICES
+// ========================================
+// ADVANTAGES
+.bl_advantages {
+  padding-top: 135px;
+  padding-bottom: 135px;
+  background-image: url("../img/advantages/advantages_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 40%;
+  position: relative;
+  @media (max-width: 600px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media (max-width: 425px) {
+    // background-size: cover;
+    background-position: 54% center;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .bl_advantages__content {
+    position: relative;
+    z-index: 5;
+    h2 {
+      color: #fff;
+      margin-bottom: 70px;
+      width: 100%;
+      @media (max-width: 600px) {
+        margin-bottom: 60px;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+      }
+      li {
+        // width: 24%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 255px;
+        width: 100%;
+        @media (max-width: 600px) {
+          max-width: 300px;
+        }
+        .bl_advantages__img {
+          // flex-basis: 95px;
+          height: 95px;
+          width: 85px;
+          margin-bottom: 15px;
+          @media (max-width: 600px) {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 20px;
+          }
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: top;
+          }
+        }
+        h3 {
+          color: #fff;
+          margin-bottom: 25px;
+          @media (max-width: 600px) {
+            margin-bottom: 15px;
+          }
+        }
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+// END ADVANTAGES
+// ========================================
+// HOW IT WORKS
+.bl_how_it_works {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  @media (max-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  .bl_how_it_works__content {
+    h2 {
+      width: 100%;
+      margin-bottom: 70px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 150px;
+        @media (max-width: 992px) {
+          flex-direction: column;
+          margin-bottom: 90px;
+          align-items: center;
+        }
+        &:nth-child(2n) {
+          flex-direction: row-reverse;
+          @media (max-width: 992px) {
+            flex-direction: column;
+            align-items: center;
+          }
+          .bl_how_it_works__text {
+            margin-right: 0;
+            margin-left: 60px;
+            max-width: 250px;
+            min-width: 250px;
+            @media (max-width: 992px) {
+              margin-left: 0;
+            }
+          }
+        }
+        &:last-child {
+          margin-bottom: 110px;
+          @media (max-width: 768px) {
+            margin-bottom: 70px;
+          }
+        }
+        .bl_how_it_works__text {
+          max-width: 285px;
+          min-width: 285px;
+          margin-right: 60px;
+          position: relative;
+          @media (max-width: 992px) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 38px;
+          }
+          .number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 440px;
+            font-weight: 600;
+            font-family: $Open;
+            color: rgba(208, 208, 208, 0.1);
+            @media (max-width: 992px) {
+              font-size: 300px;
+            }
+            @media (max-width: 768px) {
+              font-size: 208px;
+            }
+          }
+          h3 {
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 5;
+            @media (max-width: 768px) {
+              margin-bottom: 10px;
+            }
+          }
+          p {
+            position: relative;
+            z-index: 5;
+          }
+        }
+        .bl_how_it_works__img {
+          @media (max-width: 992px) {
+            max-width: 700px;
+          }
+          img {
+            display: block;
+            @media (max-width: 768px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .btn__blue {
+      margin: 0 auto;
+    }
+  }
+}
+// END HOW IT WORKS
+// ========================================
+// FAQ
+.bl_faq {
+  padding-bottom: 200px;
+  @media (max-width: 768px) {
+    padding-bottom: 100px;
+  }
+  .bl_faq__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    h2 {
+      color: $blue1;
+      position: relative;
+      margin-right: 160px;
+      @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 55px;
+        width: 100%;
+      }
+      &::before {
+        content: "";
+        width: 257px;
+        height: 153px;
+        background-image: url("../img/arrow_faq.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: 80%;
+        left: 30px;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+    ul {
+      max-width: 860px;
+      li {
+        border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+        margin-bottom: 35px;
+        &:last-child {
+          margin-bottom: 0;
+          border-bottom: none;
+          p {
+            margin-bottom: 0;
+          }
+        }
+        h4 {
+          margin-bottom: 18px;
+          text-align: left;
+          @media (max-width: 768px) {
+            margin-bottom: 10px;
+          }
+        }
+        p {
+          margin-bottom: 16px;
+          text-align: left;
+          @media (max-width: 768px) {
+            margin-bottom: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+// END FAQ
+// ========================================

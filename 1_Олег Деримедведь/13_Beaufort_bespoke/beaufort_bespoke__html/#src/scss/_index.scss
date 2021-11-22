@@ -1,0 +1,500 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// BLOCK HEADER
+.bl_header {
+  .bl_header__items {
+    ul {
+      width: 100%;
+
+      li {
+        width: 100%;
+
+        .bl_header__item {
+          width: 100%;
+          height: 610px;
+
+          overflow: hidden;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+    }
+  }
+}
+// END BLOCK HEADER
+// ========================================
+// ADVANTAGES
+.bl_advantages {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  .container {
+    max-width: 1150px;
+  }
+  .bl_advantages__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .bl_advantages__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    @media (max-width: 600px) {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+    &:last-child {
+      @media (max-width: 600px) {
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+      display: block;
+      max-width: 32px;
+      min-width: 32px;
+      height: 32px;
+      margin-right: 12px;
+    }
+    h4 {
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-top: 3px;
+    }
+  }
+}
+// END ADVANTAGES
+// ========================================
+// BESPOKE TEXT
+.bl_bespoke_text {
+  padding-top: 90px;
+  padding-bottom: 50px;
+  background-color: #fff;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .container {
+    max-width: 945px;
+  }
+  .bl_bespoke_content {
+    .main_h1 {
+      p {
+        color: $gold;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+        font-weight: 400;
+      }
+      h1 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 25px;
+      }
+    }
+    p {
+      text-align: center;
+      margin-bottom: 20px;
+      &:nth-child(2) {
+        font-size: 21px;
+        color: $grey1;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+// END BESPOKE TEXT
+// ========================================
+// FEATURED KITCHENS
+.bl_featured_kitchens {
+  padding-top: 30px;
+  padding-bottom: 120px;
+  @media (max-width: 768px) {
+    padding-bottom: 50px;
+  }
+
+  .bl_featured__content {
+    > h2 {
+      font-size: 26px;
+      margin-bottom: 30px;
+      text-align: center;
+      display: block;
+    }
+  }
+  .bl_featured__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 48px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 35px;
+    }
+  }
+  .bl_featured__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 32%;
+    @media (max-width: 768px) {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+    &:last-child {
+      @media (max-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+    .item__img {
+      height: 216px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      position: relative;
+      @media (max-width: 1400px) {
+        height: calc(140px + (216 - 140) * ((100vw - 769px) / (1400 - 769)));
+      }
+      @media (max-width: 768px) {
+        height: calc(170px + (216 - 170) * ((100vw - 320px) / (768 - 320)));
+        margin-bottom: 10px;
+      }
+      a {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+      }
+    }
+    h3 {
+      color: $grey1_80;
+      font-size: 18px;
+      font-weight: 300;
+      text-align: center;
+      font-family: $Euro;
+      a {
+        display: block;
+        color: $grey1_80;
+        text-align: center;
+        transition: 0.3s;
+
+        &:hover {
+          color: $gold;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+  .btn_grey1 {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+// END FEATURED KITCHENS
+// ========================================
+// OUR STORY
+.bl_our_story {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url("../img/others/our_story.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  @media (max-width: 768px) {
+    padding-bottom: 80px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .container {
+    max-width: 1145px;
+  }
+
+  .bl_our_story__content {
+    position: relative;
+    z-index: 5;
+    p {
+      font-family: $Euro;
+      font-size: 21px;
+      color: $grey1;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 400;
+      line-height: 32px;
+    }
+    .btn_grey1 {
+      border: 2px solid $grey1;
+      display: block;
+      margin: 0 auto;
+      width: fit-content;
+      background-color: transparent;
+      color: $grey1;
+      margin-top: 30px;
+      &:hover {
+        background-color: $grey1_80;
+        color: #fff;
+      }
+    }
+  }
+}
+// END OUR STORY
+// ========================================
+// OUR PROCESS
+.bl_our_process {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .main_h2 {
+    margin-bottom: 50px;
+    p {
+      color: $gold;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+  .bl_our_process__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 50px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  .bl_our_process__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100px;
+    width: 25%;
+    border-right: 1px solid #979797;
+    padding-left: 10px;
+    padding-right: 10px;
+    @media (max-width: 768px) {
+      border: none;
+      border-bottom: 1px solid #979797;
+      padding: 0;
+      padding-bottom: 50px;
+      padding-top: 40px;
+      max-width: 300px;
+      width: 100%;
+    }
+    &:last-child {
+      border-right: none;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: $Azo;
+      // color: rgba(192, 188, 161, 0.4);
+      color: #e6e4d9;
+      font-size: 120px;
+      line-height: 100%;
+      font-weight: 700;
+      margin-top: 4px;
+      @media (max-width: 768px) {
+        margin-top: 20px;
+      }
+    }
+  }
+  .item1 {
+    &::before {
+      content: "1";
+    }
+  }
+  .item2 {
+    &::before {
+      content: "2";
+    }
+  }
+  .item3 {
+    &::before {
+      content: "3";
+    }
+  }
+  .item4 {
+    &::before {
+      content: "4";
+    }
+  }
+  h3 {
+    position: relative;
+    z-index: 5;
+    font-family: $Azo;
+    color: $grey1;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p {
+    position: relative;
+    z-index: 5;
+    font-family: $Euro;
+    color: $grey1_80;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .btn_grey1 {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+// END OUR PROCESS
+// ========================================
+// REVIEWS
+.bl_reviews {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background-color: #fff;
+  @media (max-width: 768px) {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+  .bl_reviews__items {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .slick-list {
+        max-width: 790px;
+        margin: 0 auto;
+      }
+      .slick-next {
+        right: 0;
+        top: 35%;
+        @media (max-width: 425px) {
+          right: 0;
+          top: auto;
+          bottom: 12%;
+        }
+      }
+      .slick-prev {
+        left: 0;
+        top: 35%;
+        @media (max-width: 425px) {
+          left: 0;
+          top: auto;
+          bottom: 12%;
+        }
+      }
+      li {
+        @media (max-width: 992px) {
+          padding-left: 60px;
+          padding-right: 60px;
+        }
+        @media (max-width: 425px) {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        .bl_reviews__item {
+          margin: 0 auto;
+          width: 100%;
+        }
+        blockquote {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        p {
+          display: block;
+          position: relative;
+          padding-bottom: 30px;
+          margin-bottom: 35px;
+          text-align: center;
+          font-size: 21px;
+          line-height: 30px;
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 2px;
+            background-color: $gold;
+          }
+        }
+        cite {
+          font-family: $Azo;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          color: $grey1;
+          text-transform: uppercase;
+          font-style: normal;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+// END REVIEWS
+// ========================================

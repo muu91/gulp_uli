@@ -1,0 +1,161 @@
+<!-- ======================================== -->
+<!-- JS Script -->
+<script src="libs/jquery-1.11.3.min.js"></script>
+<script src="libs/slick.min.js"></script>
+<script src="libs/dist/js/lightbox.min.js"></script>
+<script src="js/script.js"></script>
+
+<!-- End JS Script -->
+<!-- ======================================== -->
+<!-- JS Script MAP -->
+<script>
+    // function initMap() {
+    //     // The location of Uluru
+    //     var uluru = {
+    //         lat: -25.344,
+    //         lng: 131.036
+    //     };
+    //     var map = new google.maps.Map(
+    //         document.getElementById('map'), {
+    //             zoom: 12,
+    //             maxZoom: 30,
+    //             minZoom: 5,
+    //             center: {
+    //                 lat: 51.5080632,
+    //                 lng: -0.1609431
+    //             },
+    //             mapTypeControl: false,
+    //             disableDefaultUI: true,
+    //             position: uluru,
+    //             map: map
+    //         });
+
+    // }
+
+    var mapContent = document.getElementById('map');
+
+    // Координаты адресов
+    // --------------------
+
+    function initMap() {
+        // --------------------
+        // Подключение кнопок
+        var btn_peter = document.getElementById('btn_peter');
+        var btn_moskow = document.getElementById('btn_moskow');
+        var btn_sochi = document.getElementById('btn_sochi');
+        var btn_kazan = document.getElementById('btn_kazan');
+
+        // Список адресов
+
+        // Санкт Петербург
+
+        var peterCity = {
+            lat: 59.929367229939444,
+            lng: 30.362111521865884
+        };
+        var map = new google.maps.Map(mapContent, {
+            center: peterCity,
+            zoom: 10,
+            maxZoom: 30,
+            minZoom: 5,
+            disableDefaultUI: true,
+            mapTypeControl: false,
+        });
+        var markerCoordinate = new google.maps.Marker({
+            position: peterCity,
+            map: map,
+        });
+
+        // --------------------
+        // Санкт Петербург
+
+        btn_peter.onclick = function() {
+
+            peterCity = {
+                lat: 59.929367229939444,
+                lng: 30.362111521865884
+            };
+            map = new google.maps.Map(mapContent, {
+                center: peterCity,
+                zoom: 10,
+                maxZoom: 30,
+                minZoom: 5,
+                disableDefaultUI: true,
+                mapTypeControl: false,
+            });
+            markerCoordinate = new google.maps.Marker({
+                position: peterCity,
+                map: map,
+            });
+        };
+
+        // --------------------
+        // Москва
+
+        btn_moskow.onclick = function() {
+            var moskowCity = {
+                lat: 55.755787855786586,
+                lng: 37.62990054524496
+            };
+            map = new google.maps.Map(mapContent, {
+                center: moskowCity,
+                zoom: 10,
+                maxZoom: 30,
+                minZoom: 5,
+                disableDefaultUI: true,
+                mapTypeControl: false,
+            });
+            markerCoordinate = new google.maps.Marker({
+                position: moskowCity,
+                map: map,
+            });
+        };
+        // --------------------
+        // Сочи
+
+        btn_sochi.onclick = function() {
+            var sochiCity = {
+                lat: 43.602959230465444,
+                lng: 39.73405495020074
+            };
+            map = new google.maps.Map(mapContent, {
+                center: sochiCity,
+                zoom: 10,
+                maxZoom: 30,
+                minZoom: 5,
+                disableDefaultUI: true,
+                mapTypeControl: false,
+            });
+            markerCoordinate = new google.maps.Marker({
+                position: sochiCity,
+                map: map,
+            });
+        };
+
+        // --------------------
+        // Казань
+
+        btn_kazan.onclick = function() {
+            var kazanCity = {
+                lat: 55.78746225799451,
+                lng: 49.12409114717818
+            };
+            map = new google.maps.Map(mapContent, {
+                center: kazanCity,
+                zoom: 10,
+                maxZoom: 30,
+                minZoom: 5,
+                disableDefaultUI: true,
+                mapTypeControl: false,
+            });
+            markerCoordinate = new google.maps.Marker({
+                position: kazanCity,
+                map: map,
+            });
+        };
+    }
+</script>
+<script defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&amp;callback=initMap">
+</script>
+<!-- End JS Script MAP -->
+<!-- ======================================== -->

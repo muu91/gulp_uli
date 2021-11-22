@@ -1,0 +1,51 @@
+//FONTS
+// -----------
+// GT-America-Extended-LIGHT 
+@font-face {
+    font-family: "GT America";
+    src: url("../fonts/GT-America-Extended-Light.eot");
+    /* IE9*/
+    src: url("../fonts/GT-America-Extended-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/GT-America-Extended-Light.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/GT-America-Extended-Light.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/GT-America-Extended-Light.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/GT-America-Extended-Light.otf") format("opentype");
+    font-weight: 300; //light
+    font-style: normal;
+}
+
+//End GT-America-Extended-LIGHT 
+// ------------
+// GT-America-Extended-Regular 
+@font-face {
+    font-family: "GT America";
+    src: url("../fonts/GT-America-Extended-Regular.eot");
+    /* IE9*/
+    src: url("../fonts/GT-America-Extended-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/GT-America-Extended-Regular.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/GT-America-Extended-Regular.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/GT-America-Extended-Regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/GT-America-Extended-Regular.otf") format("opentype");
+    font-weight: 400; //regular
+    font-style: normal;
+}
+
+//End GT-America-Extended-Regular 
+// -------------
+// GT-America-Extended-Medium 
+@font-face {
+    font-family: "GT America";
+    src: url("../fonts/GT-America-Extended-Medium.eot");
+    /* IE9*/
+    src: url("../fonts/GT-America-Extended-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/GT-America-Extended-Medium.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/GT-America-Extended-Medium.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/GT-America-Extended-Medium.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/GT-America-Extended-Medium.otf") format("opentype");
+    font-weight: 500; //Medium
+    font-style: normal;
+}
+
+//End GT-America-Extended-Medium 
+// -------------
+//END FONTS

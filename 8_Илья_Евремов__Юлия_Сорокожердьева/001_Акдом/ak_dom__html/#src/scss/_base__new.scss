@@ -1,0 +1,281 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+html.lock,
+body.lock {
+    height: 100%;
+    overflow: hidden !important;
+    width: 100%;
+    position: relative;
+    // background-color: rgba(0, 0, 0, 0.5);
+}
+
+// body {
+//     overflow: hidden;
+// }
+// .main_wrapper {
+//     width: 100%;
+//     @media (max-height: 100vh) {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         align-items: stretch;
+//         min-height: 100vh;
+//     }
+// }
+
+.container {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+
+    @media (max-width: 992px) {
+        max-width: 812px;
+        padding: 0 40px;
+    }
+    @media (max-width: 728px) {
+        max-width: 500px;
+        padding: 0 20px;
+    }
+    @media (max-width: 560px) {
+        max-width: 340px;
+    }
+}
+
+// ---------------------
+// Для скрола блока
+// .scroll{
+//     max-height: calc(100vh - 56px);
+//     overflow-x: hidden;
+//     overflow-y: auto;
+// }
+// Для скрола блока
+// ------------------------------
+// ========================================
+// OTHERS
+// ------------------------------
+// CARDS
+
+.project_card {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: auto;
+    opacity: 0;
+    // display: none;
+
+    @media (max-height: 768px) {
+        justify-content: flex-start;
+    }
+
+    .card {
+        max-width: 1000px;
+        background-color: #fff;
+        // overflow: hidden;
+        width: 100%;
+        position: relative;
+        z-index: 155;
+
+        .card__slide {
+            position: relative;
+            width: 100%;
+            .slick-slider {
+                height: 100%;
+                display: block;
+                margin-bottom: 0;
+                .slick-dots {
+                    margin-bottom: 0;
+                    background-color: transparent;
+                    width: fit-content;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    margin-right: 6px;
+                    bottom: 30px;
+
+                    li {
+                        list-style: none;
+                        max-width: 10px;
+                        min-width: 10px;
+                        height: 10px;
+                        background-color: #fff;
+                        margin-right: 6px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                    .slick-active {
+                        background-color: $yellow1;
+                    }
+                }
+            }
+            .slick-list {
+                .slick-track {
+                    .slick-slide {
+                        outline: none;
+                    }
+                }
+            }
+            .slide_img {
+                height: 100%;
+                overflow: hidden;
+                height: 415px;
+                @media (max-width: 560px) {
+                    height: 300px;
+                }
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-position: center;
+                    object-fit: cover;
+                }
+            }
+        }
+        .card__text {
+            padding: 40px 50px 50px;
+            @media (max-width: 560px) {
+                padding: 20px;
+            }
+            h2 {
+                margin-bottom: 30px;
+            }
+            .card__desc {
+                border-top: 1px solid #c4c4c4;
+                border-bottom: 1px solid #c4c4c4;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 40px;
+                @media (max-width: 560px) {
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                }
+                ul {
+                    padding-right: 60px;
+                    min-width: 240px;
+                    margin-bottom: 0;
+                    @media (max-width: 768px) {
+                        padding-right: 30px;
+                        min-width: 200px;
+                    }
+                    @media (max-width: 560px) {
+                        padding-right: 0;
+                        padding-bottom: 20px;
+                    }
+
+                    li {
+                        font-family: $Mont;
+                        font-size: 13px;
+                        line-height: 180%;
+                        font-weight: 400;
+                        color: $black1;
+
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+                p {
+                    display: block;
+                    padding-left: 60px;
+                    font-family: $Mont;
+                    font-size: 13px;
+                    line-height: 180%;
+                    font-weight: 400;
+                    color: $black1;
+                    border-left: 1px solid #c4c4c4;
+                    margin-bottom: 0;
+                    @media (max-width: 768px) {
+                        padding-left: 30px;
+                    }
+                    @media (max-width: 560px) {
+                        padding-left: 0;
+                        padding-top: 20px;
+                        border: none;
+                        border-top: 1px solid #c4c4c4;
+                    }
+                }
+            }
+
+            .card_links {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+
+                @media (max-width: 560px) {
+                    flex-direction: column;
+                }
+
+                .btn_yell {
+                    min-width: 175px;
+                    height: 70px;
+                    font-size: 18px;
+                    line-height: 120%;
+                    margin-right: 30px;
+                    @media (max-width: 992px) {
+                        height: 55px;
+                        font-size: 14px;
+                        margin-right: 20px;
+                    }
+                    @media (max-width: 728px) {
+                        height: 70px;
+                        font-size: 18px;
+                    }
+                    @media (max-width: 560px) {
+                        height: 57px;
+                        font-size: 14px;
+                        width: 100%;
+                        margin-right: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+                .btn_grey {
+                    min-width: 200px;
+                    height: 70px;
+                    font-size: 18px;
+                    line-height: 120%;
+                    @media (max-width: 992px) {
+                        height: 55px;
+                        font-size: 14px;
+                    }
+                    @media (max-width: 728px) {
+                        height: 70px;
+                        font-size: 18px;
+                    }
+                    @media (max-width: 560px) {
+                        height: 57px;
+                        font-size: 14px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.project_card.active {
+    opacity: 1;
+    z-index: 152;
+}
+// END CARDS
+// ------------------------------
+// END OTHERS
+// ========================================

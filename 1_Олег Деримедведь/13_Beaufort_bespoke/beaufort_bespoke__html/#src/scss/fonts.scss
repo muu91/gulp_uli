@@ -1,0 +1,78 @@
+// Fonts
+// --------------------
+// Azo Sans
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../fonts/azosans/AzoSans-Bold.eot");
+  src: local("Azo Sans"), local("AzoSans-Bold"),
+    url("../fonts/azosans/AzoSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/azosans/AzoSans-Bold.woff2") format("woff2"), url("../fonts/azosans/AzoSans-Bold.woff") format("woff"),
+    url("../fonts/azosans/AzoSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../fonts/azosans/AzoSans-Regular.eot");
+  src: local("Azo Sans"), local("AzoSans-Regular"),
+    url("../fonts/azosans/AzoSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/azosans/AzoSans-Regular.woff2") format("woff2"),
+    url("../fonts/azosans/AzoSans-Regular.woff") format("woff"),
+    url("../fonts/azosans/AzoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../fonts/azosans/AzoSans-Light.eot");
+  src: local("Azo Sans"), local("AzoSans-Light"),
+    url("../fonts/azosans/AzoSans-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/azosans/AzoSans-Light.woff2") format("woff2"),
+    url("../fonts/azosans/AzoSans-Light.woff") format("woff"),
+    url("../fonts/azosans/AzoSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+// --------------------
+// Europa
+
+@font-face {
+  font-family: "Europa";
+  src: url("../fonts/europa/Europa-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Europa";
+  src: url("../fonts/europa/Europa-BoldItalic.otf");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Europa";
+  src: url("../fonts/europa/Europa-Light.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Europa";
+  src: url("../fonts/europa/Europa-LightItalic.otf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Europa";
+  src: url("../fonts/europa/Europa-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Europa";
+  src: url("../fonts/europa/Europa-RegularItalic.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+// --------------------

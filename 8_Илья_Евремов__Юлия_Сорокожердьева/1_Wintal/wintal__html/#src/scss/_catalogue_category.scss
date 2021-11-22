@@ -1,0 +1,47 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// CATALOGUE PAGE 2
+// .bl_catalogue_page_2 {
+//   .bl_catalogue_page__content {
+//   }
+// }
+.title_h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  @media (max-width: 425px) {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  h1 {
+    margin-bottom: 0;
+    line-height: normal;
+  }
+  p {
+    font-size: 34px;
+    font-weight: 700;
+    color: $light_grey;
+    display: block;
+    margin-left: 10px;
+    line-height: normal;
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+}
+.bl_catalogue_page_2 {
+  .bl_catalogue_page__content {
+    .title_h1 {
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+// END CATALOGUE PAGE 2
+// ========================================

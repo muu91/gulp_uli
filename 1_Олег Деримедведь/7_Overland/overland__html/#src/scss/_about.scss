@@ -1,0 +1,122 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// ========================================
+// BLOCK ABOUT US
+.bl_about_us {
+    margin-bottom: 100px;
+    @media (max-width: 1300px) {
+        margin-bottom: calc(50px + (100 - 50) *((100vw - 420px) / (1300 - 420)));
+    }
+    .main_h2 {
+        margin-bottom: 95px;
+        @media (max-width: 1300px) {
+            margin-bottom: calc(30px + (95 - 30) *((100vw - 420px) / (1300 - 420)));
+        }
+    }
+    .about_us__body {
+        .about_us__top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+            @media (max-width: 1300px) {
+                margin-bottom: calc(25px + (50 - 25) *((100vw - 420px) / (1300 - 420)));
+            }
+            @media (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
+            }
+            .about_us__text {
+                width: 38%;
+                @media (max-width: 767px) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 17px;
+                    font-style: italic;
+                    line-height: 160%;
+                    color: #000;
+                    @media (max-width: 991px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .about_us__img {
+                width: 60%;
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+                img {
+                    display: block;
+                    width: 100%;
+                    box-shadow: -3px 0 0 $grey_c4;
+                }
+            }
+        }
+        .about_us__bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            @media (max-width: 767px) {
+                flex-direction: column;
+            }
+            .about_us__left {
+                width: 49%;
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+                h3 {
+                    display: block;
+                    font-size: 35px;
+                    line-height: 130%;
+                    font-weight: 400;
+                    margin-bottom: 40px;
+                    @media (max-width: 1300px) {
+                        font-size: calc(20px + (35 - 20) *((100vw - 420px) / (1300 - 420)));
+                        margin-bottom: calc(20px + (40 - 20) *((100vw - 420px) / (1300 - 420)));
+                    }
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 180%;
+                    margin-bottom: 40px;
+                    color: #000;
+                    @media (max-width: 1300px) {
+                        margin-bottom: calc(20px + (40 - 20) *((100vw - 420px) / (1300 - 420)));
+                    }
+                    @media (max-width: 767px) {
+                        line-height: 140%;
+                    }
+                }
+            }
+            .about_us__right {
+                width: 49%;
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 180%;
+                    margin-bottom: 40px;
+                    color: #000;
+                    @media (max-width: 1300px) {
+                        margin-bottom: calc(20px + (40 - 20) *((100vw - 420px) / (1300 - 420)));
+                    }
+                    @media (max-width: 767px) {
+                        line-height: 140%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// END BLOCK ABOUT US
+// ========================================
+// ========================================

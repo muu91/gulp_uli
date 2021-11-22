@@ -1,0 +1,40 @@
+//Список шрифтов
+//Intro
+@font-face {
+    font-family: "Intro";
+    font-weight: 900; //bold
+    font-style: normal;
+    src: url("../fonts/Intro-Black-Alt.otf");
+}
+
+@font-face {
+    font-family: "Intro";
+    font-weight: 700; //bold
+    font-style: normal;
+    src: url("../fonts/Intro-Bold.otf");
+}
+
+@font-face {
+    font-family: "Intro";
+    font-weight: 400; //regular
+    font-style: normal;
+    src: url("../fonts/Intro-Regular.otf");
+}
+
+//ENd Intro
+//PragmaticaLightC
+@font-face {
+    font-family: "PragmaticaLightC";
+    font-weight: 700; //bold
+    font-style: normal;
+    src: url("../fonts/pragmaticalightc-bold.otf");
+}
+
+@font-face {
+    font-family: "PragmaticaLightC";
+    font-weight: 400; //normal
+    font-style: normal;
+    src: url("../fonts/pragmaticalightc-normal.otf");
+}
+
+//End PragmaticaLightC

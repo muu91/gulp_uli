@@ -1,0 +1,100 @@
+// -----------------------------------------------------
+//Variables
+// fonts
+$intro:'Intro',
+sans-serif;
+$pragmac:'PragmaticaLightC',
+sans-serif;
+// color 
+$green: #008B58;
+$blue: #13224B;
+$blue_a: #8194C9;
+$blue_scroll_btn: #223770;
+$grey1:#F2F2F2;
+$grey2: #C2C8CC;
+$gradient: linear-gradient(180deg, rgba(8, 19, 46, 0.9) 0%, rgba(12, 25, 55, 0) 100%);
+$gradient2: linear-gradient(0deg, rgba(8, 19, 46, 0.9) 0%, rgba(12, 25, 55, 0) 100%);
+//End Variables
+// -----------------------------------------------------
+// ========================================
+// ========================================
+// BLOCK HEADER 2
+.bl_header_2 {
+    min-height: 550px;
+    background-image: url("../img/header/international_forwarding_header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    @media (max-width: 991px) {
+        min-height: 450px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media (max-width: 767px) {
+        min-height: 400px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    @media (max-width: 450px) {
+        min-height: 350px;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(12, 25, 55, 0.2) 0%, rgba(8, 19, 46, 0.9) 100%);
+        ;
+    }
+    .header_2__body {
+        position: relative;
+        z-index: 5;
+        max-width: 550px;
+        h1 {
+            display: block;
+            font-size: 42px;
+            line-height: 120%;
+            @media (max-width: 767px) {
+                font-size: 32px;
+            }
+            @media (max-width: 450px) {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+//END BLOCK HEADER 2
+// ========================================
+// ========================================
+// BLOCK advantages
+.bl_advantages_int_for {
+    .advantages__items {
+        .advantages__item {
+            ul {
+                li {
+                    width: 45%;
+                }
+            }
+        }
+    }
+}
+
+//End BLOCK advantages
+// ========================================
+// ========================================
+// ========================================
+// ========================================
+// ========================================
+// ========================================

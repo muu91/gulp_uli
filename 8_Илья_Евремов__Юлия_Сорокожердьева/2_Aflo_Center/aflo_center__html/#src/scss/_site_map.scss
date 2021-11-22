@@ -1,0 +1,16 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// SITEMAP
+.bl_404_sitemap_2 {
+  padding-top: 0;
+  // padding-top: 60px;
+  @media (max-width: 600px) {
+    padding-top: 30px;
+  }
+}
+
+// END SITEMAP
+// ========================================

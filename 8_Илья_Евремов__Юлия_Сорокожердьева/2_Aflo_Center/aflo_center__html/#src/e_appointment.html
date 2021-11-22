@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('_head.html')
+</head>
+
+<body>
+    <div class="main_wrapper">
+        @@include('_header.html')
+        <main>
+            <!-- ======================================== -->
+            <!-- BLOCK CRUMBS -->
+            <section class="bl_crumbs">
+                <div class="container">
+                    <div class="bl_crumbs__content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Электронная запись
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- END BLOCK CRUMBS -->
+            <!-- ======================================== -->
+            <!-- E APPOINTMENT -->
+            <div class="bl_e_appointment">
+                <div class="container">
+                    <h1>
+                        Электронная запись
+                    </h1>
+                    <div class="bl_e_appointment__content">
+                        <aside>
+                            <div class="bl_e_appointment__aside">
+                                <div class="bl_e_appointment__menus">
+                                    <div class="green_menu bl_e_appointment__top">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    Взрослым
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Детям
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="green_menu bl_e_appointment__bottom">
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-filter_tab_e="bl_e_appointment__spec">
+                                                    По специализации
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-filter_tab_e="bl_e_appointment__doctors">
+                                                    По врачам
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bl_e_appointment__filter_content">
+                                    <div class="bl_e_appointment__spec" data-tab_content_e="bl_e_appointment__spec">
+                                        <h4>
+                                            Cпециализация
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    Акушер-гинеколог
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Аллерголог
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Ультразвуковой диагностики (УЗИ) врачи
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Функциональной диагностики врачи
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Гастроэнтеролог
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Дерматолог-венеролог
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Инфекционист
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Кардиолог
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Маммолог
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Мануальный терапевт
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Невролог
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Онколог
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Оториноларинголог (ЛОР)
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Офтальмолог
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Психиатр (психиатр-нарколог)
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Пульмонолог
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Стоматолог
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Терапевт
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Уролог
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Хирург
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Эндоскопист
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Эндокринолог
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Гематолог
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="bl_e_appointment__doctors"
+                                        data-tab_content_e="bl_e_appointment__doctors">
+                                        <form action="#">
+                                            <div class="input">
+                                                <input type="text" required>
+                                                <span class="placeholder">
+                                                    Поиск по врачам
+                                                </span>
+                                            </div>
+                                            <button>
+                                                <img src="./img/header/search.svg" alt="search">
+                                            </button>
+                                        </form>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    Абрамов Алексей Александрович
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Алыпов Илья Валентинович
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Арбузов Сергей Алексеевич
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Береснева Елена Владимировна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Бзыкова Диана Артуровна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Блинова Ирина Вадимовна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Бурова Юлия Владимировна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Вылегжанин Игорь Леонидович
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Герасименко Оксана Викторовна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Гребенева Наталья Владимировна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Гребнева Ирина Александровна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Гунбин Вячеслав Николаевич
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Гущина Полина Фёдоровна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Ермакова Елена Александровна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Ефремов Виктор Павлович
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Жолобова Татьяна Владимировна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Жуков Владимир Николаевич
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Жуликова Оксана Андреевна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Земцова Ирина Сергеевна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Зонова Ольга Владимировна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Зубарева Наталья Юрьевна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Зыков Александр Николаевич
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Иванов Владимир Павлович
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Зубарева Наталья Юрьевна
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Зыков Александр Николаевич
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Иванов Владимир Павлович
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="btn_more_doctors">
+                                            Показать всех
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <main>
+                            <div class="bl_e_appointment__main">
+                                <!-- -------------------- -->
+                                <div class="bl_e_a_branches">
+                                    <h3>
+                                        Выберите филиал
+                                    </h3>
+                                    <div class="bl_e_a_branches__content">
+                                        <div class="bl_map_branches__menu__mobile">
+                                            <span>
+                                                Филиал
+                                            </span>
+                                            <select name="select" id="select_mobile">
+                                                <option value="1" selected>
+                                                    <h4>
+                                                        МЦ на Володарского
+                                                    </h4>
+                                                </option>
+                                                <option value="2">
+                                                    <h4>
+                                                        МЦ на Октябрьском
+                                                    </h4>
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="bl_e_a_branches__menu">
+                                            <ul>
+                                                <li data-filter_tab="address1">
+                                                    <address>
+                                                        <h4>
+                                                            МЦ на Октябрьском
+                                                        </h4>
+                                                        <p>
+                                                            г. Киров, Октябрьский пр-т, д.29а
+                                                        </p>
+                                                    </address>
+                                                </li>
+                                                <li data-filter_tab="address2">
+                                                    <address>
+                                                        <h4>
+                                                            МЦ на Володарского
+                                                        </h4>
+                                                        <p>
+                                                            г. Киров, ул. Володарского, д.60
+                                                        </p>
+                                                    </address>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bl_e_a_branches__address">
+                                            <div class="address__img">
+                                                <img src="./img/index/3_branches/branch1.png" alt="branches">
+                                            </div>
+                                            <div class="address_text">
+                                                <div class="address__address">
+                                                    <div class="address__content">
+                                                        <p class="title">
+                                                            Адрес
+                                                        </p>
+                                                        <p>
+                                                            г. Киров, ул. Володарского, д.60
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="btn_bg btn_e_a_branches__map">
+                                                        Показать на карте
+                                                    </a>
+                                                </div>
+                                                <div class="address__grafik">
+                                                    <p class="title">
+                                                        График работы
+                                                    </p>
+                                                    <p>
+                                                        <span>Пн-Пт:</span> 8-00 — 17-00 (без обеда); <br>
+                                                        <span>Cб-Вс:</span>
+                                                        выходные
+                                                        дни
+                                                    </p>
+                                                </div>
+                                                <div class="address__phone">
+                                                    <p class="title">
+                                                        Номер телефона
+                                                    </p>
+                                                    <a href="tel:+78332680303">
+                                                        <span>+7 8332</span> 68-03-03
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bl_e_a_branches__maps">
+                                        <a href="#" class="btn_close_e_a_branches__map btn_bg">
+                                            Закрыть
+                                        </a>
+                                        <div class="bl_e_a_branches__map"></div>
+                                    </div>
+                                </div>
+                                <!-- -------------------- -->
+                                <div class="bl_e_a_doctors">
+                                    <h3>
+                                        Выберите врача
+                                    </h3>
+                                    <div class="bl_e_a_doctors__items">
+                                        <div class="swiper bl_e_a_doctors__swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class=" swiper-slide" data-tab_content="address1">
+                                                    <div class="bl_e_a_doctors__item">
+                                                        <div class="bl_e_a_doctors__img ">
+                                                            <img src="./img/servicein/spec2.png" alt="doctor">
+                                                        </div>
+                                                        <h4>
+                                                            Копанев К.Н.
+                                                        </h4>
+                                                        <p>
+                                                            Врач УЗИ, гастроэнтеролог
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide" data-tab_content="address2">
+                                                    <div class="bl_e_a_doctors__item">
+                                                        <div class="bl_e_a_doctors__img">
+                                                            <img src="./img/other/avatar_girl.png" alt="doctor">
+                                                        </div>
+                                                        <h4>
+                                                            Ушакова Е.Ю.
+                                                        </h4>
+                                                        <p>
+                                                            Врач УЗИ
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide" data-tab_content="address1">
+                                                    <div class="bl_e_a_doctors__item">
+                                                        <div class="bl_e_a_doctors__img">
+                                                            <img src="./img/servicein/spec3.png" alt="doctor">
+                                                        </div>
+                                                        <h4>
+                                                            Зыков А.Н.
+                                                        </h4>
+                                                        <p>
+                                                            Акушер, врач УЗИ
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide" data-tab_content="address1">
+                                                    <div class="bl_e_a_doctors__item">
+                                                        <div class="bl_e_a_doctors__img">
+                                                            <img src="./img/other/avatar_boy.png" alt="doctor">
+                                                        </div>
+                                                        <h4>
+                                                            Феофилактов М.А.
+                                                        </h4>
+                                                        <p>
+                                                            Врач УЗИ
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide" data-tab_content="address1">
+                                                    <div class="bl_e_a_doctors__item">
+                                                        <div class="bl_e_a_doctors__img">
+                                                            <img src="./img/other/avatar_girl.png" alt="doctor">
+                                                        </div>
+                                                        <h4>
+                                                            Сироткина Н.В.
+                                                        </h4>
+                                                        <p>
+                                                            Гирудотерапевт, невролог
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide" data-tab_content="address1">
+                                                    <div class="bl_e_a_doctors__item">
+                                                        <div class="bl_e_a_doctors__img">
+                                                            <img src="./img/other/avatar_girl.png" alt="doctor">
+                                                        </div>
+                                                        <h4>
+                                                            Зубарева Н.Ю.
+                                                        </h4>
+                                                        <p>
+                                                            Врач УЗИ, онколог
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide" data-tab_content="address1">
+                                                    <div class="bl_e_a_doctors__item">
+                                                        <div class="bl_e_a_doctors__img">
+                                                            <img src="./img/other/avatar_boy.png" alt="doctor">
+                                                        </div>
+                                                        <h4>
+                                                            Антоненко О.А.
+                                                        </h4>
+                                                        <p>
+                                                            Врач УЗИ, хирург
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="swiper-pagination"></div> -->
+                                            <div class="swiper-button-prev">
+                                                <img src="./img/icons/arrow_left_slide.svg" class="svg"
+                                                    alt="slide_left">
+                                                <img src="./img/icons/arrow_left_slide_mobile_red.svg" alt="slide_left">
+                                            </div>
+                                            <div class="swiper-button-next">
+                                                <img src="./img/icons/arrow_right_slide.svg" class="svg"
+                                                    alt="slide_right">
+                                                <img src="./img/icons/arrow_right_slide_mobile_red.svg"
+                                                    alt="slide_right">
+                                            </div>
+                                            <div class="swiper-scrollbar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- -------------------- -->
+                                <div class="bl_e_a_timetable">
+                                    <h3>
+                                        Расписание приема
+                                    </h3>
+                                    <div class="bl_e_a_timetable__content">
+                                        <div class="bl_e_a_timetable__top">
+                                            <div class="timetable__calendar" id="calendar">
+
+                                            </div>
+                                            <div class="timetable__right">
+                                                <div class="timetable__green">
+                                                    <div class="bl_green"></div>
+                                                    <p>
+                                                        зеленым отмечены даты в которые доступны приёмы
+                                                    </p>
+                                                </div>
+                                                <p>
+                                                    Выбранная дата приема: <span>20.09.2021</span>
+                                                </p>
+                                                <div class="timetable__times">
+                                                    <p>
+                                                        Доступное время
+                                                    </p>
+                                                    <ul>
+                                                        <li class="active">
+                                                            17:00
+                                                        </li>
+                                                        <li>
+                                                            17:30
+                                                        </li>
+                                                        <li class="disabled">
+                                                            18:00
+                                                        </li>
+                                                        <li>
+                                                            18:30
+                                                        </li>
+                                                        <li>
+                                                            19:00
+                                                        </li>
+                                                        <li>
+                                                            19:30
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bl_e_a_timetable__bottom">
+                                            <div class="timetable__data">
+                                                <div class="data_spec">
+                                                    <h3>
+                                                        Данные специалиста
+                                                    </h3>
+                                                    <div class="data_block">
+                                                        <p class="title">
+                                                            Специалист
+                                                        </p>
+                                                        <p>
+                                                            Врач УЗИ
+                                                        </p>
+                                                    </div>
+                                                    <div class="data_block">
+                                                        <p class="title">
+                                                            ФИО специалиста
+                                                        </p>
+                                                        <p>
+                                                            Копанев К.Н.
+                                                        </p>
+                                                    </div>
+                                                    <div class="data_block">
+                                                        <p class="title">
+                                                            Дата и время приема:
+                                                        </p>
+                                                        <p>
+                                                            28.09.2021 17:00
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="data_patient">
+                                                    <h3>
+                                                        Данные пациента
+                                                    </h3>
+                                                    <div class="data_patient__1">
+                                                        <div class="data_block">
+                                                            <p class="title">
+                                                                ФИО
+                                                            </p>
+                                                            <p>
+                                                                Петров Валентин Иванович
+                                                            </p>
+                                                        </div>
+                                                        <div class="data_block">
+                                                            <p class="title">
+                                                                Номер телефона
+                                                            </p>
+                                                            <p>
+                                                                +7 922 123 45 67
+                                                            </p>
+                                                        </div>
+                                                        <div class="data_select">
+                                                            <select name="select" id="select_mobile">
+                                                                <option value="1" selected>
+                                                                    Другой профиль
+                                                                </option>
+                                                                <option value="2">
+                                                                    Профиль 2
+                                                                </option>
+                                                                <option value="3">
+                                                                    Профиль 3
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="data_patient__forms">
+                                                        <div class="form__inputs">
+                                                            <form action="#">
+                                                                <div class="input">
+                                                                    <input type="text" required>
+                                                                    <span class="placeholder">
+                                                                        Фамилия
+                                                                    </span>
+                                                                </div>
+                                                                <div class="input">
+                                                                    <input type="text" required>
+                                                                    <span class="placeholder">
+                                                                        Имя
+                                                                    </span>
+                                                                </div>
+                                                                <div class="input">
+                                                                    <input type="text" required>
+                                                                    <span class="placeholder">
+                                                                        Отчество
+                                                                    </span>
+                                                                </div>
+                                                                <div class="input">
+                                                                    <input type="text" required>
+                                                                    <span class="placeholder">
+                                                                        Номер телефона
+                                                                    </span>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <p>
+                                                            Если вы зарегистрированы на нашем сайте, <a
+                                                                href="#">войдите</a> в личный
+                                                            кабинет
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="timetable__btns">
+                                                <a href="#" class="btn_red">
+                                                    Записаться
+                                                </a>
+                                                <label class="checkbox_main">
+                                                    <p class="main_check">
+                                                        <input type="checkbox" checked>
+                                                        <span></span>
+                                                    </p>
+                                                    <p>
+                                                        Согласен на обработку персональных данных
+                                                    </p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <!-- END E APPOINTMENT -->
+            <!-- ======================================== -->
+
+
+        </main>
+        @@include('_footer.html') @@include('_popups.html') @@include('_js_source.html')
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// BLOCK 404
+.bl_404 {
+  .container {
+    max-width: 1280px;
+  }
+  .bl_404__content {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      height: auto;
+    }
+    .bl_404__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 48%;
+      position: relative;
+      z-index: 6;
+      @media (max-width: 768px) {
+        width: 100%;
+        max-width: 500px;
+      }
+      h1 {
+        font-size: 246px;
+        font-weight: 800;
+        color: $orange1;
+        font-family: $Mont;
+        text-align: center;
+        line-height: 100%;
+        @media (max-width: 768px) {
+          display: block;
+          font-size: 200px;
+        }
+      }
+      p {
+        text-align: center;
+        font-family: $Mont;
+        font-weight: 700;
+        font-size: 18px;
+        display: block;
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
+        &:nth-child(2) {
+          font-size: 37px;
+          margin-bottom: 50px;
+        }
+        a {
+          color: $orange1;
+          text-decoration: underline;
+        }
+      }
+    }
+    .bl_404__img {
+      width: 48%;
+      position: relative;
+      @media (max-width: 768px) {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 120px;
+      }
+      &:before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 50px;
+        background-image: url(../img/404/mouse.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        position: absolute;
+        left: -150px;
+        bottom: -100px;
+        @media (max-width: 768px) {
+          left: 0;
+        }
+      }
+      &:after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 70px;
+        background-image: url(../img/404/fish.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        position: absolute;
+        left: 0;
+        bottom: -100px;
+        @media (max-width: 768px) {
+          left: 150px;
+        }
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+// END BLOCK 404
+// ========================================

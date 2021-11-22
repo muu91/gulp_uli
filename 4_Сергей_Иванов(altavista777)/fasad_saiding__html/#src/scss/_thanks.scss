@@ -1,0 +1,187 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// BLOCK HEADER
+.bl_header__tnanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+    min-height: 640px;
+  }
+  .bl_header__content {
+    .bl_header__text {
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: 0;
+      .bl_header__text_h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        h1 {
+          text-align: center;
+          font-size: 50px;
+          box-shadow: none;
+          color: #fff;
+          margin-bottom: 40px;
+          font-family: $Rob;
+          text-shadow: none;
+          @media (max-width: 768px) {
+            font-size: 30px;
+            margin-bottom: 50px;
+          }
+          span {
+            &:first-child {
+              display: inline;
+              font-size: 50px;
+              text-transform: none;
+            }
+            @media (max-width: 768px) {
+              &:first-child {
+                display: block;
+                font-size: 55px;
+              }
+            }
+          }
+        }
+        p {
+          background-color: transparent;
+          font-size: 30px;
+          font-weight: 300;
+          font-family: $Rob;
+          line-height: 50px;
+          color: #fff;
+          margin-bottom: 20px;
+          display: block;
+          text-align: center;
+          @media (max-width: 768px) {
+            font-size: 26px;
+            margin-bottom: 60px;
+            line-height: 30px;
+          }
+        }
+        .btn__yellow {
+          max-width: 330px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+// END BLOCK HEADER
+// ========================================
+
+// INSTA
+.bl_insta__thanks {
+  padding-top: 100px;
+  padding-bottom: 130px;
+  @media (max-width: 768px) {
+    padding-bottom: 100px;
+    padding-top: 90px;
+  }
+  .container {
+    @media (max-width: 425px) {
+      padding: 0;
+    }
+  }
+  .main_h2 {
+    margin-bottom: 95px;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (max-width: 768px) {
+      margin: 0 auto;
+      margin-bottom: 90px;
+    }
+    @media (max-width: 425px) {
+      max-width: 250px;
+    }
+    h2 {
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+  }
+  .bl_insta__content {
+    position: relative;
+    background-image: url("../img/others/insta_gradient.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 20px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 425px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 270px;
+      height: 270px;
+      background-image: url("../img/others/insta.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      @media (max-width: 1100px) {
+        width: 230px;
+        height: 230px;
+      }
+      @media (max-width: 992px) {
+        width: 200px;
+        height: 200px;
+        left: 20px;
+      }
+      @media (max-width: 768px) {
+        width: 100px;
+        height: 100px;
+        top: auto;
+        bottom: -30%;
+        transform: none;
+      }
+      @media (max-width: 425px) {
+        left: 0;
+        bottom: -40%;
+      }
+    }
+    p {
+      font-family: $Rob;
+      font-size: 30px;
+      line-height: normal;
+      font-weight: 400;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px;
+      @media (max-width: 768px) {
+        font-size: 26px;
+      }
+    }
+    a {
+      font-family: $Rob;
+      font-size: 36px;
+      line-height: normal;
+      font-weight: 400;
+      color: #fff;
+      text-align: center;
+      text-decoration: underline;
+      transition: 0.3s;
+      @media (max-width: 768px) {
+        font-size: 30px;
+      }
+      &:hover {
+        transition: 0.3s;
+        opacity: 0.6;
+      }
+    }
+  }
+}
+// END INSTA
+// ========================================

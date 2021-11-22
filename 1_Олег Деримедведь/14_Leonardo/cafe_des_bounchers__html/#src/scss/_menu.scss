@@ -1,0 +1,298 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// HEADER
+.bl_menu__header {
+  padding-top: 140px;
+  @media (max-width: 1420px) {
+    padding-top: 120px;
+  }
+  @media (max-width: 1250px) {
+    padding-top: 100px;
+  }
+  .bl_menu__content {
+    // min-height: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    @media (max-width: 425px) {
+      padding-bottom: 40px;
+      padding-top: 80px;
+      min-height: auto;
+    }
+    h1 {
+      margin-bottom: 24px;
+    }
+    p {
+      display: block;
+      margin-bottom: 16px;
+      text-align: center;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span {
+        display: block;
+      }
+    }
+    .big {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .red {
+      color: #891a0f;
+    }
+  }
+}
+
+// END HEADER
+// ========================================
+// MENU UL 1
+.bl_menu_ul_1 {
+  // padding-bottom: 80px;
+  @media (max-width: 425px) {
+    // padding-bottom: 40px;
+  }
+  .container {
+    max-width: 1224px;
+  }
+  .bl_menu_ul_1__content {
+    ul {
+      @media (max-width: 425px) {
+        margin-bottom: 40px;
+      }
+      li {
+        h3 {
+          text-align: center;
+          margin-bottom: 24px;
+          @media (max-width: 425px) {
+            margin-bottom: 40px;
+          }
+        }
+        > p {
+          text-align: center;
+          margin-bottom: 40px;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          li {
+            width: 100%;
+            // margin-bottom: 40px;
+            &:last-child {
+              margin-bottom: 40px;
+              @media (max-width: 425px) {
+                margin-bottom: 0;
+              }
+            }
+
+            .bl_menu_ul_1__row {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              padding: 16px 24px;
+              @media (max-width: 425px) {
+                padding-left: 0;
+                padding-right: 0;
+                flex-direction: column;
+              }
+              .bl_menu_ul_1__text {
+                width: 100%;
+                h4 {
+                  line-height: normal;
+                  text-align: left;
+                  margin-bottom: 8px;
+                  @media (max-width: 425px) {
+                    margin-bottom: 16px;
+                    display: block;
+                  }
+                }
+                > p {
+                  display: block;
+                  width: 100%;
+                  min-height: 54px;
+                  max-width: 800px;
+                  @media (max-width: 425px) {
+                    min-height: auto;
+                    margin-bottom: 16px;
+                  }
+                  > span {
+                    color: #891a0f;
+                    display: block;
+                  }
+                }
+              }
+              .bl_menu_ul_1__price {
+                margin-left: 24px;
+                width: fit-content;
+                @media (max-width: 425px) {
+                  margin-left: 0;
+                }
+                div {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: flex-end;
+                  align-items: center;
+                  &:first-child {
+                    @media (max-width: 425px) {
+                      margin-bottom: 16px;
+                    }
+                  }
+
+                  p {
+                    font-size: 20px;
+                    font-weight: 700;
+                    font-family: $Mart;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: normal;
+                    color: $black_16;
+                    text-align: right;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    @media (max-width: 425px) {
+                      text-align: left;
+                      justify-content: flex-start;
+                    }
+                    &:first-child {
+                      @media (max-width: 425px) {
+                        min-width: 100px;
+                      }
+                    }
+                    &:last-child {
+                      font-weight: 700;
+                      margin-left: 16px;
+                      min-width: 84px;
+                      max-width: 84px;
+                      font-size: 20px;
+                      @media (max-width: 768px) {
+                        font-size: 16px;
+                        min-width: 50px;
+                      }
+                    }
+                    span {
+                      color: #891a0f;
+                      display: inline;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END MENU UL 1
+// ========================================
+// MENU UL 2
+.bl_menu_ul_2 {
+  padding-bottom: 120px;
+  @media (max-width: 768px) {
+    padding-bottom: 80px;
+  }
+  .bl_menu_ul_2__content {
+    ul {
+      > li {
+        margin-bottom: 40px;
+        h3 {
+          margin-bottom: 40px;
+          text-align: center;
+          @media (max-width: 768px) {
+            margin-bottom: 24px;
+          }
+        }
+        h4 {
+          margin-bottom: 24px;
+          text-align: center;
+        }
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          @media (max-width: 768px) {
+            flex-direction: column;
+          }
+          li {
+            width: 50%;
+            padding: 16px 24px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+            // min-height: 128px;
+            margin-bottom: 0;
+            @media (max-width: 768px) {
+              width: 100%;
+              padding-left: 0;
+              padding-right: 0;
+              margin-bottom: 0;
+              min-height: auto;
+            }
+            @media (max-width: 425px) {
+              flex-direction: column;
+            }
+            .bl_menu_ul_2__text {
+              h4 {
+                text-align: left;
+                line-height: normal;
+                margin-bottom: 8px;
+                @media (max-width: 425px) {
+                  margin-bottom: 24px;
+                }
+              }
+            }
+            .bl_menu_ul_2__price {
+              margin-left: 24px;
+              min-width: 80px;
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-end;
+              margin-left: 20px;
+              @media (max-width: 992px) {
+                min-width: auto;
+              }
+              @media (max-width: 425px) {
+                margin-left: 0;
+                justify-content: flex-start;
+              }
+              p {
+                color: $black_16;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: normal;
+                @media (max-width: 768px) {
+                  font-size: 16px;
+                }
+                @media (max-width: 425px) {
+                  min-width: 100px;
+                  margin-right: 16px;
+                }
+                &:last-child {
+                  margin-left: 24px;
+                  @media (max-width: 425px) {
+                    margin-left: 0;
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END MENU UL 2
+// ========================================

@@ -1,0 +1,192 @@
+@import "_base.scss";
+// ========================================
+// ========================================
+// BLOCK CONTACTS
+.bl_contacts_2 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    h3 {
+        max-width: 700px;
+    }
+}
+
+//END BLOCK CONTACTS
+// ========================================
+// ========================================
+// BLOCK CONTACTS 
+.bl_contacts_form {
+    padding-top: 90px;
+    @media (max-width: 991px) {
+        padding-top: 50px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 30px;
+    }
+    .bl_form {
+        padding: 90px 100px;
+        background-color: $grey1;
+        margin-top: 90px;
+        @media (max-width: 991px) {
+            padding: 50px 60px;
+            margin-top: 50px;
+        }
+        @media (max-width: 767px) {
+            margin-top: 0;
+        }
+        @media (max-width: 450px) {
+            padding: 30px 20px;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            form {
+                padding: 0;
+                margin-bottom: 0;
+            }
+        }
+        h2 {
+            padding-left: 0;
+            &:before {
+                display: none;
+            }
+        }
+        .form__inputs {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            input {
+                width: 48%;
+                border: none;
+                background-color: transparent;
+                border-bottom: 2px solid $grey2;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                font-family: $pragmac;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 120%;
+                color: #0C0D0F;
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+                @media (max-width: 450px) {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+                &:active,
+                &:focus {
+                    outline: none;
+                    border-bottom: 2px solid #0C0D0F;
+                }
+            }
+             ::placeholder {
+                font-family: $pragmac;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 120%;
+                color: #0C0D0F;
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                }
+            }
+             :-ms-input-placeholder {
+                font-family: $pragmac;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 120%;
+                color: #0C0D0F;
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                }
+            }
+             ::-ms-input-placeholder {
+                font-family: $pragmac;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 120%;
+                color: #0C0D0F;
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                }
+            }
+        }
+        textarea {
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid $grey2;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-family: $pragmac;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 120%;
+            color: #0C0D0F;
+            margin-bottom: 40px;
+            &:active,
+            &:focus {
+                outline: none;
+                border-bottom: 2px solid #0C0D0F;
+            }
+            &::placeholder {
+                color: #0C0D0F;
+            }
+        }
+        button {
+            background-color: $green;
+            border: none;
+            padding: 15px 18px;
+            color: #fff;
+            width: max-content;
+            transition: 0.3s;
+            max-width: 220px;
+            width: 100%;
+            cursor: pointer;
+            &:active,
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                transition: 0.3s;
+                background-color: $blue;
+            }
+            span {
+                background-color: #fff;
+                margin-left: 50px;
+                &:before,
+                &:after {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+//END BLOCK CONTACTS 
+// ========================================
+// ========================================
+.bl_contacts_2 {
+    padding-bottom: 0;
+    @media (max-width: 991px) {
+        padding-top: 50px;
+    }
+    .contacts__items {
+        padding: 0;
+        box-shadow: none;
+        margin-bottom: 90px;
+        @media (max-width: 991px) {
+            margin-bottom: 50px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+        .contacts__item {
+            width: 25%;
+            @media (max-width: 991px) {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,257 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// EVENT
+.bl_event {
+  padding-bottom: 100px;
+  @media (max-width: 768px) {
+    padding-bottom: 60px;
+  }
+  .bl_event__content {
+    .bl_event__items {
+      margin-bottom: 40px;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px 30px;
+        @media (max-width: 1024px) {
+          gap: 60px 20px;
+        }
+        @media (max-width: 768px) {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 40px 10px;
+        }
+        @media (max-width: 600px) {
+          grid-template-columns: repeat(1, 1fr);
+          gap: 30px;
+        }
+        li {
+          position: relative;
+          > a {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+          }
+          &:hover .bl_event__img::before {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            bottom: 0;
+            border-radius: 0;
+            transition: 0.3s;
+          }
+          &:hover .bl_event__img img,
+          &:hover .bl_event__img > svg {
+            transition: 0.8s;
+            opacity: 1;
+          }
+          .bl_event__img {
+            height: 274px;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 30px;
+            margin-bottom: 20px;
+            @media (max-width: 1440px) {
+              height: 220px;
+            }
+            @media (max-width: 1024px) {
+              height: 183px;
+              padding: 20px;
+            }
+            @media (max-width: 992px) {
+              height: 180px;
+            }
+            @media (max-width: 992px) {
+              height: 214px;
+            }
+            @media (max-width: 600px) {
+              padding: 20px;
+              height: 250px;
+            }
+            @media (max-width: 425px) {
+              height: 220px;
+            }
+            @media (max-width: 374px) {
+              height: 178px;
+            }
+            &::before {
+              content: "";
+              display: block;
+              background-color: $red;
+              width: 0px;
+              height: 0px;
+              left: 60px;
+              top: auto;
+              right: auto;
+              bottom: 60px;
+              position: absolute;
+              z-index: 2;
+              border-radius: 500px;
+              transition: 0.3s;
+            }
+
+            .bl_stock__hover {
+              position: absolute;
+            }
+
+            .bg_img {
+              position: absolute;
+              left: 0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+              }
+            }
+            > img {
+              display: block;
+              width: 50px;
+              position: absolute;
+              bottom: 30px;
+              left: 30px;
+              transition: 0.3s;
+              opacity: 0;
+              z-index: 5;
+            }
+            > svg {
+              display: block;
+              width: 50px;
+              position: absolute;
+              bottom: 30px;
+              left: 30px;
+              opacity: 0;
+              transition: 0.3s;
+              z-index: 5;
+              @media (max-width: 1024px) {
+                bottom: 30px;
+                left: 30px;
+              }
+              @media (max-width: 600px) {
+                bottom: 20px;
+                left: 20px;
+              }
+            }
+            .bl_event__date {
+              font-family: $Nun;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 135%;
+              color: #fff;
+              margin-bottom: 30px;
+              width: 50%;
+              position: absolute;
+              top: 30px;
+              left: 30px;
+              z-index: 3;
+              @media (max-width: 1024px) {
+                left: 30px;
+                top: 30px;
+              }
+              @media (max-width: 768px) {
+                margin-bottom: 5px;
+              }
+              @media (max-width: 600px) {
+                left: 20px;
+                top: 20px;
+              }
+            }
+            h3 {
+              width: 45%;
+              font-family: $Nun;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 130%;
+              color: #fff;
+              z-index: 3;
+              @media (max-width: 1440px) {
+                width: 55%;
+                margin-top: 0;
+              }
+              @media (max-width: 1024px) {
+                font-size: 18px;
+              }
+              @media (max-width: 992px) {
+                font-size: 16px;
+              }
+              @media (max-width: 768px) {
+                width: 70%;
+                margin-top: 20px;
+              }
+            }
+          }
+          .bl_event__text {
+            padding-left: 30px;
+            @media (max-width: 1024px) {
+              padding-left: 20px;
+            }
+            .text__term {
+              display: flex;
+              flex-direction: row;
+              margin-bottom: 15px;
+              p {
+                font-family: $Nun;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 135%;
+                color: $grey;
+              }
+              .text__date {
+                font-family: $Nun;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 135%;
+                color: $dark;
+              }
+            }
+            .text__branches {
+              p {
+                font-family: $Nun;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 135%;
+                color: $grey;
+                span {
+                  font-family: $Nun;
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 135%;
+                  color: $dark;
+                  display: block;
+                  margin-top: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// END EVENT
+// ========================================

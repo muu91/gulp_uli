@@ -1,0 +1,150 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// LIKE
+.bl_like {
+  .bl_like__content {
+    h1 {
+      margin-bottom: 47px;
+    }
+    .main_main {
+      @media (max-width: 992px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .main__content {
+        .main__content__top {
+          justify-content: flex-end;
+        }
+        .main__content__items {
+          ul {
+            li {
+              .btn_delete {
+                position: absolute;
+                right: 30px;
+                top: 0;
+                width: 8px;
+                height: 8px;
+                display: block;
+                z-index: 5;
+                @media (max-width: 1440px) {
+                  right: 20px;
+                }
+                @media (max-width: 500px) {
+                  right: 0;
+                }
+
+                img {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      aside {
+        margin-right: 0;
+        margin-left: 30px;
+        @media (max-width: 1200px) {
+          max-width: 220px;
+          min-width: 220px;
+          margin-left: 20px;
+        }
+
+        @media (max-width: 992px) {
+          display: block;
+          max-width: none;
+          min-width: auto;
+          width: 100%;
+          margin-left: 0;
+        }
+        .buy_all {
+          background-color: $bg1;
+          padding: 30px;
+          @media (max-width: 992px) {
+            // display: grid;
+            // grid-template-columns: repeat(4, 1fr);
+            // gap: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          @media (max-width: 700px) {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+          }
+          .buy_all__li {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width: 1200px) {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+            @media (max-width: 992px) {
+              margin-right: 20px;
+            }
+            @media (max-width: 700px) {
+              flex-direction: row;
+              margin-right: 0;
+            }
+            p {
+              color: $light_grey;
+              font-weight: 400;
+              line-height: normal;
+              @media (max-width: 992px) {
+                margin-bottom: 10px;
+              }
+              @media (max-width: 700px) {
+                margin-bottom: 0;
+              }
+              &:last-child {
+                color: $dark;
+              }
+            }
+          }
+          .btn_blue {
+            margin-bottom: 20px;
+            min-width: 130px;
+            @media (max-width: 992px) {
+              margin-right: 50px;
+            }
+          }
+          .btn_clear {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            font-family: $Mont;
+            font-size: 14px;
+            color: $light_grey;
+            font-weight: 500;
+            line-height: normal;
+            &::before {
+              content: "";
+              width: 8px;
+              height: 8px;
+              min-width: 8px;
+              max-width: 8px;
+              background-image: url("../img/icons/btn_close_burger.svg");
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center center;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END LIKE
+// ========================================

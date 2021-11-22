@@ -1,0 +1,137 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// ========================================
+// BLOCK HEADER
+.bl_contact {
+    margin-bottom: 100px;
+    @media (max-width: 1200px) {
+        margin-bottom: calc(50px + (100 - 50) *((100vw - 320px) / (1200 - 320)));
+    }
+    .main_h2 {
+        margin: 0 auto;
+        margin-bottom: 100px;
+        max-width: 950px;
+        @media (max-width: 1200px) {
+            margin-bottom: calc(30px + (100 - 30) *((100vw - 320px) / (1200 - 320)));
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            max-width: 570px;
+        }
+    }
+    .contact__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact__item {
+            width: 33.333%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 15px;
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+            @media (max-width: 450px) {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .contact__title {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                @media (max-width: 1200px) {
+                    margin-bottom: calc(10px + (20 - 10) *((100vw - 320px) / (1200 - 320)));
+                }
+                img {
+                    height: 36px;
+                    display: block;
+                    margin-right: 10px;
+                    @media (max-width: 1200px) {
+                        height: calc(18px + (36 - 18) *((100vw - 320px) / (1200 - 320)));
+                    }
+                }
+                p {
+                    font-size: 34px;
+                    line-height: 130%;
+                    display: block;
+                    font-weight: 400;
+                    color: #000;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                    @media (max-width: 1200px) {
+                        font-size: calc(18px + (34 - 18) *((100vw - 320px) / (1200 - 320)));
+                    }
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+            &:first-child {
+                >p {
+                    max-width: 220px;
+                }
+            }
+            >img {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+                @media (max-width: 767px) {
+                    max-width: 300px;
+                }
+            }
+            >p {
+                font-size: 19px;
+                font-weight: 400;
+                line-height: 160%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #000;
+                height: 100%;
+                @media (max-width: 1200px) {
+                    font-size: calc(16px + (19 - 16) *((100vw - 320px) / (1200 - 320)));
+                }
+                a {
+                    color: #000;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// BLOCK HEADER
+// ========================================
+// ========================================
+// BLOCK MAPS
+.bl_maps {
+    height: 700px;
+    width: 100%;
+    margin-bottom: 100px;
+    background-color: grey;
+    @media (max-width: 1200px) {
+        margin-bottom: calc(50px + (100 - 50) *((100vw - 320px) / (1200 - 320)));
+        height: calc(300px + (700 - 300) *((100vw - 320px) / (1200 - 320)));
+    }
+}
+
+// END BLOCK MAPS
+// ========================================
+// ========================================

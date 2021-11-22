@@ -1,0 +1,64 @@
+// -----------------------------------------------------
+//Variables
+@import "_variables.scss";
+//End Variables
+// -----------------------------------------------------
+.main__terms_and_conditions {
+    background-color: $black_1a;
+}
+
+// ========================================
+// ========================================
+// BLOCK MAIN TEXTS
+.bl_main_text {
+    padding-top: 220px;
+    padding-bottom: 180px;
+    @media (max-width: 767px) {
+        padding-top: 170px;
+        padding-bottom: 100px;
+    }
+    .main_text__body {
+        max-width: 780px;
+        margin: 0 auto;
+        overflow: hidden;
+        h2 {
+            color: #fff;
+            display: block;
+            margin-bottom: 45px;
+            font-weight: 400;
+        }
+        h3 {
+            margin-bottom: 5px;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }
+        }
+        p {
+            margin-bottom: 25px;
+            color: #fff;
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            span {
+                display: block;
+            }
+            a {
+                display: block;
+                color: #fff;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+//END BLOCK MAIN TEXTS
+// ========================================
+// ========================================

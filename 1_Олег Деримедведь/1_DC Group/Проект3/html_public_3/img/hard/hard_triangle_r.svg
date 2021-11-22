@@ -1,0 +1,9 @@
+<svg id="Компонент_109_4" data-name="Компонент 109 – 4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="812.614" height="938.013" viewBox="0 0 812.614 938.013">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <path id="Контур_3909" data-name="Контур 3909" d="M502.691,403.09,630.7,181.369,246.669,403.09H502.691m38.328,66.386H0L812.071,0,541.019,469.477Z" transform="translate(406.035 938.013) rotate(-120)" opacity="0.039" fill="url(#linear-gradient)"/>
+</svg>

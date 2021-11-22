@@ -1,0 +1,555 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// DOCTORS
+.bl_doctors {
+  padding-bottom: 100px;
+  @media (max-width: 768px) {
+    padding-bottom: 60px;
+  }
+  .bl_doctors__content {
+    .green_menu {
+      margin-bottom: 60px;
+      @media (max-width: 768px) {
+        margin-bottom: 40px;
+      }
+    }
+    .bl_doctors__items {
+      margin-bottom: 40px;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 60px 30px;
+        @media (max-width: 1024px) {
+          gap: 60px 20px;
+        }
+        @media (max-width: 768px) {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 40px 10px;
+        }
+        @media (max-width: 600px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}
+.green_menu {
+  overflow: auto;
+  border-radius: 8px;
+  margin-bottom: 60px;
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    width: fit-content;
+    overflow: auto;
+    position: relative;
+    width: fit-content;
+    // border-top: 2px solid $border;
+    &::before {
+      content: "";
+      height: 2px;
+      width: 98%;
+      background-color: $border;
+      top: 0;
+      left: 4px;
+      right: 4px;
+      position: absolute;
+      display: block;
+    }
+    &::after {
+      content: "";
+      height: 2px;
+      width: 98%;
+      background-color: $border;
+      bottom: 0;
+      left: 4px;
+      right: 4px;
+      position: absolute;
+      display: block;
+    }
+    li {
+      &:first-child {
+        a {
+          border-left: 2px solid $border;
+          border-bottom-left-radius: 8px;
+          border-top-left-radius: 8px;
+        }
+      }
+      &:last-child {
+        a {
+          border-right: 2px solid $border;
+          border-bottom-right-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 54px;
+        padding: 16px 30px;
+        position: relative;
+        white-space: nowrap;
+        z-index: 5;
+        color: $l_grey;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 135%;
+        transition: 0.3s;
+        border-top: 2px solid $border;
+        border-bottom: 2px solid $border;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+        @media (max-width: 425px) {
+          height: 47px;
+          padding: 14px 20px;
+        }
+        &:hover {
+          transition: 0.3s;
+          background-color: $border;
+        }
+        &:focus {
+          border: 2px solid $dark;
+        }
+      }
+      a.active {
+        color: #fff;
+        transition: 0.3s;
+        border: 2px solid $green;
+        background-color: $green;
+      }
+    }
+  }
+}
+.doctor__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: 0.3s;
+  &:focus .doctor__img,
+  &:hover .doctor__img {
+    filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.1));
+    transition: 0.3s;
+  }
+  &:focus h3,
+  &:hover h3 {
+    color: $red;
+    transition: 0.3s;
+  }
+  > a {
+    display: block;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
+  .doctor__img {
+    height: 380px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    @media (max-width: 1440px) {
+      height: 320px;
+    }
+    @media (max-width: 1200px) {
+      height: 280px;
+    }
+    @media (max-width: 1024px) {
+      height: 253px;
+    }
+    @media (max-width: 768px) {
+      height: 265px;
+    }
+    @media (max-width: 700px) {
+      height: 220px;
+    }
+    @media (max-width: 600px) {
+      height: 300px;
+    }
+    @media (max-width: 500px) {
+      height: 250px;
+    }
+    @media (max-width: 425px) {
+      height: 200px;
+    }
+    @media (max-width: 374px) {
+      height: 160px;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  h3 {
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: $dark;
+    transition: 0.3s;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+    @media (max-width: 425px) {
+      font-size: 14px;
+    }
+  }
+  .doctor__spec {
+    margin-bottom: 10px;
+    p {
+      font-size: 14px;
+      line-height: 135%;
+      color: $l_grey;
+      font-weight: 600;
+      @media (max-width: 425px) {
+        font-size: 12px;
+      }
+    }
+  }
+  .doctor__address {
+    p {
+      font-size: 14px;
+      line-height: 135%;
+      color: $dark;
+      font-weight: 600;
+      @media (max-width: 425px) {
+        font-size: 12px;
+      }
+      span {
+        color: $l_grey;
+        display: inline;
+      }
+    }
+  }
+}
+
+// --------------------
+// PAGINATION
+.bl_pagination__content {
+  position: relative;
+  background-color: $bg;
+  border-radius: 8px;
+  ul {
+    padding: 0;
+    // max-width: 324px;
+    width: fit-content;
+    margin: 0 auto;
+    height: 80px;
+    @media (max-width: 768px) {
+      height: 44px;
+    }
+    li {
+      height: 100%;
+      display: block;
+      &:first-child {
+        position: absolute;
+        left: 60px;
+        top: 0;
+        @media (max-width: 768px) {
+          left: 30px;
+        }
+        @media (max-width: 425px) {
+          left: 20px;
+        }
+        &:hover::before {
+          opacity: 0;
+          transition: 0.3s;
+        }
+        &:hover::after {
+          opacity: 1;
+          transition: 0.3s;
+        }
+        &::before {
+          content: "";
+          display: block;
+          width: 50px;
+          height: 12px;
+          background-image: url("../img/icons/arrow_pag_left_dark.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          pointer-events: none;
+          @media (max-width: 700px) {
+            width: 10px;
+            background-image: url("../img/icons/arrow_pag_left_dark_mobile.svg");
+          }
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 50px;
+          height: 12px;
+          background-image: url("../img/icons/arrow_pag_left_red.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          opacity: 0;
+          transition: 0.3s;
+          pointer-events: none;
+          @media (max-width: 700px) {
+            display: none;
+          }
+        }
+        a {
+          font-size: 0;
+          position: relative;
+          display: block;
+          width: 50px;
+          padding: 0;
+          @media (max-width: 700px) {
+            width: 20px;
+          }
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+      &:last-child {
+        position: absolute;
+        right: 60px;
+        top: 0;
+        @media (max-width: 768px) {
+          right: 30px;
+        }
+        @media (max-width: 425px) {
+          right: 20px;
+        }
+        &:hover::before {
+          opacity: 0;
+          transition: 0.3s;
+        }
+        &:hover::after {
+          opacity: 1;
+          transition: 0.3s;
+        }
+        &::before {
+          content: "";
+          display: block;
+          width: 50px;
+          height: 12px;
+          background-image: url("../img/icons/arrow_pag_right_dark.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          pointer-events: none;
+          @media (max-width: 700px) {
+            width: 10px;
+            background-image: url("../img/icons/arrow_pag_right_dark_mobile.svg");
+          }
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 50px;
+          height: 12px;
+          background-image: url("../img/icons/arrow_pag_right_red.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          opacity: 0;
+          transition: 0.3s;
+          pointer-events: none;
+          @media (max-width: 700px) {
+            display: none;
+          }
+        }
+        a {
+          font-size: 0;
+          position: relative;
+          display: block;
+          width: 50px;
+          padding: 0;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 28px;
+        height: 100%;
+        margin: 0;
+        background: transparent;
+        border-radius: 0;
+        border: 0;
+        transition: 0.3s;
+        font-family: $Nun;
+        line-height: 150%;
+        font-weight: 700;
+        font-size: 16px;
+        color: $l_grey;
+        box-shadow: none;
+        @media (max-width: 768px) {
+          padding: 20px 20px;
+        }
+        @media (max-width: 700px) {
+          padding: 15px;
+        }
+        @media (max-width: 425px) {
+          font-size: 12px;
+        }
+
+        &:hover {
+          background-color: $border;
+          transition: 0.3s;
+          color: $dark;
+        }
+      }
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 28px;
+        height: 100%;
+        margin: 0;
+        background: transparent;
+        border-radius: 0;
+        border: 0;
+        transition: 0.3s;
+        font-family: $Nun;
+        line-height: 150%;
+        font-weight: 700;
+        font-size: 16px;
+        color: $l_grey;
+        box-shadow: none;
+        @media (max-width: 768px) {
+          padding: 20px 20px;
+        }
+        @media (max-width: 700px) {
+          padding: 15px;
+        }
+        @media (max-width: 425px) {
+          font-size: 12px;
+        }
+        &:hover {
+          background-color: $border !important;
+          transition: 0.3s;
+        }
+      }
+    }
+    li.disabled {
+      &:hover::before {
+        opacity: 1;
+        transition: 0.3s;
+      }
+      &:first-child {
+        &::before {
+          content: "";
+          display: block;
+          width: 50px;
+          height: 12px;
+          background-image: url("../img/icons/arrow_pag_left_disabled.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          pointer-events: none;
+          @media (max-width: 700px) {
+            width: 10px;
+            background-image: url("../img/icons/arrow_pag_left_disabled_mobile.svg");
+          }
+        }
+        &::after {
+          display: none;
+        }
+      }
+      &:last-child {
+        &::before {
+          content: "";
+          display: block;
+          width: 50px;
+          height: 12px;
+          background-image: url("../img/icons/arrow_pag_right_disabled.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          pointer-events: none;
+          @media (max-width: 700px) {
+            width: 10px;
+            background-image: url("../img/icons/arrow_pag_right_disabled_mobile.svg");
+          }
+        }
+        &::after {
+          display: none;
+        }
+      }
+      span {
+        font-size: 0;
+        &:hover {
+          background-color: transparent !important;
+        }
+      }
+    }
+  }
+  li.active {
+    span {
+      color: $red;
+      box-shadow: none;
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+  .prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  .next {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+// END PAGINATION
+// --------------------
+
+// END DOCTORS
+// ========================================
+
+// ========================================

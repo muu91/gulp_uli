@@ -1,0 +1,69 @@
+/*
+Theme Name: DC Direct
+Description:
+*/
+
+.wpcf7-response-output {
+    color: #000;
+}
+.home .bl_mini_block .mini_block__items .mini_block__item {
+    position: relative;
+    margin-left: auto;
+}
+.key_fetures__items .key_fetures__item .key_fetures__text {
+    width: calc(100% - 120px);
+}
+.bl_team .team__items {
+    flex-wrap: wrap;
+}
+.bl_team .team__items .team_item {
+    margin-top: 200px;
+}
+.bl_team h3 {
+    margin-bottom: 50px;
+}
+.home .bl_print_tool .print_tool__mini {
+    transform: translateX(-50%);
+    bottom: -400px;
+}
+.bl_e_cataloque {
+    padding-top: 400px;
+}
+
+.bl_header, .bl_header__main{
+    background-attachment: fixed;
+}
+
+/**/
+
+.bl_announce__why .announce__ul .announce__item2 .announce__img, .bl_announce__why .announce__ul .announce__item .announce__img{
+    height:  auto !important;
+}
+.bl_announce__why .announce__ul .announce__item .announce__img img {
+    transform: translateY(17%);
+}
+.announce__item {
+    align-items: flex-start;
+}
+/**/
+@media (max-width: 991px){
+	.home .bl_print_tool .print_tool__mini {
+	    bottom: -400px;
+	    max-width: 100%;
+	    left: 0;
+	    transform: none;
+	}
+	.bl_e_cataloque {
+	    padding-top: 300px;
+	}
+}
+@media (max-width: 860px){
+	.bl_csr .csr_mini {
+	    bottom: 290px;
+	}
+}
+@media (max-width: 767px){
+	.bl_csr .csr_mini {
+	    bottom: 55px;
+	}
+}

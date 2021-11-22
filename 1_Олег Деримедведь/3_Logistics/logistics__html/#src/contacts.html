@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('_head.html')
+</head>
+
+<body>
+    @@include('_preloader.html') @@include('_header_2.html')
+    <main class="main">
+
+        <!-- ======================================== -->
+        <!-- ======================================== -->
+        <!-- BLOCK CONTACTS 2-->
+        <div class="bl_contacts_form">
+            <div class="container">
+
+                <div class="main_h2">
+                    <div class="bands">
+                        <span data-aos="fade-down" data-aos-delay="800"></span>
+                        <span data-aos="fade-down" data-aos-delay="600"></span>
+                        <span data-aos="fade-down" data-aos-delay="400"></span>
+                        <span data-aos="fade-down" data-aos-delay="200"></span>
+                        <span data-aos="fade-down" data-aos-delay="0"></span>
+                    </div>
+                    <h2>
+                        Контакты
+                    </h2>
+                </div>
+                <h3 data-aos="fade-up" data-aos-delay="200">
+                    Мы создаём <span>эффективные решения</span> для развития вашего бизнеса
+                </h3>
+                <div class="bl_form" data-aos="fade-up" data-aos-delay="0">
+                    <form action="#" class="form">
+
+                        <div class="main_h2">
+
+                            <h2 data-aos="fade-up" data-aos-delay="0">
+                                Остались вопросы?
+                            </h2>
+                        </div>
+                        <div class="form__inputs" data-aos="fade-up" data-aos-delay="600">
+                            <input type="text" placeholder="Ваше имя и фамилия">
+                            <input type="tel" placeholder="Телефон">
+                            <input type="email" placeholder="Email">
+                            <input type="text" placeholder="Тема сообщения">
+
+                        </div>
+                        <textarea name="textarea" rows="1" placeholder="Текст сообщения" data-aos="fade-up" data-aos-delay="800"></textarea>
+                        <button class="read_more__green" data-aos="fade-up" data-aos-delay="1000">Отправить <span></span></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!--END BLOCK CONTACTS 2-->
+        <!-- ======================================== -->
+        <!-- ======================================== -->
+
+        <!-- BLOCK CONTACTS -->
+        <div class="bl_contacts bl_contacts_2" id="bl_map_contacts">
+            <div class="container">
+
+                <div class="main_h2">
+                    <div class="bands">
+                        <span data-aos="fade-down" data-aos-delay="800"></span>
+                        <span data-aos="fade-down" data-aos-delay="600"></span>
+                        <span data-aos="fade-down" data-aos-delay="400"></span>
+                        <span data-aos="fade-down" data-aos-delay="200"></span>
+                        <span data-aos="fade-down" data-aos-delay="0"></span>
+                    </div>
+                    <h2>
+                        Связаться с нами
+                    </h2>
+                </div>
+                <div class="contacts__items">
+                    <div class="contacts__item" data-aos="fade-up" data-aos-delay="0">
+                        <span>Адрес</span>
+                        <address>
+                            <a href="#map_contacts" data-coordinat="40,40" data-id="1">
+                                Украина, Киев, Туманяна 15а
+                            </a>
+                        </address>
+                    </div>
+                    <div class="contacts__item" data-aos="fade-up" data-aos-delay="200">
+                        <span>Почта</span>
+                        <a href="mailto:info@business-group.com.ua">
+                            info@business-group.com.ua
+                        </a>
+                    </div>
+                    <div class="contacts__item" data-aos="fade-up" data-aos-delay="400">
+                        <span>Телефон</span>
+                        <a href="tel:+380672434954">
+                            +38 067 243 49 54
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- MAPS -->
+            <div id="map_contacts" class="maps__map" data-aos="fade-in" data-aos-delay="0">
+
+            </div>
+            <!--END MAPS -->
+
+        </div>
+        <!--END BLOCK CONTACTS -->
+        <!-- ======================================== -->
+        <!-- ======================================== -->
+
+
+
+    </main>
+
+    <!-- POPUP -->
+    @@include('_popup_contacts.html')
+    <!-- END POPUP -->
+    @@include('_footer.html') @@include('_js_source.html')
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var center = {
+                lat: 50.4447127,
+                lng: 30.601249,
+            };
+            let mapMarkers = {};
+            // The map, centered at Uluru
+
+            var map = new google.maps.Map(document.getElementById("map_contacts"), {
+                zoom: 6,
+                center: center,
+                mapTypeControl: false,
+                scrollwheel: false,
+                disableDefaultUI: false,
+                position: center,
+                map: map,
+                styles: [{
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#f5f5f5",
+                    }, ],
+                }, {
+                    elementType: "labels.icon",
+                    stylers: [{
+                        visibility: "off",
+                    }, ],
+                }, {
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#616161",
+                    }, ],
+                }, {
+                    elementType: "labels.text.stroke",
+                    stylers: [{
+                        color: "#f5f5f5",
+                    }, ],
+                }, {
+                    featureType: "administrative.land_parcel",
+                    stylers: [{
+                        visibility: "off",
+                    }, ],
+                }, {
+                    featureType: "administrative.land_parcel",
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#bdbdbd",
+                    }, ],
+                }, {
+                    featureType: "administrative.neighborhood",
+                    stylers: [{
+                        visibility: "off",
+                    }, ],
+                }, {
+                    featureType: "poi",
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#eeeeee",
+                    }, ],
+                }, {
+                    featureType: "poi",
+                    elementType: "labels.text",
+                    stylers: [{
+                        visibility: "off",
+                    }, ],
+                }, {
+                    featureType: "poi",
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#757575",
+                    }, ],
+                }, {
+                    featureType: "poi.park",
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#e5e5e5",
+                    }, ],
+                }, {
+                    featureType: "poi.park",
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#9e9e9e",
+                    }, ],
+                }, {
+                    featureType: "road",
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#ffffff",
+                    }, ],
+                }, {
+                    featureType: "road",
+                    elementType: "labels",
+                    stylers: [{
+                        visibility: "on",
+                    }, ],
+                }, {
+                    featureType: "road.arterial",
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#757575",
+                    }, ],
+                }, {
+                    featureType: "road.highway",
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#dadada",
+                    }, ],
+                }, {
+                    featureType: "road.highway",
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#616161",
+                    }, ],
+                }, {
+                    featureType: "road.local",
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#9e9e9e",
+                    }, ],
+                }, {
+                    featureType: "transit.line",
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#e5e5e5",
+                    }, ],
+                }, {
+                    featureType: "transit.station",
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#eeeeee",
+                    }, ],
+                }, {
+                    featureType: "water",
+                    elementType: "geometry",
+                    stylers: [{
+                        color: "#c9c9c9",
+                    }, ],
+                }, {
+                    featureType: "water",
+                    elementType: "labels.text",
+                    stylers: [{
+                        visibility: "off",
+                    }, ],
+                }, {
+                    featureType: "water",
+                    elementType: "labels.text.fill",
+                    stylers: [{
+                        color: "#9e9e9e",
+                    }, ],
+                }, ],
+            });
+
+            $(".contacts__items address a").each(function(idx) {
+                let coord = $(this).data("coordinat") || "55.5,82.3",
+                    text = $(this).text();
+
+                let marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(
+                        coord.split(",")[0],
+                        coord.split(",")[1]
+                    ),
+                    map: map,
+                    title: text,
+                    icon: "https://themes.upro.dev/logistics/wp-content/themes/logistics/img/point.svg",
+                });
+
+                mapMarkers[$(this).data('id')] = marker;
+
+                $(this).click(function() {
+                    let marker = mapMarkers[$(this).data('id')];
+                    if (marker) {
+                        map.setZoom(10);
+                        map.panTo(marker.position);
+                    }
+                });
+            });
+        }
+    </script>
+
+    <script defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-pBlC3Ex6zwA0zIWMz4H93I3CZvYf8d0&amp;callback=initMap">
+    </script>
+</body>
+
+</html>

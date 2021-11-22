@@ -1,0 +1,37 @@
+<svg id="Компонент_45_2" data-name="Компонент 45 – 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1926.606" height="640" viewBox="0 0 1926.606 640">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle" width="1926.607" height="640" transform="translate(1 2052)" fill="#f4f4f4"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="-0.243" y1="0.5" x2="1.066" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5537e8"/>
+      <stop offset="0.75" stop-color="#387ef5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.293" stop-color="#fff"/>
+      <stop offset="1" stop-color="#312780"/>
+    </linearGradient>
+  </defs>
+  <g id="Группа_масок_74" data-name="Группа масок 74" transform="translate(-1 -2052)" clip-path="url(#clip-path)">
+    <g id="Сгруппировать_5914" data-name="Сгруппировать 5914" transform="translate(-260.252 2052.777)">
+      <g id="Сгруппировать_5913" data-name="Сгруппировать 5913">
+        <rect id="Прямоугольник_390" data-name="Прямоугольник 390" width="2074.404" height="1410.565" transform="translate(259.84)" fill="#1d7eff"/>
+        <path id="Контур_4033" data-name="Контур 4033" d="M1186.52,1506.662v.039H-114.56V96.1H678.427l.024.077,502.673,1395.5,4.964,13.8.407,1.191Z" transform="translate(374.4 -96.097)" opacity="0.85" fill="url(#linear-gradient)"/>
+        <path id="Контур_4034" data-name="Контур 4034" d="M678.739,96.133h-793.3V300.191l945.806,876.458,29.014,26.867,325.829,301.917.024.038.408.384Zm-551.4,199.331h479.6l239.79,665.789Z" transform="translate(374.4 -96.057)" opacity="0.05" fill="url(#linear-gradient-2)" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <path id="Контур_4035" data-name="Контур 4035" d="M1562.41,696.236,1395.218,453.642l127.287,43.935,39.9,198.658ZM1548.667,451.25l-268.783-94.317L1632.407,872.9Z" transform="translate(814.979 193.26)" fill="#fff" opacity="0.15"/>
+        <path id="Контур_4036" data-name="Контур 4036" d="M1335.659,749.792l76.158,139.672-63.233-34.6-12.925-105.077Zm-2.138,126.179,133.469,73.842-160.412-296.77Z" transform="translate(823.412 521.748)" fill="#fff" opacity="0.15"/>
+        <path id="Контур_4037" data-name="Контур 4037" d="M132.3,636.84,239.127,809.032,154.7,772.369,132.3,636.84Zm3.835,165.13,178.245,78.455L89.222,514.369Z" transform="translate(438.786 367.911)" fill="#fff" opacity="0.15"/>
+        <g id="Сгруппировать_5912" data-name="Сгруппировать 5912" transform="translate(0 171.819)" opacity="0.05">
+          <path id="Контур_4038" data-name="Контур 4038" d="M-6.148,661.264-204.043,689.9l93.789-105.889L-6.148,661.264ZM-113.342,529.181-312.014,751.86l419.057-57.724Z" transform="translate(312.014 212.523)" fill="#fff"/>
+          <path id="Контур_4039" data-name="Контур 4039" d="M495.081,718.506l-73.8,83.2L443.2,725.958l51.885-7.452Zm-60.859-13L387.566,865.333l156.7-175.042Z" transform="translate(533.048 391.249)" fill="#fff"/>
+          <path id="Контур_4040" data-name="Контур 4040" d="M1233.522,222.747l-1.649,70.155-11.811-35.842,13.459-34.313ZM1212.5,256.6l24.8,75.875L1241.182,184Z" transform="translate(793.688 -170.401)" fill="#fff"/>
+          <path id="Контур_4041" data-name="Контур 4041" d="M1349.841,538.463l-43.776,2.23,21.487-21.372,22.29,19.142Zm-22.529-31.271-45.5,44.91,92.677-4.075Z" transform="translate(815.587 188.13)" fill="#fff"/>
+          <path id="Контур_4042" data-name="Контур 4042" d="M674.764,281.744l-25.2-57.423,22.94,17.052,2.257,40.371Zm3.936-47.353-48.4-36.3,53.009,121.922Z" transform="translate(609.74 -154.77)" fill="#fff"/>
+          <path id="Контур_4043" data-name="Контур 4043" d="M381.066,217.455l-66.845,19.1,29.984-40.48,36.861,21.382Zm-38.922-39.9L278.6,262.747,420.2,223.3Z" transform="translate(498.621 -177.553)" fill="#fff"/>
+          <path id="Контур_4044" data-name="Контур 4044" d="M1013.5,847.893l186.086-173.152-61.859,172.681-124.227.47Zm142.9,51.092,131.5-364.195L893.007,898.585Z" transform="translate(692.744 218.747)" fill="#fff"/>
+        </g>
+      </g>
+      <rect id="Прямоугольник_391" data-name="Прямоугольник 391" width="2063.082" height="897.183" transform="translate(260.475 213.07)" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg id="Oracle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="136.991" height="130.292" viewBox="0 0 136.991 130.292">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#483aeb"/>
+      <stop offset="1" stop-color="#3575f2"/>
+    </linearGradient>
+  </defs>
+  <path id="Контур_4015" data-name="Контур 4015" d="M150.921,66.876,103.589,60,82.426,17.11,61.262,60,13.93,66.876l34.251,33.382L40.091,147.4l42.334-22.25L124.8,147.4l-8.09-47.136Zm-68.5,47.3L52.983,129.657,58.6,96.875,34.782,73.655,67.7,68.867,82.426,39.041,97.15,68.867l32.919,4.788L106.247,96.875l5.62,32.781Z" transform="translate(-13.93 -17.11)" fill="url(#linear-gradient)"/>
+</svg>

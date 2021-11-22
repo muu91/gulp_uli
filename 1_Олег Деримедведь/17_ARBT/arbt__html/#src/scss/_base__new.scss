@@ -1,0 +1,68 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+html.lock,
+body.lock,
+body.lock_2 {
+    height: 100%;
+    overflow: hidden !important;
+    width: 100%;
+    position: relative;
+    // background-color: rgba(0, 0, 0, 0.5);
+}
+
+// body {
+//     overflow: hidden;
+// }
+.main_wrapper {
+    width: 100%;
+    @media (max-height: 100vh) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        min-height: 100vh;
+    }
+}
+
+.container {
+    max-width: 1660px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+    @media (max-width: 992px) {
+        padding: 0 40px;
+    }
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
+}
+
+// ---------------------
+// Для скрола блока
+// .scroll{
+//     max-height: calc(100vh - 56px);
+//     overflow-x: hidden;
+//     overflow-y: auto;
+// }
+// Для скрола блока
+// ------------------------------
+// ========================================
+// OTHERS
+// ------------------------------
+// Решение проблемы с высотой шрифта
+// * {
+//     font-variant-numeric: lining-nums;
+//     -moz-font-feature-settings: "lnum" 1;
+//     -moz-font-feature-settings: "lnum=1";
+//     -ms-font-feature-settings: "lnum" 1;
+//     -o-font-feature-settings: "lnum" 1;
+//     -webkit-font-feature-settings: "lnum" 1;
+//     font-feature-settings: "lnum" 1;
+// }
+
+// ------------------------------
+// END OTHERS
+// ========================================

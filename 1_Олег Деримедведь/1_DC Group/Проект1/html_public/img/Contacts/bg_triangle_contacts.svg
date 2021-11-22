@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1013" height="562" viewBox="0 0 1013 562">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_94" data-name="Прямоугольник 94" width="1013" height="562" transform="translate(0 120)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.761"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0.678"/>
+    </linearGradient>
+  </defs>
+  <g id="Группа_масок_17" data-name="Группа масок 17" transform="translate(0 -120)" clip-path="url(#clip-path)">
+    <path id="Контур_249" data-name="Контур 249" d="M254,1301.426l153.1,265.181L-52.205,1301.426H254m45.841-79.4H-347.225l971.247,561.5-324.182-561.5Z" transform="translate(346.979 -1102.027)" opacity="0.151" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

@@ -1,0 +1,101 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// CONDITIONS
+.bl_conditions {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  @media (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .container {
+    max-width: 1060px;
+  }
+  .bl_conditions__content {
+    h1 {
+      color: $orange1;
+      margin-bottom: 30px;
+      font-weight: 500;
+      text-align: center;
+    }
+    p {
+      margin-bottom: 20px;
+      @media (max-width: 768px) {
+        margin-bottom: 16px;
+      }
+    }
+    > p:last-child {
+      margin-bottom: 0;
+    }
+    > p:nth-child(2) {
+      text-align: center;
+      font-style: italic;
+    }
+    > div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 160px;
+      @media (max-width: 768px) {
+        gap: 30px;
+      }
+      @media (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
+
+      div {
+        h3 {
+          text-align: left;
+        }
+      }
+    }
+    h3 {
+      font-size: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+      @media (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+    ul {
+      margin-bottom: 30px;
+      margin-top: 30px;
+      li {
+        font-family: $Mont;
+        color: #000;
+        display: block;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: normal;
+        position: relative;
+
+        @media (max-width: 768px) {
+          font-size: 14px;
+          margin-bottom: 16px;
+        }
+
+        &::before {
+          content: "";
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          left: 0;
+          top: 5px;
+          border-radius: 50%;
+          background-color: $orange1;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// END CONDITIONS
+// ========================================

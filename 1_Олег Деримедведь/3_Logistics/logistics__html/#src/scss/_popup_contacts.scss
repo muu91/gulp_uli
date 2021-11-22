@@ -1,0 +1,108 @@
+@import "_base.scss";
+// ========================================
+// ========================================
+// BLOCK POPUP
+.bl_popup_contacts {
+    display: flex;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(19, 34, 75, 0.9);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 991px) {
+        padding: 40px;
+    }
+    @media (max-width: 767px) {
+        padding: 20px;
+    }
+    .popup_body {
+        position: relative;
+        padding: 50px;
+        background: white;
+        max-width: 778px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 408px;
+        @media (max-width: 991px) {
+            padding: 40px;
+        }
+        @media (max-width: 767px) {
+            min-height: 350px;
+        }
+        @media (max-width: 450px) {
+            padding: 20px;
+            min-height: 280px;
+        }
+        .popup_btn_close {
+            position: absolute;
+            display: block;
+            right: 25px;
+            top: 25px;
+            width: 24px;
+            height: 24px;
+            z-index: 2;
+            background-image: url("../img/icons/popup_close.svg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: 0.3s;
+            &:hover {
+                cursor: pointer;
+                transform: rotate(90deg);
+                transition: 0.3s;
+            }
+            @media (max-width: 767px) {
+                right: 20px;
+                top: 20px;
+            }
+        }
+        .popup_text {
+            position: relative;
+            z-index: 10;
+            h2 {
+                padding-left: 0;
+                text-align: center;
+                margin-bottom: 20px;
+                line-height: 100%;
+                &:before {
+                    display: none;
+                }
+            }
+            p {
+                text-align: center;
+            }
+        }
+        img {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 48px;
+            width: 250px;
+            height: auto;
+            @media (max-width: 991px) {
+                width: 200px;
+            }
+            @media (max-width: 767px) {
+                width: 160px;
+            }
+            @media (max-width: 450px) {
+                width: 120px;
+            }
+        }
+    }
+}
+
+// END BLOCK POPUP
+// ========================================
+// ========================================

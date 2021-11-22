@@ -1,0 +1,71 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// BLOCK HEADER
+.bl_header__landing {
+    .bl_header__content {
+        flex-direction: row-reverse;
+        .bl_header__text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .header_btn {
+                margin-right: 20px;
+                @media (max-width: 768px) {
+                    margin-right: 0;
+                }
+                &:before {
+                    right: auto;
+                    left: 100%;
+                    background-position: left center;
+                    top: -40px;
+                }
+                &:after {
+                    right: 100%;
+                    top: auto;
+                    bottom: -30px;
+                    left: auto;
+                    background-position: right center;
+                    width: 600px;
+                    @media (max-width: 1200px) {
+                        width: 500px;
+                    }
+                    @media (max-width: 1100px) {
+                        width: 380px;
+                        bottom: -20px;
+                    }
+                    @media (max-width: 992px) {
+                        width: 700px;
+                    }
+                }
+            }
+        }
+        .bl_header__img {
+            margin-right: 60px;
+            margin-left: 0;
+            &:after {
+                left: auto;
+                right: 85%;
+                background-position: right center;
+            }
+        }
+    }
+}
+
+// END BLOCK HEADER
+// ========================================
+// BLOCK ADVANTAGES LANDING
+.bl_advantages__landing {
+    padding-top: 70px;
+    margin-bottom: 0;
+    .bl_advantages__content {
+        .main_h2 {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+// END BLOCK ADVANTAGES LANDING
+// ========================================

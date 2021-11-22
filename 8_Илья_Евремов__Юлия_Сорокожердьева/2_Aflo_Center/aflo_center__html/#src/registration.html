@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('_head.html')
+</head>
+
+<body>
+    <div class="main_wrapper">
+        @@include('_header.html')
+        <main>
+            <!-- ======================================== -->
+            <!-- CRUMBS -->
+            <section class="bl_crumbs">
+                <div class="container">
+                    <div class="bl_crumbs__content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Регистрация
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- END CRUMBS -->
+            <!-- ======================================== -->
+            <!-- REGISTRATION -->
+            <div class="bl_registration">
+                <div class="container">
+                    <div class="bl_registration__content">
+                        <h1>
+                            Регистрация
+                        </h1>
+                        <div class="bl_registration__form">
+                            <form action="#">
+                                <div class="bl_registration__inputs">
+                                    <div class="bl_reg__input">
+                                        <div class="input">
+                                            <input type="text" required>
+                                            <span class="placeholder">
+                                                Фамилия
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bl_reg__input">
+                                        <div class="input">
+                                            <input type="text" required>
+                                            <span class="placeholder">
+                                                Имя
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bl_reg__input">
+                                        <div class="input">
+                                            <input type="text" required>
+                                            <span class="placeholder">
+                                                Отчество
+                                            </span>
+                                        </div>
+                                        <label class="checkbox_main">
+                                            <p class="main_check">
+                                                <input type="checkbox">
+                                                <span></span>
+                                            </p>
+                                            <p>
+                                                нет отчества
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <div class="bl_reg__input">
+                                        <div class="input_date">
+                                            <input type="date" id="datepicker" placeholder="" required>
+                                            <span class="placeholder_date">
+                                                Дата рождения
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bl_reg__input">
+                                        <div class="input">
+                                            <input type="email" required>
+                                            <span class="placeholder">
+                                                e-mail
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bl_reg__input">
+                                        <div class="input">
+                                            <input type="tel" required>
+                                            <span class="placeholder">
+                                                Телефон
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bl_registration__inputs__bottom">
+                                    <div class="bl_reg__input">
+                                        <div class="input">
+                                            <input type="password" required>
+                                            <span class="placeholder">
+                                                Пароль
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bl_reg__input">
+                                        <div class="input">
+                                            <input type="password" required>
+                                            <span class="placeholder">
+                                                Подтверждения пароля
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bl_registration__checkbox">
+                                    <label class="checkbox_main">
+                                        <p class="main_check">
+                                            <input type="checkbox" checked>
+                                            <span></span>
+                                        </p>
+                                        <p>
+                                            Согласен на обработку персональных данных
+                                        </p>
+                                    </label>
+                                    <label class="checkbox_main">
+                                        <p class="main_check">
+                                            <input type="checkbox" checked>
+                                            <span></span>
+                                        </p>
+                                        <p>
+                                            Подписаться на рассылку новостей Афло-центра
+                                        </p>
+                                    </label>
+                                </div>
+                                <div class="bl_registration__btns">
+                                    <button class="btn_red">
+                                        Зарегистрироваться
+                                    </button>
+                                    <button class="btn_red btn_green_reg">
+                                        Войти
+                                    </button>
+                                    <button class="btn_bg btn_gos_uslugi">
+                                        Войти через
+                                        <img src="./img/other/gos_uslugi.png" alt="gos_uslugi">
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <p>
+                            Для отображения всех функций (просмотр записей, приёмов, результатов анализов и т.д.)
+                            необходимо заключить договор с
+                            медицинским центром. Для этого, необходимо подойти в ближайший филиал «Афло-центр». Если вы
+                            уже являетесь клиентом мед.
+                            центра, то информация в ЛК будет загружена автоматически.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- END REGISTRATION -->
+            <!-- ======================================== -->
+
+
+
+        </main>
+        @@include('_footer.html') @@include('_popups.html') @@include('_js_source.html')
+
+</body>
+
+</html>

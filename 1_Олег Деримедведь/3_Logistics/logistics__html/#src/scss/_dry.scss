@@ -1,0 +1,189 @@
+@import "_base.scss";
+// ========================================
+// ======================================== 
+//  BLOCK HEADER
+.bl_header_2__dry {
+    background-image: url("../img/header/dry_logistics_header.jpg");
+    .header_2__body {
+        max-width: none;
+        h1 {
+            font-size: 60px;
+            @media (max-width: 767px) {
+                font-size: 38px;
+            }
+            @media (max-width: 450px) {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+// END BLOCK HEADER
+// ======================================== 
+// ======================================== 
+// BLOCK CLIENTS
+.bl_clients {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    @media (max-width: 450px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .clients__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-top: 1px solid #C2C8CC;
+        border-left: 1px solid #C2C8CC;
+        @media (max-width: 1400px) {
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+        @media (max-width: 767px) {
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .clients__item {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 48px;
+            height: 200px;
+            border-right: 2px solid #C2C8CC;
+            border-bottom: 1px solid #C2C8CC;
+            box-sizing: border-box;
+            @media (max-width: 991px) {
+                padding: 20px;
+            }
+            @media (max-width: 767px) {
+                width: 50%;
+            }
+            @media (max-width: 450px) {
+                width: 100%;
+            }
+            img {
+                height: auto;
+                max-width: 100%;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+//End BLOCK CLIENTS
+// ======================================== 
+// ========================================
+// Other directions
+.bl_other_directions {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: $grey1;
+    @media (max-width: 991px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .other_directions__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+        .other_directions__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 5;
+            min-height: 380px;
+            width: 32%;
+            overflow: hidden;
+            padding: 35px;
+            @media (max-width: 991px) {
+                min-height: 300px;
+            }
+            @media (max-width: 767px) {
+                min-height: 200px;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(8, 19, 46, 0.7);
+                z-index: 1;
+            }
+            &:hover p {
+                transition: 0.3s;
+                margin-top: 20px;
+                padding-top: 20px;
+                opacity: 1;
+                transform: translateY(0%);
+            }
+            &:hover img {
+                transition: 1s;
+                width: 105%;
+                height: 105%;
+            }
+            a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: block;
+                z-index: 20;
+            }
+            img {
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                object-fit: cover;
+                object-position: center;
+                transition: 1s;
+            }
+            h3 {
+                display: block;
+                text-align: center;
+                color: #ffffff;
+                position: relative;
+                z-index: 6;
+                margin-bottom: 0;
+            }
+            p {
+                width: 100%;
+                color: #ffffff;
+                border-top: 2px solid #fff;
+                position: relative;
+                z-index: 10;
+                text-align: center;
+                font-size: 16px;
+                line-height: 120%;
+                margin-top: 0px;
+                padding-top: 0px;
+                opacity: 0;
+                transition: 0.3s;
+                transform: translateY(100%);
+            }
+        }
+    }
+}
+
+//End Other directions
+// ========================================
+// ========================================

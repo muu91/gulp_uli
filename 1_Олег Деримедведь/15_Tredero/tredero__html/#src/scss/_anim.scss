@@ -1,0 +1,412 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+
+$outerYearSpacing: 35px;
+$cardWidth: 655px;
+$cardHeight: 342px;
+.bl_work_money .bl_work_money__content .bl_work_money__top ul li {
+  padding: 0;
+  background: transparent !important;
+  box-shadow: none;
+  overflow: visible;
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+
+.card {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.42);
+  box-shadow: inset 24.8667px -24.8667px 24.8667px rgba(192, 193, 193, 0.105),
+    inset -24.8667px 24.8667px 24.8667px rgba(255, 255, 255, 0.105);
+  border-radius: 23px;
+  padding: 24px;
+  overflow: hidden;
+  min-height: 420px;
+  z-index: 4;
+
+  &__year {
+    position: relative;
+    z-index: 99;
+    max-width: 280px;
+    @media (max-width: 992px) {
+      max-width: 220px;
+    }
+    h3 {
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.source {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -30px;
+  opacity: 0.5;
+  font-size: 12px;
+  a {
+    color: #000;
+  }
+}
+.anim-item:not(:hover) {
+  .card > div,
+  .card {
+    transform: none !important;
+    transition: all 0.2s ease;
+  }
+}
+.anim-item.is-active {
+  .card > div,
+  .card {
+    transition: all 0.2s ease;
+  }
+}
+.anim-item-1 {
+  .img-anim {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    img {
+      position: absolute;
+      vertical-align: top;
+    }
+  }
+  .img-anim-0 {
+    img {
+      bottom: -95px;
+      right: 30px;
+    }
+  }
+  .img-anim-1 {
+    z-index: 6;
+    img {
+      position: absolute;
+      vertical-align: top;
+      bottom: -10px;
+      left: 37%;
+    }
+  }
+  .img-anim-2 {
+    z-index: 4;
+    img {
+      position: absolute;
+      vertical-align: top;
+      bottom: 18px;
+      right: 0;
+    }
+  }
+  .img-anim-3 {
+    z-index: 6;
+    img {
+      bottom: 255px;
+      right: 65px;
+    }
+  }
+}
+.anim-item-2 {
+  .img-anim {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    img {
+      position: absolute;
+      vertical-align: top;
+    }
+  }
+  .img-anim-0 {
+    img {
+      bottom: 0;
+      right: 120px;
+    }
+  }
+  .img-anim-1 {
+    z-index: 6;
+    img {
+      bottom: 30px;
+      right: 130px;
+    }
+  }
+  .img-anim-2 {
+    z-index: 7;
+    img {
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.anim-item-3 {
+  .img-anim {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    img {
+      position: absolute;
+      vertical-align: top;
+    }
+  }
+  .img-anim-0 {
+    img {
+      bottom: 0;
+      right: 0;
+    }
+  }
+  .img-anim-1 {
+    z-index: 6;
+    img {
+      bottom: 0;
+      right: 0;
+    }
+  }
+  .img-anim-2 {
+    z-index: 4;
+    img {
+      bottom: 50px;
+      right: 0;
+    }
+  }
+}
+
+.anim-item-4 {
+  .img-anim {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    img {
+      position: absolute;
+      vertical-align: top;
+    }
+  }
+  .img-anim-0 {
+    img {
+      bottom: 0;
+      right: 0;
+    }
+  }
+  .img-anim-1 {
+    z-index: 4;
+    img {
+      bottom: 0;
+      right: 0;
+    }
+  }
+  .img-anim-2 {
+    z-index: 7;
+    img {
+      bottom: 50px;
+      right: 0;
+    }
+  }
+}
+.img-table {
+  display: none;
+}
+.img-mob {
+  display: none;
+}
+@media (max-width: 992px) {
+  .card__year h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .card__year p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .card__year {
+    max-width: 280px;
+    @media (max-width: 992px) {
+      max-width: 220px;
+    }
+    @media (max-width: 768px) {
+      max-width: 280px;
+    }
+  }
+  .card {
+    padding: 22px 25px;
+    img {
+      transform: scale(0.8) !important;
+      transform-origin: right bottom;
+    }
+  }
+  .anim-item-1 .img-anim-3 img {
+    bottom: 215px;
+  }
+  .anim-item-1 .img-anim-0 img {
+    bottom: -74px;
+    right: 21px;
+  }
+  .anim-item-1 .img-anim-2 img {
+    bottom: 30px;
+  }
+  .anim-item-1 .img-anim-1 img {
+    bottom: -35px;
+    left: 33%;
+  }
+  .card > div {
+    display: none;
+  }
+  .card {
+    .img-table {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    .card__year {
+      display: block !important;
+    }
+  }
+  .bl_work_money .bl_work_money__content .bl_work_money__top ul li {
+    min-height: 270px;
+  }
+  .card {
+    min-height: 270px;
+  }
+}
+@media (max-width: 767px) {
+  .bl_work_money .bl_work_money__content .bl_work_money__top ul {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .card__year {
+    max-width: 100%;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+  }
+  .anim-item-1 .card > div {
+    top: 50%;
+  }
+  .bl_work_money .bl_work_money__content .bl_work_money__top ul li {
+    min-height: 350px;
+    margin-bottom: 24px;
+  }
+  .card {
+    min-height: 350px;
+  }
+  .card__year h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .card__year p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  .card__year .btn_orange {
+    background-color: $green1;
+    border: 2px solid $green1;
+    &:hover {
+      background-color: #fff;
+      color: $green1;
+    }
+  }
+  .card {
+    padding: 17px 15px;
+    .btn_orange {
+      width: 100%;
+    }
+  }
+  .card img {
+    transform: scale(0.6) !important;
+  }
+  .bl_work_money .bl_work_money__top .anim-item-1 .img-anim-0,
+  .bl_work_money .bl_work_money__top .anim-item-1 .img-anim-1,
+  .bl_work_money .bl_work_money__top .anim-item-1 .img-anim-2,
+  .bl_work_money .bl_work_money__top .anim-item-1 .img-anim-3,
+  .bl_work_money .bl_work_money__top .anim-item-1 .img-anim-4 {
+    width: 200px;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, 0) !important;
+  }
+  .anim-item-1 .img-anim-0 img {
+    bottom: -33px;
+    right: 50px;
+  }
+  .anim-item-1 .img-anim-1 img {
+    bottom: -20px;
+    left: 8%;
+    transform: scale(0.4) !important;
+  }
+  .anim-item-1 .img-anim-2 img {
+    bottom: 0;
+    right: 20px;
+  }
+  .anim-item-1 .img-anim-3 img {
+    bottom: 90px;
+    transform: scale(0.4) !important;
+    right: 47px;
+  }
+  .bl_work_money .bl_work_money__content .bl_work_money__top ul li {
+    background: rgba(255, 255, 255, 0.42) !important;
+  }
+  .card {
+    .img-table {
+      display: none;
+    }
+    .img-mob {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0) !important;
+      }
+    }
+  }
+  .anim-item-3 {
+    .card {
+      .img-mob {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        img {
+          position: relative;
+          bottom: 0;
+          left: inherit;
+          transform: none !important;
+          right: 0;
+        }
+      }
+    }
+  }
+}

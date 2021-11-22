@@ -1,0 +1,182 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// VACANCIES
+.bl_vacancies {
+  padding-bottom: 100px;
+  @media (max-width: 768px) {
+    padding-bottom: 60px;
+  }
+  .bl_vacancies__content {
+    .bl_vacancies__contacts {
+      padding: 60px;
+      background-color: $bg;
+      border-radius: 8px;
+      margin-bottom: 100px;
+      @media (max-width: 768px) {
+        padding: 30px;
+        margin-bottom: 60px;
+      }
+      @media (max-width: 600px) {
+        padding: 20px;
+      }
+
+      h2 {
+        margin-bottom: 40px;
+      }
+      .bl_vacancies__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        @media (max-width: 1024px) {
+          gap: 20px;
+        }
+        @media (max-width: 600px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .bl_vacancies__item {
+          .item_title {
+            margin-bottom: 10px;
+            p {
+              font-size: 14px;
+              font-weight: 600;
+              line-height: 135%;
+              color: $grey;
+            }
+          }
+          .item_content {
+            display: flex;
+            flex-direction: row;
+            a {
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 150%;
+              color: $dark;
+              transition: 0.3s;
+              @media (max-width: 1024px) {
+                font-size: 18px;
+              }
+              @media (max-width: 768px) {
+                font-size: 16px;
+              }
+
+              &:hover {
+                color: $red;
+                transition: 0.3s;
+              }
+            }
+            p {
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 150%;
+              color: $grey;
+              margin-left: 5px;
+              @media (max-width: 1024px) {
+                font-size: 18px;
+              }
+              @media (max-width: 768px) {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .bl_vacancies__vacancie {
+      margin-bottom: 40px;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        @media (max-width: 1024px) {
+          gap: 20px;
+        }
+        @media (max-width: 992px) {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+        }
+        @media (max-width: 700px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 600px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        li {
+          padding: 30px;
+          border-radius: 8px;
+          border: 2px solid $border;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          @media (max-width: 600px) {
+            padding: 20px;
+          }
+          .vacancie__top {
+            .vacancie__date {
+              margin-bottom: 10px;
+              p {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 135%;
+                color: $grey;
+              }
+            }
+            h3 {
+              font-size: 22px;
+              font-weight: 400;
+              line-height: 150%;
+              color: $dark;
+              margin-bottom: 40px;
+              @media (max-width: 1024px) {
+                margin-bottom: 30px;
+                font-size: 19px;
+              }
+              @media (max-width: 768px) {
+                font-size: 17px;
+              }
+              @media (max-width: 600px) {
+                font-size: 16px;
+                margin-bottom: 20px;
+              }
+            }
+          }
+          .vacancie__bottom {
+            .vacancie__item {
+              margin-bottom: 20px;
+              .item__title {
+                p {
+                  font-size: 14px;
+                  font-weight: 600;
+                  line-height: 135%;
+                  color: $grey;
+                  margin-bottom: 10px;
+                  @media (max-width: 600px) {
+                    font-size: 12px;
+                  }
+                }
+              }
+              .item__content {
+                p {
+                  font-size: 14px;
+                  line-height: 135%;
+                  font-weight: 600;
+                  color: $dark;
+                  @media (max-width: 600px) {
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// END VACANCIES
+// ========================================

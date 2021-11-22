@@ -1,0 +1,36 @@
+body {
+  background: #333;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.slick-slide .slide-content {
+  margin: 0 10%;
+  padding: 50px 100px;
+  background: #fff;
+}
+
+.slick-list {
+  margin: 20px 0px;
+}
+.slick-slide {
+  background-color: #fff;
+  border: 2px solid #ccc;
+}
+
+.nav div {
+  background: white;
+  margin: 5px 20%;
+  padding: 5px;
+  text-align: center;
+}
+
+.active {
+  color: red;
+  font-weight: bold;
+}

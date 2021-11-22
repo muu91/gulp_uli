@@ -1,0 +1,219 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// ========================================
+// BLOCK POPUP
+.bl_popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    padding: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    //  display: none;
+    @media(max-height: 767px) {
+        justify-content: flex-start;
+    }
+    .popup__bg {
+        background-color: #fff;
+        border-radius: 10px;
+        max-width: 560px;
+        width: 100%;
+        padding: 40px;
+        position: relative;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // overflow: scroll;
+        @media(max-width: 767px) {
+            padding: 20px;
+            padding-top: 40px;
+        }
+        @media(max-height: 767px) {
+            min-height: auto;
+        }
+        .btn_close {
+            display: block;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            width: 24px;
+            height: 24px;
+            transition: 0.3s;
+            background-image: url("../img/icons/close.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            &:hover {
+                transition: 0.6s;
+                transform: rotate(360deg);
+            }
+        }
+        .popup__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            //  overflow: scroll;
+            //  display: none;
+            h3 {
+                text-align: center;
+                font-size: 38px;
+                line-height: 130%;
+                margin-bottom: 10px;
+                @media(max-width: 767px) {
+                    font-size: 26px;
+                }
+            }
+            p {
+                text-align: center;
+                font-size: 14px;
+                line-height: 120%;
+                color: #666;
+                display: block;
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0;
+                    max-width: 400px;
+                }
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                input {
+                    padding: 14px 10px;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    border: 1px solid #DDDDDD;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    outline: none;
+                    font-family: $OS;
+                    font-size: 14px;
+                    line-height: 14px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &:focus,
+                    &:active {
+                        border: 1px solid $black1;
+                    }
+                }
+                .popup__select {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    position: relative;
+                    &:after {
+                        content: '\f078';
+                        position: absolute;
+                        right: 15px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 18px;
+                        height: 18px;
+                        font-size: 18px;
+                        line-height: 18px;
+                        font-weight: 900;
+                        font-family: $FA5;
+                        color: $black1;
+                        pointer-events: none;
+                        transition: 0.3s;
+                        @media(max-width: 767px) {
+                            width: 15px;
+                            height: 15px;
+                            font-size: 15px;
+                        }
+                    }
+                    select {
+                        width: 100%;
+                        padding: 14px 10px;
+                        padding-left: 26px;
+                        width: 100%;
+                        border: 1px solid #DDDDDD;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        outline: none;
+                        font-family: $OS;
+                        font-size: 14px;
+                        line-height: 14px;
+                        appearance: none;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        &:focus,
+                        &:active {
+                            border: 1px solid $black1;
+                        }
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+                button {
+                    display: block;
+                    width: 100%;
+                    color: #000;
+                    padding: 14px 29px;
+                    background-color: $yellow;
+                    border: 2px solid $yellow;
+                    border-radius: 50px;
+                    font-family: $OS;
+                    font-size: 14px;
+                    line-height: 100%;
+                    transition: 0.3s;
+                    outline: none;
+                    margin-bottom: 10px;
+                    &:hover {
+                        background-color: #fff;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+        .popup__result {
+            height: 100%;
+            display: none;
+            .popup__success {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h3 {
+                    margin-bottom: 10px;
+                }
+                p {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.bl_popup__form {
+    display: none;
+}
+
+.bl_popup__success {
+    display: none;
+}
+
+// END BLOCK POPUP
+// ========================================
+// ========================================
