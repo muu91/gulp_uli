@@ -1,0 +1,512 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+html.lock,
+body.lock {
+    overflow: hidden !important;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    // background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main_wrapper {
+    width: 100%;
+    overflow: hidden;
+    @media (max-height: 100vh) {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        // align-items: stretch;
+        // min-height: 100vh;
+    }
+}
+
+// html {
+//     -webkit-font-smoothing: antialiased;
+// }
+// * {
+//     text-transform: none; // mac ff fix
+//     -webkit-font-smoothing: antialiased; // safari mac nicer
+//     -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
+//     text-rendering: optimizeLegibility;
+//     -webkit-font-smoothing: subpixel-antialiased !important; //more fatty in safari
+//     text-rendering: geometricPrecision !important; //more fatty in safari
+//     -webkit-font-smoothing: antialiased;
+// }
+
+.container {
+    max-width: 1840px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+    @media (max-width: 1024px) {
+        padding: 0 40px;
+    }
+    @media (max-width: 768px) {
+        padding: 0 30px;
+    }
+    @media (max-width: 375px) {
+        padding: 0 20px;
+    }
+}
+
+// ---------------------
+// Для скрола блока
+// .scroll{
+//     max-height: calc(100vh - 56px);
+//     overflow-x: hidden;
+//     overflow-y: auto;
+// }
+// Для скрола блока
+// ------------------------------
+// ========================================
+// ------------------------------
+// Heading
+h1 {
+    display: block;
+    font-family: $HelvEx;
+    font-size: 62px;
+    line-height: 92px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    // letter-spacing: 0px;
+    @media (max-width: 1440px) {
+        letter-spacing: 0;
+        font-size: 54px;
+        line-height: 66px;
+    }
+    @media (max-width: 1024px) {
+        font-size: 46px;
+    }
+    @media (max-width: 768px) {
+        font-size: 30px;
+        line-height: 42px;
+    }
+}
+h2 {
+    display: block;
+    font-family: $HelvEx;
+    font-size: 62px;
+    line-height: 92px;
+    font-weight: 300;
+    color: $black;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    @media (max-width: 1440px) {
+        letter-spacing: 0;
+        font-size: 54px;
+        line-height: 66px;
+    }
+    @media (max-width: 1024px) {
+        font-size: 46px;
+    }
+    @media (max-width: 768px) {
+        font-size: 30px;
+        line-height: 42px;
+    }
+}
+
+// End Heading
+// ------------------------------
+p {
+    font-family: $Helv;
+    color: $black;
+    display: block;
+    font-size: 22px;
+    line-height: 142%;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+// ------------------------------
+// Buttons
+// -------------------
+
+// -------------------
+// End Buttons
+// ------------------------------
+// ========================================
+// SWIPER
+// ------------------------------
+// BUTTONS
+.btn_free_trial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    min-width: 225px;
+    width: fit-content;
+    color: $black;
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-family: $HelvEx;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 50px;
+    transition: 0.3s;
+    border: 2px solid #fff;
+    @media (max-width: 768px) {
+        height: 47px;
+        min-width: 153px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        transition: 0.3s;
+    }
+    &:focus {
+        transition: 0.3s;
+        border: 2px solid $blue;
+    }
+}
+.btn_watch_video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 32px;
+    position: relative;
+    white-space: nowrap;
+    font-family: $HelvEx;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    transition: 0.3s;
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 17px;
+        padding-left: 25px;
+    }
+    &::before {
+        content: "";
+        display: block;
+        width: 14px;
+        height: 18px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("../img/icons/play_white.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        @media (max-width: 768px) {
+            height: 16px;
+            width: 11px;
+        }
+    }
+    &:hover {
+        transition: 0.3s;
+        opacity: 0.6;
+    }
+}
+
+.btn_underline_blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $HelvEx;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: $blue;
+    position: relative;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    transition: 0.3s;
+    width: fit-content;
+    @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $blue;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../img/icons/top_arrow50_blue.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        position: absolute;
+        right: -35px;
+        top: 0;
+    }
+    &:focus,
+    &:hover {
+        transition: 0.3s;
+        // opacity: 0.6;
+        color: #0319e4;
+    }
+}
+.btn_underline_black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $HelvEx;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: $black;
+    position: relative;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    transition: 0.3s;
+    width: fit-content;
+    @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $black;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../img/icons/top_arrow50_black.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        position: absolute;
+        right: -35px;
+        top: 0;
+    }
+    &:focus,
+    &:hover {
+        transition: 0.3s;
+        opacity: 0.6;
+    }
+}
+.btn_underline_white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $HelvEx;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #fff;
+    position: relative;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    transition: 0.3s;
+    width: fit-content;
+    @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../img/icons/top_arrow50_white.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        position: absolute;
+        right: -35px;
+        top: 0;
+    }
+    &:focus,
+    &:hover {
+        transition: 0.3s;
+        opacity: 0.6;
+    }
+}
+// END BUTTONS
+// ------------------------------
+// SWIPER PAGINATION
+
+// .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+//     margin: 0 10px;
+// }
+// .swiper-pagination {
+//     width: fit-content;
+//     bottom: 40px;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     @media (max-width: 600px) {
+//         bottom: 10px;
+//     }
+
+//     span {
+//         display: block;
+//         width: 5px;
+//         max-width: 5px;
+//         min-width: 5px;
+//         height: 5px;
+//         border-radius: 50%;
+//         background-color: #fff;
+//         margin-right: 20px;
+//         transition: 0.3s;
+//         opacity: 1;
+//         margin: 0 10px;
+
+//         &:last-child {
+//             margin-right: 0;
+//         }
+//     }
+//     .swiper-pagination-bullet-active {
+//         transition: 0.3s;
+//         width: 10px;
+//         max-width: 10px;
+//         min-width: 10px;
+//         height: 10px;
+//     }
+// }
+// END SWIPER PAGINATION
+// ------------------------------
+// SCROLLBAR
+// .swiper-scrollbar {
+//     width: 240px;
+//     height: 12px;
+//     border-radius: 6px;
+//     overflow: hidden;
+//     bottom: -100px;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     background-color: transparent;
+//     @media (max-width: 1024px) {
+//         bottom: -60px;
+//     }
+//     @media (max-width: 600px) {
+//         bottom: -40px;
+//         width: 160px;
+//     }
+//     .swiper-scrollbar-drag {
+//         border-radius: 0;
+//         // background-color: $l_grey;
+//     }
+// }
+// END SCROLLBAR
+// ------------------------------
+// END SWIPER
+// ========================================
+// ------------------------------
+// OTHERS
+// ------------------------------
+// VIDEO
+.plyr__control {
+    background-color: $blue;
+
+    &:hover {
+        background: $blue !important;
+        opacity: 0.8;
+    }
+    &:before {
+        background: #fff !important;
+    }
+    &:after {
+        background: $blue !important;
+    }
+    span {
+        color: #fff;
+    }
+}
+.plyr__controls {
+    input {
+        background-color: $blue;
+        color: $blue;
+    }
+}
+// .plyr__progress__buffer {
+//     // background-color: $blue;
+// }
+.plyr__progress {
+    input[type="range"]::-webkit-slider-runnable-track {
+        color: $blue;
+    }
+}
+.plyr--full-ui input[type="range"] {
+    color: $blue;
+}
+.plyr__control--overlaid {
+    background: transparent radial-gradient(closest-side at 50% 50%, #5756a4 0%, #5756a400 100%) 0% 0% no-repeat
+        padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 308px !important;
+    height: 308px !important;
+    border: 0;
+    padding: 130px;
+    @media (max-width: 768px) {
+        width: 200px !important;
+        height: 200px !important;
+        padding: 80px;
+    }
+    svg {
+        width: 55px;
+        height: 60px;
+        @media (max-width: 768px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    &:hover {
+        background: transparent radial-gradient(closest-side at 50% 50%, #5756a4 0%, #5756a400 100%) 0% 0% no-repeat
+            padding-box !important;
+        opacity: 0.8;
+    }
+}
+
+// END VIDEO
+// ------------------------------
+// END OTHERS
+// ------------------------------
+// ========================================

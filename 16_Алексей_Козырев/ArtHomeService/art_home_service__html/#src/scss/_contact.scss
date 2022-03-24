@@ -1,0 +1,90 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- CONTACT HEADER  ----------
+.bl_contact_header {
+  padding-bottom: 200px;
+  @media (max-width: 768px) {
+    padding-bottom: 100px;
+  }
+  @media (max-width: 425px) {
+    padding-bottom: 60px;
+  }
+}
+.contacts {
+  h2 {
+    margin-bottom: 63px;
+    @media (max-width: 425px) {
+      margin-bottom: 40px;
+    }
+  }
+  &__items {
+    margin-bottom: 100px;
+    @media (max-width: 768px) {
+      margin-bottom: 60px;
+    }
+    @media (max-width: 425px) {
+      margin-bottom: 40px;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 60px 30px;
+      @media (max-width: 1024px) {
+        gap: 60px 20px;
+      }
+      @media (max-width: 768px) {
+        gap: 60px 10px;
+      }
+      @media (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+      }
+    }
+  }
+  &__item {
+    .contacts__title {
+      font-size: 14px;
+      line-height: 135%;
+      font-weight: 400;
+      color: $green_light;
+    }
+    a,
+    address,
+    .number {
+      font-size: 26px;
+      line-height: 150%;
+      font-weight: 400;
+      color: $white;
+      font-style: normal;
+      @media (max-width: 1024px) {
+        font-size: 20px;
+      }
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+      @media (max-width: 425px) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__map {
+    height: 600px;
+    background-color: #ccc;
+    @media (max-width: 1024px) {
+      height: 400px;
+    }
+    @media (max-width: 768px) {
+      height: 302px;
+    }
+    @media (max-width: 425px) {
+      height: 200px;
+    }
+  }
+}
+// ---------- END CONTACT HEADER  ----------
+// ----------------------------------------
+
+// ========================================

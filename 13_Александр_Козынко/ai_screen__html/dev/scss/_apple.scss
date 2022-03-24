@@ -1,0 +1,127 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// BASE
+.for_apple {
+  .btn_free_trial {
+    padding-top: 20px;
+    @media (max-width: 768px) {
+    }
+  }
+  .btn_watch_video {
+    &::before {
+      content: "";
+      transform: translateY(-65%);
+    }
+  }
+  .btn_underline_blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $HelvEx;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: $blue;
+    position: relative;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    transition: 0.3s;
+    width: fit-content;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $blue;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url("../img/icons/top_arrow50_blue.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      position: absolute;
+      right: -35px;
+      top: 0;
+    }
+    &:focus,
+    &:hover {
+      transition: 0.3s;
+      // opacity: 0.6;
+      color: #0319e4;
+    }
+  }
+  .btn_underline_blue {
+    &::after {
+      top: -4px;
+    }
+  }
+  .btn_underline_black {
+    &::after {
+      top: -4px;
+    }
+  }
+  .btn_underline_white {
+    &::after {
+      top: -4px;
+    }
+  }
+
+  // BASE
+  // ========================================
+  // INDEX
+
+  .bl_video {
+    .bl_video__video {
+      .btn_play_video {
+        img {
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .bl_reviews {
+    .bl_reviews__content {
+      .bl_reviews__slides {
+        .swiper {
+          .swiper-button-prev {
+            img {
+              margin-top: -2px;
+              @media (max-width: 768px) {
+                margin-top: 0px;
+              }
+            }
+          }
+          .swiper-button-next {
+            img {
+              margin-top: -2px;
+              @media (max-width: 768px) {
+                margin-top: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // END INDEX
+  // ========================================
+}

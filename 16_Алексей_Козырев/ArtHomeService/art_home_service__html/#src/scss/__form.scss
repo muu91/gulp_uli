@@ -1,0 +1,629 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- FORMS ----------
+// ----------------------------------------
+// ----- RADIO -----
+.main__radio {
+  max-width: 26px;
+  min-width: 26px;
+  height: 26px;
+  border: 2px solid $green_light;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  z-index: 10;
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover .radio__span {
+    opacity: 1;
+  }
+  &:focus::before,
+  &:focus::after {
+    opacity: 1;
+    pointer-events: all;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 5;
+    left: -2px;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: $grad_gold;
+    border-radius: 50%;
+    transition: 0.3s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 6;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .radio__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    top: -100%;
+    left: -100%;
+    overflow: hidden;
+  }
+  input:checked + .radio__span {
+    opacity: 1;
+  }
+  input:checked + .radio__span::before,
+  input:checked + .radio__span::after {
+    opacity: 1;
+  }
+  .radio__span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $green_light;
+    border-radius: 50%;
+    transition: 0.3s;
+    opacity: 0;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 9;
+      left: -2px;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: $grad_gold;
+      border-radius: 50%;
+      transition: 0.3s;
+      opacity: 0;
+      pointer-events: none;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 10;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      border: 2px solid $white;
+      background: $grad_gold;
+      border-radius: 50%;
+      transition: 0.3s;
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
+// ----- END RADIO -----
+// ----------------------------------------
+// ----- CHECKBOX -----
+.main__checkbox {
+  max-width: 26px;
+  min-width: 26px;
+  height: 26px;
+  border: 2px solid $green;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  z-index: 10;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover .checkbox__span {
+    opacity: 1;
+  }
+
+  &:focus::before,
+  &:focus::after {
+    opacity: 1;
+    pointer-events: all;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 5;
+    left: -2px;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: $grad_gold;
+    transition: 0.3s;
+    // opacity: 0;
+    // pointer-events: none;
+    border-radius: 5px;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 6;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: $dark2;
+    transition: 0.3s;
+    border-radius: 3px;
+
+    // opacity: 0;
+    // border-radius: 3px;
+    // pointer-events: none;
+  }
+  &:hover::after {
+    background: #fff;
+  }
+  .check__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    top: -100%;
+    left: -100%;
+    overflow: hidden;
+  }
+  input:checked + .checkbox__span {
+    opacity: 1;
+  }
+  input:checked + .checkbox__span::before,
+  input:checked + .checkbox__span::after {
+    opacity: 1;
+  }
+  .checkbox__span {
+    display: block;
+    background-color: $green;
+    transition: 0.3s;
+    min-width: 18px;
+    max-width: 18px;
+    height: 18px;
+    opacity: 0;
+    padding: 0;
+    border-radius: 3px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 9;
+      left: -2px;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: $grad_gold;
+      transition: 0.3s;
+      opacity: 0;
+      pointer-events: none;
+      border-radius: 5px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 10;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      border: 2px solid $white;
+      background: $grad_gold;
+      transition: 0.3s;
+      opacity: 0;
+      pointer-events: none;
+      border-radius: 3px;
+    }
+  }
+}
+// ----- END CHECKBOX -----
+// ----------------------------------------
+// ----- INPUT -----
+.input {
+  position: relative;
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    font-size: 26px;
+    line-height: 150%;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 14px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: $white;
+    width: 100%;
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+    @media (max-width: 425px) {
+      font-size: 16px;
+    }
+    &:active + .border__bottom,
+    &:focus + .border__bottom,
+    &:hover + .border__bottom {
+      background: $grad_gold;
+    }
+  }
+  .border__bottom {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: $green_light;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+  }
+  ::placeholder {
+    font-size: 26px;
+    line-height: 150%;
+    font-weight: 400;
+    color: $green_light;
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+    @media (max-width: 425px) {
+      font-size: 16px;
+    }
+  }
+  :-ms-input-placeholder {
+    font-size: 26px;
+    line-height: 150%;
+    font-weight: 400;
+    color: $green_light;
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+    @media (max-width: 425px) {
+      font-size: 16px;
+    }
+  }
+  ::-ms-input-placeholder {
+    font-size: 26px;
+    line-height: 150%;
+    font-weight: 400;
+    color: $green_light;
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+    @media (max-width: 425px) {
+      font-size: 16px;
+    }
+  }
+}
+// ----- END INPUT -----
+// ----------------------------------------
+// ----- TEXTAREA -----
+.textarea {
+  position: relative;
+  textarea {
+    font-size: 26px;
+    line-height: 150%;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: $white;
+    width: 100%;
+    height: 64px;
+    resize: vertical;
+    display: block;
+    @media (max-width: 1024px) {
+      font-size: 20px;
+      height: 54px;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+      height: 51px;
+    }
+    @media (max-width: 425px) {
+      font-size: 16px;
+      height: 48px;
+    }
+    &:active + .border__bottom,
+    &:focus + .border__bottom,
+    &:hover + .border__bottom {
+      background: $grad_gold;
+    }
+  }
+  .border__bottom {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: $green_light;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+  }
+  ::placeholder {
+    font-size: 26px;
+    line-height: 150%;
+    font-weight: 400;
+    color: $green_light;
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+    @media (max-width: 425px) {
+      font-size: 16px;
+    }
+  }
+  :-ms-input-placeholder {
+    font-size: 26px;
+    line-height: 150%;
+    font-weight: 400;
+    color: $green_light;
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+    @media (max-width: 425px) {
+      font-size: 16px;
+    }
+  }
+  ::-ms-input-placeholder {
+    font-size: 26px;
+    line-height: 150%;
+    font-weight: 400;
+    color: $green_light;
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+    @media (max-width: 425px) {
+      font-size: 16px;
+    }
+  }
+}
+// ----- END TEXTAREA -----
+// ----------------------------------------
+// ----- UPLOAD -----
+.upload {
+  position: relative;
+  .upload_review {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  .upload_label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    height: 103px;
+    border: 1px dashed $green_light;
+
+    @media (max-width: 425px) {
+      height: 122px;
+      padding: 30px 40px;
+    }
+    img {
+      display: block;
+      width: 14px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 135%;
+      color: $green_light;
+      text-align: center;
+      letter-spacing: 0.23px;
+    }
+  }
+}
+
+// ----- END UPLOAD -----
+// ----------------------------------------
+
+// input {
+//   font-family: $Nun;
+//   font-size: 14px;
+//   font-weight: 700;
+//   line-height: 135%;
+//   color: $dark;
+//   height: 54px;
+//   border-radius: 8px;
+//   background-color: $bg;
+//   display: block;
+//   padding: 25px 20px 10px 20px;
+//   transition: 0.3s;
+//   border: 2px solid $border;
+//   outline: none;
+//   &:focus,
+//   &:active {
+//     background-color: transparent;
+//     transition: 0.3s;
+//     border: 2px solid $border;
+//   }
+// }
+// .input {
+//   position: relative;
+//   .placeholder {
+//     font-family: $Nun;
+//     font-size: 14px;
+//     font-weight: 700;
+//     line-height: 135%;
+//     color: $grey;
+//     position: absolute;
+//     left: 20px;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     transition: 0.3s;
+//     pointer-events: none;
+//   }
+// }
+// input:focus ~ .placeholder,
+// input:not(:focus):valid ~ .placeholder {
+//   top: 30%;
+//   font-size: 12px;
+//   transition: 0.3s;
+//   color: $l_grey;
+// }
+
+// ::placeholder {
+//   font-family: $Nun;
+//   font-size: 14px;
+//   font-weight: 700;
+//   line-height: 135%;
+//   color: $grey;
+//   height: 54px;
+//   border-radius: 8px;
+//   background-color: $bg;
+//   display: block;
+//   border: 0;
+//   padding: 18px 20px;
+//   @media (max-width: 768px) {
+//     // font-size: 14px;
+//   }
+// }
+
+// :-ms-input-placeholder {
+//   font-family: $Nun;
+//   font-size: 14px;
+//   font-weight: 700;
+//   line-height: 135%;
+//   color: $grey;
+//   height: 54px;
+//   border-radius: 8px;
+//   background-color: $bg;
+//   display: block;
+//   border: 0;
+//   padding: 18px 20px;
+//   @media (max-width: 768px) {
+//     // font-size: 14px;
+//   }
+// }
+
+// ::-ms-input-placeholder {
+//   font-family: $Nun;
+//   font-size: 14px;
+//   font-weight: 700;
+//   line-height: 135%;
+//   color: $grey;
+//   height: 54px;
+//   border-radius: 8px;
+//   background-color: $bg;
+//   display: block;
+//   border: 0;
+//   padding: 18px 20px;
+//   @media (max-width: 768px) {
+//     // font-size: 14px;
+//   }
+// }
+// ----- END INPUTS -----
+// ----------------------------------------
+// ----- SELECTS -----
+
+// ----- END SELECTS -----
+// ----------------------------------------
+// ----- TEXTAREA -----
+// .textarea {
+//   width: 100%;
+//   position: relative;
+//   .textarea_place {
+//     font-family: $Nun;
+//     font-size: 14px;
+//     font-weight: 700;
+//     line-height: 135%;
+//     color: $grey;
+//     position: absolute;
+//     left: 20px;
+//     top: 20px;
+//     transform: translateY(-50%);
+//     transition: 0.3s;
+//     pointer-events: none;
+//   }
+//   textarea {
+//     font-family: $Nun;
+//     font-size: 14px;
+//     font-weight: 700;
+//     line-height: 135%;
+//     color: $dark;
+//     height: 54px;
+//     border-radius: 8px;
+//     background-color: $bg;
+//     display: block;
+//     padding: 25px 20px 10px 20px;
+//     transition: 0.3s;
+//     border: 2px solid $border;
+//     outline: none;
+//     &:focus,
+//     &:active {
+//       background-color: transparent;
+//       transition: 0.3s;
+//       border: 2px solid $border;
+//     }
+//   }
+
+//   textarea {
+//     width: 100%;
+//     padding: 18px 20px;
+//     background-color: $bg;
+//     border: 0;
+//     min-height: 110px;
+//     border-radius: 8px;
+//     resize: vertical;
+//     max-height: 500px;
+//     border: 2px solid $border;
+//   }
+//   textarea:focus + .textarea_place,
+//   textarea:not(:focus):valid + .textarea_place {
+//     top: 12px;
+//     font-size: 12px;
+//     transition: 0.3s;
+//     color: $l_grey;
+//   }
+// }
+// ----- END TEXTAREA -----
+// ----------------------------------------
+// ---------- END FORMS ----------
+// ========================================

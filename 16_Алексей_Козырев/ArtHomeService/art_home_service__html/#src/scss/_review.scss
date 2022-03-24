@@ -1,0 +1,327 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- REVIEW  ----------
+// .bl_review_p {
+// }
+
+// ---------- END REVIEW  ----------
+// ----------------------------------------
+// ---------- MASONRY ----------
+.bl_masonry {
+  .container {
+    max-width: 1838px;
+    @media (max-width: 1440px) {
+      padding: 0 20px;
+    }
+    @media (max-width: 1024px) {
+      padding: 0;
+    }
+  }
+  .bl_review_p {
+    &__items {
+      padding-top: 4px;
+      margin-bottom: 100px;
+      @media (max-width: 425px) {
+        margin-bottom: 60px;
+      }
+      > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        > li {
+          margin-bottom: 100px;
+          width: 50%;
+          @media (max-width: 992px) {
+            margin-bottom: 60px;
+          }
+          @media (max-width: 700px) {
+            width: 100%;
+          }
+        }
+      }
+      .btn_gold {
+        margin: 0 auto;
+        margin-top: 40px;
+        @media (max-width: 425px) {
+          margin-top: 20px;
+        }
+      }
+    }
+    &__item {
+      width: 570px;
+      margin: 0 auto;
+      @media (max-width: 1350px) {
+        width: 500px;
+      }
+      @media (max-width: 1200px) {
+        width: 400px;
+      }
+      @media (max-width: 992px) {
+        width: 290px;
+      }
+
+      .item__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 19px;
+        .item__top__left {
+          .bl_review_p__date {
+            font-size: 14px;
+            line-height: 135%;
+            font-weight: 400;
+            color: $green_light;
+            margin-bottom: 20px;
+          }
+          h3 {
+            font-size: 28px;
+            line-height: 150%;
+            font-weight: 400;
+            color: $green_light;
+            letter-spacing: 0.28px;
+            @media (max-width: 1024px) {
+              font-size: 20px;
+            }
+            @media (max-width: 992px) {
+              font-size: 18px;
+            }
+            @media (max-width: 425px) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .bl_review_p__text {
+        margin-bottom: 40px;
+        @media (max-width: 992px) {
+          margin-bottom: 20px;
+        }
+      }
+      .bl_review_p__imgs {
+        .bl_review_p__imgs__anons {
+          height: 340px;
+          margin-bottom: 40px;
+          @media (max-width: 1350px) {
+            height: 300px;
+          }
+          @media (max-width: 1200px) {
+            height: 250px;
+          }
+          @media (max-width: 992px) {
+            height: 158px;
+            margin-bottom: 20px;
+          }
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+        .bl_review_p__imgs__mini {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            width: 80%;
+            @media (max-width: 1200px) {
+              gap: 20px;
+            }
+            @media (max-width: 992px) {
+              gap: 10px;
+            }
+
+            li {
+              height: 70px;
+              display: none;
+              width: 100%;
+              margin-bottom: 0;
+              column-count: auto;
+              column-gap: normal;
+              @media (max-width: 1350px) {
+                height: 55px;
+              }
+              @media (max-width: 1200px) {
+                height: 45px;
+              }
+              @media (max-width: 992px) {
+                height: 40px;
+              }
+              &:first-child,
+              &:nth-child(2),
+              &:nth-child(3),
+              &:nth-child(4) {
+                display: block;
+              }
+              a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                img {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: center;
+                }
+              }
+            }
+          }
+          .bl_review_p__counts {
+            background-color: $dark;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90px;
+            height: 70px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 5;
+            font-size: 26px;
+            line-height: 150%;
+            color: $white;
+            border: none;
+            opacity: 0;
+            pointer-events: none;
+            // @media (max-width: 1920px) {
+            //   width: calc(60px + (90 - 60) * ((100vw - 1025px) / (1920 - 1025)));
+            //   height: calc(47px + (70 - 47) * ((100vw - 1025px) / (1920 - 1025)));
+            // }
+            @media (max-width: 1350px) {
+              width: 77.5px;
+              height: 55px;
+            }
+            @media (max-width: 1200px) {
+              width: 65px;
+              height: 45px;
+            }
+            @media (max-width: 1024px) {
+              font-size: 20px;
+            }
+            @media (max-width: 992px) {
+              width: 50.5px;
+              height: 40px;
+            }
+            @media (max-width: 768px) {
+              font-size: 18px;
+            }
+
+            span {
+              margin-left: 2px;
+            }
+          }
+          .bl_review_p__counts__active {
+            opacity: 1;
+            pointer-events: all;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ---------- END MASONRY  ----------
+// ----------------------------------------
+// ---------- REVIEW FORM ----------
+.bl_review_contact {
+  background-color: $dark2;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  @media (max-width: 1024px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (max-width: 425px) {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  &__content {
+    h2 {
+      margin-bottom: 79px;
+    }
+  }
+  .review_form {
+    form {
+      .input {
+        margin-bottom: 60px;
+      }
+      .textarea {
+        margin-bottom: 60px;
+      }
+      .review_form__upload {
+        margin-bottom: 60px;
+        @media (max-width: 425px) {
+          margin-bottom: 40px;
+        }
+        > p {
+          color: $green_light;
+          margin-bottom: 23px;
+        }
+      }
+      .review_form__bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @media (max-width: 425px) {
+          flex-direction: column;
+          align-items: center;
+        }
+        button {
+          margin-right: 30px;
+          @media (max-width: 425px) {
+            margin-right: 0;
+            margin-bottom: 30px;
+          }
+        }
+        p {
+          font-size: 14px;
+          line-height: 135%;
+          font-weight: 400;
+          color: $green_light;
+          letter-spacing: 0.14px;
+          @media (max-width: 425px) {
+            text-align: center;
+          }
+          a {
+            display: inline;
+            color: $white;
+            font-weight: 400;
+            &:hover {
+              color: $green_light;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// .review_form {
+//   form {
+//   }
+// }
+// ---------- END REVIEW FORM ----------
+// ----------------------------------------
+
+// ========================================

@@ -1,0 +1,743 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// SCHEDULE
+.bl_schedule {
+  padding-top: 170px;
+  background-image: url("../img/bg/bg_schedule.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-bottom: 1px solid $black;
+  @media (max-width: 1024px) {
+    padding-bottom: 45px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 105px;
+    border-bottom: none;
+    background-image: url("../img/bg/bg_schedule_mob.png");
+  }
+  .bl_schedule__content {
+    h1 {
+      color: $black;
+      max-width: 1025px;
+      margin-bottom: 50px;
+      @media (max-width: 768px) {
+        margin-bottom: 45px;
+      }
+    }
+    .bl_schedule__form {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      @media (max-width: 1024px) {
+        flex-direction: column-reverse;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 200%;
+        background-color: $black;
+        position: absolute;
+        top: 0;
+        left: -40%;
+      }
+    }
+    .form_sch {
+      width: 60.5%;
+      margin-bottom: 15px;
+      @media (max-width: 1440px) {
+        width: 58%;
+      }
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+      .form__inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 58px 50px;
+        max-width: 810px;
+        margin-right: 30px;
+        margin-bottom: 60px;
+        @media (max-width: 1024px) {
+          max-width: none;
+          margin-right: 0;
+        }
+        @media (max-width: 768px) {
+          gap: 35px;
+          margin-bottom: 45px;
+        }
+        @media (max-width: 600px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+      @media (max-width: 1200px) {
+        // width: 100%;
+      }
+      h3 {
+        font-family: $HelvEx;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: $black;
+        text-transform: uppercase;
+        margin-bottom: 23px;
+        padding-left: 10px;
+        @media (max-width: 768px) {
+          margin-bottom: 25px;
+          padding-left: 0;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .form__radio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 810px;
+        margin-right: 30px;
+        margin-bottom: 60px;
+        border: 2px solid $black;
+        border-radius: 3px;
+        @media (max-width: 1024px) {
+          max-width: none;
+          margin-right: 0;
+        }
+        @media (max-width: 768px) {
+          margin-bottom: 45px;
+        }
+        @media (max-width: 600px) {
+          flex-direction: column;
+        }
+
+        .radio {
+          width: 33.333%;
+          transition: 0.3s;
+          @media (max-width: 600px) {
+            width: 100%;
+          }
+
+          &:last-child {
+            label {
+              border-right: 0;
+              @media (max-width: 600px) {
+                border-right: none;
+                border-bottom: none;
+              }
+            }
+          }
+          label {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 25px 20px;
+            border-right: 2px solid $black;
+            position: relative;
+            transition: 0.3s;
+            @media (max-width: 768px) {
+              padding: 20px;
+            }
+            @media (max-width: 600px) {
+              border-right: none;
+              border-bottom: 2px solid $black;
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
+            .radio_check {
+              min-width: 20px;
+              max-width: 20px;
+              height: 20px;
+              border: 2px solid $black;
+              border-radius: 50%;
+              margin-right: 15px;
+              position: relative;
+              transition: 0.3s;
+              @media (max-width: 768px) {
+                min-width: 14px;
+                max-width: 14px;
+                height: 14px;
+                border: 1px solid $black;
+              }
+              @media (max-width: 600px) {
+                margin-right: 70px;
+              }
+              @media (max-width: 375px) {
+                margin-right: 30px;
+              }
+
+              input {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 0;
+                height: 0;
+                opacity: 0;
+                &:checked ~ span {
+                  // background-color: #fff;
+                  transition: 0.3s;
+                  opacity: 1;
+                }
+              }
+              span {
+                display: block;
+                min-width: 13px;
+                max-width: 13px;
+                height: 13px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: $black;
+                border-radius: 50%;
+                opacity: 0;
+                transition: 0.3s;
+                @media (max-width: 768px) {
+                  min-width: 8px;
+                  max-width: 8px;
+                  height: 8px;
+                }
+              }
+            }
+            > p {
+              font-family: $HelvEx;
+              font-size: 20px;
+              line-height: 24px;
+              font-weight: 500;
+              color: $black;
+              transition: 0.3s;
+              height: 20px;
+              @media (max-width: 768px) {
+                font-size: 14px;
+                line-height: 20px;
+              }
+              @media (max-width: 600px) {
+                width: 120px;
+              }
+              @media (max-width: 390px) {
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+        .radio.active {
+          transition: 0.3s;
+          label {
+            background-color: $black;
+            transition: 0.3s;
+            .radio_check {
+              border: 2px solid #fff;
+              transition: 0.3s;
+              @media (max-width: 768px) {
+                border: 1px solid #fff;
+              }
+
+              span {
+                background-color: #fff;
+                opacity: 1;
+                transition: 0.3s;
+              }
+            }
+            > p {
+              color: #fff;
+              transition: 0.3s;
+              @media (max-width: 768px) {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+      .form__textarea {
+        max-width: 810px;
+        margin-right: 30px;
+        @media (max-width: 1024px) {
+          max-width: none;
+          margin-right: 0;
+        }
+      }
+    }
+    .show_you {
+      border-left: 1px solid $black;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      width: 39.25%;
+      @media (max-width: 1440px) {
+        width: 38.8%;
+      }
+      @media (max-width: 1205px) {
+        width: 39.4%;
+      }
+      @media (max-width: 1024px) {
+        width: 100%;
+        border: none;
+        position: relative;
+        margin-bottom: 50px;
+      }
+      @media (max-width: 768px) {
+        padding-top: 45px;
+        padding-bottom: 45px;
+      }
+      &::before {
+        @media (max-width: 1024px) {
+          content: "";
+          height: 1px;
+          width: 200%;
+          background-color: $black;
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: -50%;
+        }
+      }
+      h3 {
+        font-family: $HelvEx;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: $black;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+        padding-left: 70px;
+        @media (max-width: 768px) {
+          margin-bottom: 30px;
+          padding-left: 0;
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+      ul {
+        li {
+          padding-top: 38px;
+          padding-bottom: 34px;
+          padding-left: 70px;
+          padding-right: 70px;
+          position: relative;
+          font-family: $HelvEx;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          color: $black;
+          @media (max-width: 768px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            padding-right: 0;
+            font-size: 16px;
+            line-height: 25px;
+          }
+          &:last-child {
+            padding-bottom: 0;
+          }
+          &::before {
+            content: "";
+            height: 1px;
+            width: 200%;
+            background-color: $black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            @media (max-width: 1024px) {
+              width: 100%;
+            }
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 11px;
+            height: 11px;
+            background-color: $black;
+            border-radius: 50%;
+            position: absolute;
+            left: 30px;
+            top: 49px;
+            @media (max-width: 768px) {
+              left: 0;
+              top: 36px;
+              width: 7px;
+              height: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// ----------
+// FORM
+.inputs {
+  position: relative;
+  span {
+    display: none;
+    font-family: $HelvEx;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $blue;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    @media (max-width: 390px) {
+      right: 0;
+      font-size: 20px;
+    }
+  }
+  input:required ~ span {
+    display: block;
+  }
+  input {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-bottom: 28px;
+    border-bottom: 2px solid $black;
+    width: 100%;
+    font-family: $HelvEx;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $black;
+    outline: none;
+    border-radius: 0;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+      padding-bottom: 17px;
+    }
+    &:focus {
+      border-bottom: 2px solid $blue;
+    }
+  }
+  ::placeholder {
+    font-family: $HelvEx;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $black;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+.form__textarea {
+  margin-bottom: 40px;
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+  textarea {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 27px;
+    border-bottom: 2px solid $black;
+    width: 100%;
+    height: 53px;
+    font-family: $HelvEx;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $black;
+    outline: none;
+    resize: vertical;
+    border-radius: 0;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+      padding-bottom: 17px;
+      height: 43px;
+    }
+    &:focus {
+      border-bottom: 2px solid $blue;
+    }
+  }
+  ::placeholder {
+    font-family: $HelvEx;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $black;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  :-ms-input-placeholder {
+    font-family: $HelvEx;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $black;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  ::-ms-input-placeholder {
+    font-family: $HelvEx;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $black;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+.form__check {
+  max-width: 515px;
+  margin-right: 20px;
+  @media (max-width: 600px) {
+    margin-right: 0;
+    margin-bottom: 30px;
+    max-width: none;
+  }
+  label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    > p {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
+      a {
+        color: $black;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.check {
+  max-width: 20px;
+  min-width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  border: 2px solid $black;
+  border-radius: 3px;
+  position: relative;
+  @media (max-width: 768px) {
+    max-width: 14px;
+    min-width: 14px;
+    height: 14px;
+    border: 1px solid $black;
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+  input:checked ~ span {
+    opacity: 1;
+    transition: 0.3s;
+  }
+  span {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    background-color: $black;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s;
+    @media (max-width: 768px) {
+      width: 9px;
+      height: 9px;
+    }
+  }
+}
+.btn_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  min-width: 225px;
+  width: fit-content;
+  color: #fff;
+  background-color: $black;
+  padding: 15px 60px;
+  text-align: center;
+  font-family: $HelvEx;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 50px;
+  transition: 0.3s;
+  border: 2px solid $black;
+  white-space: nowrap;
+  @media (max-width: 768px) {
+    height: 47px;
+    min-width: 153px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+  }
+  &:focus {
+    transition: 0.3s;
+    border: 2px solid $blue;
+  }
+}
+.form__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 810px;
+  margin-right: 30px;
+  @media (max-width: 1024px) {
+    max-width: none;
+    margin-right: 0;
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+.selects {
+  position: relative;
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   width: 15px;
+  //   height: 10px;
+  //   background-image: url("../img/icons/arrow_bottom_accordeon.svg");
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   background-position: center center;
+  //   position: absolute;
+  //   top: 10px;
+  //   right: 10px;
+  //   pointer-events: none;
+  //   @media (max-width: 768px) {
+  //     width: 13px;
+  //     height: 9px;
+  //     top: 6px;
+  //     right: 0;
+  //   }
+  // }
+  select {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 27px;
+    border-bottom: 2px solid $black;
+    width: 100%;
+    font-family: $HelvEx;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $black;
+    outline: none;
+    appearance: none;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+      padding-bottom: 17px;
+    }
+    &:focus {
+      border-bottom: 2px solid $blue;
+    }
+  }
+}
+// END FORM
+// ----------
+// END SCHEDULE
+// ========================================
+// TRUST SCHEDULE
+.bl_trust__schedule {
+  border-left: none;
+  @media (max-width: 1200px) {
+    border-right: none;
+  }
+  .container {
+    padding: 0;
+    padding-right: 120px;
+    max-width: none;
+    @media (max-width: 1440px) {
+      padding-right: 80px;
+    }
+    @media (max-width: 1200px) {
+      padding: 0;
+    }
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+  .bl_trust__content {
+    flex-direction: row-reverse;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      margin-left: -2px;
+    }
+    h2 {
+      padding-left: 70px;
+      @media (max-width: 1600px) {
+        padding-left: 20px;
+      }
+      @media (max-width: 390px) {
+        max-width: 370px;
+      }
+    }
+    .bl_trust__items {
+      border-right: 1px solid #b0afb0;
+      @media (max-width: 1200px) {
+        border-right: none;
+      }
+    }
+  }
+}
+// END TRUST SCHEDULE
+// ========================================
+// REVIEWS SHEDULE
+.bl_reviews__schedule {
+  .bl_reviews__content {
+    h2 {
+      @media (max-width: 390px) {
+        display: none;
+      }
+    }
+    .mob_h2 {
+      display: none;
+      @media (max-width: 390px) {
+        display: block;
+      }
+    }
+  }
+}
+// END REVIEWS SHEDULE
+// ========================================

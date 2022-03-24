@@ -1,0 +1,86 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- INTERESTING  ----------
+.bl_interesting {
+  padding-bottom: 200px;
+  @media (max-width: 768px) {
+    padding-bottom: 100px;
+  }
+  &__items {
+    padding-top: 5px;
+    ul {
+      display: block;
+      li {
+        display: block;
+        margin-bottom: 102px;
+        width: 50%;
+        @media (max-width: 768px) {
+          margin-bottom: 60px;
+        }
+        @media (max-width: 600px) {
+          width: 100%;
+          margin-bottom: 40px;
+        }
+        .mr-0 {
+          margin-left: auto;
+          margin-right: 0;
+        }
+      }
+    }
+    .btn_gold {
+      margin: 0 auto;
+    }
+  }
+  &__item {
+    max-width: 570px;
+    position: relative;
+    @media (max-width: 1300px) {
+      max-width: 380px;
+    }
+    @media (max-width: 992px) {
+      max-width: 290px;
+    }
+    @media (max-width: 600px) {
+      max-width: none;
+    }
+    > a {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+      width: 100%;
+      height: 100%;
+    }
+
+    h3 {
+      color: $green_light;
+      margin-bottom: 18px;
+      letter-spacing: 0.28px;
+    }
+  }
+}
+// ---------- END INTERESTING  ----------
+// ----------------------------------------
+// ========================================
+// ---------- INTERESTING INSIDE ----------
+.bl_inter_inside {
+  &__content {
+    h1 {
+      @media (max-width: 375px) {
+        font-size: 35px;
+      }
+    }
+    .main_post {
+      padding-top: 5px;
+    }
+  }
+}
+
+// ---------- END INTERESTING INSIDE ----------
+// ========================================

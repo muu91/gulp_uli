@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main_wrapper bg_green">
+        @@include('__header.html')
+        <main>
+            <!-- -------------------------------------- -->
+            <!-- ---------- 404 ---------- -->
+            <section class="bl_404">
+                <div class="container">
+                    <div class="bl_404__content">
+                        <h1 class="title150">
+                            Запрашиваемая страница не найдена
+                        </h1>
+                        <a href="#" class="btn_border_green">
+                            <span>
+                                Главная страница
+                            </span>
+                        </a>
+                        <p class="paragraph26">
+                            Список возможных причин отображения данной страницы:
+                        </p>
+                        <ul>
+                            <li class="paragraph26">
+                                Вам могли прислать неверную ссылку.
+                            </li>
+                            <li class="paragraph26">
+                                Вы могли набрать адрес с ошибкой.
+                            </li>
+                            <li class="paragraph26">
+                                Документ мог быть удален с изменением структуры сайта.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- ---------- END 404 ---------- -->
+            <!-- -------------------------------------- -->
+
+        </main>
+        @@include('__footer.html') @@include('__popups.html') @@include('__js_source.html')
+
+</body>
+
+</html>
