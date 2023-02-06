@@ -1,0 +1,166 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- FOOTER ----------
+.footer {
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid $sep2;
+    border-bottom: 1px solid $sep2;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media (max-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+  &__catalog {
+    max-width: 460px;
+    width: 100%;
+    margin-right: 20px;
+    @media (max-width: 600px) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      margin-right: 0;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 20px;
+      @media (max-width: 768px) {
+        gap: 5px 10px;
+      }
+    }
+    a {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: $grey_txt;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+      &:hover {
+        color: $dark_txt;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__services {
+    max-width: 300px;
+    margin-right: 20px;
+    @media (max-width: 600px) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      margin-right: 0;
+    }
+    ul {
+      li {
+        margin-bottom: 10px;
+        @media (max-width: 768px) {
+          margin-bottom: 10px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &__menu {
+    margin-right: 20px;
+    @media (max-width: 600px) {
+      margin-right: 0;
+    }
+    ul {
+      li {
+        margin-bottom: 30px;
+        @media (max-width: 768px) {
+          margin-bottom: 25px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      a {
+        margin-bottom: 0;
+        font-weight: 600;
+        &:hover {
+          color: $grey_txt;
+        }
+      }
+    }
+  }
+  &__contact {
+    margin-bottom: 30px;
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+    > p {
+      font-size: 12px;
+      margin-bottom: 6px;
+      color: $grey_txt;
+    }
+  }
+  &__soc-networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    @media (max-width: 1024px) {
+      // display: none;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 24px;
+      max-width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      &:hover,
+      &:focus {
+        opacity: 0.6;
+      }
+      .insta-icon {
+        width: 24px;
+        height: 24px;
+      }
+      .vk-icon {
+        margin-top: 7px;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    p {
+      font-size: 12px;
+      a {
+        margin-left: 10px;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+    .made {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
+      margin-left: 20px;
+    }
+  }
+}
+// ---------- END FOOTER ----------
+// ========================================

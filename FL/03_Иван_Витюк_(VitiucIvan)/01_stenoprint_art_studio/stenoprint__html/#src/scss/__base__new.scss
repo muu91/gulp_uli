@@ -1,0 +1,411 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+body {
+    // font: 16px/160% "open_sans", Arial, sans-serif;
+    font-family: "Gilroy", sans-serif;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../img/others/main-bg.svg");
+}
+
+// html.lock,
+body.lock {
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+    position: relative;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    // max-width: 992px;
+    margin: 0 auto;
+    main {
+        flex: 1 1 auto;
+    }
+}
+
+.container {
+    max-width: calc(1430px + 160px);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+    @media (max-width: 1300px) {
+        padding: 0 60px;
+    }
+    @media (max-width: 1024px) {
+        padding: 0 40px;
+    }
+    @media (max-width: 768px) {
+        padding: 0 30px;
+    }
+    @media (max-width: 375px) {
+        padding: 0 20px;
+    }
+    @media (max-width: 374px) {
+        padding: 0 15px;
+    }
+}
+.d-none {
+    display: none !important;
+}
+// ========================================
+// ---------- HEADING ----------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $G;
+    font-style: normal;
+    line-height: 130%;
+    color: $dark_txt;
+    font-weight: 600;
+}
+.title_h1 {
+    font-size: 50px;
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
+}
+.title_h2 {
+    font-size: 40px;
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+}
+.title24 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
+}
+.title18 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+.title16 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+// ---------- END HEADING ----------
+// ----------------------------------------
+// ---------- TEXTS ----------
+p {
+    display: block;
+    font-family: $G;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $dark_txt;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+a,
+span {
+    display: inline-block;
+    font-family: $G;
+    color: $dark_txt;
+}
+button {
+    outline: none;
+    cursor: pointer;
+}
+// ---------- END TEXTS ----------
+// ----------------------------------------
+// ---------- BUTTONS ----------
+// ----------------------------------------
+.btn-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 140%;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+    color: $w;
+    width: fit-content;
+    font-family: $G;
+}
+.btn-border-white {
+    border: 1px solid $w;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+.btn-red-menu {
+    background-color: $red;
+    padding: 15px 30px;
+    margin-right: 50px;
+    @media (max-width: 1024px) {
+        margin-right: 30px;
+        padding: 15px;
+    }
+    &__icons {
+        width: 18px;
+        height: 18px;
+        position: relative;
+        margin-right: 10px;
+        @media (max-width: 1024px) {
+            margin-right: 0;
+        }
+        svg {
+            position: absolute;
+            inset: 0;
+            fill: $w;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header__cross {
+            opacity: 0;
+            @media (max-width: 1024px) {
+                position: relative;
+                left: 2px;
+                top: 1px;
+            }
+            use {
+                transform: scale(1.6);
+            }
+        }
+        .header__catalog {
+            opacity: 1;
+        }
+    }
+    &__text {
+        font-family: $G;
+        font-weight: 600;
+        color: $w;
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+}
+.btn-red-menu__desktop.active {
+    .btn-red-menu__icons {
+        .header__cross {
+            opacity: 1;
+        }
+        .header__catalog {
+            opacity: 0;
+        }
+    }
+}
+.btn-red {
+    background-color: $red;
+    padding: 20px 60px;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+    &:hover {
+        background-color: $red_hov;
+        box-shadow: 0px 15px 20px -15px #ff0d35;
+    }
+}
+.btn-more-underline {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+    color: $dark_txt;
+    text-decoration: underline;
+    &:hover span {
+        text-decoration: none;
+    }
+    span {
+        text-decoration: underline;
+    }
+}
+.btn-more-arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .btn-arrow-up {
+        transition: transform 0.3s;
+        width: 18px;
+        height: 18px;
+        padding: 3px;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+}
+.btn-more-arrow.active .btn-arrow-up {
+    transform: rotate(180deg);
+}
+
+.btn-more-red {
+    font-family: $G;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: $red;
+    margin-top: 10px;
+    &:hover span {
+        color: $red_hov;
+    }
+    &:hover .btn-more-red__icon {
+        transform: translateX(5px);
+    }
+    span {
+        color: $red;
+    }
+    .btn-more-red__icon {
+        width: 14px;
+        height: 14px;
+        fill: $red;
+        margin-left: 5px;
+        transition: 0.3s;
+        margin-top: 2px;
+    }
+}
+// ----------------------------------------
+// ---------- END BUTTONS ----------
+// ========================================
+// ---------- INDENTS ----------
+// ----------------------------------------
+.mb-120 {
+    margin-bottom: 120px;
+    @media (max-width: 768px) {
+        margin-bottom: 80px;
+    }
+    @media (max-width: 480px) {
+        margin-bottom: 60px;
+    }
+}
+.mt-120 {
+    margin-top: 120px;
+    @media (max-width: 768px) {
+        margin-top: 80px;
+    }
+    @media (max-width: 480px) {
+        margin-top: 60px;
+    }
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+    @media (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+    @media (max-width: 480px) {
+        margin-bottom: 40px;
+    }
+}
+.mb-50 {
+    margin-bottom: 50px;
+    @media (max-width: 768px) {
+        margin-bottom: 40px;
+    }
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+}
+.mb-20 {
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+        margin-bottom: 10px;
+    }
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.pb-120 {
+    padding-bottom: 120px;
+    @media (max-width: 768px) {
+        padding-bottom: 80px;
+    }
+    @media (max-width: 480px) {
+        padding-bottom: 60px;
+    }
+}
+.tit50 {
+    margin-bottom: 50px;
+    @media (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+}
+.tit20 {
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+        margin-bottom: 10px;
+    }
+}
+.max710 {
+    max-width: 710px;
+}
+.fw600 {
+    font-weight: 600;
+}
+
+// ----------------------------------------
+// ---------- END INDENTS ----------
+// ========================================
+// ---------- COLORS ----------
+// ----------------------------------------
+.grey_txt {
+    color: $grey_txt;
+}
+// .grey_txt2 {
+//     color: $grey_txt;
+// }
+
+// ----------------------------------------
+// ---------- END COLORS ----------
+// ========================================
+// ---------- OTHERS ----------
+// ----------------------------------------
+.icon {
+    fill: $dark_txt;
+    width: 24px;
+    height: 24px;
+    // use {
+    //   // display: block;
+    //   width: 100px;
+    //   height: 100px;
+    // }
+}
+.imgcov {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+// ----------------------------------------
+// ---------- END OTHERS ----------
+// ========================================

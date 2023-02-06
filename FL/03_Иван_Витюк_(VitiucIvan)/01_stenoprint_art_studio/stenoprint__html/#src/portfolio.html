@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <!-- @@include('__header.html', {
+        "btn-back": "d-none",
+        "name_title": "Бронирование переговорок"
+        }) -->
+        <main>
+            <!-- -------------------------------------- -->
+            <!-- ---------- CRUMBS ---------- -->
+            @@include('_crumbs2.html', {
+            "class_main": "",
+            "class2": "",
+            "text2": "Портфолио",
+            })
+            <!-- ---------- END CRUMBS ---------- -->
+            <!-- -------------------------------------- -->
+            <!-- ---------- PORTFOLIO ---------- -->
+            <section class="bl-portfolio">
+                <div class="container">
+                    <div class="bl-portfolio__content">
+                        <h1 class="title_h1 tit50">
+                            Портфолио
+                        </h1>
+                        <div class="bl-portfolio__btns mb-30">
+                            <button class="js-btn_filter_portfolio active">
+                                Дизайнерские обои
+                            </button>
+                            <button class="js-btn_filter_portfolio">
+                                Виниловые обои
+                            </button>
+                            <button class="js-btn_filter_portfolio">
+                                Фирменные обои
+                            </button>
+                        </div>
+                        <div class="bl-portfolio__items">
+                            <ul>
+                                <li>
+                                    <div class="bl-portfolio__item">
+                                        <a href="#" class="js-btn-portfolio"></a>
+                                        <div class="bl-portfolio__img">
+                                            <img src="./img/blog/top_img1.png" alt="poerfolio img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-portfolio__item">
+                                        <a href="#" class="js-btn-portfolio"></a>
+                                        <div class="bl-portfolio__img">
+                                            <img src="./img/blog/top_img2.png" alt="poerfolio img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-portfolio__item">
+                                        <a href="#" class="js-btn-portfolio"></a>
+                                        <div class="bl-portfolio__img">
+                                            <img src="./img/blog/top_img2.png" alt="poerfolio img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-portfolio__item">
+                                        <a href="#" class="js-btn-portfolio"></a>
+                                        <div class="bl-portfolio__img">
+                                            <img src="./img/blog/top_img1.png" alt="poerfolio img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-portfolio__item">
+                                        <a href="#" class="js-btn-portfolio"></a>
+                                        <div class="bl-portfolio__img">
+                                            <img src="./img/blog/top_img1.png" alt="poerfolio img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-portfolio__item">
+                                        <a href="#" class="js-btn-portfolio"></a>
+                                        <div class="bl-portfolio__img">
+                                            <img src="./img/blog/top_img2.png" alt="poerfolio img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-portfolio__item">
+                                        <a href="#" class="js-btn-portfolio"></a>
+                                        <div class="bl-portfolio__img">
+                                            <img src="./img/blog/top_img2.png" alt="poerfolio img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-portfolio__item">
+                                        <a href="#" class="js-btn-portfolio"></a>
+                                        <div class="bl-portfolio__img">
+                                            <img src="./img/blog/top_img1.png" alt="poerfolio img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-portfolio__item">
+                                        <a href="#" class="js-btn-portfolio"></a>
+                                        <div class="bl-portfolio__img">
+                                            <img src="./img/blog/top_img1.png" alt="poerfolio img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-portfolio__item">
+                                        <a href="#" class="js-btn-portfolio"></a>
+                                        <div class="bl-portfolio__img">
+                                            <img src="./img/blog/top_img2.png" alt="poerfolio img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-portfolio__item">
+                                        <a href="#" class="js-btn-portfolio"></a>
+                                        <div class="bl-portfolio__img">
+                                            <img src="./img/blog/top_img2.png" alt="poerfolio img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-portfolio__item">
+                                        <a href="#" class="js-btn-portfolio"></a>
+                                        <div class="bl-portfolio__img">
+                                            <img src="./img/blog/top_img1.png" alt="poerfolio img">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        @@include('_pagination.html')
+                    </div>
+                </div>
+                <div class="pl-modals pl-modals_portfolio js-pl-modals-portfolio">
+                    <div class="pl-modal">
+                        <div class="pl-modal__content">
+                            <div class="pl-modal__slider">
+                                <div class="swiper js-swiper-mod_places">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./img/index/place1.png" alt="place">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/index/place2.png" alt="place">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/index/place1.png" alt="place">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/index/place2.png" alt="place">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+
+                                    <div class="swiper-button-prev">
+                                        <svg class="icon arrow-left">
+                                            <use xlink:href="./img/svg/sprites.svg#arrow_left_white">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <svg class="icon arrow-right">
+                                            <use xlink:href="./img/svg/sprites.svg#arrow_right_white">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pl-modal__texts">
+                                <h4 class="title24">
+                                    Зеркальные тонирующие пленки серии SR PS
+                                </h4>
+                                <div class="pl-modal__seria seria">
+                                    <a href="#"></a>
+                                    <div class="seria__left">
+                                        <div class="seria__img">
+                                            <img src="./img/portfolio/seria1.png" alt="seria">
+                                        </div>
+                                        <div class="seria__texts">
+                                            <h6>
+                                                Серия R GOLD
+                                            </h6>
+                                            <p>
+                                                Зеркальная пленка
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="seria__price">
+                                        <b>552 ₽</b> / м2
+                                    </div>
+                                </div>
+                                <div class="pl-modal__texts_scroll">
+                                    <p>
+                                        Разнообразный и богатый опыт говорит нам, что
+                                        внедрение современных
+                                        методик представляет собой интересный
+                                        эксперимент
+                                        проверки кластеризации усилий. Предварительные
+                                        выводы неутешительны:
+                                        базовый вектор развития создаёт предпосылки для
+                                        дальнейших направлений развития. Не следует,
+                                        однако, забывать, что
+                                        граница обучения кадров прекрасно подходит для
+                                        реализации своевременного выполнения
+                                        сверхзадачи. Разнообразный и
+                                        богатый опыт говорит нам, что высокое качество
+                                        позиционных исследований, а также свежий взгляд
+                                        на привычные вещи —
+                                        безусловно открывает новые горизонты для
+                                        позиций,
+                                        занимаемых участниками в отношении поставленных
+                                        задач.
+                                    </p>
+                                    <a href="#" class="btn-m btn-red">
+                                        Перейти в каталог коллекции
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="btn-close-modal js-btn-close-modal">
+                                <svg class="icon cross-icon">
+                                    <use xlink:href="./img/svg/sprites.svg#cross"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ---------- END PORTFOLIO ---------- -->
+            <!-- -------------------------------------- -->
+        </main>
+        @@include('__footer.html')
+        @@include('__popups.html') @@include('__js_source.html')
+    </div>
+</body>
+
+</html>

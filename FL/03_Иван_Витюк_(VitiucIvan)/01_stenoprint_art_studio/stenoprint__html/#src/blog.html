@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <!-- @@include('__header.html', {
+        "btn-back": "d-none",
+        "name_title": "Бронирование переговорок"
+        }) -->
+        <main>
+            <!-- -------------------------------------- -->
+            <!-- ---------- CRUMBS ---------- -->
+            @@include('_crumbs2.html', {
+            "class_main": "",
+            "class2": "",
+            "text2": "Блог",
+            })
+            <!-- ---------- END CRUMBS ---------- -->
+            <!-- -------------------------------------- -->
+            <!-- ---------- BLOG ---------- -->
+            <section class="bl-blog">
+                <div class="container">
+                    <div class="bl-blog__content">
+                        <h1 class="title_h1 tit50">
+                            Блог
+                        </h1>
+                        <div class="bl-blog__top">
+                            <form action="#">
+                                <div class="search-input">
+                                    <input type="text" placeholder="Поиск...">
+                                    <button type="submit" class="btn-search-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="./img/svg/sprites.svg#search"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="bl-blog__selects">
+                                    <button class="btn-select js-btn-select-blog">
+                                        <span>
+                                            Все категории
+                                        </span>
+                                        <svg class="icon arrow-icon">
+                                            <use xlink:href="./img/svg/sprites.svg#arrow_up_dark"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="selects_ul js-selects_ul">
+                                        <ul>
+                                            <li>
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                                <div class="cat-quaintity">
+                                                    13
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    Антигравийная пленка 2
+                                                </button>
+                                                <div class="cat-quaintity">
+                                                    26
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    Антигравийная 3
+                                                </button>
+                                                <div class="cat-quaintity">
+                                                    116
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                                <div class="cat-quaintity">
+                                                    13
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    Антигравийная пленка 2
+                                                </button>
+                                                <div class="cat-quaintity">
+                                                    26
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    Антигравийная 3
+                                                </button>
+                                                <div class="cat-quaintity">
+                                                    116
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="bl-blog__items">
+                            <ul>
+                                <li>
+                                    <div class="bl-blog__item">
+                                        <a href="#"></a>
+                                        <div class="bl-blog__img">
+                                            <img src="./img/index/blog1.png" alt="blog img">
+                                            <div class="bl-blog__btns">
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="bl-blog__texts">
+                                            <h3 class="title18">
+                                                Как бы то ни было, граница обучения кадров ни к чему нас не
+                                                обязывает
+                                            </h3>
+                                            <p>
+                                                Есть над чем задуматься: акционеры крупнейших компаний будут
+                                                разоблачены. Однозначно, активно развивающиеся страны
+                                                третьего мира,
+                                            </p>
+                                            <div class="bl-blog__bottom">
+                                                <div class="bl-blog__views">
+                                                    <svg class="icon view">
+                                                        <use xlink:href="./img/svg/sprites.svg#view"></use>
+                                                    </svg>
+                                                    <p class="grey_txt">
+                                                        3833
+                                                    </p>
+                                                </div>
+                                                <div class="bl-blog__date">
+                                                    22 мая 2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-blog__item">
+                                        <a href="#"></a>
+                                        <div class="bl-blog__img">
+                                            <img src="./img/index/blog1.png" alt="blog img">
+                                            <div class="bl-blog__btns">
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="bl-blog__texts">
+                                            <h3 class="title18">
+                                                Как бы то ни было, граница обучения кадров ни к чему нас не
+                                                обязывает
+                                            </h3>
+                                            <p>
+                                                Есть над чем задуматься: акционеры крупнейших компаний будут
+                                                разоблачены. Однозначно, активно развивающиеся страны
+                                                третьего мира,
+                                            </p>
+                                            <div class="bl-blog__bottom">
+                                                <div class="bl-blog__views">
+                                                    <svg class="icon view">
+                                                        <use xlink:href="./img/svg/sprites.svg#view"></use>
+                                                    </svg>
+                                                    <p class="grey_txt">
+                                                        3833
+                                                    </p>
+                                                </div>
+                                                <div class="bl-blog__date">
+                                                    22 мая 2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-blog__item">
+                                        <a href="#"></a>
+                                        <div class="bl-blog__img">
+                                            <img src="./img/index/blog1.png" alt="blog img">
+                                            <div class="bl-blog__btns">
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="bl-blog__texts">
+                                            <h3 class="title18">
+                                                Как бы то ни было, граница обучения кадров ни к чему нас не
+                                                обязывает
+                                            </h3>
+                                            <p>
+                                                Есть над чем задуматься: акционеры крупнейших компаний будут
+                                                разоблачены. Однозначно, активно развивающиеся страны
+                                                третьего мира,
+                                            </p>
+                                            <div class="bl-blog__bottom">
+                                                <div class="bl-blog__views">
+                                                    <svg class="icon view">
+                                                        <use xlink:href="./img/svg/sprites.svg#view"></use>
+                                                    </svg>
+                                                    <p class="grey_txt">
+                                                        3833
+                                                    </p>
+                                                </div>
+                                                <div class="bl-blog__date">
+                                                    22 мая 2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-blog__item">
+                                        <a href="#"></a>
+                                        <div class="bl-blog__img">
+                                            <img src="./img/index/blog1.png" alt="blog img">
+                                            <div class="bl-blog__btns">
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="bl-blog__texts">
+                                            <h3 class="title18">
+                                                Как бы то ни было, граница обучения кадров ни к чему нас не
+                                                обязывает
+                                            </h3>
+                                            <p>
+                                                Есть над чем задуматься: акционеры крупнейших компаний будут
+                                                разоблачены. Однозначно, активно развивающиеся страны
+                                                третьего мира,
+                                            </p>
+                                            <div class="bl-blog__bottom">
+                                                <div class="bl-blog__views">
+                                                    <svg class="icon view">
+                                                        <use xlink:href="./img/svg/sprites.svg#view"></use>
+                                                    </svg>
+                                                    <p class="grey_txt">
+                                                        3833
+                                                    </p>
+                                                </div>
+                                                <div class="bl-blog__date">
+                                                    22 мая 2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-blog__item">
+                                        <a href="#"></a>
+                                        <div class="bl-blog__img">
+                                            <img src="./img/index/blog1.png" alt="blog img">
+                                            <div class="bl-blog__btns">
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="bl-blog__texts">
+                                            <h3 class="title18">
+                                                Как бы то ни было, граница обучения кадров ни к чему нас не
+                                                обязывает
+                                            </h3>
+                                            <p>
+                                                Есть над чем задуматься: акционеры крупнейших компаний будут
+                                                разоблачены. Однозначно, активно развивающиеся страны
+                                                третьего мира,
+                                            </p>
+                                            <div class="bl-blog__bottom">
+                                                <div class="bl-blog__views">
+                                                    <svg class="icon view">
+                                                        <use xlink:href="./img/svg/sprites.svg#view"></use>
+                                                    </svg>
+                                                    <p class="grey_txt">
+                                                        3833
+                                                    </p>
+                                                </div>
+                                                <div class="bl-blog__date">
+                                                    22 мая 2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-blog__item">
+                                        <a href="#"></a>
+                                        <div class="bl-blog__img">
+                                            <img src="./img/index/blog1.png" alt="blog img">
+                                            <div class="bl-blog__btns">
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="bl-blog__texts">
+                                            <h3 class="title18">
+                                                Как бы то ни было, граница обучения кадров ни к чему нас не
+                                                обязывает
+                                            </h3>
+                                            <p>
+                                                Есть над чем задуматься: акционеры крупнейших компаний будут
+                                                разоблачены. Однозначно, активно развивающиеся страны
+                                                третьего мира,
+                                            </p>
+                                            <div class="bl-blog__bottom">
+                                                <div class="bl-blog__views">
+                                                    <svg class="icon view">
+                                                        <use xlink:href="./img/svg/sprites.svg#view"></use>
+                                                    </svg>
+                                                    <p class="grey_txt">
+                                                        3833
+                                                    </p>
+                                                </div>
+                                                <div class="bl-blog__date">
+                                                    22 мая 2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-blog__item">
+                                        <a href="#"></a>
+                                        <div class="bl-blog__img">
+                                            <img src="./img/index/blog1.png" alt="blog img">
+                                            <div class="bl-blog__btns">
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="bl-blog__texts">
+                                            <h3 class="title18">
+                                                Как бы то ни было, граница обучения кадров ни к чему нас не
+                                                обязывает
+                                            </h3>
+                                            <p>
+                                                Есть над чем задуматься: акционеры крупнейших компаний будут
+                                                разоблачены. Однозначно, активно развивающиеся страны
+                                                третьего мира,
+                                            </p>
+                                            <div class="bl-blog__bottom">
+                                                <div class="bl-blog__views">
+                                                    <svg class="icon view">
+                                                        <use xlink:href="./img/svg/sprites.svg#view"></use>
+                                                    </svg>
+                                                    <p class="grey_txt">
+                                                        3833
+                                                    </p>
+                                                </div>
+                                                <div class="bl-blog__date">
+                                                    22 мая 2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-blog__item">
+                                        <a href="#"></a>
+                                        <div class="bl-blog__img">
+                                            <img src="./img/index/blog1.png" alt="blog img">
+                                            <div class="bl-blog__btns">
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="bl-blog__texts">
+                                            <h3 class="title18">
+                                                Как бы то ни было, граница обучения кадров ни к чему нас не
+                                                обязывает
+                                            </h3>
+                                            <p>
+                                                Есть над чем задуматься: акционеры крупнейших компаний будут
+                                                разоблачены. Однозначно, активно развивающиеся страны
+                                                третьего мира,
+                                            </p>
+                                            <div class="bl-blog__bottom">
+                                                <div class="bl-blog__views">
+                                                    <svg class="icon view">
+                                                        <use xlink:href="./img/svg/sprites.svg#view"></use>
+                                                    </svg>
+                                                    <p class="grey_txt">
+                                                        3833
+                                                    </p>
+                                                </div>
+                                                <div class="bl-blog__date">
+                                                    22 мая 2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-blog__item">
+                                        <a href="#"></a>
+                                        <div class="bl-blog__img">
+                                            <img src="./img/index/blog1.png" alt="blog img">
+                                            <div class="bl-blog__btns">
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="bl-blog__texts">
+                                            <h3 class="title18">
+                                                Как бы то ни было, граница обучения кадров ни к чему нас не
+                                                обязывает
+                                            </h3>
+                                            <p>
+                                                Есть над чем задуматься: акционеры крупнейших компаний будут
+                                                разоблачены. Однозначно, активно развивающиеся страны
+                                                третьего мира,
+                                            </p>
+                                            <div class="bl-blog__bottom">
+                                                <div class="bl-blog__views">
+                                                    <svg class="icon view">
+                                                        <use xlink:href="./img/svg/sprites.svg#view"></use>
+                                                    </svg>
+                                                    <p class="grey_txt">
+                                                        3833
+                                                    </p>
+                                                </div>
+                                                <div class="bl-blog__date">
+                                                    22 мая 2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-blog__item">
+                                        <a href="#"></a>
+                                        <div class="bl-blog__img">
+                                            <img src="./img/index/blog1.png" alt="blog img">
+                                            <div class="bl-blog__btns">
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="bl-blog__texts">
+                                            <h3 class="title18">
+                                                Как бы то ни было, граница обучения кадров ни к чему нас не
+                                                обязывает
+                                            </h3>
+                                            <p>
+                                                Есть над чем задуматься: акционеры крупнейших компаний будут
+                                                разоблачены. Однозначно, активно развивающиеся страны
+                                                третьего мира,
+                                            </p>
+                                            <div class="bl-blog__bottom">
+                                                <div class="bl-blog__views">
+                                                    <svg class="icon view">
+                                                        <use xlink:href="./img/svg/sprites.svg#view"></use>
+                                                    </svg>
+                                                    <p class="grey_txt">
+                                                        3833
+                                                    </p>
+                                                </div>
+                                                <div class="bl-blog__date">
+                                                    22 мая 2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-blog__item">
+                                        <a href="#"></a>
+                                        <div class="bl-blog__img">
+                                            <img src="./img/index/blog1.png" alt="blog img">
+                                            <div class="bl-blog__btns">
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="bl-blog__texts">
+                                            <h3 class="title18">
+                                                Как бы то ни было, граница обучения кадров ни к чему нас не
+                                                обязывает
+                                            </h3>
+                                            <p>
+                                                Есть над чем задуматься: акционеры крупнейших компаний будут
+                                                разоблачены. Однозначно, активно развивающиеся страны
+                                                третьего мира,
+                                            </p>
+                                            <div class="bl-blog__bottom">
+                                                <div class="bl-blog__views">
+                                                    <svg class="icon view">
+                                                        <use xlink:href="./img/svg/sprites.svg#view"></use>
+                                                    </svg>
+                                                    <p class="grey_txt">
+                                                        3833
+                                                    </p>
+                                                </div>
+                                                <div class="bl-blog__date">
+                                                    22 мая 2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-blog__item">
+                                        <a href="#"></a>
+                                        <div class="bl-blog__img">
+                                            <img src="./img/index/blog1.png" alt="blog img">
+                                            <div class="bl-blog__btns">
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="bl-blog__texts">
+                                            <h3 class="title18">
+                                                Как бы то ни было, граница обучения кадров ни к чему нас не
+                                                обязывает
+                                            </h3>
+                                            <p>
+                                                Есть над чем задуматься: акционеры крупнейших компаний будут
+                                                разоблачены. Однозначно, активно развивающиеся страны
+                                                третьего мира,
+                                            </p>
+                                            <div class="bl-blog__bottom">
+                                                <div class="bl-blog__views">
+                                                    <svg class="icon view">
+                                                        <use xlink:href="./img/svg/sprites.svg#view"></use>
+                                                    </svg>
+                                                    <p class="grey_txt">
+                                                        3833
+                                                    </p>
+                                                </div>
+                                                <div class="bl-blog__date">
+                                                    22 мая 2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl-blog__item">
+                                        <a href="#"></a>
+                                        <div class="bl-blog__img">
+                                            <img src="./img/index/blog1.png" alt="blog img">
+                                            <div class="bl-blog__btns">
+                                                <button>
+                                                    Антигравийная пленка
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="bl-blog__texts">
+                                            <h3 class="title18">
+                                                Как бы то ни было, граница обучения кадров ни к чему нас не
+                                                обязывает
+                                            </h3>
+                                            <p>
+                                                Есть над чем задуматься: акционеры крупнейших компаний будут
+                                                разоблачены. Однозначно, активно развивающиеся страны
+                                                третьего мира,
+                                            </p>
+                                            <div class="bl-blog__bottom">
+                                                <div class="bl-blog__views">
+                                                    <svg class="icon view">
+                                                        <use xlink:href="./img/svg/sprites.svg#view"></use>
+                                                    </svg>
+                                                    <p class="grey_txt">
+                                                        3833
+                                                    </p>
+                                                </div>
+                                                <div class="bl-blog__date">
+                                                    22 мая 2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                        @@include('_pagination.html')
+                    </div>
+                </div>
+            </section>
+            <!-- ---------- END BLOG ---------- -->
+            <!-- -------------------------------------- -->
+            <!-- ---------- PAGINATION ---------- -->
+            <!-- @@include('_pagination.html') -->
+            <!-- ---------- END PAGINATION ---------- -->
+            <!-- -------------------------------------- -->
+        </main>
+        @@include('__footer.html')
+        @@include('__popups.html') @@include('__js_source.html')
+    </div>
+</body>
+
+</html>

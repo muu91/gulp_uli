@@ -1,0 +1,958 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- BLOCK HEADER ----------
+// ----------------------------------------
+// .ggg {
+//   p {
+//     @extend %grey;
+//   }
+// }
+
+.bl-header {
+  padding-top: 50px;
+  @media (max-width: 768px) {
+    padding-top: 30px;
+  }
+  &__slider {
+    @media (max-width: 480px) {
+      margin-bottom: 60px;
+    }
+  }
+  &__slide {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 120px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 768px) {
+      padding: 80px;
+    }
+    @media (max-width: 480px) {
+      padding: 40px 30px;
+      padding-bottom: 110px;
+      min-height: auto;
+    }
+    p {
+      color: $w;
+      max-width: 710px;
+      margin-bottom: 50px;
+    }
+  }
+  .title_h1 {
+    color: $w;
+    max-width: 710px;
+    margin-bottom: 20px;
+  }
+  .btn-red {
+    @media (max-width: 425px) {
+      width: 100%;
+    }
+  }
+
+  .swiper-button-prev {
+    @media (max-width: 480px) {
+      left: 15px;
+      top: auto;
+      bottom: 30px;
+    }
+    .arrow-left {
+      fill: #fff;
+    }
+  }
+  .swiper-button-next {
+    @media (max-width: 480px) {
+      left: 65px;
+      top: auto;
+      bottom: 30px;
+    }
+    .arrow-right {
+      fill: #fff;
+    }
+  }
+  .swiper-pagination {
+    @media (max-width: 480px) {
+      left: 130px !important;
+      right: 30px !important;
+      bottom: 53px !important;
+      width: auto;
+      transform: none;
+    }
+  }
+  &__texts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+    .title_h2 {
+      max-width: 470px;
+      min-width: 470px;
+      margin-right: 30px;
+      @media (max-width: 1300px) {
+        max-width: 390px;
+        min-width: 390px;
+      }
+      @media (max-width: 992px) {
+        max-width: none;
+        min-width: auto;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__text {
+    width: 100%;
+    max-width: 830px;
+  }
+  &__text-hidden {
+    margin-bottom: 30px;
+    p {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .hidden-text {
+    display: none;
+  }
+}
+.slide1-bg {
+  background-image: url("../img/index/header_bg1.png");
+}
+.grid_4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  &__item {
+    background: radial-gradient(49.88% 49.88% at 22.29% 100%, rgba(207, 213, 229, 0.15) 0%, rgba(207, 213, 229, 0) 100%),
+      radial-gradient(80.86% 83.87% at 0% 0%, rgba(255, 220, 141, 0.08) 0%, rgba(255, 220, 141, 0) 100%), #fffefc;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    padding: 50px 40px 40px;
+    @media (max-width: 1300px) {
+      padding: 30px;
+    }
+    p {
+      color: $grey_txt;
+    }
+  }
+  &__img {
+    margin-bottom: 50px;
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.img-circle128 {
+  max-width: 128px;
+  width: 100%;
+  height: 128px;
+  border-radius: 50%;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    max-width: 96px;
+    height: 96px;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: imgcov;
+    object-position: center;
+  }
+}
+// ----------------------------------------
+// ---------- END BLOCK HEADER ----------
+// ========================================
+// ---------- SERVICES ----------
+// ----------------------------------------
+.bl-services {
+  .swiper-pagination {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+  .swiper {
+    // padding-bottom: 78px;
+    @media (max-width: 768px) {
+      padding-bottom: 120px;
+      overflow: inherit;
+    }
+    > .btn-more-underline {
+      position: absolute;
+      bottom: 16px;
+      right: 0;
+      z-index: 1;
+      white-space: nowrap;
+      @media (max-width: 768px) {
+        bottom: 0;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .swiper-slide {
+    @media (max-width: 768px) {
+      height: auto;
+    }
+  }
+  .grid_4 {
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 768px) {
+      display: flex;
+      gap: 0;
+    }
+    &__item {
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+      height: 100%;
+      &:hover .btn-more-red .btn-more-red__icon {
+        transform: translateX(10px);
+      }
+      > a {
+        display: block;
+        position: absolute;
+        inset: 0;
+      }
+    }
+    &__img {
+      margin-bottom: 0;
+      height: 320px;
+      @media (max-width: 768px) {
+        height: 305px;
+      }
+      img,
+      picture {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+      }
+    }
+    &__texts {
+      padding: 20px 40px 35px;
+      margin-bottom: 30px;
+      // position: relative;
+      @media (max-width: 768px) {
+        padding: 15px 30px 30px;
+      }
+      .btn-more-red {
+        position: absolute;
+        left: 40px;
+        bottom: 35px;
+        @media (max-width: 768px) {
+          left: 30px;
+          bottom: 30px;
+        }
+      }
+    }
+  }
+}
+// ----------------------------------------
+// ---------- END SERVICES ----------
+// ========================================
+// ---------- POPULAR ----------
+// ----------------------------------------
+.filter-menu {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  @media (max-width: 768px) {
+    min-width: 100vw;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    left: -30px;
+  }
+  @media (max-width: 375px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    left: -20px;
+  }
+
+  li {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  button {
+    font-family: $G;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: $grey_txt;
+    background-color: #fffefc;
+    border: 2px solid $sep;
+    border-radius: 50px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    @media (max-width: 768px) {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    &:hover {
+      background-color: $red;
+      border: 2px solid $red;
+      color: $w;
+    }
+  }
+  button.active {
+    background-color: $red;
+    border: 2px solid $red;
+    color: $w;
+    pointer-events: none;
+  }
+}
+.bl-popular {
+  ::-webkit-scrollbar {
+    height: 2px;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-track {
+    // background-color: $sep2;
+    background: transparent;
+
+    // box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset;
+  }
+  // Стилизация ползунка
+  ::-webkit-scrollbar-thumb {
+    // background-color: $grey_txt;
+    background: transparent;
+
+    height: 2px;
+    border-radius: 20px;
+    // border: 2px solid #fff;
+  }
+  &__slider {
+    max-height: 525px;
+    min-height: 525px;
+    padding-bottom: 78px;
+    @media (max-width: 768px) {
+      padding-bottom: 120px;
+    }
+  }
+
+  &__item {
+    background: radial-gradient(49.88% 49.88% at 22.29% 100%, rgba(207, 213, 229, 0.15) 0%, rgba(207, 213, 229, 0) 100%),
+      radial-gradient(80.86% 83.87% at 0% 0%, rgba(255, 220, 141, 0.08) 0%, rgba(255, 220, 141, 0) 100%), #fffefc;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    transition: 0.3s;
+    position: relative;
+
+    > a {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+    }
+    &:hover {
+      margin-bottom: 0;
+    }
+    &:hover .bl-popular__links {
+      height: 92px;
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+  &__img {
+    height: 350px;
+    min-width: calc(100% + 4px);
+    position: relative;
+    left: -2px;
+    top: -2px;
+    border-radius: 30px;
+    overflow: hidden;
+    @media (max-width: 768px) {
+      height: 330px;
+    }
+    img,
+    picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &__btns {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .btn-pop {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      font-family: $G;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      padding: 8px 15px;
+      border-radius: 50px;
+      color: $w;
+      background: $red;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .btn-pop-red {
+      background: linear-gradient(133.97deg, #ffcfe0 3.15%, #e96796 22.8%, #ef3c3c 85.51%);
+    }
+    .btn-pop-pink {
+      background: linear-gradient(133.97deg, #ffe9fe 3.15%, #e39ee0 22.8%, #b669b3 85.51%);
+    }
+    .btn-pop-green {
+      background: linear-gradient(133.97deg, #f2ffef 3.15%, #93c688 22.8%, #56824c 85.51%);
+    }
+    .btn-pop-blue {
+      background: linear-gradient(133.97deg, #c2ccff 3.15%, #465edb 22.8%, #3147ba 85.51%);
+    }
+  }
+  &__texts {
+    padding: 20px 30px;
+  }
+  &__texts-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    .tit16 {
+      margin-right: 5px;
+    }
+  }
+  &__price {
+    font-size: 14px;
+    white-space: nowrap;
+    b {
+      font-size: 18px;
+    }
+  }
+  &__texts-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    p {
+      margin-right: 5px;
+      font-size: 14px;
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
+    }
+    del {
+      font-size: 14px;
+      white-space: nowrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      b {
+        line-height: 95%;
+        color: $grey_txt;
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  &__links {
+    border-top: 2px solid #ffffff;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    transition: 0.3s;
+    z-index: 5;
+    position: relative;
+    // pointer-events: none;
+    @media (max-width: 768px) {
+      display: none;
+    }
+    .btn-red {
+      padding: 15px 17px;
+      margin-right: 5px;
+      width: 140px;
+    }
+    .btn-more-underline {
+      text-align: center;
+      width: 140px;
+    }
+  }
+  .swiper {
+    position: static;
+    @media (max-width: 768px) {
+      overflow: inherit;
+    }
+    .swiper-wrapper {
+      z-index: 20;
+    }
+    > .btn-more-underline {
+      position: absolute;
+      bottom: 16px;
+      right: 0;
+      z-index: 1;
+      white-space: nowrap;
+      @media (max-width: 768px) {
+        bottom: 0;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+[data-slider="btn-filter2"],
+[data-slider="btn-filter3"] {
+  display: none;
+}
+// .filer1 {
+//   position: relative;
+//   &::before {
+//     content: "";
+//     display: block;
+//     width: 20px;
+//     height: 20px;
+//     background-color: #000;
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     z-index: 200;
+//   }
+// }
+// .filer2 {
+//   position: relative;
+//   &::before {
+//     content: "";
+//     display: block;
+//     width: 20px;
+//     height: 20px;
+//     background-color: #ccc;
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     z-index: 200;
+//   }
+// }
+// .filer3 {
+//   position: relative;
+//   &::before {
+//     content: "";
+//     display: block;
+//     width: 20px;
+//     height: 20px;
+//     background-color: red;
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     z-index: 200;
+//   }
+// }
+// ----------------------------------------
+// ---------- END POPULAR ----------
+// ========================================
+// ---------- PLACES ----------
+// ----------------------------------------
+.bl-places {
+  @media (max-width: 768px) {
+    // display: none !important;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 10px;
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__item {
+    background: radial-gradient(
+        99.36% 102.39% at 100% 76.24%,
+        rgba(211, 229, 207, 0.08) 0%,
+        rgba(211, 229, 207, 0) 100%
+      ),
+      radial-gradient(68.66% 43.09% at 0% 100%, rgba(207, 213, 229, 0.15) 0%, rgba(207, 213, 229, 0) 100%), #fffefc;
+    border: 2px solid #fff;
+    border-radius: 30px;
+  }
+  // &__slider {
+  //   height: 400px;
+  // }
+  &__img {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative;
+    width: calc(100% + 4px);
+    left: -2px;
+    top: -2px;
+    @media (max-width: 1024px) {
+      height: 300px;
+    }
+    @media (max-width: 768px) {
+      height: 240px;
+    }
+    img,
+    picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &__search {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(237, 238, 242, 0.6), rgba(237, 238, 242, 0.6));
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    .btn-search {
+      width: 64px;
+      height: 64px;
+      background-color: $red;
+      border-radius: 50%;
+      .icon {
+        margin-left: 4px;
+        margin-top: 4px;
+        fill: #fff;
+      }
+    }
+  }
+  &__texts {
+    padding: 30px 40px;
+  }
+  .pl-modal {
+    // display: flex;
+    &__content {
+      max-width: 1430px;
+      .swiper {
+        .swiper-slide {
+          height: 535px;
+          @media (max-width: 768px) {
+            height: 350px;
+          }
+          @media (max-width: 480px) {
+            height: 220px;
+          }
+        }
+        .swiper-pagination {
+          @media (max-width: 600px) {
+            left: 20px !important;
+            right: 20px !important;
+            transform: none;
+            max-width: none;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ----------------------------------------
+// ---------- END PLACES ----------
+// ========================================
+// ---------- FORM ----------
+// ----------------------------------------
+.bl-indform {
+  &__content {
+    background: radial-gradient(
+        25.54% 71.56% at 71.36% 78.16%,
+        rgba(211, 229, 207, 0.3) 0%,
+        rgba(211, 229, 207, 0) 100%
+      ),
+      radial-gradient(35.81% 100% at 0% 100%, rgba(207, 213, 229, 0.3) 0%, rgba(207, 213, 229, 0) 100%),
+      radial-gradient(60.59% 64.89% at 0% 0%, rgba(255, 181, 61, 0.1) 0%, rgba(255, 181, 61, 0) 100%), #fffefc;
+    width: 100%;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    padding: 60px 120px;
+    position: relative;
+    overflow: hidden;
+    @media (max-width: 992px) {
+      padding: 60px;
+    }
+    @media (max-width: 480px) {
+      padding: 30px;
+    }
+    &::after {
+      content: "";
+      width: 590px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: cover;
+      background-image: url("../img/index/form_img.png");
+      @media (max-width: 1300px) {
+        width: 400px;
+      }
+      @media (max-width: 1024px) {
+        display: none;
+      }
+    }
+  }
+  &__form {
+    max-width: 710px;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    h2 {
+      max-width: 513px;
+    }
+    > p {
+      max-width: 513px;
+    }
+  }
+}
+.indform {
+  &__inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    button {
+      margin-right: 30px;
+      @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+    }
+    p {
+      @media (max-width: 480px) {
+        text-align: center;
+      }
+      a {
+        text-decoration: underline;
+        color: $grey_txt;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.indinputs {
+  .inp_tit {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: $grey_txt;
+  }
+}
+.indinput {
+  input {
+    border-radius: 10px;
+    padding: 20px 25px;
+    border: 2px solid $sep;
+  }
+}
+// ----------------------------------------
+// ---------- END FORM ----------
+// ========================================
+// ---------- BLOG ----------
+.bl-blog {
+  &__slider {
+    padding-bottom: 78px;
+    @media (max-width: 768px) {
+      padding-bottom: 100px;
+    }
+    .swiper {
+      position: static;
+      > .btn-more-underline {
+        position: absolute;
+        bottom: 16px;
+        right: 0;
+        z-index: 1;
+        white-space: nowrap;
+        @media (max-width: 768px) {
+          bottom: 0;
+          right: auto;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+  &__item {
+    background: radial-gradient(49.88% 49.88% at 22.29% 100%, rgba(207, 213, 229, 0.15) 0%, rgba(207, 213, 229, 0) 100%),
+      radial-gradient(80.86% 83.87% at 0% 0%, rgba(255, 220, 141, 0.08) 0%, rgba(255, 220, 141, 0) 100%), #fffefc;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  &__img {
+    max-height: 250px;
+    min-height: 250px;
+    height: 250px;
+    width: calc(100% + 4px);
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative;
+    left: -2px;
+    top: -2px;
+    @media (max-width: 768px) {
+      min-height: 178px;
+      max-height: 178px;
+      height: 250px;
+    }
+    > a {
+      display: block;
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+    }
+    img,
+    picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &__btns {
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    @media (max-width: 768px) {
+      left: 30px;
+      bottom: 20px;
+    }
+    button {
+      margin-right: 10px;
+      margin-top: 10px;
+      font-family: $G;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      padding: 8px 15px;
+      border-radius: 50px;
+      color: $w;
+      background: $red;
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__texts {
+    padding: 30px 40px 20px;
+    @media (max-width: 768px) {
+      padding: 20px 30px;
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  &__views {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .view {
+      fill: $grey_txt;
+      width: 18px;
+      height: 18px;
+      margin-right: 5px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 600;
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
+    }
+  }
+  &__date {
+    font-weight: 600;
+    color: $grey_txt;
+    font-size: 14px;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}
+// ---------- END BLOG ----------
+// ========================================

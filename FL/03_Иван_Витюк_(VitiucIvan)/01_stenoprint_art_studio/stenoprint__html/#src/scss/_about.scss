@@ -1,0 +1,105 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- CRUMBS ----------
+// ----------------------------------------
+.bl-crumbs {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  @media (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  &__nav {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: flex-start;
+    // align-items: center;
+    // flex-wrap: wrap;
+
+    a {
+      margin-right: 10px;
+      padding-right: 14px;
+      position: relative;
+      font-family: $G;
+      font-size: 14px;
+      color: $grey_txt;
+      display: inline;
+      &:hover {
+        color: rgba(130, 130, 130, 0.6);
+      }
+      &:hover::after {
+        color: rgba(130, 130, 130, 1);
+      }
+      &::after {
+        content: "/";
+        display: block;
+        width: fit-content;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: $G;
+        font-size: 14px;
+      }
+      &:last-child {
+        margin-right: 0;
+        padding-right: 0;
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .home_link {
+      width: 38px;
+      height: 14px;
+      display: inline-block;
+      margin-top: 5px;
+      line-height: 100%;
+      transform: translateY(2px);
+      &:hover svg {
+        opacity: 0.6;
+      }
+      svg {
+        width: 14px;
+        height: 14px;
+        fill: $grey_txt;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+// ----------------------------------------
+// ---------- END CRUMBS ----------
+// ========================================
+// ---------- ACTIVITY ----------
+// ----------------------------------------
+.bl-activity {
+  &__img {
+    border-radius: 30px;
+    overflow: hidden;
+    height: 400px;
+    @media (max-width: 1200px) {
+      height: 300px;
+    }
+    @media (max-width: 768px) {
+      height: 400px;
+    }
+    @media (max-width: 480px) {
+      height: 230px;
+    }
+    img,
+    picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+// ----------------------------------------
+// ---------- END ACTIVITY ----------
+// ========================================

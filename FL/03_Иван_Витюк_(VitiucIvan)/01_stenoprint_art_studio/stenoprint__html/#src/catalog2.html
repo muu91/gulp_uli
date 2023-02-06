@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <!-- @@include('__header.html', {
+        "btn-back": "d-none",
+        "name_title": "Бронирование переговорок"
+        }) -->
+        <main>
+            <!-- -------------------------------------- -->
+            <!-- ---------- CRUMBS ---------- -->
+            @@include('_crumbs3.html', {
+            "class_main": "",
+            "class2": "",
+            "text2": "Каталог товаров",
+            "class3": "",
+            "text3": "Дизайнерские обои",
+            })
+            <!-- ---------- END CRUMBS ---------- -->
+            <!-- -------------------------------------- -->
+            <!-- ---------- SERVICES ---------- -->
+            <section class="bl-catalog">
+                <div class="container">
+                    <div class="bl-catalog__content">
+                        <h1 class="title_h1 tit50">
+                            Дизайнерские обои
+                        </h1>
+                        <div class="cat_main">
+                            <div class="cat_main__aside filter">
+                                <button class="btn-filter-mobile js-btn-filter-mobile">
+                                    <span class="js-btn-filter-mobile__name">
+                                        Показать фильтры
+                                    </span>
+                                    <svg class="icon cross-icon">
+                                        <use xlink:href="./img/svg/sprites.svg#cross"></use>
+                                    </svg>
+                                    <svg class="icon filter-icon">
+                                        <use xlink:href="./img/svg/sprites.svg#filter"></use>
+                                    </svg>
+                                </button>
+                                <form action="#">
+                                    <div class="filter__selects">
+                                        <div class="filter__select">
+                                            <button class="btn-filter js-btn-filter">
+                                                <span>Коллекции:</span>
+                                                <span class="name_check">Акварель, Модерн, Цветы</span>
+                                                <svg class="icon arrow-up-dark">
+                                                    <use xlink:href="./img/svg/sprites.svg#arrow_up_dark"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="filter__checkboxes js-filter__checkboxes">
+                                                <ul>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox" checked>
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Градиенты
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    13
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Акварель
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    24
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Модерн
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    16
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Цветы
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    42
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Классика
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    31
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="filter__select">
+                                            <button class="btn-filter js-btn-filter">
+                                                <span>Материал:</span>
+                                                <span class="name_check"></span>
+                                                <svg class="icon arrow-up-dark">
+                                                    <use xlink:href="./img/svg/sprites.svg#arrow_up_dark"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="filter__checkboxes js-filter__checkboxes">
+                                                <ul>
+                                                    <li>
+                                                        <div class="filter_material js-filter_material">
+                                                            <div class="filter_material__img">
+                                                                <img src="./img/portfolio/seria1.png" alt="material">
+                                                            </div>
+                                                            <div class="filter_material__right">
+                                                                <div class="filter_material__texts">
+                                                                    <h6 class="title16">
+                                                                        Серия R GOLD
+                                                                    </h6>
+                                                                    <p class="grey_txt">
+                                                                        Зеркальная пленка
+                                                                    </p>
+                                                                </div>
+                                                                <div class="filter_material__quantity">
+                                                                    20
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="filter_material js-filter_material active">
+                                                            <div class="filter_material__img">
+                                                                <img src="./img/portfolio/seria2.png" alt="material">
+                                                            </div>
+                                                            <div class="filter_material__right">
+                                                                <div class="filter_material__texts">
+                                                                    <h6 class="title16">
+                                                                        Серия R BLUE
+                                                                    </h6>
+                                                                    <p class="grey_txt">
+                                                                        Тонирующая пленка
+                                                                    </p>
+                                                                </div>
+                                                                <div class="filter_material__quantity">
+                                                                    15
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="filter_material js-filter_material">
+                                                            <div class="filter_material__img">
+                                                                <img src="./img/portfolio/seria3.png" alt="material">
+                                                            </div>
+                                                            <div class="filter_material__right">
+                                                                <div class="filter_material__texts">
+                                                                    <h6 class="title16">
+                                                                        Серия SR PS
+                                                                    </h6>
+                                                                    <p class="grey_txt">
+                                                                        Матовые тонирующие
+                                                                    </p>
+                                                                </div>
+                                                                <div class="filter_material__quantity">
+                                                                    43
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="filter_material js-filter_material">
+                                                            <div class="filter_material__img">
+                                                                <img src="./img/portfolio/seria4.png" alt="material">
+                                                            </div>
+                                                            <div class="filter_material__right">
+                                                                <div class="filter_material__texts">
+                                                                    <h6 class="title16">
+                                                                        Серия ATRIUM
+                                                                    </h6>
+                                                                    <p class="grey_txt">
+                                                                        Металлизированные с блеском
+                                                                    </p>
+                                                                </div>
+                                                                <div class="filter_material__quantity">
+                                                                    88
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="filter__select">
+                                            <button class="btn-filter js-btn-filter">
+                                                <span>Цвет</span>
+                                                <span class="name_check"></span>
+                                                <svg class="icon arrow-up-dark">
+                                                    <use xlink:href="./img/svg/sprites.svg#arrow_up_dark"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="filter__checkboxes js-filter__checkboxes">
+                                                <ul>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox" checked>
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Градиенты
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    13
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Акварель
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    24
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Модерн
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    16
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Цветы
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    42
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Классика
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    31
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="filter__select">
+                                            <button class="btn-filter js-btn-filter">
+                                                <span>Цена</span>
+                                                <span class="name_check"></span>
+                                                <svg class="icon arrow-up-dark">
+                                                    <use xlink:href="./img/svg/sprites.svg#arrow_up_dark"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="filter__checkboxes js-filter__checkboxes">
+                                                <ul>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox" checked>
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Градиенты
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    13
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Акварель
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    24
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Модерн
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    16
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Цветы
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    42
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter__label">
+                                                            <p class="check">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </p>
+                                                            <p class="filter__label_texts">
+                                                                <span class="title_filter">
+                                                                    Классика
+                                                                </span>
+                                                                <span class="quantity_tovar_filter">
+                                                                    31
+                                                                </span>
+                                                            </p>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter__btns">
+                                        <button class="btn-m btn-red">
+                                            Применить
+                                        </button>
+                                        <button class="btn-reset-filter">
+                                            <svg class="icon cross-icon">
+                                                <use xlink:href="./img/svg/sprites.svg#cross"></use>
+                                            </svg>
+                                            Сбросить
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="cat_main__main">
+                                <div class="cat_main__items">
+                                    <ul>
+                                        <li>
+                                            <div class="bl-popular__item">
+                                                <a href="#"></a>
+                                                <div class="bl-popular__img">
+                                                    <img src="./img/index/popular1.png" alt="popular">
+                                                    <div class="bl-popular__btns">
+                                                        <button class="btn-pop btn-pop-red">
+                                                            -25%
+                                                        </button>
+                                                        <button class="btn-pop btn-pop-pink">
+                                                            Популярное
+                                                        </button>
+                                                        <button class="btn-pop btn-pop-green">
+                                                            Новинка
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="bl-popular__texts">
+                                                    <div class="bl-popular__texts-top">
+                                                        <h4 class="title16">
+                                                            1111Floraison
+                                                        </h4>
+                                                        <p class="bl-popular__price">
+                                                            <b>
+                                                                от 2 552 ₽
+                                                            </b>
+                                                            / м2
+                                                        </p>
+                                                    </div>
+                                                    <div class="bl-popular__texts-bottom">
+                                                        <p class="grey_txt">
+                                                            Артикул: 11039
+                                                        </p>
+                                                        <del>
+                                                            <b>от 3 452 ₽</b> / м2
+                                                        </del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bl-popular__item">
+                                                <a href="#"></a>
+                                                <div class="bl-popular__img">
+                                                    <img src="./img/index/popular1.png" alt="popular">
+                                                    <div class="bl-popular__btns">
+                                                        <button class="btn-pop btn-pop-pink">
+                                                            Популярное
+                                                        </button>
+                                                        <button class="btn-pop btn-pop-green">
+                                                            Новинка
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="bl-popular__texts">
+                                                    <div class="bl-popular__texts-top">
+                                                        <h4 class="title16">
+                                                            1111Floraison
+                                                        </h4>
+                                                        <p class="bl-popular__price">
+                                                            <b>
+                                                                от 2 552 ₽
+                                                            </b>
+                                                            / м2
+                                                        </p>
+                                                    </div>
+                                                    <div class="bl-popular__texts-bottom">
+                                                        <p class="grey_txt">
+                                                            Артикул: 11039
+                                                        </p>
+                                                        <del>
+                                                            <b>от 3 452 ₽</b> / м2
+                                                        </del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bl-popular__item">
+                                                <a href="#"></a>
+                                                <div class="bl-popular__img">
+                                                    <img src="./img/index/popular1.png" alt="popular">
+                                                    <div class="bl-popular__btns">
+                                                        <button class="btn-pop btn-pop-blue">
+                                                            В наличии
+                                                        </button>
+                                                        <button class="btn-pop btn-pop-green">
+                                                            Новинка
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="bl-popular__texts">
+                                                    <div class="bl-popular__texts-top">
+                                                        <h4 class="title16">
+                                                            1111Floraison
+                                                        </h4>
+                                                        <p class="bl-popular__price">
+                                                            <b>
+                                                                от 2 552 ₽
+                                                            </b>
+                                                            / м2
+                                                        </p>
+                                                    </div>
+                                                    <div class="bl-popular__texts-bottom">
+                                                        <p class="grey_txt">
+                                                            Артикул: 11039
+                                                        </p>
+                                                        <del>
+                                                            <b>от 3 452 ₽</b> / м2
+                                                        </del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bl-popular__item">
+                                                <a href="#"></a>
+                                                <div class="bl-popular__img">
+                                                    <img src="./img/index/popular1.png" alt="popular">
+                                                    <div class="bl-popular__btns">
+                                                        <button class="btn-pop btn-pop-red">
+                                                            -25%
+                                                        </button>
+                                                        <button class="btn-pop btn-pop-pink">
+                                                            Популярное
+                                                        </button>
+                                                        <button class="btn-pop btn-pop-green">
+                                                            Новинка
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="bl-popular__texts">
+                                                    <div class="bl-popular__texts-top">
+                                                        <h4 class="title16">
+                                                            1111Floraison
+                                                        </h4>
+                                                        <p class="bl-popular__price">
+                                                            <b>
+                                                                от 2 552 ₽
+                                                            </b>
+                                                            / м2
+                                                        </p>
+                                                    </div>
+                                                    <div class="bl-popular__texts-bottom">
+                                                        <p class="grey_txt">
+                                                            Артикул: 11039
+                                                        </p>
+                                                        <del>
+                                                            <b>от 3 452 ₽</b> / м2
+                                                        </del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bl-popular__item">
+                                                <a href="#"></a>
+                                                <div class="bl-popular__img">
+                                                    <img src="./img/index/popular1.png" alt="popular">
+                                                    <div class="bl-popular__btns">
+                                                        <button class="btn-pop btn-pop-pink">
+                                                            Популярное
+                                                        </button>
+                                                        <button class="btn-pop btn-pop-green">
+                                                            Новинка
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="bl-popular__texts">
+                                                    <div class="bl-popular__texts-top">
+                                                        <h4 class="title16">
+                                                            1111Floraison
+                                                        </h4>
+                                                        <p class="bl-popular__price">
+                                                            <b>
+                                                                от 2 552 ₽
+                                                            </b>
+                                                            / м2
+                                                        </p>
+                                                    </div>
+                                                    <div class="bl-popular__texts-bottom">
+                                                        <p class="grey_txt">
+                                                            Артикул: 11039
+                                                        </p>
+                                                        <del>
+                                                            <b>от 3 452 ₽</b> / м2
+                                                        </del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bl-popular__item">
+                                                <a href="#"></a>
+                                                <div class="bl-popular__img">
+                                                    <img src="./img/index/popular1.png" alt="popular">
+                                                    <div class="bl-popular__btns">
+                                                        <button class="btn-pop btn-pop-blue">
+                                                            В наличии
+                                                        </button>
+                                                        <button class="btn-pop btn-pop-green">
+                                                            Новинка
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="bl-popular__texts">
+                                                    <div class="bl-popular__texts-top">
+                                                        <h4 class="title16">
+                                                            1111Floraison
+                                                        </h4>
+                                                        <p class="bl-popular__price">
+                                                            <b>
+                                                                от 2 552 ₽
+                                                            </b>
+                                                            / м2
+                                                        </p>
+                                                    </div>
+                                                    <div class="bl-popular__texts-bottom">
+                                                        <p class="grey_txt">
+                                                            Артикул: 11039
+                                                        </p>
+                                                        <del>
+                                                            <b>от 3 452 ₽</b> / м2
+                                                        </del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bl-popular__item">
+                                                <a href="#"></a>
+                                                <div class="bl-popular__img">
+                                                    <img src="./img/index/popular1.png" alt="popular">
+                                                    <div class="bl-popular__btns">
+                                                        <button class="btn-pop btn-pop-red">
+                                                            -25%
+                                                        </button>
+                                                        <button class="btn-pop btn-pop-pink">
+                                                            Популярное
+                                                        </button>
+                                                        <button class="btn-pop btn-pop-green">
+                                                            Новинка
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="bl-popular__texts">
+                                                    <div class="bl-popular__texts-top">
+                                                        <h4 class="title16">
+                                                            1111Floraison
+                                                        </h4>
+                                                        <p class="bl-popular__price">
+                                                            <b>
+                                                                от 2 552 ₽
+                                                            </b>
+                                                            / м2
+                                                        </p>
+                                                    </div>
+                                                    <div class="bl-popular__texts-bottom">
+                                                        <p class="grey_txt">
+                                                            Артикул: 11039
+                                                        </p>
+                                                        <del>
+                                                            <b>от 3 452 ₽</b> / м2
+                                                        </del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bl-popular__item">
+                                                <a href="#"></a>
+                                                <div class="bl-popular__img">
+                                                    <img src="./img/index/popular1.png" alt="popular">
+                                                    <div class="bl-popular__btns">
+                                                        <button class="btn-pop btn-pop-pink">
+                                                            Популярное
+                                                        </button>
+                                                        <button class="btn-pop btn-pop-green">
+                                                            Новинка
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="bl-popular__texts">
+                                                    <div class="bl-popular__texts-top">
+                                                        <h4 class="title16">
+                                                            1111Floraison
+                                                        </h4>
+                                                        <p class="bl-popular__price">
+                                                            <b>
+                                                                от 2 552 ₽
+                                                            </b>
+                                                            / м2
+                                                        </p>
+                                                    </div>
+                                                    <div class="bl-popular__texts-bottom">
+                                                        <p class="grey_txt">
+                                                            Артикул: 11039
+                                                        </p>
+                                                        <del>
+                                                            <b>от 3 452 ₽</b> / м2
+                                                        </del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bl-popular__item">
+                                                <a href="#"></a>
+                                                <div class="bl-popular__img">
+                                                    <img src="./img/index/popular1.png" alt="popular">
+                                                    <div class="bl-popular__btns">
+                                                        <button class="btn-pop btn-pop-blue">
+                                                            В наличии
+                                                        </button>
+                                                        <button class="btn-pop btn-pop-green">
+                                                            Новинка
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="bl-popular__texts">
+                                                    <div class="bl-popular__texts-top">
+                                                        <h4 class="title16">
+                                                            1111Floraison
+                                                        </h4>
+                                                        <p class="bl-popular__price">
+                                                            <b>
+                                                                от 2 552 ₽
+                                                            </b>
+                                                            / м2
+                                                        </p>
+                                                    </div>
+                                                    <div class="bl-popular__texts-bottom">
+                                                        <p class="grey_txt">
+                                                            Артикул: 11039
+                                                        </p>
+                                                        <del>
+                                                            <b>от 3 452 ₽</b> / м2
+                                                        </del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                @@include('_pagination.html')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ---------- END SERVICES ---------- -->
+            <!-- -------------------------------------- -->
+        </main>
+        @@include('__footer.html')
+        @@include('__popups.html') @@include('__js_source.html')
+    </div>
+</body>
+
+</html>

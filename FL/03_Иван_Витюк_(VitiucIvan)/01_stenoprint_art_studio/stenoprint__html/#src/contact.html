@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <!-- @@include('__header.html', {
+        "btn-back": "d-none",
+        "name_title": "Бронирование переговорок"
+        }) -->
+        <main>
+            <!-- -------------------------------------- -->
+            <!-- ---------- CRUMBS ---------- -->
+            @@include('_crumbs2.html', {
+            "class_main": "",
+            "class2": "",
+            "text2": "Контакты",
+            })
+            <!-- ---------- END CRUMBS ---------- -->
+            <!-- -------------------------------------- -->
+            <!-- ---------- CONTACT ---------- -->
+            <section class="bl-contact mb-120">
+                <div class="container">
+                    <h1 class="title_h1 mb-120">
+                        Контакты
+                    </h1>
+                    <div class="bl-contact__content">
+                        <div class="bl-contact__contacts">
+                            <div class="contacts">
+                                <div class="header__contact contacts__address">
+                                    <p>
+                                        Адрес:
+                                    </p>
+                                    <address>
+                                        Москва, ул. Новая Басманная, дом 18, строение 2
+                                    </address>
+                                </div>
+                                <div class="header__contact">
+                                    <p>
+                                        Позвонить нам:
+                                    </p>
+                                    <a href="tel:+75558889866" class="header__phone">
+                                        +7 (555) 888-98-66
+                                    </a>
+                                </div>
+                                <div class="header__contact">
+                                    <p>
+                                        Написать нам:
+                                    </p>
+                                    <a href="mailto:info@stenoprint.ru" class="header__mail">
+                                        info@stenoprint.ru
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header__soc-networks">
+                                <a href="https://www.instagram.com/">
+                                    <svg class="icon insta-icon">
+                                        <use xlink:href="./img/svg/sprites.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                                <a href="https://telegram.com/">
+                                    <svg class="icon telegram-icon">
+                                        <use xlink:href="./img/svg/sprites.svg#telegram"></use>
+                                    </svg>
+                                </a>
+                                <a href="https://whatsapp.com/">
+                                    <svg class="icon whatsapp-icon">
+                                        <use xlink:href="./img/svg/sprites.svg#whatsapp"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="bl-contact__time">
+                                <p>
+                                    Время работы:
+                                </p>
+                                <p>
+                                    Пн - Пт: 9:00 - 18:00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bl-contact__map">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ---------- END CONTACT ---------- -->
+            <!-- -------------------------------------- -->
+            <!-- ---------- FORM ---------- -->
+            @@include('_form1.html', {
+            "form-class1": ""
+            })
+            <!-- ---------- END FORM ---------- -->
+            <!-- -------------------------------------- -->
+        </main>
+        @@include('__footer.html')
+        @@include('__popups.html') @@include('__js_source.html')
+    </div>
+</body>
+
+</html>
