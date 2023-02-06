@@ -1,0 +1,272 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- POPUPS ----------
+// ----------------------------------------
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 105;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  display: none;
+  @media (max-height: 768px) {
+    align-items: flex-start;
+  }
+  .block-close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+  &__content {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 530px;
+    width: 100%;
+    padding-bottom: 40px;
+    z-index: 5;
+    > p {
+      font-family: $G;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: normal;
+      color: $dark;
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      margin-bottom: 27px;
+      text-align: center;
+    }
+  }
+  .btn-close-popup {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 15px;
+    top: 15px;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  &__logo {
+    background-color: #f4f4f4;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media (max-width: 480px) {
+      padding-top: 60px;
+    }
+    img {
+      max-width: 270px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 46px;
+    button {
+      height: 57px;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: $G;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: normal;
+      color: $dark;
+      &:first-child {
+        border-bottom-right-radius: 10px;
+      }
+      &:last-child {
+        border-bottom-left-radius: 10px;
+      }
+    }
+    button.active {
+      background-color: #f4f4f4;
+    }
+  }
+  &__soc-btns {
+    margin-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 47px;
+      max-width: 370px;
+      width: 100%;
+      position: relative;
+      font-family: $G;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: normal;
+      text-align: center;
+      color: $dark;
+      border-radius: 10px;
+      margin: 0 auto;
+      &:first-child {
+        margin-bottom: 14px;
+      }
+      img,
+      picture {
+        display: block;
+        width: 35px;
+        position: absolute;
+        left: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+        @media (max-width: 380px) {
+          left: 5px;
+          width: 25px;
+        }
+      }
+      span {
+        @media (max-width: 380px) {
+          margin-left: 28px;
+        }
+      }
+    }
+    .btn-facebook {
+      color: #fff;
+      background-color: #3b5998;
+    }
+    .btn-google {
+      border: 1px solid #c8c3c3;
+    }
+  }
+  form {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .btn-green {
+    margin: 0 auto;
+    max-width: 330px;
+    width: 100%;
+  }
+}
+.inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 34px;
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+  .input {
+    width: 100%;
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:first-child {
+      margin-right: 30px;
+      @media (max-width: 480px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+    input {
+      border: 1px solid #c8c3c3;
+      border-radius: 10px;
+      height: 47px;
+      outline: none;
+      font-family: $G;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: normal;
+      color: $dark;
+      width: 100%;
+      padding-left: 38px;
+      padding-right: 38px;
+      text-align: center;
+    }
+    input::placeholder {
+      font-family: $G;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: normal;
+      color: $dark;
+    }
+    input:-ms-input-placeholder {
+      font-family: $G;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: normal;
+      color: $dark;
+    }
+    input::-ms-input-placeholder {
+      font-family: $G;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: normal;
+      color: $dark;
+    }
+  }
+  .input-email {
+    position: relative;
+    &::before {
+      background-image: url("../img/icons/email.svg");
+    }
+  }
+  .input-password {
+    position: relative;
+    &::before {
+      background-image: url("../img/icons/password.svg");
+    }
+  }
+}
+.btn-remember {
+  font-family: $G;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: normal;
+  color: $green;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  &:hover {
+    color: $dark;
+  }
+}
+
+// ----------------------------------------
+// ---------- END POPUPS ----------
+// ========================================

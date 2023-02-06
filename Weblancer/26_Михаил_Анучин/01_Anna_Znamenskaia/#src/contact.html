@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <!-- @@include('__header.html', {
+        "btn-back": "d-none",
+        "name_title": "Бронирование переговорок"
+        }) -->
+        <main>
+            <!-- ======================================== -->
+            <!-- --------------- BLOCK HEADER --------------- -->
+            <section class='bl_header_main  bl_header_contact'>
+                <div class='container'>
+                    <div class='bl_header_main__content'>
+                        <div class="bl_header_main__texts">
+                            <h1>
+                                <span class="tit60 tit_grad2">
+                                    остались вопросы?
+                                </span>
+                            </h1>
+                            <p class="bl_header_main__p tit27">
+                                Свяжитесь с нами любым удобным для вас способом и менеджер с удовольствием
+                                ответит на все ваши вопросы
+                            </p>
+                            <div class="bl_header_contact__btns">
+                                <a href="#" class="btn_grad1">
+                                    <span>
+                                        telegram
+                                    </span>
+                                </a>
+                                <a href="#" class="btn_grad1">
+                                    <span>
+                                        whatsapp
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- --------------- END BLOCK HEADER --------------- -->
+            <!-- ======================================== -->
+        </main>
+        @@include('__footer.html')
+        @@include('__popups.html') @@include('__js_source.html')
+    </div>
+</body>
+
+</html>

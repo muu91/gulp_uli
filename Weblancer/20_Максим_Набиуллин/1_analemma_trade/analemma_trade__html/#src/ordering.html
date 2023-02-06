@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <main>
+            <!-- -------------------------------------- -->
+            <!-- ---------- CONTACTS ---------- -->
+            <section class="bl-crumbs">
+                <div class="container">
+                    <div class="bl-crumbs__content">
+                        <ul>
+                            <li>
+                                <a href='#'>
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#'>
+                                    Оформление заказа
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-back-crumbs">
+                            Назад
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- ---------- END CONTACTS ---------- -->
+            <!-- -------------------------------------- -->
+            <!-- ---------- ORDERING ---------- -->
+            <section class="bl-ordering">
+                <div class="container">
+                    <h1>
+                        Оформление заказа
+                    </h1>
+                    <div class="bl-ordering__content">
+                        <main class="ord-main">
+                            <div class="ordering-items">
+                                <ul>
+                                    <li>
+                                        <div class="ordering-items__item">
+                                            <button class="btn-remove-order js-btn-remove-order">
+                                                <img src="./img/icons/btn-close-grey.svg" alt="btn-close">
+                                            </button>
+                                            <div class="ordering-items__img">
+                                                <img src="./img/tovar/tovar1.png" alt="tovar">
+                                            </div>
+                                            <div class="ordering-items__texts">
+                                                <div class="ordering-items__top">
+                                                    <h2>
+                                                        Кольцо К177бр
+                                                    </h2>
+                                                    <div class="ordering-items__prices">
+                                                        <div class="ordering-price">
+                                                            5 040 ₽
+                                                        </div>
+                                                        <del>
+                                                            5 540 ₽
+                                                        </del>
+                                                    </div>
+                                                </div>
+                                                <div class="ordering-items__bottom">
+                                                    <ul>
+                                                        <li>
+                                                            <div>
+                                                                Проба:
+                                                            </div>
+                                                            <div>
+                                                                585
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                Размер/длина:
+                                                            </div>
+                                                            <div>
+                                                                17
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                Вес изделия:
+                                                            </div>
+                                                            <div>
+                                                                2,04
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                Металл:
+                                                            </div>
+                                                            <div>
+                                                                Красное золото
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="personal-data personal-data-ord">
+                                <h2>
+                                    Личные данные
+                                </h2>
+                                <form action="#">
+                                    <div class="input">
+                                        <span>
+                                            Имя
+                                        </span>
+                                        <input type="text" value="Дмитрий">
+                                    </div>
+                                    <div class="input">
+                                        <span>
+                                            Фамилия
+                                        </span>
+                                        <input type="text" value="Федоров">
+                                    </div>
+                                    <div class="input">
+                                        <span>
+                                            e-mail
+                                        </span>
+                                        <input type="email" value="dmitri@gmail.com">
+                                    </div>
+                                    <div class="input">
+                                        <span>
+                                            Адрес доставки
+                                        </span>
+                                        <input type="text" value="г. Стерилитамак, ул. Артема 75 - 43">
+                                    </div>
+                                    <div class="input">
+                                        <span>
+                                            Номер телефона
+                                        </span>
+                                        <input type="tel" id="personal-data-ord-input" value="+7 (917) 346 89 90"
+                                            placeholder="+7 (917) 346 89 90">
+                                    </div>
+                                </form>
+                            </div>
+                        </main>
+                        <aside class="ord-aside">
+                            <div class="ord-promocode">
+                                <form action="#">
+                                    <input type="text" placeholder="промокод">
+                                    <button class="btn-yellow-border">
+                                        Применить
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="ord-descr">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            Всего товаров:
+                                        </div>
+                                        <div>
+                                            1 товар(ов)
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            Сумма заказа:
+                                        </div>
+                                        <div>
+                                            38 990 ₽
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <label>
+                                                <div class="ord-check">
+                                                    <input type="checkbox" checked>
+                                                    <span></span>
+                                                </div>
+                                                <p>
+                                                    Использовать бонусы:
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="gold">
+                                            1 000 ₽
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            Итого к оплате:
+                                        </div>
+                                        <div class="ord-descr__price">
+                                            37 990 ₽
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>
+                                Стоимость доставки будет расчитан
+                                индивидуально менеджером
+                                после офрмления заказа.
+                            </p>
+                            <button class="btn-yellow">
+                                Оформить заказ
+                            </button>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <!-- ---------- END ORDERING ---------- -->
+            <!-- -------------------------------------- -->
+            <!-- ---------- CONTACTS ---------- -->
+            @@include('_contacts.html')
+            <!-- ---------- END CONTACTS ---------- -->
+            <!-- -------------------------------------- -->
+
+        </main>
+        @@include('__footer.html') @@include('__popups.html') @@include('__js_source.html')
+    </div>
+</body>
+
+</html>

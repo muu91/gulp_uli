@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <!-- @@include('__header.html', {
+        "btn-back": "d-none",
+        "name_title": "Бронирование переговорок"
+        }) -->
+        <main>
+            <!-- ======================================== -->
+            <!-- --------------- TOVAR --------------- -->
+            <section class='bl_tovar'>
+                <div class='container'>
+                    <a href="#" class="btn_back">
+                        Вернуться
+                    </a>
+                    <div class="bl_tovar__content">
+                        <div class="bl_tovar__tovar tovar">
+                            <div class="tovar__img">
+                                <div class="tovar__status status_new">
+                                    Новинка
+                                </div>
+                                <img src="./img/others/tovar1.png" alt="tovar">
+                            </div>
+                            <div class="tovar__texts">
+                                <h1 class="h1">
+                                    Моторное масло Shell Helix Ultra 0W-40 API SP синтетическое
+                                </h1>
+                                <ul>
+                                    <li>
+                                        <div class="tovar__availability">
+                                            <p class="availability">
+                                                В наличии
+                                            </p>
+                                            <p class="not_availability">
+                                                нет в наличии
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tovar__price">
+                                            6780 р
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tovar__basket_quantity">
+                                            <a href="#" class="btn btn_gold">
+                                                В корзину
+                                            </a>
+                                            <div class="u-count">
+                                                <button class="u-count__minus">
+                                                    <img src="./img/icons/minus.svg" alt="minus">
+                                                </button>
+                                                <div class="u-count__number">1</div>
+                                                <button class="u-count__plus">
+                                                    <img src="./img/icons/plus.svg" alt="plus">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bl_catalog__radios">
+                                            <form action="#">
+                                                <label>
+                                                    <input type="radio" name="sort" checked>
+                                                    <span>
+                                                        4 л
+                                                    </span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="sort">
+                                                    <span>
+                                                        57 л
+                                                    </span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="sort">
+                                                    <span>
+                                                        209 л
+                                                    </span>
+                                                </label>
+                                            </form>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn btn_white_border">
+                                            Перейти к корзине
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bl_tovar__tabs tabs">
+                            <div class="tabs__menu js-tabs__menu">
+                                <ul>
+                                    <li>
+                                        <a href='#' class="active" data-tab-btn="desc">
+                                            Описание
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='#' data-tab-btn="charact">
+                                            Характеристики
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tabs__content">
+                                <div class="tabs__desc" data-tab-content="desc">
+                                    <p>
+                                        Моторное масло Shell Helix Ultra ECT C3 создано на основе самых современных
+                                        технологий для совместимости с системами
+                                        снижения токсичности выхлопных газов, которые позволяют сохранять чистоту
+                                        сажевых фильтров для поддержания высоких
+                                        эксплуатационных характеристик двигателя. Кроме того, данное масло помогает
+                                        уменьшить трение между деталями двигателя
+                                        для обеспечения повышенной экономии топлива.
+                                    </p>
+                                    <p>
+                                        Моторное масло Shell Helix Ultra 0W-40 API SP синтетическое
+                                    </p>
+                                </div>
+                                <div class="tabs__characteristics" data-tab-content="charact">
+                                    <table class="tabs__table">
+                                        <tr>
+                                            <td>
+                                                Допуски и одобрения
+                                            </td>
+                                            <td>
+                                                MB-Approval 226.5, MB-Approval 229.5, Renault RN0700, Renault
+                                                RN0710, VW 502.00, VW 505.00
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Вязкость по SAE
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    0W-40
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Классификация по API
+                                            </td>
+                                            <td>
+                                                SP
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Классификация по ACEA
+                                            </td>
+                                            <td>
+                                                A3, B3, B4
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Тип базового масла
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    синтетическое
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                PurePlus (GTL)
+                                            </td>
+                                            <td>
+                                                Да
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- --------------- END TOVAR --------------- -->
+            <!-- ======================================== -->
+            <!-- ======================================== -->
+            <!-- --------------- OTHER TOVAR --------------- -->
+            <section class='bl_other_tovar'>
+                <div class='container'>
+                    <div class='bl_other_tovar__content'>
+                        <h2 class="h2">
+                            С этими товарами также берут
+                        </h2>
+                        <div class="bl_other_tovar__items bl_other_tovar__scroll">
+                            <div class="swiper js-other_tovar">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="bl_other_tovar__img">
+                                            <div class="tovar__status status_new">
+                                                Новинка
+                                            </div>
+                                            <img src="./img/others/tovar1.png" alt="tovar">
+                                        </div>
+                                        <div class="bl_other_tovar__texts">
+                                            <h3>
+                                                Моторное масло Shell Helix Ultra 0W-40 API SP синтетическое
+                                            </h3>
+                                            <div class="tovar__availability">
+                                                <p class="availability">
+                                                    В наличии
+                                                </p>
+                                                <p class="not_availability">
+                                                    нет в наличии
+                                                </p>
+                                            </div>
+                                            <div class="tovar__price">
+                                                6780 р
+                                            </div>
+                                            <a href="#" class="btn btn_gold">
+                                                В корзину
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="bl_other_tovar__img">
+                                            <div class="tovar__status status_new">
+                                                Новинка
+                                            </div>
+                                            <img src="./img/others/tovar1.png" alt="tovar">
+                                        </div>
+                                        <div class="bl_other_tovar__texts">
+                                            <h3>
+                                                Моторное масло Shell Helix Ultra 0W-40 API SP синтетическое
+                                            </h3>
+                                            <div class="tovar__availability">
+                                                <p class="availability">
+                                                    В наличии
+                                                </p>
+                                                <p class="not_availability">
+                                                    нет в наличии
+                                                </p>
+                                            </div>
+                                            <div class="tovar__price">
+                                                6780 р
+                                            </div>
+                                            <a href="#" class="btn btn_gold">
+                                                В корзину
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="bl_other_tovar__img">
+                                            <div class="tovar__status status_new">
+                                                Новинка
+                                            </div>
+                                            <img src="./img/others/tovar1.png" alt="tovar">
+                                        </div>
+                                        <div class="bl_other_tovar__texts">
+                                            <h3>
+                                                Моторное масло Shell Helix Ultra 0W-40 API SP синтетическое
+                                            </h3>
+                                            <div class="tovar__availability">
+                                                <p class="availability">
+                                                    В наличии
+                                                </p>
+                                                <p class="not_availability">
+                                                    нет в наличии
+                                                </p>
+                                            </div>
+                                            <div class="tovar__price">
+                                                6780 р
+                                            </div>
+                                            <a href="#" class="btn btn_gold">
+                                                В корзину
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="bl_other_tovar__img">
+                                            <div class="tovar__status status_new">
+                                                Новинка
+                                            </div>
+                                            <img src="./img/others/tovar1.png" alt="tovar">
+                                        </div>
+                                        <div class="bl_other_tovar__texts">
+                                            <h3>
+                                                Моторное масло Shell Helix Ultra 0W-40 API SP синтетическое
+                                            </h3>
+                                            <div class="tovar__availability">
+                                                <p class="availability">
+                                                    В наличии
+                                                </p>
+                                                <p class="not_availability">
+                                                    нет в наличии
+                                                </p>
+                                            </div>
+                                            <div class="tovar__price">
+                                                6780 р
+                                            </div>
+                                            <a href="#" class="btn btn_gold">
+                                                В корзину
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="bl_other_tovar__img">
+                                            <div class="tovar__status status_new">
+                                                Новинка
+                                            </div>
+                                            <img src="./img/others/tovar1.png" alt="tovar">
+                                        </div>
+                                        <div class="bl_other_tovar__texts">
+                                            <h3>
+                                                Моторное масло Shell Helix Ultra 0W-40 API SP синтетическое
+                                            </h3>
+                                            <div class="tovar__availability">
+                                                <p class="availability">
+                                                    В наличии
+                                                </p>
+                                                <p class="not_availability">
+                                                    нет в наличии
+                                                </p>
+                                            </div>
+                                            <div class="tovar__price">
+                                                6780 р
+                                            </div>
+                                            <a href="#" class="btn btn_gold">
+                                                В корзину
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="bl_other_tovar__img">
+                                            <div class="tovar__status status_new">
+                                                Новинка
+                                            </div>
+                                            <img src="./img/others/tovar1.png" alt="tovar">
+                                        </div>
+                                        <div class="bl_other_tovar__texts">
+                                            <h3>
+                                                Моторное масло Shell Helix Ultra 0W-40 API SP синтетическое
+                                            </h3>
+                                            <div class="tovar__availability">
+                                                <p class="availability">
+                                                    В наличии
+                                                </p>
+                                                <p class="not_availability">
+                                                    нет в наличии
+                                                </p>
+                                            </div>
+                                            <div class="tovar__price">
+                                                6780 р
+                                            </div>
+                                            <a href="#" class="btn btn_gold">
+                                                В корзину
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- --------------- END OTHER TOVAR --------------- -->
+            <!-- ======================================== -->
+            <!-- ======================================== -->
+            <!-- --------------- MARQUEE  --------------- -->
+            <!-- @@include('_marquee.html') -->
+            <!-- --------------- END MARQUEE  --------------- -->
+            <!-- ======================================== -->
+        </main>
+        @@include('__footer.html')
+        @@include('__popups.html') @@include('__js_source.html')
+    </div>
+</body>
+
+</html>

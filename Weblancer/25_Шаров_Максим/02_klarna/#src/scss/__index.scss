@@ -1,0 +1,716 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- MAIN ----------
+// ----------------------------------------
+// .ggg {
+//   p {
+//     @extend %grey;
+//   }
+// }
+.main-m-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 600px) {
+    padding-top: 14px;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  @media (max-height: 800px) {
+    justify-content: flex-start;
+  }
+}
+.m-block {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  &__content {
+    background-color: #ededed;
+    border-radius: 20px;
+    padding: 25px 35px;
+    max-width: 540px;
+    min-width: 540px;
+    @media (max-width: 600px) {
+      min-width: auto;
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px 15px;
+    }
+  }
+}
+// ----------------------------------------
+.m-block__check {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.u-check {
+  margin-right: 10px;
+  position: relative;
+  input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    &:focus ~ .u-check__check,
+    &:checked ~ .u-check__check {
+      border: 2px solid #000;
+    }
+
+    &:checked ~ .u-check__check::before {
+      opacity: 1;
+    }
+  }
+  &__check {
+    display: block;
+    position: relative;
+    min-width: 27px;
+    max-width: 27px;
+    height: 27px;
+    border: 2px solid $dark;
+    transition: 0.3s;
+    border-radius: 7px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -2px;
+      left: 3px;
+      transition: 0.3s;
+      width: 28px;
+      height: 20px;
+      opacity: 0;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      background-image: url("../img/icons/check.svg");
+    }
+  }
+}
+// ----------------------------------------
+.klarna-pink {
+  display: block;
+  max-width: 80px;
+  margin-right: 20px;
+}
+.plaid {
+  display: block;
+  max-width: 130px;
+  margin-right: 20px;
+}
+// ----------------------------------------
+.hr {
+  display: block;
+  border: 1px solid #fff;
+}
+
+// ----------------------------------------
+// ---------- END MAIN ----------
+// ========================================
+// ---------- END KLARNA 1 ----------
+// ----------------------------------------
+.title-h3__klarna1 {
+  margin-bottom: 5px;
+}
+.p__klarna1 {
+  margin-bottom: 13px;
+}
+.m-block__check-klarna1-2 {
+  padding-bottom: 0;
+}
+.m-block__check-klarna1-2-2 {
+  margin-bottom: 24px;
+}
+// .m-block__check-klarna1-1 {
+//   padding-bottom: 0;
+// }
+// ----------------------------------------
+// ---------- END KLARNA 1 ----------
+// ========================================
+// ---------- KLARNA 2 ----------
+// ----------------------------------------
+.m-block__ul {
+  @extend %G;
+  @extend %dark;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  li {
+    position: relative;
+    padding-left: 16px;
+    &::before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $green;
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
+  }
+}
+.m-block__ul2 {
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+.klarna-img {
+  display: block;
+  max-width: 126px;
+  width: 100%;
+  margin: 0 auto;
+}
+.klarna-img__klarna2 {
+  margin-top: 30px;
+  margin-bottom: 22px;
+}
+.btn-green-long__klarna2 {
+  margin-bottom: 40px;
+  @media (max-width: 480px) {
+    margin-bottom: 23px;
+  }
+}
+.btn-green-long__plaid {
+  margin-top: 20px;
+}
+// ----------------------------------------
+// ---------- END KLARNA 2 ----------
+// ========================================
+// ---------- KLARNA 3 ----------
+// ----------------------------------------
+.m-block__klarna-pink {
+  margin-bottom: 25px;
+}
+.m-block__klarna3 {
+  margin-top: 14px;
+}
+.btn-green-long__plaid3 {
+  margin-top: 50px;
+  @media (max-width: 480px) {
+    margin-top: 20px;
+  }
+}
+// ----------------------------------------
+// ---------- END KLARNA 3 ----------
+// ========================================
+// ---------- KLARNA 4 ----------
+// ----------------------------------------
+.k-input {
+  position: relative;
+  overflow: hidden;
+  border-radius: 7px;
+}
+input {
+  border: none;
+  background-color: #fff;
+  border-radius: 7px;
+  height: 52px;
+  outline: none;
+  font-family: $G;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: $dark;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+input::placeholder {
+  font-family: $G;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: $dark;
+}
+input:-ms-input-placeholder {
+  font-family: $G;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: $dark;
+}
+input::-ms-input-placeholder {
+  font-family: $G;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: $dark;
+}
+.k-input__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn-search {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 52px;
+    width: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    img {
+      max-width: 25px;
+      display: block;
+      margin: 0 auto;
+    }
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+.title-h3__klarna4 {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.k-input_4 {
+  margin-bottom: 30px;
+}
+.m-block__banks {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+  }
+  a {
+    height: 100px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: block;
+    padding: 20px 10px;
+    @media (max-width: 480px) {
+      height: 85px;
+    }
+    img,
+    picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}
+.m-block__banks4 {
+  margin-bottom: 60px;
+  @media (max-width: 480px) {
+    margin-bottom: 40px;
+  }
+}
+.klarna-img__klarna4 {
+  margin-bottom: 20px;
+}
+.m-block__banks4-plaid {
+  margin-bottom: 0;
+}
+// ----------------------------------------
+// ---------- END KLARNA 4 ----------
+// ========================================
+// ---------- KLARNA 5 ----------
+// ----------------------------------------
+.no-results {
+  margin-top: 80px;
+  margin-bottom: 57px;
+  @media (max-width: 480px) {
+    margin-top: 50px;
+  }
+  img,
+  picture {
+    display: block;
+    width: auto;
+    height: 48px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  p {
+    text-align: center;
+  }
+}
+// ----------------------------------------
+// ---------- END KLARNA 5 ----------
+// ========================================
+// ---------- KLARNA 6 ----------
+// ----------------------------------------
+.banks-logo {
+  display: block;
+  height: 64px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 26px;
+  margin-bottom: 35px;
+  @media (max-width: 480px) {
+    height: 40px;
+  }
+  img,
+  picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+.k-input_6-1 {
+  margin-bottom: 24px;
+}
+.k-input_6-2 {
+  margin-bottom: 35px;
+}
+.btn-green-long__klarna6 {
+  margin-bottom: 36px;
+}
+.title-h3__klarna6 {
+  margin-top: 37px;
+  margin-bottom: 24px;
+  @media (max-width: 480px) {
+    margin-top: 20px;
+    margin-bottom: 12px;
+  }
+}
+.klarna-img__klarna6 {
+  margin-top: 50px;
+  @media (max-width: 480px) {
+    margin-top: 26px;
+  }
+}
+// ----------------------------------------
+// ---------- END KLARNA 6 ----------
+// ========================================
+// ---------- KLARNA 7 ----------
+// ----------------------------------------
+.p__klarna7 {
+  margin-top: 43px;
+  margin-bottom: 15px;
+  @media (max-width: 480px) {
+    margin-top: 30px;
+  }
+}
+.p__klarna7-2 {
+  margin-top: 40px;
+  @media (max-width: 480px) {
+    margin-top: 20px;
+  }
+}
+// ----------------------------------------
+// ---------- END KLARNA 7 ----------
+// ========================================
+// ---------- KLARNA 8 ----------
+// ----------------------------------------
+.home-img {
+  max-width: 86px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 36px;
+  margin-bottom: 27px;
+}
+.title-h3__klarna8 {
+  margin-bottom: 17px;
+}
+.k-input_8-1,
+.k-input_8-2 {
+  margin-bottom: 24px;
+}
+.k-input_8-3 {
+  margin-bottom: 40px;
+}
+.klarna-img__klarna8 {
+  margin-top: 20px;
+}
+// ----------------------------------------
+// ---------- END KLARNA 8 ----------
+// ========================================
+// ---------- KLARNA 9 ----------
+// ----------------------------------------
+.title-h3__klarna9 {
+  margin-top: 37px;
+  margin-bottom: 24px;
+  @media (max-width: 480px) {
+    margin-top: 22px;
+  }
+}
+// ----------------------------------------
+// ---------- END KLARNA 9 ----------
+// ========================================
+// ---------- KLARNA 10 ----------
+// ----------------------------------------
+.p__klarna10-1 {
+  margin-bottom: 15px;
+}
+.p__klarna10-2 {
+  margin-bottom: 20px;
+}
+.btn-green-long__klarna10 {
+  margin-bottom: 20px;
+}
+.btn-green-long__klarna10-2 {
+  margin-bottom: 40px;
+}
+// ----------------------------------------
+// ---------- END KLARNA 10 ----------
+// ========================================
+// ---------- KLARNA 11 ----------
+// ----------------------------------------
+.title-h3__klarna11 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.cards-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  h4 {
+    font-family: $G;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    color: $dark;
+    @media (max-width: 480px) {
+      margin-bottom: 10px;
+    }
+  }
+  img,
+  picture {
+    height: 33px;
+    display: block;
+    width: fit-content;
+  }
+}
+.cards-inputs {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.k-input_11__card-number {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.k-input_11__date {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.k-input_11__cvc {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.btn-green-long__klarna11 {
+  margin-bottom: 34px;
+}
+.klarna-img__klarna11 {
+  margin-top: 27px;
+}
+.k-input_11 {
+  position: relative;
+  width: 100%;
+  &::before {
+    content: "";
+    display: block;
+    height: 21px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  input {
+    padding-left: 45px;
+  }
+}
+.k-input_11__card-number {
+  margin-bottom: 17px;
+  &::before {
+    background-image: url("../img/icons/card.svg");
+  }
+}
+.k-input_11__date {
+  width: calc(50% - 15px);
+  margin-right: 15px;
+  @media (max-width: 480px) {
+    width: calc(50% - 5px);
+    margin-right: 5px;
+  }
+  &::before {
+    width: 22px;
+    background-image: url("../img/icons/date.svg");
+  }
+}
+.k-input_11__cvc {
+  width: calc(50% - 15px);
+  margin-left: 15px;
+  @media (max-width: 480px) {
+    width: calc(50% - 5px);
+    margin-left: 5px;
+  }
+  &::before {
+    width: 18px;
+    background-image: url("../img/icons/cvc.svg");
+  }
+}
+.master-card {
+  &::before {
+    background-image: url("../img/icons/master-card.svg");
+  }
+}
+// ----------------------------------------
+// ---------- END KLARNA 11 ----------
+// ========================================
+// ---------- KLARNA 13 ----------
+// ----------------------------------------
+.fill-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 12px;
+  background-color: #ffb3c7;
+  border-radius: 7px;
+  margin-bottom: 12px;
+  img,
+  picture {
+    display: block;
+    min-width: 20px;
+    max-width: 20px;
+    margin-right: 15px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+// ----------------------------------------
+// ---------- END KLARNA 13 ----------
+// ========================================
+// ---------- KLARNA 14 ----------
+// ----------------------------------------
+.title-h3__klarna14 {
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+.k-input_14 {
+  margin-bottom: 14px;
+}
+.names14 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.k-input_14__mobile {
+  position: relative;
+  &::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("../img/icons/i-grey.svg");
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.klarne-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  p {
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+  .btn-clear {
+    @extend %G;
+    color: $green;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+    &:hover {
+      // text-decoration: underline;
+      opacity: 0.6;
+    }
+  }
+}
+.btn-green-long__klarna14 {
+  margin-bottom: 34px;
+}
+.klarna-img__klarna14 {
+  margin-top: 27px;
+}
+// ----------------------------------------
+// ---------- END KLARNA 14 ----------
+// ========================================
+// ---------- KLARNA 15 ----------
+// ----------------------------------------
+.home-img__gmail {
+  max-width: 242px;
+  @media (max-width: 480px) {
+    max-width: 160px;
+  }
+}
+.btn-secure15 {
+  display: block;
+  width: fit-content;
+  font-family: $G;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  color: $green;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+// ----------------------------------------
+// ---------- END KLARNA 15 ----------
+// ========================================
+// ---------- INDEX ----------
+// ----------------------------------------
+.klarna-active {
+  display: none;
+}
+.plaid-active {
+  display: none;
+}
+// ----------------------------------------
+// ---------- END INDEX ----------
+// ========================================

@@ -1,0 +1,13 @@
+/* ---------------------------------------- */
+/* ----- Bebas Neue ----- */
+/* -------------------- */
+@font-face {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("./BebasNeueBold.ttf") format("truetype"), url("./BebasNeueBold.woff2") format("woff2"), url("./BebasNeueBold.woff") format("woff");
+}
+/* -------------------- */
+/* ----- END Bebas Neue ----- */
+/* ---------------------------------------- */

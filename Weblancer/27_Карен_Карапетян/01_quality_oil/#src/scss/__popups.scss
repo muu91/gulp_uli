@@ -1,0 +1,102 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- POPUPS ----------
+// ----------------------------------------
+.popup {
+  position: fixed;
+  inset: 0;
+  z-index: 105;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  overflow: auto;
+  display: none;
+  @media (max-height: 768px) {
+    justify-content: flex-start;
+  }
+  .div_bg {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+  .btn_popup_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+    img,
+    picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  &__content {
+    position: relative;
+    overflow: auto;
+    max-width: 760px;
+    z-index: 5;
+  }
+  &__popup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    border-radius: 10px;
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  &__img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../img/others/popup1.png");
+    padding: 56px 40px;
+    @media (max-width: 480px) {
+      padding: 20px;
+    }
+    h3 {
+      font-family: $M;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 130%;
+      color: #fff;
+      margin-bottom: 20px;
+      @media (max-width: 480px) {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    }
+    p {
+      color: $w;
+    }
+  }
+  .bl_contacts {
+    &__bottom {
+      grid-template-columns: repeat(1, 1fr);
+      gap: none;
+      padding: 0;
+      border-radius: 0;
+    }
+    &__form {
+      border-radius: 0;
+      textarea {
+        max-height: 115px;
+      }
+    }
+  }
+}
+// ----------------------------------------
+// ---------- END POPUPS ----------
+// ========================================

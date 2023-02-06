@@ -1,0 +1,939 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- BLOCK HEADER ----------
+// ----------------------------------------
+.bl_header_main {
+  background-image: url(../img/main/header_bg_main.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  @media (max-width: 768px) {
+    background-position: 66% bottom;
+  }
+  @media (max-width: 480px) {
+    background-image: url(../img/main/header_bg_main_mobile.webp);
+  }
+  @media (min-width: 1600px) {
+    background-image: url(../img/main/header_bg_main_big.webp);
+  }
+  &__texts {
+    min-height: 594px;
+    max-width: 682px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 37px;
+    @media (max-width: 768px) {
+      max-width: 430px;
+    }
+    @media (max-width: 600px) {
+      max-width: 290px;
+    }
+    @media (max-width: 480px) {
+      padding-top: 30px;
+      padding-bottom: 72px;
+      justify-content: flex-start;
+      max-width: 257px;
+      min-height: 482px;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    .tit_mini {
+      display: block;
+      width: fit-content;
+    }
+  }
+  &__p {
+    color: $addit1;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+  .btn_border__white {
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+  &__bottom {
+    margin-top: auto;
+    margin-bottom: 0;
+    max-width: 210px;
+    display: none;
+    @media (max-width: 480px) {
+      display: block;
+    }
+    .btn_grad1 {
+      margin-bottom: 5px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+// ----------------------------------------
+// ---------- END BLOCK HEADER ----------
+// ========================================
+//==============================
+//---------- THIS IS ----------
+.bl_this {
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+    span {
+      display: block;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    img,
+    picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  &__item {
+    min-width: 300px;
+    width: 300px;
+    margin-top: 31px;
+    @media (max-width: 1200px) {
+      width: 280px;
+      min-width: 280px;
+    }
+    @media (max-width: 992px) {
+      width: 200px;
+      min-width: 200px;
+    }
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      min-width: auto;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(4) {
+      margin-left: 18.5%;
+      @media (max-width: 768px) {
+        margin-left: 0;
+      }
+    }
+    &:nth-child(5) {
+      margin-right: 18.5%;
+      @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__img {
+    @media (max-width: 768px) {
+      min-width: 200px;
+      width: 200px;
+      margin-right: 10px;
+    }
+    @media (max-width: 480px) {
+      min-width: 100px;
+      width: 100px;
+    }
+  }
+  &__texts {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  h4 {
+    margin-bottom: 10px;
+  }
+}
+//---------- END THIS IS ----------
+//==============================
+//==============================
+//---------- YOU CAN ----------
+.bl_you_can {
+  background-image: url(../img/main/you_can_bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  @media (min-width: 1600px) {
+    background-image: url(../img/main/you_can_bg_big.webp);
+  }
+  @media (max-width: 768px) {
+    background-image: url(../img/main/you_can_bg_big_mob.webp);
+    padding-bottom: 50px;
+    padding-top: 40px;
+  }
+  &__content {
+    position: relative;
+  }
+  &__think {
+    max-width: 1005px;
+    position: absolute;
+    top: 100px;
+    left: 79px;
+    padding: 27px 60px 80px;
+    // overflow: hidden;
+    @media (min-width: 1600px) {
+      left: -100px;
+      top: 80px;
+    }
+    @media (max-width: 992px) {
+      left: 0;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      bottom: 0;
+      right: 0;
+      width: 1030px;
+      height: 115%;
+      background-image: url(../img/main/you_can_think.png);
+      background-size: contain;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      z-index: 1;
+      @media (max-width: 1300px) {
+        background-size: 100% 100%;
+        width: 100%;
+      }
+    }
+    p {
+      font-family: $M;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 27px;
+      line-height: 33px;
+      position: relative;
+      z-index: 5;
+    }
+  }
+  &__texts {
+    min-height: 950px;
+    max-width: 660px;
+    margin-right: 0;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 83px;
+    @media (max-width: 768px) {
+      padding: 0;
+      min-height: auto;
+    }
+    @media (max-width: 480px) {
+    }
+    h2 {
+      margin-bottom: 40px;
+      @media (max-width: 768px) {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 34px 60px;
+    @media (max-width: 768px) {
+      gap: 20px 40px;
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+  }
+  &__item {
+    padding: 20px;
+    padding-left: 30px;
+    position: relative;
+    overflow: hidden;
+    @media (max-width: 480px) {
+      padding: 10px;
+      padding-left: 15px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 30px;
+      border-radius: 15px;
+      background-color: #ddbea7;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      @media (max-width: 480px) {
+        border-radius: 5px;
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: calc(100% - 10px);
+      border-radius: 10px;
+      background-color: $addit;
+      z-index: 2;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      @media (max-width: 480px) {
+        width: calc(100% - 5px);
+        border-radius: 4px;
+      }
+    }
+    p {
+      position: relative;
+      z-index: 5;
+    }
+  }
+}
+//---------- END YOU CAN ----------
+//==============================
+//==============================
+//---------- SUCCESS CAREER ----------
+.bl_suc_career {
+  &__content {
+    h2 {
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    > p {
+      text-align: center;
+      font-weight: 400;
+      margin-bottom: 40px;
+      @media (max-width: 600px) {
+        max-width: 190px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 760px;
+    margin: 0 auto;
+    margin-bottom: -205px;
+    @media (max-width: 768px) {
+      justify-content: space-around;
+      margin-bottom: -180px;
+    }
+    @media (max-width: 600px) {
+      margin-bottom: 40px;
+    }
+    > p {
+      margin-bottom: 66px;
+    }
+  }
+  &__item {
+    min-width: 300px;
+    width: 300px;
+    @media (max-width: 768px) {
+      min-width: 200px;
+      width: 200px;
+    }
+    @media (max-width: 600px) {
+      min-width: 120px;
+      width: 120px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  &__img {
+    margin-bottom: 20px;
+    @media (max-width: 600px) {
+      margin-bottom: 10px;
+    }
+  }
+  &__texts {
+    padding: 283px 65px 80px;
+    box-shadow: 0px 4px 9px rgba(201, 169, 144, 0.2);
+    border-radius: 42px;
+    background-color: $addit20;
+    @media (max-width: 768px) {
+      padding: 250px 40px 60px;
+    }
+    @media (max-width: 600px) {
+      padding: 20px;
+      border-radius: 15px;
+    }
+    p {
+      margin-bottom: 40px;
+      font-weight: 400;
+      @media (max-width: 600px) {
+        margin-bottom: 20px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+//---------- END SUCCESS CAREER ----------
+//==============================
+//==============================
+//---------- NOT HAPPEN ----------
+.bl_not_happen {
+  padding-bottom: 70px;
+  @media (max-width: 768px) {
+    padding-bottom: 20px;
+  }
+  &__content {
+    h2 {
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+    > p {
+      color: $addit1;
+      font-weight: 400;
+      margin-bottom: 40px;
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+  }
+}
+.img_txts {
+  &__item {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: 700px) {
+      flex-direction: column;
+      padding-top: 0;
+      padding-bottom: 40px;
+    }
+  }
+  &__img {
+    border-radius: 19px;
+    overflow: hidden;
+    position: relative;
+    width: 46.2%;
+    height: fit-content;
+    @media (max-width: 700px) {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 10px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(
+        360deg,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(91, 87, 87, 0.42) 29.06%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+  }
+  &__rubles {
+    position: absolute;
+    top: 31px;
+    left: 45px;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 124px;
+    @media (max-width: 1300px) {
+      left: 30px;
+      top: 30px;
+    }
+    @media (max-width: 768px) {
+      left: 20px;
+      top: 20px;
+    }
+    img,
+    picture {
+      width: 20px;
+      display: block;
+      margin-right: 5px;
+      @media (max-width: 768px) {
+        width: 11px;
+      }
+    }
+    .opacity_03 {
+      opacity: 0.3;
+    }
+  }
+  &__rubles_bottom {
+    font-family: $M;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: block;
+    white-space: nowrap;
+    margin-top: 5px;
+    min-width: 120px;
+    @media (max-width: 768px) {
+      font-size: 12px;
+      margin-top: 2px;
+    }
+  }
+  &__bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 47px;
+    right: 47px;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1300px) {
+      left: 30px;
+      right: 30px;
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      left: 20px;
+      bottom: 20px;
+    }
+  }
+  &__bottom_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    @media (max-width: 768px) {
+      margin-top: 10px;
+    }
+    img,
+    picture {
+      display: block;
+      width: 45px;
+      min-width: 45px;
+      margin-right: 10px;
+      @media (max-width: 1300px) {
+        width: 35px;
+        min-width: 35px;
+      }
+      @media (max-width: 768px) {
+        width: 22px;
+        min-width: 22px;
+        margin-right: 5px;
+      }
+    }
+    p {
+      color: $w;
+    }
+  }
+  &__texts {
+    width: 48.2%;
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+    h3 {
+      margin-bottom: 30px;
+      @media (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__ul {
+    margin-bottom: 60px;
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+    li {
+      font-family: $M;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: normal;
+      color: $text;
+      margin-bottom: 13px;
+      @media (max-width: 1024px) {
+        font-size: 14px;
+      }
+      @media (max-width: 600px) {
+        font-size: 12px;
+      }
+      @media (max-width: 600px) {
+        margin-bottom: 8px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .btn_grad1 {
+    width: fit-content;
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+}
+.img_txts__item_reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+//---------- END NOT HAPPEN ----------
+//==============================
+//==============================
+//---------- MARQUEE ----------
+.bl_marquee {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background-color: $addit20;
+  @media (max-width: 768px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  li {
+    white-space: nowrap;
+    margin-right: 22px;
+  }
+}
+//---------- END MARQUEE ----------
+//==============================
+//==============================
+//---------- ITEM 3 ----------
+// .bl_item_3 {
+// }
+.articles_3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 50px;
+  @media (max-width: 1024px) {
+    grid: 30px;
+  }
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  &__item {
+    position: relative;
+    padding: 40px;
+    border-radius: 42px;
+    background-color: $addit20;
+    box-shadow: 0px 4px 9px rgba(201, 169, 144, 0.2);
+    @media (max-width: 1024px) {
+      padding: 30px;
+    }
+    @media (max-width: 992px) {
+      display: flex;
+      flex-direction: row;
+    }
+    @media (max-width: 600px) {
+      padding: 20px;
+      border-radius: 20px;
+    }
+  }
+  &__top_text {
+    position: absolute;
+    right: 56px;
+    top: 25px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: $addit1;
+    color: $w;
+    font-family: $M;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: normal;
+    @media (max-width: 1024px) {
+      font-size: 14px;
+      right: 35px;
+    }
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+  &__img {
+    height: 160px;
+    min-height: 160px;
+    border-radius: 19px;
+    overflow: hidden;
+    margin-bottom: 36px;
+    @media (max-width: 992px) {
+      margin: 0;
+      margin-right: 30px;
+    }
+    @media (max-width: 600px) {
+      margin-right: 10px;
+      height: 140px;
+      min-height: 140px;
+      min-width: 120px;
+      width: 120px;
+    }
+    img,
+    picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &__texts {
+    padding-bottom: 21px;
+    @media (max-width: 992px) {
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    h4 {
+      margin-bottom: 30px;
+      max-width: 247px;
+      @media (max-width: 992px) {
+        max-width: none;
+      }
+      @media (max-width: 600px) {
+        margin-bottom: 10px;
+      }
+    }
+    p {
+      margin-bottom: 70px;
+      @media (max-width: 992px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .btn_read {
+    margin-bottom: 0;
+    margin-top: auto;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    @media (max-width: 992px) {
+      position: relative;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+//---------- END ITEM 3 ----------
+//==============================
+//==============================
+//---------- MAILING ----------
+.bl_mailing {
+  padding-top: 87px;
+  padding-bottom: 128px;
+  background-image: url(../img/main/mailing_bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: relative;
+
+  @media (max-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 44px;
+    background-size: cover;
+  }
+  @media (max-width: 480px) {
+    overflow: hidden;
+    background-image: none;
+  }
+  @media (min-width: 1600px) {
+    background-size: cover;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: row-reverse;
+    }
+    @media (max-width: 480px) {
+      justify-content: flex-start;
+      flex-direction: row;
+    }
+  }
+  h2 {
+    margin-bottom: 60px;
+    @media (max-width: 992px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+    }
+    span {
+      display: block;
+      text-align: left;
+      br {
+        display: none;
+        @media (max-width: 480px) {
+          display: block;
+        }
+      }
+    }
+    .p_27 {
+      margin-bottom: 12px;
+      @media (max-width: 600px) {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  &__p {
+    margin-bottom: 60px;
+    line-height: 123%;
+    @media (max-width: 992px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 480px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__tit {
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      display: none;
+      margin-left: 20px;
+    }
+  }
+  &__img {
+    max-width: 520px;
+    margin-right: 40px;
+    @media (max-width: 768px) {
+      margin: 0;
+    }
+    @media (max-width: 480px) {
+      position: absolute;
+      max-width: none;
+      width: 235px;
+      left: 51%;
+      top: 0;
+    }
+  }
+  &__texts {
+    max-width: 600px;
+    @media (max-width: 1200px) {
+      max-width: 400px;
+    }
+    @media (max-width: 480px) {
+      max-width: 225px;
+      position: relative;
+      z-index: 5;
+    }
+  }
+  &__ul {
+    margin-bottom: 60px;
+    @media (max-width: 992px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .btn_grad1 {
+    width: fit-content;
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+}
+.ul_check {
+  li {
+    font-family: $M;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: normal;
+    color: $text;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 11px;
+    @media (max-width: 600px) {
+      font-size: 12px;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: calc(50% - 8px);
+      left: 0;
+      width: 20px;
+      height: 15px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      background-image: url("../img/icons/check.svg");
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+//---------- END MAILING ----------
+//==============================
+//==============================
+//---------- REVIEWS STUDENTS ----------
+.bl_rev_student {
+  padding-bottom: 50px;
+  h2 {
+    margin-bottom: 50px;
+    @media (max-width: 600px) {
+      margin-bottom: 70px;
+    }
+  }
+  &__slider {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 600px;
+  }
+  &__item {
+    width: 100%;
+    height: 100%;
+    img,
+    picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}
+//---------- END REVIEWS STUDENTS ----------
+//==============================

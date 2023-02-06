@@ -1,0 +1,32 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- FOOTER ----------
+.footer {
+  background-color: #dedede;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media (max-width: 480px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .container {
+    max-width: calc(760px + 160px);
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 16px;
+    max-width: 336px;
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// ---------- END FOOTER ----------
+// ========================================

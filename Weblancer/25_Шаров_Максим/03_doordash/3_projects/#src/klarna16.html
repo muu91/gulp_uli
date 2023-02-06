@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <!-- @@include('__header.html', {
+        "btn-back": "d-none",
+        "name_title": "Бронирование переговорок"
+        }) -->
+        <main class="main-m-block">
+            <!-- -------------------------------------- -->
+            <!-- ---------- KLARNA ---------- -->
+            <section class="bl-miniblock m-block">
+                <form action="#" class="m-block__content">
+                    <div class="m-block__klarna-pink">
+                        <img src="./img/icons/klarna-pink.svg" alt="klarna pink" class="klarna-pink">
+                    </div>
+                    <hr class="hr">
+                    <div class="m-block__klarna0 m-block__klarna7">
+                        <img src="./img/icons/bomb.svg" alt="bomb" class="home-img">
+                        <p class="p__klarna10-1">
+                            Sorry, we couldn’t approve your credit card,
+                            because your request was declined by your bank.
+                        </p>
+                        <p class="p__klarna10-2">
+                            Please use a different credit card or
+                            use a bank account.
+                        </p>
+                        <button class="btn-green btn-green-long btn-green-long__klarna10">
+                            Add another Credit Card
+                        </button>
+                        <button class="btn-green btn-green-long btn-green-long__klarna10-2">
+                            Add bank account
+                        </button>
+                    </div>
+                    <hr class="hr">
+                    <h3 class="title-h3_2 title-h3__klarna9">
+                        No transaction will be executed
+                    </h3>
+                    <p>
+                        Authorization is absolutely secure. <br>
+                        Authorization is carried out on the page of your Bank.
+                    </p>
+                    <img src="./img/icons/klarna.svg" alt="klarna" class="klarna-img klarna-img__klarna8">
+                </form>
+            </section>
+            <!-- ---------- END KLARNA ---------- -->
+            <!-- -------------------------------------- -->
+        </main>
+        @@include('__footer.html')
+        @@include('__popups.html')
+        @@include('__js_source.html')
+    </div>
+</body>
+
+</html>

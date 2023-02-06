@@ -1,0 +1,298 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- CONTACTS ----------
+// ----------------------------------------
+.bl-contacts {
+  h2 {
+    margin-bottom: 26px;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33px;
+    @media (max-width: 480px) {
+      margin-bottom: 20px;
+    }
+    a {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 65px;
+      background-color: #d9d9d9;
+      padding: 5px;
+      width: 100%;
+      color: #7a7a7a;
+
+      &:first-child {
+        margin-right: 30px;
+        @media (max-width: 480px) {
+          margin-right: 20px;
+        }
+      }
+      &:hover {
+        background-color: $gold;
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+        span {
+          color: #fff;
+        }
+      }
+      img {
+        display: block;
+      }
+      svg {
+        min-width: 24px;
+        max-width: 24px;
+        transition: 0.3s;
+        path {
+          transition: 0.3s;
+        }
+      }
+      span {
+        display: block;
+        margin-left: 6px;
+        font-family: $R;
+        font-weight: 500;
+        font-size: 24px;
+        transition: 0.3s;
+        @media (max-width: 576px) {
+          font-size: 20px;
+        }
+        @media (max-width: 480px) {
+          font-size: 16px;
+        }
+      }
+    }
+    a.active {
+      background-color: $gold;
+      pointer-events: none;
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+      span {
+        color: #fff;
+      }
+    }
+  }
+  &__map {
+    height: 570px;
+    background-color: #ccc;
+    min-width: 100vw;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (max-width: 480px) {
+      height: 280px;
+    }
+  }
+}
+.bl-about {
+  padding-top: 43px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+  @media (max-width: 750px) {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  &__left {
+    min-width: 350px;
+    max-width: 350px;
+    background: #ffffff;
+    box-shadow: 0px 8px 61px rgba(0, 0, 0, 0.08);
+    padding: 30px 25px;
+    margin-right: 34px;
+    margin-top: -275px;
+    height: fit-content;
+    @media (max-width: 750px) {
+      min-width: 390px;
+      max-width: 390px;
+      margin: 0 auto;
+      margin-bottom: 57px;
+      margin-top: -183px;
+    }
+    @media (max-width: 480px) {
+      min-width: auto;
+      max-width: none;
+      width: 100%;
+      padding: 30px 18px;
+      margin-top: -140px;
+    }
+    .address-map {
+      position: relative;
+      padding-left: 30px;
+      font-family: $R;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #ababab;
+      margin-bottom: 18px;
+      &::before {
+        content: "";
+        width: 22px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url("../img/icons/map-marker-gold.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
+    }
+    address {
+      font-family: $R;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 120%;
+      color: #000;
+      font-style: normal;
+      display: block;
+      margin-bottom: 30px;
+      @media (max-width: 480px) {
+        font-size: 20px;
+      }
+    }
+    .btn-about-phone {
+      position: relative;
+      padding-left: 30px;
+      font-family: $R;
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 120%;
+      color: #000;
+      margin-bottom: 23px;
+      white-space: nowrap;
+      @media (max-width: 480px) {
+        font-size: 20px;
+      }
+      &:hover {
+        color: $gold;
+      }
+      &::before {
+        content: "";
+        width: 22px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url("../img/icons/phone-icon-gold.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
+    }
+    > p {
+      display: block;
+      font-family: $R;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 134%;
+      color: #8b8b8b;
+      margin-bottom: 30px;
+      @media (max-width: 480px) {
+        font-size: 16px;
+      }
+    }
+    .btn-yellow {
+      @media (max-width: 480px) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__texts {
+    @media (max-width: 750px) {
+      background-color: #000;
+      min-width: calc(100vw + 1px);
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+    @media (max-width: 425px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .footer-logo {
+      width: 300px;
+      height: 103px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      background-image: url("../img/logo-footer.svg");
+      position: absolute;
+      left: 0;
+      bottom: 64px;
+      display: block;
+      // display: none;
+      @media (max-width: 768px) {
+        bottom: 200px;
+      }
+      @media (max-width: 750px) {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        max-width: 186px;
+        height: 64px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        background-image: url("../img/logo.svg");
+      }
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 48px;
+      margin-bottom: 20px;
+      @media (max-width: 750px) {
+        font-size: 24px;
+        text-align: center;
+        color: $gold;
+        width: 100%;
+        border-top: 1px solid #474747;
+        padding-top: 17px;
+      }
+    }
+    p {
+      display: block;
+      font-size: 18px;
+      line-height: 134%;
+      color: #8b8b8b;
+      margin-bottom: 20px;
+      @media (max-width: 750px) {
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// ----------------------------------------
+// ---------- END CONTACTS ----------
+// ========================================

@@ -1,0 +1,98 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- SWIPER ----------
+// ----------------------------------------
+.swiper {
+  position: relative;
+  overflow: initial;
+  // margin-bottom: 55px;
+  // @media (max-width: 600px) {
+  // margin-bottom: 0;
+  // }
+}
+// .swiper-slide {
+//   height: auto;
+// }
+// ----------------------------------------
+// ---------- PAGINATION ----------
+.swiper-pagination {
+  width: fit-content !important;
+  left: 50% !important;
+  bottom: -33px !important;
+  transform: translateX(-50%);
+  height: 15px;
+  // @media (max-width: 600px) {
+  //   display: none;
+  // }
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    margin: 0 !important;
+    margin-right: 6px !important;
+    opacity: 1;
+    position: relative;
+    pointer-events: all;
+    cursor: pointer;
+    border: 1px solid #dedede;
+    background-color: transparent;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      inset: -1px;
+      background-color: transparent;
+      border-radius: 50%;
+      transition: opacity 0.3s;
+    }
+    &:last-child {
+      margin-right: 0 !important;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    &::before {
+      background: linear-gradient(49.65deg, #bd7533 2.17%, #feb839 99.05%);
+      transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+  }
+}
+// ---------- END PAGINATION ----------
+// ----------------------------------------
+// ---------- BUTTONS ----------
+.swiper-button-prev,
+.swiper-button-next {
+  width: 20px;
+  height: 45px;
+  transition: 0.3s;
+  &::after {
+    color: $o;
+  }
+}
+.swiper-button-prev {
+  left: -70px;
+  @media (max-width: 600px) {
+    left: -30px;
+  }
+  @media (max-width: 480px) {
+    left: -25px;
+  }
+}
+.swiper-button-next {
+  right: -70px;
+  @media (max-width: 600px) {
+    right: -30px;
+  }
+  @media (max-width: 480px) {
+    right: -25px;
+  }
+}
+// .swiper-button-next.swiper-button-disabled,
+// .swiper-button-prev.swiper-button-disabled {
+//   opacity: 0;
+// }
+// ---------- END BUTTONS ----------
+// ----------------------------------------
+// ---------- END SWIPER ----------
+// ========================================

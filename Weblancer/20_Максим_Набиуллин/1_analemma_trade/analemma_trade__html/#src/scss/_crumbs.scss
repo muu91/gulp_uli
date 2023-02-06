@@ -1,0 +1,103 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- CRUMBS ----------
+// ----------------------------------------
+.bl-crumbs {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @media (max-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  &__content {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      @media (max-width: 480px) {
+        display: none;
+      }
+      li {
+        margin-right: 8px;
+        &:last-child {
+          margin-right: 0;
+          a {
+            color: $gold;
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    a {
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+      color: #a6a6a6;
+      padding-right: 12px;
+      position: relative;
+      &:hover {
+        color: $gold;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 9px;
+        background-image: url("../img/icons/arrow-right-grey-crumbs.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .btn-back-crumbs {
+      display: block;
+      font-family: $R;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      color: #000;
+      position: relative;
+      padding: 0;
+      padding-left: 25px;
+      display: none;
+      @media (max-width: 480px) {
+        display: block;
+      }
+      &::before {
+        content: "";
+        width: 20px;
+        height: 10px;
+        background-image: url("../img/icons/arrow-left-black.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 45%;
+        transform: translateY(-50%);
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+// ----------------------------------------
+// ---------- END CRUMBS ----------
+// ========================================

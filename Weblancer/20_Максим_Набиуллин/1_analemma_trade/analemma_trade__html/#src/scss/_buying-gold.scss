@@ -1,0 +1,776 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ----------------------------------------
+// ---------- BLOCK HEADER GOLD ----------
+.bl-header-gold {
+  @media (max-width: 480px) {
+    position: relative;
+    z-index: 6;
+  }
+  .bl-header__content {
+    .swiper {
+      overflow: inherit;
+      .swiper-wrapper {
+        .swiper-slide-2 {
+          background-image: url("../img/other/bg-header-gold.png");
+          @media (max-width: 768px) {
+            height: auto;
+            padding-top: 44px;
+            padding-bottom: 77px;
+          }
+          @media (max-width: 480px) {
+            padding-top: 20px;
+          }
+          .container {
+            background-image: none;
+            background-color: transparent;
+            @media (max-width: 576px) {
+              height: auto;
+            }
+            @media (max-width: 480px) {
+              height: 300px;
+            }
+          }
+          &__content {
+            @media (max-width: 768px) {
+              flex-direction: column;
+            }
+            @media (max-width: 480px) {
+              justify-content: flex-start;
+            }
+          }
+          &__text {
+            position: relative;
+            margin-right: 20px;
+            @media (max-width: 768px) {
+              display: flex;
+              max-width: 445px;
+              width: 100%;
+              margin-bottom: 27px;
+              margin-right: 0;
+            }
+            &:before {
+              content: "";
+              width: 547px;
+              height: 612px;
+              display: block;
+              background-image: url("../img/buying-gold/header-left1.png");
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center center;
+              position: absolute;
+              left: -470px;
+              top: -160px;
+              @media (max-width: 1024px) {
+                width: 273px;
+                height: 220px;
+                background-image: url("../img/buying-gold/header-left2.png");
+                top: -160px;
+                left: 80px;
+              }
+              @media (max-width: 992px) {
+                width: 250px;
+                height: 200px;
+                left: 50px;
+                top: -170px;
+              }
+              @media (max-width: 768px) {
+                left: 250px;
+                top: 0;
+                z-index: 5;
+              }
+              @media (max-width: 480px) {
+                left: 165px;
+                top: -40px;
+                width: 120px;
+                height: 85px;
+                z-index: 5;
+              }
+            }
+            &::after {
+              content: "";
+              width: 238px;
+              height: 196px;
+              display: block;
+              background-image: url("../img/buying-gold/header-center1.png");
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center center;
+              position: absolute;
+              right: -180px;
+              bottom: -130px;
+              z-index: 5;
+              @media (max-width: 1024px) {
+                width: 200px;
+                height: 180px;
+                right: -110px;
+              }
+              @media (max-width: 768px) {
+                display: none;
+              }
+            }
+
+            h2 {
+              display: block;
+              font-family: $R;
+              font-size: 48px;
+              font-weight: 400;
+              line-height: normal;
+              @media (max-width: 992px) {
+                // display: none;
+                font-size: 35px;
+              }
+              @media (max-width: 768px) {
+                display: none;
+              }
+              span {
+                display: block;
+                font-size: 120px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 100%;
+                @media (max-width: 1024px) {
+                  font-size: 80px;
+                }
+                @media (max-width: 992px) {
+                  font-size: 70px;
+                }
+              }
+            }
+            p {
+              font-family: $R;
+              font-size: 24px;
+              font-weight: 400;
+              max-width: 408px;
+              line-height: normal;
+              @media (max-width: 992px) {
+                font-size: 20px;
+              }
+              @media (max-width: 768px) {
+                display: none;
+              }
+            }
+
+            h2 {
+              @media (max-width: 768px) {
+                display: block;
+              }
+            }
+            p {
+              @media (max-width: 768px) {
+                display: block;
+                max-width: 270px;
+                font-size: 16px;
+              }
+              @media (max-width: 576px) {
+                font-size: 16px;
+              }
+            }
+          }
+          .block-black {
+            position: relative;
+            @media (max-width: 576px) {
+              transform: none;
+            }
+            &:before {
+              content: "";
+              width: 173px;
+              height: 210px;
+              display: block;
+              background-image: url("../img/buying-gold/header-center2.png");
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center center;
+              position: absolute;
+              left: -90px;
+              top: -90px;
+              z-index: -1;
+              @media (max-width: 1024px) {
+                display: none;
+              }
+              @media (max-width: 480px) {
+                display: block;
+                width: 210px;
+                height: 100px;
+                background-image: url("../img/buying-gold/header-left3.png");
+                left: -160px;
+                top: -30px;
+                z-index: 5;
+              }
+            }
+            &::after {
+              content: "";
+              width: 512px;
+              height: 507px;
+              display: block;
+              background-image: url("../img/buying-gold/header-right1.png");
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center center;
+              position: absolute;
+              right: -425px;
+              bottom: -90px;
+              @media (max-width: 768px) {
+                width: 170px;
+                height: 140px;
+                bottom: -10px;
+                right: -130px;
+                background-image: url("../img/buying-gold/header-center1.png");
+              }
+              @media (max-width: 480px) {
+                width: 120px;
+                height: 100px;
+                bottom: auto;
+                top: -40px;
+                right: -60px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .swiper-button-prev__index,
+  .swiper-button-next__index {
+    display: none;
+  }
+}
+// ---------- END BLOCK HEADER GOLD ----------
+// ----------------------------------------
+// ---------- WE ACCEPT ----------
+.bl-we-accept {
+  padding-top: 70px;
+  margin-bottom: -30px;
+  position: relative;
+  z-index: 5;
+  @media (max-width: 480px) {
+    padding-top: 180px;
+  }
+
+  h2 {
+    margin-bottom: 26px;
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+    @media (max-width: 576px) {
+      font-size: 20px;
+    }
+    @media (max-width: 600px) {
+      margin-bottom: 15px;
+    }
+  }
+  &__menu {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin-bottom: 28px;
+    @media (max-width: 600px) {
+      margin-bottom: 15px;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        width: 50%;
+      }
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-radius: 10px;
+      height: 60px;
+      font-size: 22px;
+      line-height: 120%;
+      font-weight: 400;
+      color: #000;
+      text-align: center;
+      padding: 5px 20px;
+      @media (max-width: 600px) {
+        height: 48px;
+        font-size: 14px;
+      }
+    }
+    .btn-gold-wa.active {
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+      background-color: #b4962a;
+      color: #fff;
+      pointer-events: none;
+    }
+    .btn-silver-wa.active {
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+      background: linear-gradient(89.64deg, #bcbcbc 8.54%, #b3b3b3 53.71%, #9c9c9c 99.84%);
+      color: #fff;
+    }
+  }
+}
+.gold-silver {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 50px 60px;
+  background-color: #fff;
+  min-height: 637px;
+  @media (max-width: 1024px) {
+    padding: 50px;
+    padding-right: 0;
+  }
+  @media (max-width: 768px) {
+    padding: 50px;
+    min-height: auto;
+  }
+  @media (max-width: 600px) {
+    padding: 30px 35px;
+  }
+  @media (max-width: 480px) {
+    padding: 30px 17px;
+  }
+}
+.gs-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__texts {
+    max-width: 445px;
+    min-width: 445px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 5;
+    @media (max-width: 800px) {
+      max-width: 350px;
+      min-width: 350px;
+    }
+    @media (max-width: 768px) {
+      max-width: none;
+      min-width: auto;
+      width: 100%;
+      margin: 0;
+    }
+  }
+  &__subtexts {
+    h3 {
+      font-family: $SF;
+      max-width: 427px;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 60px;
+      line-height: 130%;
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+      @media (max-width: 600px) {
+        font-size: 22px;
+        margin-bottom: 30px;
+      }
+      @media (max-width: 480px) {
+        margin-bottom: 17px;
+        font-size: 16px;
+      }
+      .gold {
+        color: $gold;
+      }
+      .silver {
+        color: #858585;
+      }
+    }
+  }
+  &__select {
+    position: relative;
+    width: 100%;
+    margin-bottom: 22px;
+    @media (max-width: 600px) {
+      margin-bottom: 17px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 10px;
+      background-image: url("../img/icons/arrow-down-gold2.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    select {
+      height: 48px;
+      border: 1px solid #d0d0d0;
+      border-radius: 5px;
+      font-family: $SF;
+      font-size: 18px;
+      line-height: 120%;
+      font-weight: 400;
+      color: #000;
+      width: 100%;
+      appearance: none;
+      padding: 10px 20px;
+      padding-right: 40px;
+      outline: none;
+    }
+  }
+  .input {
+    position: relative;
+    margin-bottom: 26px;
+    @media (max-width: 600px) {
+      margin-bottom: 17px;
+    }
+    &::after {
+      content: "г";
+      font-family: $R;
+      color: #aeaeae;
+      font-size: 18px;
+      font-weight: 400;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    input {
+      height: 48px;
+      border: 1px solid #d0d0d0;
+      border-radius: 5px;
+      font-family: $SF;
+      font-size: 18px;
+      line-height: 120%;
+      font-weight: 400;
+      color: #000;
+      width: 100%;
+      appearance: none;
+      padding: 10px 20px;
+      padding-right: 40px;
+      outline: none;
+    }
+  }
+  .btn-yellow-next {
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 135px;
+    position: relative;
+    font-weight: 400;
+    @media (max-width: 480px) {
+      max-width: none;
+      width: 100%;
+    }
+    &::after {
+      content: "";
+      width: 10px;
+      height: 15px;
+      display: block;
+      background-image: url("../img/icons/arrow-right-slide-white.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      margin-left: 10px;
+    }
+  }
+  &__img {
+    max-width: 460px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__img-silver {
+    img {
+      // transform: translateY(-50px);
+      margin-top: -50px;
+    }
+  }
+  &__table {
+    width: 100%;
+    min-height: 250px;
+    @media (max-width: 768px) {
+      min-height: auto;
+    }
+    @media (max-width: 600px) {
+      overflow: auto;
+    }
+  }
+  .pp-table {
+    margin-bottom: 6px;
+    @media (max-width: 768px) {
+      min-width: 445px;
+      padding-bottom: 0;
+    }
+    @media (max-width: 600px) {
+      overflow: hidden;
+      min-width: 480px;
+      margin-bottom: 20px;
+    }
+    &__th {
+      padding: 0;
+      border: none;
+      ul {
+        justify-content: space-between;
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          min-width: 106px;
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: 20px;
+          &:first-child {
+            min-width: 55px;
+            max-width: 60px;
+            position: relative;
+            @media (max-width: 768px) {
+              // max-width: none;
+            }
+            &::before {
+              content: "";
+              display: block;
+              position: absolute;
+              width: 2px;
+              height: calc(500% + 5px);
+              left: auto;
+              top: 0;
+              right: -50px;
+              background-color: $gold;
+              box-shadow: none;
+              display: none;
+              @media (max-width: 768px) {
+                display: block;
+              }
+              @media (max-width: 700px) {
+                right: -30px;
+              }
+              @media (max-width: 600px) {
+                right: -20px;
+              }
+            }
+          }
+          img {
+            display: block;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+    &__tr {
+      border: none;
+      padding: 0;
+      ul {
+        li {
+          min-width: 106px;
+          margin-right: 18px;
+          margin-bottom: 20px;
+          &:last-child {
+            margin-right: 0;
+          }
+          &:first-child {
+            min-width: 50px;
+            max-width: 60px;
+            margin-right: 40px;
+            text-align: center;
+            color: $gold;
+            font-weight: 700;
+            @media (max-width: 600px) {
+            }
+          }
+          label {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+              cursor: pointer;
+            }
+            p {
+              font-size: 18px;
+              white-space: nowrap;
+            }
+          }
+        }
+        li.silver-color {
+          color: #858585;
+        }
+      }
+    }
+  }
+  .inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 25px;
+    }
+    .input {
+      margin-bottom: 0;
+      &::after {
+        display: none;
+      }
+      input {
+        text-align: center;
+        height: 36px;
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid #aeaeae;
+        border-radius: 0;
+      }
+    }
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    .btn-back {
+      height: 48px;
+      min-width: 48px;
+      max-width: 48px;
+      margin-right: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #a6a6a6;
+      border-radius: 4px;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    .btn-yellow {
+      max-width: none;
+    }
+  }
+  .pers-data {
+    label {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+}
+// ---------- END WE ACCEPT ----------
+// ----------------------------------------
+// ---------- RANSOM 2 ----------
+.bl-ransom2 {
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .bl-ransom__bottom {
+    .purchase-price {
+      margin: 0;
+    }
+    h2 {
+      @media (max-width: 768px) {
+        font-size: 32px;
+      }
+      @media (max-width: 576px) {
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+    .u-tabs__btns {
+      @media (max-width: 576px) {
+        margin-bottom: 30px;
+      }
+      @media (max-width: 480px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+// ---------- END RANSOM 2 ----------
+// ----------------------------------------
+// ---------- ADVANTAGE ----------
+.bl-advantage {
+  background-color: #e5e5e5;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .container {
+    @media (max-width: 768px) {
+      padding: 0;
+
+      // overflow: auto;
+    }
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    @media (max-width: 1024px) {
+      gap: 22px;
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(3, 240px);
+      padding-left: 30px;
+      padding-right: 30px;
+      overflow: auto;
+    }
+    @media (max-width: 425px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: row;
+  }
+  &__img {
+    max-width: 85px;
+    min-width: 85px;
+    height: 85px;
+    margin-right: 16px;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  &__texts {
+    margin-top: 15px;
+    h4 {
+      font-family: $SF;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 9px;
+      color: #000;
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+    p {
+      font-family: $SF;
+      font-size: 16px;
+      font-weight: 400;
+      color: #000;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+      span {
+        color: $gold;
+        font-weight: 700;
+      }
+    }
+  }
+}
+// ---------- END ADVANTAGE ----------
+// ----------------------------------------
+// ========================================

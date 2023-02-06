@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <!-- @@include('__header.html', {
+        "btn-back": "d-none",
+        "name_title": "Бронирование переговорок"
+        }) -->
+        <main class="main-m-block">
+            <!-- -------------------------------------- -->
+            <!-- ---------- KLARNA ---------- -->
+            <section class="bl-miniblock m-block">
+                <form action="#" class="m-block__content">
+                    <div class="m-block__klarna-pink">
+                        <img src="./img/icons/plaid.svg" alt="plaid" class="plaid">
+                    </div>
+                    <hr class="hr">
+                    <div class="m-block__klarna0 m-block__klarna6">
+                        <div class="banks-logo">
+                            <img src="./img/icons/chase.svg" alt="logo" class=""></img>
+                        </div>
+                        <div class="k-input k-input_6-1">
+                            <input type="text" placeholder="Use your online Banking data to log in">
+                        </div>
+                        <div class="k-input k-input_6-2">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <button class="btn-green btn-green-long btn-green-long__klarna6">
+                            Secure log on
+                        </button>
+                    </div>
+                    <hr class="hr">
+                    <h3 class="title-h3_2 title-h3__klarna6">
+                        Use your online Banking data to log in
+                    </h3>
+                    <p>
+                        Authorization is absolutely secure. <br>
+                        Authorization is carried out on the page of your Bank.
+                    </p>
+                </form>
+            </section>
+            <!-- ---------- END KLARNA ---------- -->
+            <!-- -------------------------------------- -->
+        </main>
+        @@include('__footer.html')
+        @@include('__popups.html')
+        @@include('__js_source.html')
+    </div>
+</body>
+
+</html>

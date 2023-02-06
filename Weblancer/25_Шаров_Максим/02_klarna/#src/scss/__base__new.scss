@@ -1,0 +1,153 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+
+// html.lock,
+body.lock {
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+    position: relative;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    // max-width: 992px;
+    margin: 0 auto;
+    main {
+        flex: 1 1 auto;
+    }
+}
+
+.container {
+    max-width: calc(1130px + 160px);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+    @media (max-width: 1024px) {
+        padding: 0 42px;
+    }
+    @media (max-width: 768px) {
+        padding: 0 36px;
+    }
+    @media (max-width: 480px) {
+        padding: 0 17px;
+    }
+}
+.d-none {
+    display: none !important;
+}
+// ========================================
+// ---------- HEADING ----------
+
+// ---------- END HEADING ----------
+// ----------------------------------------
+// ---------- TEXTS ----------
+.title-h2 {
+    @extend %G;
+    @extend %dark;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: normal;
+    margin-bottom: 60px;
+    text-align: center;
+    display: block;
+    @media (max-width: 480px) {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+}
+.title-h3 {
+    @extend %G;
+    @extend %dark;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+    @media (max-width: 480px) {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    span {
+        font-weight: 600;
+    }
+}
+.title-h3_2 {
+    @extend %G;
+    @extend %dark;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: normal;
+    display: block;
+    @media (max-width: 480px) {
+    }
+}
+p {
+    @extend %G;
+    @extend %dark;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    > span {
+        font-weight: 600;
+    }
+    a {
+        color: $green;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+// ---------- END TEXTS ----------
+// ----------------------------------------
+// ---------- BUTTONS ----------
+// ----------------------------------------
+.btn-green {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: $green;
+    border-radius: 10px;
+    border: 2px solid $green;
+    color: #fff;
+    font-family: $G;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    height: 57px;
+    min-width: 188px;
+    max-width: 188px;
+    &:hover {
+        color: $green;
+        background-color: #fff;
+    }
+}
+.btn-green-long {
+    min-width: 406px;
+    max-width: 406px;
+    margin: 0 auto;
+    @media (max-width: 480px) {
+        min-width: auto;
+        max-width: none;
+        width: 100%;
+    }
+}
+// ----------------------------------------
+// ---------- END BUTTONS ----------
+// ========================================
+// ---------- OTHERS ----------
+// ----------------------------------------
+
+// ----------------------------------------
+// ---------- END OTHERS ----------
+// ========================================

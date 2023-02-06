@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <!-- @@include('__header.html', {
+        "btn-back": "d-none",
+        "name_title": "Бронирование переговорок"
+        }) -->
+        <main class="main-m-block">
+            <!-- -------------------------------------- -->
+            <!-- ---------- BLOCK ---------- -->
+            <section class="bl-miniblock m-block">
+                <form action="#" class="m-block__content">
+                    <div class="m-block__top">
+                        <h3 class="title-h3_2 title-h3__klarna1">
+                            Payment Methods
+                        </h3>
+                        <p class="p__klarna1">
+                            Add New Payment Method
+                        </p>
+                    </div>
+                    <hr class="hr">
+                    <label class="m-block__check m-block__check-klarna1-1 btn-to-klarna">
+                        <img src="./img/icons/klarna-pink.svg" alt="klarna pink" class="klarna-pink">
+                        <div class="u-check u-check-active u-check-klarna ">
+                            <input type="checkbox" id="inp-klarna">
+                            <span class="u-check__check"></span>
+                        </div>
+                    </label>
+                    <div class="m-block__klarna0 klarna-active">
+                        <h3 class="title-h3_2 title-h3__klarna2">
+                            Add your payment method by Klarna
+                            Why Klarna?
+                        </h3>
+                        <ul class="m-block__ul m-block__ul2">
+                            <li>
+                                Without registration
+                            </li>
+                            <li>
+                                With online banking
+                            </li>
+                            <li>
+                                No fee
+                            </li>
+                            <li>
+                                Klarna buyer's protection
+                            </li>
+                        </ul>
+                        <p>
+                            By continuing, I accept the <a href="#">Klarna Service terms</a> <br>
+                            and confirm that I have read the <a href="#">Privacy Policy</a>.
+                        </p>
+                        <button class="btn-green btn-green-long btn-green-long__klarna2 btn-green-long__plaid">
+                            Connect to Klarna
+                        </button>
+                    </div>
+                    <hr class="hr">
+                    <label class="m-block__check btn-to-plaid">
+                        <img src="./img/icons/plaid.svg" alt="plaid" class="plaid">
+                        <div class="u-check u-check-active u-check-plaid">
+                            <input type="checkbox" id="inp-plaid">
+                            <span class="u-check__check"></span>
+                        </div>
+                    </label>
+                    <div class="m-block__klarna0 plaid-active">
+                        <h3 class="title-h3_2 title-h3__klarna2">
+                            Add your payment method by Plaid
+                            Why Plaid?
+                        </h3>
+                        <ul class="m-block__ul m-block__ul2">
+                            <li>
+                                Without registration
+                            </li>
+                            <li>
+                                With online banking
+                            </li>
+                            <li>
+                                No fee
+                            </li>
+                            <li>
+                                Plaid buyer's protection
+                            </li>
+                        </ul>
+                        <p>
+                            By continuing, I accept the <a href="#">Plaid Service terms</a> <br>
+                            and confirm that I have read the <a href="#">Privacy Policy</a>.
+                        </p>
+                        <button class="btn-green btn-green-long btn-green-long__klarna2 btn-green-long__plaid">
+                            Connect to Plaid
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <!-- ---------- END BLOCK ---------- -->
+            <!-- -------------------------------------- -->
+        </main>
+        @@include('__footer.html')
+        @@include('__popups.html') @@include('__js_source.html')
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- PRIVACY POLICY ----------
+// ----------------------------------------
+.bl-privacy-policy {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #fff;
+  .container {
+    max-width: 1200px;
+  }
+  h1 {
+    display: block;
+    font-family: $B;
+    font-size: 40px;
+    line-height: 130%;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  h2 {
+    display: block;
+    font-family: $G;
+    font-size: 22px;
+    line-height: 130%;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  ul {
+    li {
+      margin-bottom: 40px;
+      font-family: $M;
+      line-height: 155%;
+      font-size: 16px;
+      font-weight: 400;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      ul {
+        li {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// ----------------------------------------
+// ---------- END PRIVACY POLICY ----------
+// ========================================

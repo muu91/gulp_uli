@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <main>
+            <!-- -------------------------------------- -->
+            <!-- ---------- PERSONAL AREA ---------- -->
+            <section class="bl-pers-area">
+                <div class="container">
+                    <h1>
+                        личный кабинет
+                    </h1>
+                    <div class="bl-pers-area__content">
+                        <aside class="pers-area-aside pa-aside">
+                            <div class="pa-aside__menu pa-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/icons/pa-user.svg" alt="pa-user">
+                                            <span>
+                                                Ваши данные
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/icons/pa-address.svg" alt="pa-user">
+                                            <span>
+                                                Адреса доставки
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/icons/pa-zakaz.svg" alt="pa-user">
+                                            <span>
+                                                Заказы
+                                                <span class="order-amount">
+                                                    2
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/icons/pa-exit.svg" alt="pa-user">
+                                            <span>
+                                                Выход
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <main class="pers-area-main">
+                            <div class="pa-orders">
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                        <div class="pa-orders__item order">
+                                            <div class="order__left">
+                                                <div class="order__left-title">
+                                                    <h3>
+                                                        заказ № 88477-2022
+                                                        <span class="order__status status-process">
+                                                            в обработке
+                                                        </span>
+                                                    </h3>
+                                                    <div class="order__date">
+                                                        31 мая 2022 г.
+                                                    </div>
+                                                </div>
+                                                <div class="order__left-prices">
+                                                    <div class="order__price">
+                                                        23 560 р.
+                                                    </div>
+                                                    <div class="order__amount">
+                                                        2 товара
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="order__button">
+                                                <img src="./img/icons/slide-arrow-right.svg" alt="arrow-right">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                        <div class="pa-orders__item order">
+                                            <div class="order__left">
+                                                <div class="order__left-title">
+                                                    <h3>
+                                                        заказ № 57448-2022
+                                                        <span class="order__status status-cancel">
+                                                            отменен
+                                                        </span>
+                                                    </h3>
+                                                    <div class="order__date">
+                                                        22 мая 2022 г.
+                                                    </div>
+                                                </div>
+                                                <div class="order__left-prices">
+                                                    <div class="order__price">
+                                                        23 560 р.
+                                                    </div>
+                                                    <div class="order__amount">
+                                                        2 товара
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="order__button">
+                                                <img src="./img/icons/slide-arrow-right.svg" alt="arrow-right">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                        <div class="pa-orders__item order">
+                                            <div class="order__left">
+                                                <div class="order__left-title">
+                                                    <h3>
+                                                        заказ № 118400-2022
+                                                        <span class="order__status status-success">
+                                                            оплачен и отгружен
+                                                        </span>
+                                                    </h3>
+                                                    <div class="order__date">
+                                                        12 мая 2022 г.
+                                                    </div>
+                                                </div>
+                                                <div class="order__left-prices">
+                                                    <div class="order__price">
+                                                        23 560 р.
+                                                    </div>
+                                                    <div class="order__amount">
+                                                        2 товара
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="order__button">
+                                                <img src="./img/icons/slide-arrow-right.svg" alt="arrow-right">
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </section>
+            <!-- ---------- END PERSONAL AREA ---------- -->
+            <!-- -------------------------------------- -->
+        </main>
+        @@include('__footer.html') @@include('__popups.html') @@include('__js_source.html')
+
+</body>
+
+</html>

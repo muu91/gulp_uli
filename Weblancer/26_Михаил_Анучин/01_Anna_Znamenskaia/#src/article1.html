@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <!-- @@include('__header.html', {
+        "btn-back": "d-none",
+        "name_title": "Бронирование переговорок"
+        }) -->
+        <div class="main_aside">
+            <div class="container">
+                <div class="main_aside__content">
+                    <main class="main">
+                        <a href="#" class="btn_back">
+                            <svg class="icon in-back">
+                                <use xlink:href="#back"></use>
+                            </svg>
+                            <span>
+                                Назад
+                            </span>
+                        </a>
+                        <div class="article_body">
+                            <img src="./img/articles/article_body.png" alt="article">
+                            <h1 class="tit40">
+                                Здесь будет название статьи
+                            </h1>
+                            <div class="article_body__cat mb_50">
+                                Категория:
+                                <a href="#">
+                                    Поиск работы
+                                </a>
+                            </div>
+                            <p>
+                                Здесь будет интересный текст. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nunc quis dolor lorem. Aenean
+                                vehicula blandit ligula vitae sagittis. Curabitur pretium ante sit amet congue
+                                imperdiet. Duis egestas dictum sapien,
+                                non feugiat odio ultrices vitae. In a arcu luctus, mollis massa et, porttitor turpis.
+                                Nam id interdum nulla. Donec et
+                                malesuada leo. Morbi vestibulum, erat nec aliquam convallis, ante nisl consequat elit,
+                                sit amet cursus nisl quam a eros.
+                                Vivamus posuere lacus vitae mi ultrices, quis egestas orci iaculis. Fusce tristique
+                                malesuada convallis. Sed aliquam
+                                elit sed purus ultrices ultricies. Pellentesque porta arcu id laoreet facilisis. Duis
+                                mauris sapien, semper vitae
+                                sagittis in, convallis et purus. Integer arcu nisl, dictum id nulla sit amet, aliquet
+                                suscipit quam.
+                            </p>
+                            <p>
+                                Phasellus consectetur tempus convallis. In tempus enim sed purus condimentum, sed
+                                euismod enim sagittis. In at tempor
+                                purus. Nam vitae dapibus elit. Aliquam auctor viverra auctor. Sed rhoncus enim erat, non
+                                rutrum lorem dictum viverra.
+                                Duis volutpat eget tellus et tincidunt.
+                            </p>
+                            <p>
+                                Donec facilisis justo at tortor pellentesque congue. Duis consequat lorem at ante
+                                suscipit scelerisque. Nulla blandit
+                                augue at nisi cursus, cursus sagittis turpis ornare. Aliquam placerat justo leo, id
+                                rutrum enim sodales eget. Aenean
+                                eget felis enim. Cras vehicula maximus nisi, sit amet lacinia nisl porta vitae. Nunc a
+                                turpis vitae tellus tincidunt
+                                vehicula. Morbi euismod et mi sit amet finibus.
+                            </p>
+                        </div>
+                    </main>
+                    <aside class="aside">
+                        <div class="aside__search mb_50">
+                            <form action="#">
+                                <div class="inp_search">
+                                    <input type="text" placeholder="Поиск по статьям">
+                                    <button class="btn_search">
+                                        <img src="./img/icons/search.svg" alt="search">
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <h6 class="p17 fw700">
+                            Подпишитесь на рассылку
+                        </h6>
+                        <p>
+                            Подпишитесь и получайте
+                            полезные статьи на ваш e-mail
+                        </p>
+                        <div class="aside__email mb_50">
+                            <div class="input">
+                                <input type="text" placeholder="Поиск по статьям">
+                            </div>
+                            <button class="btn_grad2">
+                                <span>
+                                    Подписаться
+                                </span>
+                            </button>
+                        </div>
+                        <div class="aside__menu mb_50">
+                            <h6 class="p17 fw700">
+                                Рубрики
+                            </h6>
+                            <ul>
+                                <li>
+                                    <a href="#" class="count">
+                                        <span>
+                                            Поиск работы
+                                        </span>
+                                        <span class="count__number">
+                                            555
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#' class="count">
+                                        <span>
+                                            Поиск призвания
+                                        </span>
+                                        <span class="count__number">
+                                            3
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#' class="count">
+                                        <span>
+                                            Работа за рубежом
+                                        </span>
+                                        <span class="count__number">
+                                            5
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#' class="count">
+                                        <span>
+                                            Выгорание
+                                        </span>
+                                        <span class="count__number">
+                                            3
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="aside__menu mb_50">
+                            <h6 class="p17 fw700">
+                                Последние статьи
+                            </h6>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            Все подводные камни
+                                            иностранных компаний от А до Я
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            Собеседование в IT компании,
+                                            на что обратить внимание
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            Жизнь за рубежом,,
+                                            как справиться со стрессом
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="aside__menu mb_50">
+                            <h6 class="p17 fw700">
+                                Самое популярное
+                            </h6>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            Как выбрать и пройти обучение
+                                            до конца
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            Как двигаться внутри компании
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            Как собрать dream team!
+                                            5 отличий кандидатов
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        @@include('__footer.html')
+        @@include('__popups.html') @@include('__js_source.html')
+    </div>
+</body>
+
+</html>

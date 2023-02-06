@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <main>
+            <!-- -------------------------------------- -->
+            <!-- ---------- CONTACTS ---------- -->
+            <section class="bl-crumbs">
+                <div class="container">
+                    <div class="bl-crumbs__content">
+                        <ul>
+                            <li>
+                                <a href='#'>
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#'>
+                                    Личный кабинет
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-back-crumbs">
+                            Назад
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- ---------- END CONTACTS ---------- -->
+            <!-- -------------------------------------- -->
+            <!-- ---------- PA ---------- -->
+            <section class="bl-pa">
+                <div class="container">
+                    <h1>
+                        Личный кабинет
+                    </h1>
+                    <div class="bl-pa__content">
+                        <aside class="pa-aside">
+                            <div class="pa-aside__fio pa-fio">
+                                <a href="#"></a>
+                                <div class="pa-fio__img">
+                                    <div class="pa-avatar">
+
+                                    </div>
+                                    <!-- <img src="" alt="photo avatar"> -->
+                                </div>
+                                <div class="pa-fio__texts">
+                                    <div class="pa-fio__fio">
+                                        ФИО
+                                    </div>
+                                    <div class="pa-fio__name">
+                                        Алмаз
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pa-aside__menu">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="">
+                                            Мои заказы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>
+                                            Мои бонусы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>
+                                            Выйти
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <div class="pa-main">
+                            <div class="personal-data">
+                                <h2>
+                                    Личные данные
+                                </h2>
+                                <form action="#">
+                                    <div class="input">
+                                        <span>
+                                            Имя
+                                        </span>
+                                        <input type="text" value="Дмитрий">
+                                    </div>
+                                    <div class="input">
+                                        <span>
+                                            Фамилия
+                                        </span>
+                                        <input type="text" value="Федоров">
+                                    </div>
+                                    <div class="input">
+                                        <span>
+                                            e-mail
+                                        </span>
+                                        <input type="email" value="dmitri@gmail.com">
+                                    </div>
+                                    <div class="input">
+                                        <span>
+                                            Номер телефона
+                                        </span>
+                                        <input type="tel" id="personal-data-input" value="+7 (917) 346 89 90"
+                                            placeholder="+7 (917) 346 89 90">
+                                    </div>
+                                    <div class="input">
+                                        <span>
+                                            Адрес доставки
+                                        </span>
+                                        <input type="text" value="г. Стерилитамак, ул. Артема 75 - 43">
+                                    </div>
+                                    <button class="btn-yellow">
+                                        Сохранить
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ---------- END PA ---------- -->
+            <!-- -------------------------------------- -->
+            <!-- ---------- CONTACTS ---------- -->
+            @@include('_contacts.html')
+            <!-- ---------- END CONTACTS ---------- -->
+            <!-- -------------------------------------- -->
+
+        </main>
+        @@include('__footer.html') @@include('__popups.html') @@include('__js_source.html')
+    </div>
+</body>
+
+</html>

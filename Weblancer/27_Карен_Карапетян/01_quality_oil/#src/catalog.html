@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <!-- @@include('__header.html', {
+        "btn-back": "d-none",
+        "name_title": "Бронирование переговорок"
+        }) -->
+        <main>
+
+            <!-- ======================================== -->
+            <!-- --------------- CATALOG --------------- -->
+            <section class='bl_catalog'>
+                <div class='container'>
+                    <h2 class="h2">
+                        Каталог
+                    </h2>
+                    <div class='bl_catalog__content'>
+                        <div class="filter_aside js-filter_aside_mob">
+                            <h4>
+                                Настройка выбора
+                            </h4>
+                            <form action="#">
+                                <div class="filter_aside__item">
+                                    <h4>
+                                        Производители
+                                    </h4>
+                                    <div class="filter_aside__labels">
+                                        <select id="">
+                                            <option value="1" selected>
+                                                Все
+                                            </option>
+                                            <option value="1">
+                                                Сначала старые
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="filter_aside__item">
+                                    <h4>
+                                        Вязкость
+                                    </h4>
+                                    <div class="filter_aside__labels">
+                                        <select id="">
+                                            <option value="1" selected>
+                                                Все
+                                            </option>
+                                            <option value="1">
+                                                Старые
+                                            </option>
+                                            <option value="1">
+                                                Новые
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="filter_aside__item">
+                                    <h4>
+                                        NlGI
+                                    </h4>
+                                    <div class="filter_aside__labels">
+                                        <select id="">
+                                            <option value="1" selected>
+                                                Вся
+                                            </option>
+                                            <option value="1">
+                                                Старые
+                                            </option>
+                                            <option value="1">
+                                                Новые
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="filter_aside__item">
+                                    <h4>
+                                        Фасовка
+                                    </h4>
+                                    <div class="filter_aside__labels">
+                                        <select id="">
+                                            <option value="1" selected>
+                                                Вся
+                                            </option>
+                                            <option value="1">
+                                                Старые
+                                            </option>
+                                            <option value="1">
+                                                Новые
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="filter_aside__item">
+                                    <h4>
+                                        Назначение
+                                    </h4>
+                                    <div class="filter_aside__labels">
+                                        <select id="">
+                                            <option value="1" selected>
+                                                Любое
+                                            </option>
+                                            <option value="1">
+                                                Старые
+                                            </option>
+                                            <option value="1">
+                                                Новые
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="bl_catalog__right">
+                            <div class="bl_catalog__right_top">
+                                <div class="bl_catalog__btn">
+                                    <select id="">
+                                        <option value="1" selected>
+                                            Масла для легкомоторного транспорта
+                                        </option>
+                                        <option value="1">
+                                            Масла для легкомоторного транспорта 2
+                                        </option>
+                                    </select>
+                                </div>
+                                <button class="btn_filter_mob js-btn_filter_mob">
+                                    <img src="./img/icons/filter_mob.svg" alt="filter_mob">
+                                </button>
+                            </div>
+                            <div class="bl_catalog__items">
+                                <ul>
+                                    <li>
+                                        <div class="bl_catalog__img">
+                                            <img src="./img/index/cat1.png" alt="cat">
+                                        </div>
+                                        <div class="bl_catalog__texts">
+                                            <div class="bl_catalog__texts_left">
+                                                <h3>
+                                                    Моторное масло Shell Helix Ultra 0W-40 API SP синтетическое
+                                                </h3>
+                                                <ul>
+                                                    <li>
+                                                        <p>
+                                                            Кол-во
+                                                        </p>
+                                                        <p>
+                                                            1
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Объем
+                                                        </p>
+                                                        <p>
+                                                            4л
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Арт.
+                                                        </p>
+                                                        <p>
+                                                            21341
+                                                        </p>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <div class="bl_catalog__texts_right">
+                                                <ul>
+                                                    <li>
+                                                        <del>
+                                                            8800р
+                                                        </del>
+                                                    </li>
+                                                    <li>
+                                                        <div class="price">
+                                                            6700р
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        15% скидка
+                                                    </li>
+                                                    <li>
+                                                        <div class="u-count">
+                                                            <button class="u-count__minus">
+                                                                <img src="./img/icons/minus.svg" alt="minus">
+                                                            </button>
+                                                            <div class="u-count__number">6</div>
+                                                            <button class="u-count__plus">
+                                                                <img src="./img/icons/plus.svg" alt="plus">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="bl_catalog__btns">
+                                                    <div class="bl_catalog__radios">
+                                                        <form action="#">
+                                                            <label>
+                                                                <input type="radio" name="sort" checked>
+                                                                <span>
+                                                                    4 л
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="sort">
+                                                                <span>
+                                                                    57 л
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="sort">
+                                                                <span>
+                                                                    209 л
+                                                                </span>
+                                                            </label>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#" class="btn btn_gold">
+                                                        В корзину
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bl_catalog__img">
+                                            <img src="./img/index/cat2.png" alt="cat">
+                                        </div>
+                                        <div class="bl_catalog__texts">
+                                            <div class="bl_catalog__texts_left">
+                                                <h3>
+                                                    Моторное масло Matrix
+                                                    Foodmax AW PAO
+                                                </h3>
+                                                <ul>
+                                                    <li>
+                                                        <p>
+                                                            Кол-во
+                                                        </p>
+                                                        <p>
+                                                            1
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Объем
+                                                        </p>
+                                                        <p>
+                                                            4л
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Арт.
+                                                        </p>
+                                                        <p>
+                                                            21341
+                                                        </p>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <div class="bl_catalog__texts_right">
+                                                <ul>
+                                                    <li>
+                                                        <del>
+                                                            8800р
+                                                        </del>
+                                                    </li>
+                                                    <li>
+                                                        <div class="price">
+                                                            6700р
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        15% скидка
+                                                    </li>
+                                                    <li>
+                                                        <div class="u-count">
+                                                            <button class="u-count__minus">
+                                                                <img src="./img/icons/minus.svg" alt="minus">
+                                                            </button>
+                                                            <div class="u-count__number">6</div>
+                                                            <button class="u-count__plus">
+                                                                <img src="./img/icons/plus.svg" alt="plus">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="bl_catalog__btns">
+                                                    <div class="bl_catalog__radios">
+                                                        <form action="#">
+                                                            <label>
+                                                                <input type="radio" name="sort" checked>
+                                                                <span>
+                                                                    4 л
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="sort">
+                                                                <span>
+                                                                    57 л
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="sort">
+                                                                <span>
+                                                                    209 л
+                                                                </span>
+                                                            </label>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#" class="btn btn_gold">
+                                                        В корзину
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bl_catalog__img">
+                                            <img src="./img/index/cat3.png" alt="cat">
+                                        </div>
+                                        <div class="bl_catalog__texts">
+                                            <div class="bl_catalog__texts_left">
+                                                <h3>
+                                                    Моторное масло Shell Helix Ultra 0W-40 API SP синтетическое
+                                                </h3>
+                                                <ul>
+                                                    <li>
+                                                        <p>
+                                                            Кол-во
+                                                        </p>
+                                                        <p>
+                                                            1
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Объем
+                                                        </p>
+                                                        <p>
+                                                            4л
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Арт.
+                                                        </p>
+                                                        <p>
+                                                            21341
+                                                        </p>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <div class="bl_catalog__texts_right">
+                                                <ul>
+                                                    <li>
+                                                        <del>
+                                                            8800р
+                                                        </del>
+                                                    </li>
+                                                    <li>
+                                                        <div class="price">
+                                                            6700р
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        15% скидка
+                                                    </li>
+                                                    <li>
+                                                        <div class="u-count">
+                                                            <button class="u-count__minus">
+                                                                <img src="./img/icons/minus.svg" alt="minus">
+                                                            </button>
+                                                            <div class="u-count__number">6</div>
+                                                            <button class="u-count__plus">
+                                                                <img src="./img/icons/plus.svg" alt="plus">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="bl_catalog__btns">
+                                                    <div class="bl_catalog__radios">
+                                                        <form action="#">
+                                                            <label>
+                                                                <input type="radio" name="sort" checked>
+                                                                <span>
+                                                                    4 л
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="sort">
+                                                                <span>
+                                                                    57 л
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="sort">
+                                                                <span>
+                                                                    209 л
+                                                                </span>
+                                                            </label>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#" class="btn btn_gold">
+                                                        В корзину
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bl_catalog__img">
+                                            <img src="./img/index/cat1.png" alt="cat">
+                                        </div>
+                                        <div class="bl_catalog__texts">
+                                            <div class="bl_catalog__texts_left">
+                                                <h3>
+                                                    Моторное масло Shell Helix Ultra 0W-40 API SP синтетическое
+                                                </h3>
+                                                <ul>
+                                                    <li>
+                                                        <p>
+                                                            Кол-во
+                                                        </p>
+                                                        <p>
+                                                            1
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Объем
+                                                        </p>
+                                                        <p>
+                                                            4л
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Арт.
+                                                        </p>
+                                                        <p>
+                                                            21341
+                                                        </p>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <div class="bl_catalog__texts_right">
+                                                <ul>
+                                                    <li>
+                                                        <del>
+                                                            8800р
+                                                        </del>
+                                                    </li>
+                                                    <li>
+                                                        <div class="price">
+                                                            6700р
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        15% скидка
+                                                    </li>
+                                                    <li>
+                                                        <div class="u-count">
+                                                            <button class="u-count__minus">
+                                                                <img src="./img/icons/minus.svg" alt="minus">
+                                                            </button>
+                                                            <div class="u-count__number">6</div>
+                                                            <button class="u-count__plus">
+                                                                <img src="./img/icons/plus.svg" alt="plus">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="bl_catalog__btns">
+                                                    <div class="bl_catalog__radios">
+                                                        <form action="#">
+                                                            <label>
+                                                                <input type="radio" name="sort" checked>
+                                                                <span>
+                                                                    4 л
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="sort">
+                                                                <span>
+                                                                    57 л
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="sort">
+                                                                <span>
+                                                                    209 л
+                                                                </span>
+                                                            </label>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#" class="btn btn_gold">
+                                                        В корзину
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bl_catalog__img">
+                                            <img src="./img/index/cat2.png" alt="cat">
+                                        </div>
+                                        <div class="bl_catalog__texts">
+                                            <div class="bl_catalog__texts_left">
+                                                <h3>
+                                                    Моторное масло Matrix
+                                                    Foodmax AW PAO
+                                                </h3>
+                                                <ul>
+                                                    <li>
+                                                        <p>
+                                                            Кол-во
+                                                        </p>
+                                                        <p>
+                                                            1
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Объем
+                                                        </p>
+                                                        <p>
+                                                            4л
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Арт.
+                                                        </p>
+                                                        <p>
+                                                            21341
+                                                        </p>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <div class="bl_catalog__texts_right">
+                                                <ul>
+                                                    <li>
+                                                        <del>
+                                                            8800р
+                                                        </del>
+                                                    </li>
+                                                    <li>
+                                                        <div class="price">
+                                                            6700р
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        15% скидка
+                                                    </li>
+                                                    <li>
+                                                        <div class="u-count">
+                                                            <button class="u-count__minus">
+                                                                <img src="./img/icons/minus.svg" alt="minus">
+                                                            </button>
+                                                            <div class="u-count__number">6</div>
+                                                            <button class="u-count__plus">
+                                                                <img src="./img/icons/plus.svg" alt="plus">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="bl_catalog__btns">
+                                                    <div class="bl_catalog__radios">
+                                                        <form action="#">
+                                                            <label>
+                                                                <input type="radio" name="sort" checked>
+                                                                <span>
+                                                                    4 л
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="sort">
+                                                                <span>
+                                                                    57 л
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="sort">
+                                                                <span>
+                                                                    209 л
+                                                                </span>
+                                                            </label>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#" class="btn btn_gold">
+                                                        В корзину
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bl_catalog__img">
+                                            <img src="./img/index/cat3.png" alt="cat">
+                                        </div>
+                                        <div class="bl_catalog__texts">
+                                            <div class="bl_catalog__texts_left">
+                                                <h3>
+                                                    Моторное масло Shell Helix Ultra 0W-40 API SP синтетическое
+                                                </h3>
+                                                <ul>
+                                                    <li>
+                                                        <p>
+                                                            Кол-во
+                                                        </p>
+                                                        <p>
+                                                            1
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Объем
+                                                        </p>
+                                                        <p>
+                                                            4л
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Арт.
+                                                        </p>
+                                                        <p>
+                                                            21341
+                                                        </p>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <div class="bl_catalog__texts_right">
+                                                <ul>
+                                                    <li>
+                                                        <del>
+                                                            8800р
+                                                        </del>
+                                                    </li>
+                                                    <li>
+                                                        <div class="price">
+                                                            6700р
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        15% скидка
+                                                    </li>
+                                                    <li>
+                                                        <div class="u-count">
+                                                            <button class="u-count__minus">
+                                                                <img src="./img/icons/minus.svg" alt="minus">
+                                                            </button>
+                                                            <div class="u-count__number">6</div>
+                                                            <button class="u-count__plus">
+                                                                <img src="./img/icons/plus.svg" alt="plus">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="bl_catalog__btns">
+                                                    <div class="bl_catalog__radios">
+                                                        <form action="#">
+                                                            <label>
+                                                                <input type="radio" name="sort" checked>
+                                                                <span>
+                                                                    4 л
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="sort">
+                                                                <span>
+                                                                    57 л
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="sort">
+                                                                <span>
+                                                                    209 л
+                                                                </span>
+                                                            </label>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#" class="btn btn_gold">
+                                                        В корзину
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bl_catalog__pagination">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="active">
+                                            1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            3
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            ...
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            4
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            След
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- --------------- END CATALOG --------------- -->
+            <!-- ======================================== -->
+            <!-- ======================================== -->
+            <!-- --------------- CONTACTS --------------- -->
+            <section class='bl_contacts'>
+                <div class='container'>
+                    <div class='bl_contacts__content'>
+                        <h2 class="h2">
+                            Контакты
+                        </h2>
+                        <div class="bl_contacts__top">
+                            <div class="bl_contacts__top_left">
+                                <div class="bl_contacts__top_item">
+                                    <h4>
+                                        Почта:
+                                    </h4>
+                                    <a href="mailto:qualityoil@mail.ru" class="header__links header__email ">
+                                        qualityoil@mail.ru
+                                    </a>
+                                </div>
+                                <div class="bl_contacts__top_item">
+                                    <h4>
+                                        Телефон:
+                                    </h4>
+                                    <a href="tel:+78002345634" class="header__links header__phone">
+                                        +78002345634
+                                    </a>
+                                    <a href="#" class="btn_orange">
+                                        Заказать звонок
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bl_contacts__top_right">
+                                <h4>
+                                    Юридическая информация:
+                                </h4>
+                                <ul>
+                                    <li>
+                                        ОГРНИП ................
+                                    </li>
+                                    <li>
+                                        ............
+                                    </li>
+                                    <li>
+                                        -
+                                    </li>
+                                    <li>
+                                        -
+                                    </li>
+                                    <li>
+                                        -
+                                    </li>
+                                    <li>
+                                        -
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn_orange">
+                                    Скачать карточку предприятия
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bl_contacts__bottom">
+                            <div class="bl_contacts__texts">
+                                <h2 class="h2">
+                                    Есть вопросы?
+                                    Оставьте заявку.
+                                </h2>
+                                <p>
+                                    Мы бесплатно проконсультируем Вас по любому вопросу.
+                                </p>
+                            </div>
+                            <div class="bl_contacts__form">
+                                <form action="#">
+                                    <h5>
+                                        Имя
+                                    </h5>
+                                    <input type="text">
+                                    <h5>
+                                        Телефон
+                                    </h5>
+                                    <input type="tel">
+                                    <h5>
+                                        Почта
+                                    </h5>
+                                    <input type="email">
+                                    <h5>
+                                        Комментарий
+                                    </h5>
+                                    <textarea name="text_form"></textarea>
+                                    <label class="u-checkbox">
+                                        <span class="u-check">
+                                            <input type="checkbox">
+                                            <span class="u-check__check"></span>
+                                        </span>
+                                        <p>
+                                            Нажимая на кнопку отправить Вы соглашаетесь на обработку персональных данных
+                                        </p>
+                                    </label>
+                                    <button class="btn btn_gold">
+                                        Отправить
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- --------------- END CONTACTS --------------- -->
+            <!-- ======================================== -->
+            <!-- ======================================== -->
+            <!-- --------------- MARQUEE  --------------- -->
+            <!-- @@include('_marquee.html') -->
+            <!-- --------------- END MARQUEE  --------------- -->
+            <!-- ======================================== -->
+        </main>
+        @@include('__footer.html')
+        @@include('__popups.html') @@include('__js_source.html')
+    </div>
+</body>
+
+</html>

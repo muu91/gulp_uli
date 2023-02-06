@@ -1,0 +1,336 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- WEBINARS ----------
+// ----------------------------------------
+.bl_header_webinars {
+  background-image: url(../img/webinars/header_webinars_bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  @media (max-width: 768px) {
+    background-position: 66% bottom;
+  }
+  @media (max-width: 480px) {
+    background-image: url(../img/webinars/header_webinars_bg_mob.webp);
+  }
+  @media (min-width: 1600px) {
+    background-image: url(../img/webinars/header_webinars_bg_big.webp);
+  }
+  h1 {
+    .tit75 {
+      @media (max-width: 600px) {
+        font-size: 25px;
+      }
+    }
+  }
+  .bl_header_main {
+    &__p {
+      color: $text;
+    }
+    &__texts {
+      @media (max-width: 480px) {
+        max-width: 200px;
+      }
+    }
+  }
+}
+
+// ----------------------------------------
+// ---------- END WEBINARS ----------
+// ========================================
+//==============================
+//---------- HAPPEN ----------
+.bl_not_happen_webinars {
+  .img_txts__item_reverse {
+    @media (max-width: 700px) {
+      padding-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+}
+.img_txts__item_bg {
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    background-color: $addit20;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+  }
+}
+//---------- END HAPPEN ----------
+//==============================
+//==============================
+//---------- COURSES ----------
+.bl_header_courses {
+  background-image: url(../img/webinars/header_courses_bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  @media (max-width: 768px) {
+    background-position: 66% bottom;
+  }
+  @media (max-width: 480px) {
+    background-image: url(../img/webinars/header_courses_bg_mob.webp);
+  }
+  @media (min-width: 1600px) {
+    background-image: url(../img/webinars/header_courses_bg_big.webp);
+  }
+  h1 {
+    margin-bottom: 20px;
+    span {
+      display: inline-block;
+    }
+  }
+  .bl_header_main {
+    &__texts {
+      padding-bottom: 0;
+      @media (max-width: 480px) {
+        max-width: none;
+      }
+    }
+    &__p {
+      color: $addit;
+    }
+  }
+}
+//---------- END COURSES ----------
+//==============================
+//==============================
+//---------- SUCCESS STORIES ----------
+.bl_header_suc_stories {
+  background-image: url(../img/webinars/header_suc_stories_bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  @media (max-width: 768px) {
+    background-position: 66% bottom;
+  }
+  @media (max-width: 480px) {
+    background-image: url(../img/webinars/header_suc_stories_bg_mob.webp);
+  }
+  @media (min-width: 1600px) {
+    background-image: url(../img/webinars/header_suc_stories_bg_big.webp);
+  }
+  h1 {
+    margin-bottom: 20px;
+    span {
+      display: inline-block;
+    }
+  }
+  .bl_header_main {
+    &__texts {
+      padding-bottom: 0;
+      max-width: 513px;
+      @media (max-width: 480px) {
+        max-width: none;
+      }
+    }
+    // &__p {
+    // color: $addit;
+    // }
+  }
+}
+.bl_suc_stories {
+  &__content {
+    position: relative;
+  }
+  &__items {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 80px 40px;
+      @media (max-width: 1200px) {
+        gap: 40px 20px;
+      }
+      @media (max-width: 768px) {
+        gap: 30px;
+      }
+      @media (max-width: 700px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    li {
+      display: none;
+      &:first-child,
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8) {
+        display: block;
+      }
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8) {
+        @media (max-width: 600px) {
+          display: none;
+        }
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      width: calc(205px + 20px);
+      height: calc(205px + 20px);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      background-image: url("../img/webinars/circle_dashed.png");
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      @media (max-width: 1200px) {
+        width: calc(150px + 20px);
+        height: calc(150px + 20px);
+      }
+      @media (max-width: 768px) {
+        width: calc(90px + 20px);
+        height: calc(90px + 20px);
+      }
+    }
+  }
+  &__img {
+    height: 205px;
+    width: 205px;
+    min-width: 205px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+    position: relative;
+    @media (max-width: 1200px) {
+      height: 150px;
+      width: 150px;
+      min-width: 150px;
+      margin-right: 20px;
+    }
+    @media (max-width: 768px) {
+      width: 90px;
+      height: 90px;
+      min-width: 90px;
+    }
+
+    img,
+    picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    > p {
+      margin-bottom: 20px;
+      @media (max-width: 768px) {
+        margin-bottom: 10px;
+      }
+    }
+    .btn_read {
+      margin-top: auto;
+      margin-bottom: 0;
+    }
+  }
+  &__texts_top {
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+    h3 {
+      margin-bottom: 5px;
+    }
+  }
+  .bottom_btn_more {
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    width: calc(100% + 20px);
+  }
+}
+//---------- END SUCCESS STORIES ----------
+//==============================
+//==============================
+//---------- CONTACT ----------
+.bl_header_contact {
+  background-image: url(../img/webinars/header_contact_bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  @media (max-width: 480px) {
+    background-image: url(../img/webinars/header_contact_bg_mob.webp);
+  }
+  @media (min-width: 1600px) {
+    background-image: url(../img/webinars/header_contact_bg_big.webp);
+  }
+
+  .bl_header_main {
+    &__texts {
+      max-width: 685px;
+      padding-bottom: 47px;
+      @media (max-width: 1024px) {
+        max-width: 500px;
+      }
+      @media (max-width: 768px) {
+        max-width: 400px;
+      }
+      h1 {
+        @media (max-width: 480px) {
+          margin-bottom: 20px;
+        }
+        span {
+          @media (max-width: 600px) {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+    &__p {
+      color: $text;
+      @media (max-width: 480px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    a {
+      @media (max-width: 480px) {
+        min-width: 192px;
+      }
+      &:first-child {
+        margin-right: 30px;
+        @media (max-width: 480px) {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+//---------- END CONTACT ----------
+//==============================

@@ -1,0 +1,146 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- SWIPER ----------
+// ----------------------------------------
+.swiper {
+  position: relative;
+  overflow: inherit;
+  margin-bottom: 55px;
+  @media (max-width: 600px) {
+    margin-bottom: 0;
+  }
+}
+.swiper-slide {
+  height: auto;
+}
+// ----------------------------------------
+// ---------- PAGINATION ----------
+.swiper-pagination {
+  width: fit-content !important;
+  left: 50% !important;
+  bottom: -55px !important;
+  transform: translateX(-50%);
+  height: 15px;
+  @media (max-width: 600px) {
+    display: none;
+  }
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 0 !important;
+    margin-right: 10px !important;
+    opacity: 1;
+    background: $grad1;
+    position: relative;
+    pointer-events: all;
+    cursor: pointer;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      bottom: 1px;
+      left: 1px;
+      background-color: #fff;
+      border-radius: 50%;
+      transition: opacity 0.3s;
+    }
+
+    &:last-child {
+      margin-right: 0 !important;
+    }
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: $grad1;
+    &::before {
+      opacity: 0;
+    }
+  }
+}
+// ---------- END PAGINATION ----------
+// ----------------------------------------
+// ---------- BUTTONS ----------
+.swiper-button-prev,
+.swiper-button-next {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+  background: $addit1;
+  border-radius: 50%;
+  overflow: hidden;
+  @media (max-width: 600px) {
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  &:hover::before {
+    opacity: 0;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: $grad1;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  &::after {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 12px;
+    height: 20px;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 6px);
+    z-index: 5;
+    @media (max-width: 600px) {
+      width: 10px;
+      height: 16px;
+      top: calc(50% - 8px);
+      left: calc(50% - 5px);
+    }
+  }
+}
+.swiper-button-prev {
+  left: -70px;
+  @media (max-width: 1024px) {
+    left: -20px;
+  }
+  @media (max-width: 600px) {
+    top: -30px;
+    left: auto !important;
+    right: 60px !important;
+  }
+  &::after {
+    background-image: url("../img/icons/arrow_left.svg");
+  }
+}
+.swiper-button-next {
+  right: -70px;
+  @media (max-width: 1024px) {
+    right: -20px;
+  }
+  @media (max-width: 600px) {
+    top: -30px;
+    right: 0 !important;
+  }
+  &::after {
+    background-image: url("../img/icons/arrow_right.svg");
+  }
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
+// ---------- END BUTTONS ----------
+// ----------------------------------------
+// ---------- END SWIPER ----------
+// ========================================

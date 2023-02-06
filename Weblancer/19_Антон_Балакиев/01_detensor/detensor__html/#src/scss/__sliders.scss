@@ -1,0 +1,187 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- SWIPER ----------
+// ----------------------------------------
+// ---------- PAGINATION ----------
+.swiper-pagination {
+  padding: 9px 16px;
+  background-color: #fff;
+  width: auto !important;
+  position: absolute;
+  bottom: 29px !important;
+  right: 28px !important;
+  top: auto !important;
+  left: auto !important;
+  border-radius: 40px;
+  z-index: 10;
+  transition: 0.3s;
+  &-bullet {
+    background-color: #c4c4c4;
+    height: 8px;
+    min-width: 8px;
+    max-width: 8px;
+    margin: 0 5px !important;
+    border-radius: 20px;
+    opacity: 1;
+    transition: 0.3s;
+    outline: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &-bullet-active {
+    background-color: $blue;
+    min-width: 30px;
+    max-width: 30px;
+    outline: none;
+  }
+}
+.pagination-grey {
+  background-color: #f4f4f4;
+}
+// ---------- END PAGINATION ----------
+// ----------------------------------------
+// ---------- PAGINATION ----------
+.swiper-button-prev,
+.swiper-button-next {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  outline: none;
+
+  &::after {
+    display: none;
+  }
+  img {
+    display: block;
+    width: 10px;
+  }
+}
+.swiper-button-prev {
+  left: 5px;
+  img {
+    margin-right: 3px;
+  }
+}
+.swiper-button-next {
+  right: -25px;
+  img {
+    margin-left: 3px;
+  }
+}
+
+.swiper-button-prev-bottom,
+.swiper-button-next-bottom {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  outline: none;
+  &::after {
+    display: none;
+  }
+  img {
+    display: block;
+    width: 10px;
+  }
+}
+.swiper-button-prev-bottom {
+  left: 5px;
+  img {
+    margin-right: 3px;
+  }
+}
+.swiper-button-next-bottom {
+  right: -25px;
+  img {
+    margin-left: 3px;
+  }
+}
+.bl-header__bottom .swiper-button-disabled {
+  pointer-events: all;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.swiper-button-up,
+.swiper-button-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 9px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  &::after {
+    display: none;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+.swiper-button-up {
+  top: 0;
+}
+.swiper-button-down {
+  bottom: 0;
+}
+
+.swiper-button-prev--card,
+.swiper-button-next--card {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  position: absolute;
+  &::after {
+    display: none;
+  }
+  img {
+    display: block;
+    width: 10px;
+  }
+}
+.swiper-button-prev--card {
+  left: 5px;
+  img {
+    margin-right: 3px;
+  }
+}
+.swiper-button-next--card {
+  right: 5px;
+  z-index: 10;
+  img {
+    margin-left: 3px;
+  }
+}
+// ---------- END PAGINATION ----------
+// ----------------------------------------
+// ---------- END SWIPER ----------
+// ========================================

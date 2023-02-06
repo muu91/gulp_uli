@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('__head.html')
+</head>
+
+<body>
+    <div class="main-wrapper">
+        @@include('__header.html')
+        <main>
+            <!-- -------------------------------------- -->
+            <!-- ---------- PERSONAL AREA ---------- -->
+            <section class="bl-pers-area bl-pa-address">
+                <div class="container">
+                    <h1>
+                        Ваши данные
+                    </h1>
+                    <div class="bl-pers-area__content">
+                        <aside class="pers-area-aside pa-aside">
+                            <div class="pa-aside__menu pa-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/icons/pa-user.svg" alt="pa-user">
+                                            <span>
+                                                Ваши данные
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/icons/pa-address.svg" alt="pa-user">
+                                            <span>
+                                                Адреса доставки
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/icons/pa-zakaz.svg" alt="pa-user">
+                                            <span>
+                                                Заказы
+                                                <span class="order-amount">
+                                                    2
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/icons/pa-exit.svg" alt="pa-user">
+                                            <span>
+                                                Выход
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <main class="pers-area-main">
+                            <div class="pa-data">
+                                <div class="pa-data__form">
+                                    <form action="#">
+                                        <div class="pa-data__inputs">
+                                            <div class="input input-city">
+                                                <input type="text" placeholder="Город *" required>
+                                            </div>
+                                            <div class="input">
+                                                <input type="text" placeholder="Фамилия *" required>
+                                            </div>
+                                            <div class="input input-phone">
+                                                <input type="tel" placeholder="Телефон *">
+                                                <a class="btn-sms-pa-data">
+                                                    отправить код
+                                                </a>
+                                            </div>
+                                            <div class="input">
+                                                <input type="email" placeholder="E-mail">
+                                            </div>
+                                            <div class="input input-date">
+                                                <div class="placeholder-date">
+                                                    Ваш день рождения:
+                                                </div>
+                                                <label>
+                                                    <input id="pa-date" class="pa-calendar" type="text"
+                                                        placeholder="09 апреля 1985 г.">
+                                                </label>
+                                                <p>
+                                                    Получите персональную скидку в честь дня рождения!
+                                                </p>
+                                            </div>
+                                            <label class="mailing">
+                                                <div class="mailing__check">
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <img src="./img/icons/check-blue.svg" alt="check-blue">
+                                                    </span>
+                                                </div>
+                                                <p>
+                                                    Использовать как основной адрес
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <button class="btn-blue-green-big btn-6">
+                                            Сохранить
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </section>
+            <!-- ---------- END PERSONAL AREA ---------- -->
+            <!-- -------------------------------------- -->
+        </main>
+        @@include('__footer.html') @@include('__popups.html') @@include('__js_source.html')
+
+</body>
+
+</html>

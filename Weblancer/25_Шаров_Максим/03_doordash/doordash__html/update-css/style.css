@@ -1,0 +1,250 @@
+.d-none{
+  display: none !important;
+}
+/* ---------- */
+/* HEADER AND FOOTER */
+.header__logo-icon img{
+  display: block;
+  max-width: 200px;
+}
+@media (max-width: 425px) {
+  .header__logo-icon img {
+    max-width: 120px;
+  }
+  .header__right{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* ---------- */
+.header-top{
+  width: 100%;
+}
+.header-top__top{
+  background-color: #06C167;
+}
+.header-top__top a{
+  padding: 7px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.3s;
+  line-height: normal;
+}
+@media (max-width: 480px) {
+.header-top__top a{
+    font-size: 16px;
+  }
+}
+.header-top__top a:hover{
+  opacity: 0.6;
+}
+.header-top__bottom .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.header-top__bottom a {
+  display: block;
+  font-family: Arial, sans-serif ;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  padding:8px 16px ;
+  transition: 0.3s;
+  text-align: center;
+  line-height: normal;
+}
+
+.header-top__bottom a:hover{
+  opacity: 0.6;
+}
+.btn-h-top-grey {
+  background-color: #E7E7E7;
+  border-radius: 50px 0 0 50px;
+  margin-right: 5px;
+}
+.btn-h-top-orange {
+  background-color: #F55F30;
+  text-transform: uppercase;
+  color: #fff !important;
+  border-radius: 0 50px 50px 0;
+}
+@media (max-width: 480px) {
+  .header-top__bottom a {
+    font-size: 12px;
+    border-radius: 0;
+  }
+
+  .header-top__bottom .container {
+    padding: 0;
+  }
+
+  .btn-h-top-grey {
+    margin-right: 0;
+  }
+}
+
+/* ---------- */
+.footer-bottom__logo{
+  max-width: 200px;  
+}
+.footer-bottom__logo img{
+  display: block;
+  width: 100%;
+}
+@media (max-width: 425px) {
+  .header__logo-icon img {
+    max-width: 120px;
+  }
+}
+@media (max-width: 425px) {
+  .footer-bottom__list {
+    flex-wrap: wrap;
+    grid-column:auto;
+        grid-row:auto;
+  }
+  .footer-bottom__inner{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-bottom__social-list{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+/* END HEADER AND FOOTER */
+/* ---------- */
+/* OFFERS */
+.bl-offers{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.bl-offers h2{
+  display: block;
+  margin-bottom: 20px;
+}
+.bl-offers__items{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+/* @media (max-width: 767px) {
+  .bl-offers__items{
+
+  }
+} */
+.bl-offers__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bl-offers__item img{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.bl-offers__item h3{
+  text-align: center;
+  display: block;
+  max-width: 180px;
+}
+
+@media (max-width: 767px) {
+  .bl-offers__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+    .bl-offers__items img{
+      max-width: 200px;  
+  } 
+}
+/* END OFFERS */
+/* ---------- */
+/* DASHPASS */
+.bl-dashpass{
+  padding-bottom: 50px;
+}
+.dashpass-slider{
+  position: relative;
+  margin-bottom: 20px;
+}
+.dashpass-slider:last-child{
+  margin-bottom: 0;
+}
+.bl-dashpass .product-slider__arrow{
+  position: absolute;
+}
+.bl-dashpass .product-slider__arrow:hover{
+  cursor: pointer;
+}
+.bl-dashpass .swiper-button-prevv {
+  top: 50%;
+  transform: translateY(-50%);
+  left: -16px;
+  z-index: 10;
+}
+.bl-dashpass .swiper-button-prevv::after{
+  background-image: url(../update-img/arrow-left.svg);
+}
+.bl-dashpass .swiper-button-nextt {
+  top: 50%;
+  transform: translateY(-50%);
+  right: -16px;
+  z-index: 10;
+}
+.bl-dashpass .swiper-button-nextt::after {
+  background-image: url(../update-img/arrow-right.svg);
+}
+.dashpass-slider .swiper-slide{
+  overflow: hidden;
+  border-radius: 15px;
+}
+.dashpass-slider .swiper-slide a{
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+}
+.dashpass-slider .swiper-slide img {
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+/* END DASHPASS */
+/* ---------- */
+/* ======================================== */
+/* ---------- */
+/* METHODS */
+.methods{
+  margin-bottom: 20px;
+}
+/* END METHODS */
+/* ---------- */
+/* EDIT PROFILE */
+.program{
+  margin-bottom: 32px;
+}
+/* END EDIT PROFILE */
+/* ---------- */
+/* ======================================== */
+/* STAGES */
+/* ---------- */
+.fix-stages{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 50;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+/* ---------- */
+/* END STAGES */
+/* ======================================== */
