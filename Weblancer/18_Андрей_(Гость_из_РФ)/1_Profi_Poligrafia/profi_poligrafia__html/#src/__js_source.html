@@ -1,0 +1,30 @@
+<!-- ======================================== -->
+<!-- ---------- JS CONNECTIONS ---------- -->
+<script src="libs/jquery-3.6.0.min.js"></script>
+<!-- <script src="libs/swiper/swiper-bundle.min.js"></script> -->
+<!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+<!-- <script src="libs/aos/aos.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+<!-- <script src="./libs/typed/typed.js"></script> -->
+<!-- <script src="./libs/fancybox/fancybox.umd.js"></script> -->
+<!-- <script src="./libs/nouislider/nouislider.min.js"></script> -->
+<!-- <script src="./libs/masonry/masonry.pkgd.min.js"></script> -->
+<script src="js/script.min.js"></script>
+<!-- ---------- END JS CONNECTIONS ---------- -->
+<!-- ======================================== -->
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&load=Map&lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+  ymaps.ready(function () {
+    let map = new ymaps.Map("footer__map", {
+      center: [55.76, 37.64],
+      zoom: 17
+    });
+
+    if (map) {
+      ymaps.modules.require(['Placemark', 'Circle'], function (Placemark, Circle) {
+        var placemark = new Placemark([55.37, 35.45]);
+      });
+    }
+  });
+</script>

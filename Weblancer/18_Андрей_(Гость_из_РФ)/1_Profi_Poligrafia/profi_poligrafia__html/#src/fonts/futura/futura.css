@@ -1,0 +1,55 @@
+/* ---------------------------------------- */
+/* ----- FUTURA ----- */
+/* -------------------- */
+
+@font-face {
+  font-family: "Futura";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("./futurabookc.ttf") format("truetype"), url("./futurabookc.woff2") format("woff2"), url("./futurabookc.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("./futurademic.ttf") format("truetype"), url("./futurademic.woff2") format("woff2"), url("./futurademic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("./futuralightc.ttf") format("truetype"), url("./futuralightc.woff2") format("woff2"), url("./futuralightc.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("./futuramediumc.ttf") format("truetype"), url("./futuramediumc.woff2") format("woff2"), url("./futuramediumc.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("./futura-extra-black-normal.ttf") format("truetype"), url("./futura-extra-black-normal.woff2") format("woff2"), url("./futura-extra-black-normal.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("./futura-book-bold.ttf") format("truetype"), url("./futura-book-bold.woff2") format("woff2"), url("./futura-book-bold.woff") format("woff");
+}
+
+/* -------------------- */
+/* ----- END FUTURA ----- */
+/* ---------------------------------------- */

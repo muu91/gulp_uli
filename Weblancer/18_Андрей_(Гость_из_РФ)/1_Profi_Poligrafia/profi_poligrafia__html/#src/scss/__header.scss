@@ -1,0 +1,26 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- HEADER ----------
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 27px;
+  // display: none;
+  &__content {
+    a {
+      display: block;
+      margin: 0 auto;
+      width: fit-content;
+      @media (max-width: 992px) {
+        max-width: 134px;
+      }
+    }
+  }
+}
+// ---------- END HEADER ----------
+// ========================================

@@ -1,0 +1,68 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- POPUPS ----------
+// ----------------------------------------
+.main-popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 150;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .popup {
+    padding: 90px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 304px;
+    img {
+      width: 50px;
+      height: 50px;
+      display: block;
+      margin-bottom: 36px;
+    }
+    h4 {
+      font-family: $Fut;
+      font-size: 22px;
+      line-height: 120%;
+      color: #000;
+      font-weight: 500;
+    }
+    a {
+      font-family: $Rob;
+      font-size: 20px;
+      line-height: 48.5px;
+      letter-spacing: 0.085px;
+      color: #000;
+      font-weight: 900;
+      transition: 0.3s;
+      margin-top: 20px;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+.main-popup-success {
+  // display: none;
+}
+.main-popup-error {
+  display: none;
+}
+
+// ----------------------------------------
+// ---------- END POPUPS ----------
+// ========================================

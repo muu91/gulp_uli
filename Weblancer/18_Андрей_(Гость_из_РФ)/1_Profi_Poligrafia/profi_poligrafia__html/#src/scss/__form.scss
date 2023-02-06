@@ -1,0 +1,102 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- FORMS ----------
+// ----------------------------------------
+input {
+  display: block;
+  font-family: $Fut;
+  color: #000;
+  border: 1px solid $blue;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  height: 50px;
+  border-radius: 3px;
+  padding: 16px 18px;
+  transition: 0.3s;
+  outline: none;
+  width: 100%;
+  &:focus,
+  &:active {
+    transition: 0.3s;
+    border: 1px solid $blue_hov;
+  }
+}
+.input {
+  position: relative;
+  .placeholder {
+    font-family: $Fut;
+    color: $grey;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  .error-text {
+    font-family: $Fut;
+    color: $grey;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    position: absolute;
+    bottom: -22px;
+    left: 5px;
+    color: #eb5757;
+    height: 0;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+input:focus ~ .placeholder,
+input:not(:focus):valid ~ .placeholder {
+  top: -10px;
+  left: 5px;
+  transition: 0.3s;
+}
+.input.error {
+  input {
+    border: 1px solid #eb5757;
+    color: #eb5757;
+  }
+  .placeholder {
+    color: #eb5757;
+  }
+  .error-text {
+    opacity: 1;
+    height: auto;
+  }
+}
+
+.btn-blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 260px;
+  border: none;
+  outline: none;
+  height: 50px;
+  background-color: $blue;
+  border-radius: 3px;
+  color: #fff;
+  font-family: $Fut;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0.06em;
+  transition: 0.3s;
+  &:hover,
+  &:focus {
+    background-color: $blue_hov;
+  }
+}
+// ----------------------------------------
+// ---------- END FORMS ----------
+// ========================================

@@ -1,0 +1,100 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+html.lock,
+body.lock {
+    height: 100%;
+    overflow: hidden !important;
+    width: 100%;
+    position: relative;
+}
+
+.main-wrapper {
+    width: 100%;
+    overflow: hidden;
+    @media (max-height: 100vh) {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        // align-items: stretch;
+        // min-height: 100vh;
+    }
+}
+
+.container {
+    max-width: calc(1160px + 160px);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+    @media (max-width: 1024px) {
+        padding: 0 67px;
+    }
+    @media (max-width: 768px) {
+        padding: 0 30px;
+    }
+    @media (max-width: 425px) {
+        padding: 0 15px;
+    }
+}
+
+// ========================================
+// ---------- HEADING ----------
+h2 {
+    display: block;
+    width: fit-content;
+    font-family: $Rob;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: 0.085em;
+    margin: 0 auto;
+    margin-bottom: 58px;
+    color: #000;
+    @media (max-width: 600px) {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+h4 {
+    font-family: $Fut;
+    font-size: 22px;
+    line-height: 120%;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-align: center;
+    color: #000;
+}
+// ---------- END HEADING ----------
+// ----------------------------------------
+// ---------- TEXTS ----------
+
+// ---------- END TEXTS ----------
+// ----------------------------------------
+// ---------- BUTTONS ----------
+// ----------------------------------------
+
+// ----------------------------------------
+// ---------- END BUTTONS ----------
+// ========================================
+// ---------- OTHERS ----------
+// ----------------------------------------
+// ---------- IMAGES ----------
+
+// ---------- END IMAGES ----------
+// ----------------------------------------
+// ---------- INDENTS ----------
+
+// ---------- END INDENTS ----------
+// ----------------------------------------
+// ---------- COLORS ----------
+
+// ---------- END COLORS ----------
+// ----------------------------------------
+
+// ----------------------------------------
+// ---------- END OTHERS ----------
+// ========================================
